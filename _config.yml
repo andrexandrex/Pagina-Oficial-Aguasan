@@ -1,5 +1,5 @@
-url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+url: https://github.com/andrexandrex/aguasan1.io
+baseurl: 
 
 # Site settings
 title: Awesome Title
@@ -63,3 +63,9 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#PLUGINS
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
