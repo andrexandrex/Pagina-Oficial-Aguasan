@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agrosanidad</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 08 Mar 2023 10:12:37 -0500</pubDate>
+    <lastBuildDate>Wed, 08 Mar 2023 10:12:37 -0500</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>FLAI</title>
+        <description>&lt;body class = &quot;body_fba&quot; &gt;
+    &lt;header class=&quot;header_fba&quot;&gt;
+      &lt;h1 style = &quot;margin-left: 15%;&quot;&gt;Biosand Filters&lt;/h1&gt;
+      &lt;nav class=&quot;nav_fba&quot;&gt;
+        &lt;ul class = &quot;ul_fba&quot;&gt;
+          &lt;li class = &quot;li_fba&quot; &gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;What is it?&lt;/a&gt;&lt;/li&gt;
+          &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;How does it work?&lt;/a&gt;&lt;/li&gt;
+          &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;section id=&quot;what1&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;    
+  &lt;!-- mODIFICACIÓN --&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;
+                &lt;h1 class=&quot;about_taital&quot;&gt;Qué es un Filtro  &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Bioarena Familiar &lt;/span&gt;(FLAI)? &lt;/h1&gt;
+                &lt;p class=&quot;about_text&quot;&gt;Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.&lt;/p&gt;
+            &lt;/div&gt;
+                &lt;div class=&quot;col-md-6&quot;&gt;
+                &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/section&gt;
+      &lt;section id=&quot;how1&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;
+                &lt;div  style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div  class=&quot;col-md-6&quot;&gt;
+                &lt;h1 class=&quot;about_taital&quot;&gt;How does a Biosand Filter work? &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
+                &lt;p class=&quot;about_text&quot;&gt;El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section id =&quot;benefits1&quot;&gt;
+        &lt;div  class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;h1 class=&quot;about_taital&quot;&gt;Benefits of Biosand Filters &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
+              &lt;ul class = &quot;ul_fba2&quot;&gt;
+                &lt;li &gt;Bajo costo y bajo mantenimiento&lt;/li&gt;
+                &lt;li&gt;Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia&lt;/li&gt;
+                &lt;li&gt;No requiere electricidad ni productos químicos.&lt;/li&gt;
+                &lt;li&gt;Fácil de usar y operar&lt;/li&gt;
+                &lt;li&gt;Tiempo de vida de 15 años&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div class=&quot;readmore_bt&quot;&gt;&lt;a href=&quot;&quot; class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.jpg&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+      &lt;p&gt;&amp;copy; 2023 Biosand Filters Inc.&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;</description>
+        <pubDate>Thu, 23 Feb 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2023/02/23/FLAI2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/02/23/FLAI2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>FBA</title>
+        <description>&lt;body class = &quot;body_fba&quot; &gt;
+  &lt;header class=&quot;header_fba&quot;&gt;
+    &lt;h1 style = &quot;margin-left: 15%;&quot;&gt;Biosand Filters&lt;/h1&gt;
+    &lt;nav class=&quot;nav_fba&quot;&gt;
+      &lt;ul class = &quot;ul_fba&quot;&gt;
+        &lt;li class = &quot;li_fba&quot; &gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;What is it?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;How does it work?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;section id=&quot;what1&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;    
+&lt;!-- mODIFICACIÓN --&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;h1 class=&quot;about_taital&quot;&gt;Qué es un Filtro  &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Bioarena Familiar &lt;/span&gt;(FBA)? &lt;/h1&gt;
+              &lt;p class=&quot;about_text&quot;&gt;Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.&lt;/p&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;section id=&quot;how1&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+              &lt;div  style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div  class=&quot;col-md-6&quot;&gt;
+              &lt;h1 class=&quot;about_taital&quot;&gt;How does a Biosand Filter work? &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
+              &lt;p class=&quot;about_text&quot;&gt;El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.&lt;/p&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id =&quot;benefits1&quot;&gt;
+      &lt;div  class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h1 class=&quot;about_taital&quot;&gt;Benefits of Biosand Filters &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
+            &lt;ul class = &quot;ul_fba2&quot;&gt;
+              &lt;li &gt;Bajo costo y bajo mantenimiento&lt;/li&gt;
+              &lt;li&gt;Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia&lt;/li&gt;
+              &lt;li&gt;No requiere electricidad ni productos químicos.&lt;/li&gt;
+              &lt;li&gt;Fácil de usar y operar&lt;/li&gt;
+              &lt;li&gt;Tiempo de vida de 15 años&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;readmore_bt&quot;&gt;&lt;a href=&quot;&quot; class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+          &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.jpg&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 Biosand Filters Inc.&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/fba/2023/02/22/FBA/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2023/02/22/FBA/</guid>
+        
+        
+        <category>FBA</category>
+        
+      </item>
+    
+      <item>
+        <title>Crisis</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Water Crisis&lt;/title&gt;
+    &lt;style&gt;
+        /* Custom styles go here */
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+        &lt;div style=&quot;height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;&quot;&gt;
+            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;crisis_img/portada_crisis.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
+        &lt;/div&gt;
+
+    &lt;div class=&quot;container&quot;&gt; 
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;div class=&quot;flip-box&quot;&gt;
+                      &lt;div class=&quot;flip-box-inner&quot;&gt;
+                        &lt;div class=&quot;flip-box-front&quot;&gt;
+                          &lt;h2&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class=&quot;flip-box-back&quot;&gt;
+                          &lt;h2&gt;Box 1 Back&lt;/h2&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;div class=&quot;flip-box&quot;&gt;
+                      &lt;div class=&quot;flip-box-inner&quot;&gt;
+                        &lt;div class=&quot;flip-box-front&quot;&gt;
+                          &lt;h2&gt;Nuestro impacto&lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;flip-box-back&quot;&gt;
+                          &lt;h2&gt;Box 2 Back&lt;/h2&gt;
+                          &lt;p&gt;This is the back of box 2.&lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                      &lt;div class=&quot;flip-box-inner&quot;&gt;
+                        &lt;div class=&quot;flip-box-front&quot;&gt;
+                          &lt;h2&gt;¿Como puedes ayudar?&lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;flip-box-back&quot;&gt;
+                          &lt;h2&gt;Box 3 Back&lt;/h2&gt;
+                          &lt;p&gt;This is the back of box 3.&lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-8&quot;&gt;
+                &lt;h1 class=&quot;mb-4&quot;&gt;The Water Crisis: Causes and Solutions&lt;/h1&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a libero id est rutrum vestibulum eget nec elit. Etiam bibendum tincidunt odio, eget pellentesque orci commodo eget. Donec vitae erat eros. Duis bibendum volutpat malesuada. Sed venenatis luctus arcu at bibendum. Duis ultricies malesuada finibus. Duis sagittis augue sapien, eu luctus velit malesuada sit amet. &lt;/p&gt;
+                &lt;p&gt;Mauris nec blandit purus, nec faucibus enim. Integer ac lorem vitae urna accumsan vulputate. Nullam facilisis sit amet turpis eu pulvinar. Etiam sagittis ante sit amet leo iaculis, vel vulputate urna fringilla. Donec vel neque vestibulum, posuere odio non, luctus urna. &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;h2 class=&quot;mb-4&quot;&gt;Related Articles&lt;/h2&gt;
+                &lt;ul class=&quot;list-group&quot;&gt;
+                    &lt;li class=&quot;list-group-item&quot;&gt;The Impact of Drought on Agriculture&lt;/li&gt;
+                    &lt;li class=&quot;list-group-item&quot;&gt;How Climate Change is Worsening the Water Crisis&lt;/li&gt;
+                    &lt;li class=&quot;list-group-item&quot;&gt;The Importance of Water Conservation&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;jumbotron text-center&quot;&gt;
+        &lt;h1&gt;The Global Water Crisis&lt;/h1&gt;
+        &lt;p&gt;Water scarcity affects more than 2 billion people worldwide. Learn more about this crisis and what you can do to help.&lt;/p&gt;
+      &lt;/div&gt;
+    
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;What is the Water Crisis?&lt;/h2&gt;
+            &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Causes of the Water Crisis&lt;/h2&gt;
+            &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Impact of the Water Crisis&lt;/h2&gt;
+            &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Solutions to the Water Crisis&lt;/h2&gt;
+            &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
+        &amp;copy; 2023 Water Crisis | All rights reserved
+    &lt;/footer&gt;
+    </description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/fba/2014/07/15/crisis/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/crisis/</guid>
+        
+        
+        <category>FBA</category>
+        
+      </item>
+    
+      <item>
+        <title>Parte Social</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Biosand Filters&lt;/title&gt;
+
+
+&lt;/head&gt;
+&lt;body class = &quot;body_fba&quot; &gt;
+  &lt;header class=&quot;header_fba&quot;&gt;
+    &lt;h1&gt;Biosand Filters&lt;/h1&gt;
+    &lt;nav class=&quot;nav_fba&quot;&gt;
+      &lt;ul class = &quot;ul_fba&quot;&gt;
+        &lt;li class = &quot;li_fba&quot;&gt;&lt;a href=&quot;#what&quot;&gt;What is it?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class = &quot;li_fba&quot;&gt;&lt;a href=&quot;#how&quot;&gt;How does it work?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class = &quot;li_fba&quot;&gt;&lt;a href=&quot;#benefits&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;main&gt;
+    &lt;section id=&quot;what&quot;&gt;
+      &lt;h2&gt;What is a Biosand Filter?&lt;/h2&gt;
+      &lt;p&gt;A biosand filter is a simple water treatment device that uses sand, gravel, and biological processes to remove impurities from drinking water. It was developed in the 1990s by Dr. David Manz and Dr. John Lloyd, and is now used in many parts of the world to provide safe drinking water.&lt;/p&gt;
+      &lt;img src=&quot;biosand-filter.jpg&quot; alt=&quot;Biosand Filter&quot;&gt;
+    &lt;/section&gt;
+    
+    &lt;section id=&quot;how&quot;&gt;
+      &lt;h2&gt;How does a Biosand Filter work?&lt;/h2&gt;
+      &lt;p&gt;Water is poured into the top of the filter, where it passes through a layer of gravel, a layer of fine sand, and a layer of coarse sand. Microorganisms that live in the sand and gravel help to break down and remove impurities from the water. The filtered water is then collected in a container at the bottom of the filter.&lt;/p&gt;
+      &lt;img src=&quot;filter-layers.png&quot; alt=&quot;Biosand Filter Layers&quot;&gt;
+    &lt;/section&gt;
+    
+    &lt;section id=&quot;benefits&quot;&gt;
+      &lt;h2&gt;Benefits of Biosand Filters&lt;/h2&gt;
+      &lt;ul class = &quot;ul_fba&quot;&gt;
+        &lt;li &gt;Low cost and low maintenance&lt;/li&gt;
+        &lt;li&gt;Can provide safe drinking water in areas with limited access to clean water&lt;/li&gt;
+        &lt;li&gt;Does not require electricity or chemicals&lt;/li&gt;
+        &lt;li&gt;Easy to use and operate&lt;/li&gt;
+        &lt;li&gt;jijiji&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 Biosand Filters Inc.&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</guid>
+        
+        
+        <category>FBA</category>
+        
+      </item>
+    
+      <item>
+        <title>Nuestro Impacto</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Water Crisis&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot;/&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+        &lt;div style=&quot;height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;&quot;&gt;
+            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal9&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                    &lt;div class=&quot;flip-box-inner&quot;&gt;
+                      &lt;div class=&quot;flip-box-front&quot;&gt;
+                        &lt;h2&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+
+                      &lt;/div&gt;
+                      &lt;div class=&quot;flip-box-back&quot;&gt;
+                        &lt;h2&gt;Box 1 Back&lt;/h2&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal10&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                    &lt;div class=&quot;flip-box-inner&quot;&gt;
+                      &lt;div class=&quot;flip-box-front&quot;&gt;
+                        &lt;h2&gt;Nuestro impacto&lt;/h2&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;flip-box-back&quot;&gt;
+                        &lt;h2&gt;Box 2 Back&lt;/h2&gt;
+                        &lt;p&gt;This is the back of box 2.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+                  &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                    &lt;div class=&quot;flip-box-inner&quot;&gt;
+                      &lt;div class=&quot;flip-box-front&quot;&gt;
+                        &lt;h2&gt;¿Como puedes ayudar?&lt;/h2&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;flip-box-back&quot;&gt;
+                        &lt;h2&gt;Box 3 Back&lt;/h2&gt;
+                        &lt;p&gt;This is the back of box 3.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/a&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;counter-up&quot;&gt;
+            &lt;div class=&quot;content&quot;&gt;
+              &lt;div class=&quot;box&quot;&gt;
+                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-filter&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;div class=&quot;counter&quot;&gt;+2500&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Filtros entregados&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;box&quot;&gt;
+                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-tint&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;div class=&quot;counter&quot;&gt;+ 10000&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Familias con agua de calidad&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;box&quot;&gt;
+                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;div class=&quot;counter&quot;&gt;11&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Comunidades Trabajadas&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;box&quot;&gt;
+                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;div class=&quot;counter&quot;&gt;2&lt;/div&gt;
+                &lt;div class=&quot;text&quot;&gt;Premios recibidos &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+          &lt;script&gt;
+            $(document).ready(function(){
+              $(&apos;.counter&apos;).counterUp({
+                delay: 10,
+                time: 3000
+              });
+            });
+            &lt;/script&gt;
+            &lt;div class=&quot;col-md-8&quot;&gt;
+                &lt;h1 class=&quot;mb-4&quot;&gt;El impacto de AguaSan&lt;/h1&gt;
+                &lt;p&gt;Nosotros hemos atendido más de 10,000 personas en diversas comunidades del Perú, como lo son:&lt;/p&gt;
+                &lt;p&gt;Nuestros proyectos son integrales,  &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
+                &lt;img class=&quot;image_2&quot; src=&quot;/img/impacto/agualimpia_sucia.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;   
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
+            &lt;h2&gt;Involucramiento con las comunidades&lt;/h2&gt;
+            &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
+            &lt;img class=&quot;image_2&quot; src=&quot;/img/impacto/problematica_agua.jpg&quot; alt=&quot;&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Capacitación a los usuarios finales&lt;/h2&gt;
+            &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Reducción del 44% de enfermedades diarreicas&lt;/h2&gt;
+            &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h2&gt;Soluciones prácticas y económicas&lt;/h2&gt;
+            &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;jumbotron text-center&quot;&gt;
+        &lt;h2&gt;Nuestros Testimonios&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;video width=&quot;640&quot; height=&quot;360&quot; controls &gt;
+        &lt;source src=&quot;/img/impacto/preguntas.mp4&quot; type=&quot;video/mp4&quot;&gt;
+      &lt;/video&gt;
+
+
+    &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
+        &amp;copy; 2023 Water Crisis | All rights reserved
+    &lt;/footer&gt;
+    </description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
+        
+        
+        <category>FBA</category>
+        
+      </item>
+    
+  </channel>
+</rss>

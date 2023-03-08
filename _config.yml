@@ -1,9 +1,9 @@
-url: https://github.com/andrexandrex/aguasan1.io
-baseurl: 
+url: ""
+baseurl: aguasan
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
+title: Agrosanidad
+email: andrejuarezcastro@gmail.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 
@@ -16,7 +16,7 @@ people:
     - title: twitter
       url: #
     - title: facebook
-      url: #
+      url: https://www.facebook.com/AguaSANPeru
     - title: stack-overflow
       url: #
 
@@ -44,16 +44,19 @@ people:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: instagram
+    url: https://www.instagram.com/aguasan.pe/
   - title: twitter
     url: http://twitter.com/jekyllrb
   - title: facebook
-    url:
+    url: https://www.facebook.com/AguaSANPeru
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
   - title: bitbucket 
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
+
 
 # Postal address (add as many lines as necessary)
 address:

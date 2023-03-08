@@ -1,35 +1,134 @@
 <!-- Services Section -->
-    <section id="services">
+<!--
+    {% for page in site.pages %}
+      {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
+-->
+
+
+
+
+
+<section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Sobre Nosotros</h2>
+                    <div class = "col-md-3">
+                    </div>
+                    <div class = "col-md-6">
+                        <h3 class="section-subheading text-muted">AguaSan cree que cada ser humano tiene derecho a agua potable de calidad. Buscamos atender la gran demanda de agua potable en centros poblados y zonas rurales que carecen de este servicio.</h3>
+                    </div>
+                    <div class = "col-md-3">
+                    </div>
+                </div> 
+            </div> 
+        
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal9"><div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h2> La Crisis de Agua en el Perú</h2>
+
+                        </div>
+                        <div class="flip-box-back">
+                          <h2>Box 1 Back</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal10"><div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h2>Nuestro impacto</h2>
+                        </div>
+                        <div class="flip-box-back">
+                          <h2>Box 2 Back</h2>
+                          <p>This is the back of box 2.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="page-scroll" href="#ayuda"><div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h2>¿Como puedes ayudar?</h2>
+                        </div>
+                        <div class="flip-box-back">
+                          <h2>Box 3 Back</h2>
+                          <p>This is the back of box 3.</p>
+                        </div>
+                      </div>
+                    </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: #f7f7f7;">    
+                <div class="col-lg-12 text-center servicios1">
+                    <h2 class="section-heading">Productos</h2>
+                </div>
+<!-- mODIFICACIÓN -->
+                <div class="col-md-6">
+                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA FAMILIAR </span> (FBA)</h1>
+                    <p class="about_text">Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.</p>
+                    <div class="readmore_bt"><a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">Read More</a></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image_2" style = "max-width: 100%;"><img src="{{site.baseurl}}/img/products/fba1.jpg"></div>
+                </div>
+            </div>
+            <div class="row"  style="background-color: #f7f7f7;">
+                <div class="col-md-6">
+                    <div class="image_2" style = "max-width: 100%;"><img src="{{site.baseurl}}/img/products/flai1.jpg"></div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA COMUNITARIO </span> (FLAI)</h1>
+                    <p class="about_text">El filtro bioarena comunitario, con una capacidad de producción de más de 2000L/día, es un producto ideal para instituciones, colegios y centros poblados. Tiene el mismo funcionamiento mediante capas filtrantes que el filtro FBA, la única diferencia son los 3 tanques que posee: uno de recepción, capta de la fuente hídrica sin tratar; el de tratamiento, es el que tiene las capas filtrantes; y el de almacenamiento, que guarda el agua tratada.</p>
+                    <div class="readmore_bt"><a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">Read More</a></div>
+                </div>
+
+
+
+
+            </div>
+
+                               
+
+
+            
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
+                    <h4 class="service-heading">Bajo Costo</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
+                    <h4 class="service-heading">Fácil de usar</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
+                    <h4 class="service-heading">Calidad de agua asegurada</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
