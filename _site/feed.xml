@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 08 Mar 2023 13:04:27 -0500</pubDate>
-    <lastBuildDate>Wed, 08 Mar 2023 13:04:27 -0500</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2023 12:33:51 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2023 12:33:51 -0500</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -355,49 +355,49 @@
 
         &lt;div class=&quot;container&quot;&gt;
           &lt;div class=&quot;row&quot;&gt;
-              &lt;div class=&quot;col-md-4&quot;&gt;
-                &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal9&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                    &lt;div class=&quot;flip-box-inner&quot;&gt;
-                      &lt;div class=&quot;flip-box-front&quot;&gt;
-                        &lt;h2&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal9&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                  &lt;div class=&quot;flip-box-inner&quot;&gt;
+                    &lt;div class=&quot;flip-box-front&quot;&gt;
+                      &lt;h2 class=&quot;h2_impacto&quot;&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
 
-                      &lt;/div&gt;
-                      &lt;div class=&quot;flip-box-back&quot;&gt;
-                        &lt;h2&gt;Box 1 Back&lt;/h2&gt;
-                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;flip-box-back&quot;&gt;
+                      &lt;h2&gt;Box 1 Back&lt;/h2&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal10&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                  &lt;div class=&quot;flip-box-inner&quot;&gt;
+                    &lt;div class=&quot;flip-box-front&quot;&gt;
+                      &lt;h2 class=&quot;h2_impacto&quot;&gt;Nuestro impacto&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;flip-box-back&quot;&gt;
+                      &lt;h2&gt;Box 2 Back&lt;/h2&gt;
+                      &lt;p&gt;This is the back of box 2.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
+                  &lt;div class=&quot;flip-box-inner&quot;&gt;
+                    &lt;div class=&quot;flip-box-front&quot;&gt;
+                      &lt;h2 class=&quot;h2_impacto&quot;&gt;¿Como puedes ayudar?&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;flip-box-back&quot;&gt;
+                      &lt;h2 class=&quot;h2_impacto&quot;&gt;Box 3 Back&lt;/h2&gt;
+                      &lt;p&gt;This is the back of box 3.&lt;/p&gt;
                     &lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;col-md-4&quot;&gt;
-                &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal10&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                    &lt;div class=&quot;flip-box-inner&quot;&gt;
-                      &lt;div class=&quot;flip-box-front&quot;&gt;
-                        &lt;h2&gt;Nuestro impacto&lt;/h2&gt;
-                      &lt;/div&gt;
-                      &lt;div class=&quot;flip-box-back&quot;&gt;
-                        &lt;h2&gt;Box 2 Back&lt;/h2&gt;
-                        &lt;p&gt;This is the back of box 2.&lt;/p&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;col-md-4&quot;&gt;
-                  &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                    &lt;div class=&quot;flip-box-inner&quot;&gt;
-                      &lt;div class=&quot;flip-box-front&quot;&gt;
-                        &lt;h2&gt;¿Como puedes ayudar?&lt;/h2&gt;
-                      &lt;/div&gt;
-                      &lt;div class=&quot;flip-box-back&quot;&gt;
-                        &lt;h2&gt;Box 3 Back&lt;/h2&gt;
-                        &lt;p&gt;This is the back of box 3.&lt;/p&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/a&gt;
-                  &lt;/div&gt;
-              &lt;/div&gt;
-          &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+      &lt;/div&gt;
     &lt;div class=&quot;container mt-5&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;counter-up&quot;&gt;
@@ -445,24 +445,30 @@
     &lt;/div&gt;   
       &lt;div class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
-            &lt;h2&gt;Involucramiento con las comunidades&lt;/h2&gt;
+          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
+            &lt;h2 class=&quot;h2_impacto&quot;&gt;Involucramiento con las comunidades&lt;/h2&gt;
             &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
-            &lt;img class=&quot;image_2&quot; src=&quot;/img/impacto/problematica_agua.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/problematica_agua.jpg&quot; alt=&quot;&quot;&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Capacitación a los usuarios finales&lt;/h2&gt;
+          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
+            &lt;h2 class=&quot;h2_impacto&quot;&gt;Capacitación a nuestros usuarios finales&lt;/h2&gt;
             &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
+            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/capacitacion.jpg&quot; alt=&quot;&quot;&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;row&quot; &gt;
+          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
             &lt;h2&gt;Reducción del 44% de enfermedades diarreicas&lt;/h2&gt;
             &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
+            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/diarrea.jpg&quot; alt=&quot;&quot;&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
             &lt;h2&gt;Soluciones prácticas y económicas&lt;/h2&gt;
             &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
+            &lt;div class = &quot;col-md-6&quot;&gt;
+            &lt;img class=&quot;image_2&quot; style = &quot;width: 100%; &quot; src=&quot;/img/impacto/FILTRO_FBA.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+            &lt;div class = &quot;col-md-6&quot;&gt;
+            &lt;img class=&quot;image_2&quot; style = &quot;width: 100%; &quot; src=&quot;/img/impacto/FILTRO_FLAI.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -476,8 +482,7 @@
 
     &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
         &amp;copy; 2023 Water Crisis | All rights reserved
-    &lt;/footer&gt;
-    </description>
+    &lt;/footer&gt;</description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
