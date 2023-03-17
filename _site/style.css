@@ -12,6 +12,73 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ .social-buttons {
+    text-align: center;
+  }
+  
+  .social-buttons li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .social-buttons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: #000;
+    border-radius: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 44px;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+  }
+  
+  .social-icon:hover {
+    background-color: #333;
+    transform: scale(1.1);
+  }
+  
+  .social-icon i {
+    margin-top: 4px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .social-icon.social-instagram i {
+    font-family: "FontAwesome";
+    content: "\f16d";
+  }
+  
+  .social-icon.social-twitter i {
+    font-family: "FontAwesome";
+    content: "\f099";
+  }
+  
+  .social-icon.social-facebook i {
+    font-family: "FontAwesome";
+    content: "\f09a";
+  }
+  
+  .social-icon.social-stack-overflow i {
+    font-family: "FontAwesome";
+    content: "\f16c";
+  }
+  
+  .social-icon.social-bitbucket i {
+    font-family: "FontAwesome";
+    content: "\f171";
+  }
+  
+  .social-icon.social-github i {
+    font-family: "FontAwesome";
+    content: "\f09b";
+  }
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:[email protected];300;400;500;600;700&display=swap');
  *{
    margin: 0;

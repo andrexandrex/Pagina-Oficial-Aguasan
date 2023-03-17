@@ -6,12 +6,15 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        {% for network in site.data.template.social %}                       
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
+                      {% for network in site.data.template.social %}                       
+                      <li>
+                        <a href="{{ network.url }}" class="social-icon social-{{ network.title }}">
+                          <i class="fa fa-{{ network.title }}"></i>
+                        </a>
+                      </li>
+                      {% endfor %}
                     </ul>
-                </div>
+                  </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
