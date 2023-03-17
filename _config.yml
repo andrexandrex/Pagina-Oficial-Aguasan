@@ -71,3 +71,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+email:
+  delivery_method: smtp
+  smtp_settings:
+    enable_starttls_auto: true
+    address: smtp.gmail.com
+    port: 587
+    user_name: aguasaneamientoparaperu@gmail.com
+    password: Soyben10%
+    authentication: :plain
+    enable_starttls_auto: true

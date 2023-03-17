@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 15 Mar 2023 12:33:51 -0500</pubDate>
-    <lastBuildDate>Wed, 15 Mar 2023 12:33:51 -0500</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2023 17:26:57 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2023 17:26:57 -0500</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -168,16 +168,17 @@
 &lt;body&gt;
 
         &lt;div style=&quot;height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;&quot;&gt;
-            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;crisis_img/portada_crisis.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
+            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;/img/crisis/portada_crisis.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
         &lt;/div&gt;
 
-    &lt;div class=&quot;container&quot;&gt; 
+        
+    &lt;div class=&quot;container&quot; style=&quot;margin-top: 25px;&quot;&gt; 
             &lt;div class=&quot;row&quot;&gt;
                 &lt;div class=&quot;col-md-4&quot;&gt;
                     &lt;div class=&quot;flip-box&quot;&gt;
                       &lt;div class=&quot;flip-box-inner&quot;&gt;
                         &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+                          &lt;h2 class=&quot;h2_impacto&quot;&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
 
                         &lt;/div&gt;
                         &lt;div class=&quot;flip-box-back&quot;&gt;
@@ -190,7 +191,7 @@
                     &lt;div class=&quot;flip-box&quot;&gt;
                       &lt;div class=&quot;flip-box-inner&quot;&gt;
                         &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2&gt;Nuestro impacto&lt;/h2&gt;
+                          &lt;h2 class=&quot;h2_impacto&quot;&gt;Nuestro impacto&lt;/h2&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flip-box-back&quot;&gt;
                           &lt;h2&gt;Box 2 Back&lt;/h2&gt;
@@ -203,7 +204,7 @@
                     &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
                       &lt;div class=&quot;flip-box-inner&quot;&gt;
                         &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2&gt;¿Como puedes ayudar?&lt;/h2&gt;
+                          &lt;h2 class=&quot;h2_impacto&quot;&gt;¿Como puedes ayudar?&lt;/h2&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flip-box-back&quot;&gt;
                           &lt;h2&gt;Box 3 Back&lt;/h2&gt;
@@ -217,44 +218,40 @@
         &lt;/div&gt;
     &lt;div class=&quot;container mt-5&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-md-8&quot;&gt;
-                &lt;h1 class=&quot;mb-4&quot;&gt;The Water Crisis: Causes and Solutions&lt;/h1&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a libero id est rutrum vestibulum eget nec elit. Etiam bibendum tincidunt odio, eget pellentesque orci commodo eget. Donec vitae erat eros. Duis bibendum volutpat malesuada. Sed venenatis luctus arcu at bibendum. Duis ultricies malesuada finibus. Duis sagittis augue sapien, eu luctus velit malesuada sit amet. &lt;/p&gt;
-                &lt;p&gt;Mauris nec blandit purus, nec faucibus enim. Integer ac lorem vitae urna accumsan vulputate. Nullam facilisis sit amet turpis eu pulvinar. Etiam sagittis ante sit amet leo iaculis, vel vulputate urna fringilla. Donec vel neque vestibulum, posuere odio non, luctus urna. &lt;/p&gt;
+            &lt;div class=&quot;col-md-8&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
+                &lt;h1 class=&quot;mb-4&quot;&gt;La crisis de agua: Los datos&lt;/h1&gt;
+                &lt;p&gt;Según el Ministerio de Vivienda, Construcción y Saneamiento, existen aproximadamente &lt;b&gt;1,175,828&lt;/b&gt; ciudadanos que aún no cuentan con agua potable para sus hogares.  &lt;/p&gt;
+                &lt;img class=&quot;image_2&quot; style=&quot;width: auto;&quot; src=&quot;/img/crisis/mapa_agua_potable.png&quot; alt=&quot;&quot;&gt;
             &lt;/div&gt;
-            &lt;div class=&quot;col-md-4&quot;&gt;
-                &lt;h2 class=&quot;mb-4&quot;&gt;Related Articles&lt;/h2&gt;
-                &lt;ul class=&quot;list-group&quot;&gt;
-                    &lt;li class=&quot;list-group-item&quot;&gt;The Impact of Drought on Agriculture&lt;/li&gt;
-                    &lt;li class=&quot;list-group-item&quot;&gt;How Climate Change is Worsening the Water Crisis&lt;/li&gt;
-                    &lt;li class=&quot;list-group-item&quot;&gt;The Importance of Water Conservation&lt;/li&gt;
-                &lt;/ul&gt;
+            &lt;div class=&quot;col-md-4&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
+                &lt;h2 class=&quot;mb-4&quot;&gt;Población con/sin cobertura&lt;/h2&gt;
+                &lt;img class=&quot;image_2&quot; style=&quot;width: auto;&quot; src=&quot;/img/crisis/agua_potable_chart.png&quot; alt=&quot;&quot;&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;jumbotron text-center&quot;&gt;
-        &lt;h1&gt;The Global Water Crisis&lt;/h1&gt;
+        &lt;h1&gt;Impacto &lt;/h1&gt;
         &lt;p&gt;Water scarcity affects more than 2 billion people worldwide. Learn more about this crisis and what you can do to help.&lt;/p&gt;
       &lt;/div&gt;
     
       &lt;div class=&quot;container&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;What is the Water Crisis?&lt;/h2&gt;
+            &lt;h2&gt;Impacto Ecónomico&lt;/h2&gt;
             &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
           &lt;/div&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Causes of the Water Crisis&lt;/h2&gt;
+            &lt;h2&gt;Impacto en la Salud&lt;/h2&gt;
             &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Impact of the Water Crisis&lt;/h2&gt;
+            &lt;h2&gt;Solución de filtros de agua&lt;/h2&gt;
             &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
           &lt;/div&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Solutions to the Water Crisis&lt;/h2&gt;
+            &lt;h2&gt;Solución de filtros de agua&lt;/h2&gt;
             &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
