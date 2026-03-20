@@ -5,78 +5,83 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 16 Mar 2023 22:50:51 -0500</pubDate>
-    <lastBuildDate>Thu, 16 Mar 2023 22:50:51 -0500</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator>
+    <pubDate>Thu, 19 Mar 2026 20:03:37 -0600</pubDate>
+    <lastBuildDate>Thu, 19 Mar 2026 20:03:37 -0600</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
     
       <item>
         <title>FLAI</title>
-        <description>&lt;body class = &quot;body_fba&quot; &gt;
-    &lt;header class=&quot;header_fba&quot;&gt;
-      &lt;h1 style = &quot;margin-left: 15%;&quot;&gt;Biosand Filters&lt;/h1&gt;
-      &lt;nav class=&quot;nav_fba&quot;&gt;
-        &lt;ul class = &quot;ul_fba&quot;&gt;
-          &lt;li class = &quot;li_fba&quot; &gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;What is it?&lt;/a&gt;&lt;/li&gt;
-          &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;How does it work?&lt;/a&gt;&lt;/li&gt;
-          &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-    &lt;/header&gt;
-    
-    &lt;main&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;section id=&quot;what1&quot;&gt;
-          &lt;div class=&quot;row&quot;&gt;    
-  &lt;!-- mODIFICACIÓN --&gt;
-            &lt;div class=&quot;col-md-6&quot;&gt;
-                &lt;h1 class=&quot;about_taital&quot;&gt;Qué es un Filtro  &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Bioarena Familiar &lt;/span&gt;(FLAI)? &lt;/h1&gt;
-                &lt;p class=&quot;about_text&quot;&gt;Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.&lt;/p&gt;
-            &lt;/div&gt;
-                &lt;div class=&quot;col-md-6&quot;&gt;
-                &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
+        <description>&lt;body class=&quot;body_fba&quot;&gt;
+  &lt;header class=&quot;header_fba&quot;&gt;
+    &lt;h1 style=&quot;margin-left: 15%;&quot;&gt;Filtro Lento de Arena Intermitente&lt;/h1&gt;
+    &lt;nav class=&quot;nav_fba&quot;&gt;
+      &lt;ul class=&quot;ul_fba&quot;&gt;
+        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;¿Qué es?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;¿Cómo funciona?&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Beneficios&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;section id=&quot;what1&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h1 class=&quot;about_taital&quot;&gt;¿Qué es un &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Filtro Lento de Arena Intermitente&lt;/span&gt; (FLAI)?&lt;/h1&gt;
+            &lt;p class=&quot;about_text&quot;&gt;Un Filtro Lento de Arena Intermitente (FLAI) es un sistema de tratamiento de agua a mayor escala diseñado para abastecer de agua segura a comunidades agrupadas, como colegios, postas de salud o conjuntos de familias. Basado en el mismo principio de filtración lenta que el filtro bioarena, el FLAI utiliza capas de arena y grava junto con procesos biológicos para remover patógenos, sólidos suspendidos y, en algunos casos, contaminantes como el arsénico. Su diseño permite tratar mayores volúmenes de agua de manera continua o intermitente, adaptándose a las necesidades comunitarias.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;/section&gt;
+      &lt;/section&gt;
+
       &lt;section id=&quot;how1&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-md-6&quot;&gt;
-                &lt;div  style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div  class=&quot;col-md-6&quot;&gt;
-                &lt;h1 class=&quot;about_taital&quot;&gt;How does a Biosand Filter work? &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
-                &lt;p class=&quot;about_text&quot;&gt;El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
-      &lt;section id =&quot;benefits1&quot;&gt;
-        &lt;div  class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-              &lt;h1 class=&quot;about_taital&quot;&gt;Benefits of Biosand Filters &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
-              &lt;ul class = &quot;ul_fba2&quot;&gt;
-                &lt;li &gt;Bajo costo y bajo mantenimiento&lt;/li&gt;
-                &lt;li&gt;Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia&lt;/li&gt;
-                &lt;li&gt;No requiere electricidad ni productos químicos.&lt;/li&gt;
-                &lt;li&gt;Fácil de usar y operar&lt;/li&gt;
-                &lt;li&gt;Tiempo de vida de 15 años&lt;/li&gt;
-              &lt;/ul&gt;
-              &lt;div class=&quot;readmore_bt&quot;&gt;&lt;a href=&quot;&quot; class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
           &lt;/div&gt;
           &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.jpg&quot;&gt;&lt;/div&gt;
+            &lt;h1 class=&quot;about_taital&quot;&gt;¿Cómo funciona un &lt;span style=&quot;color: #ff3f5c;&quot;&gt;FLAI&lt;/span&gt;?&lt;/h1&gt;
+            &lt;p class=&quot;about_text&quot;&gt;El agua ingresa al sistema y atraviesa lentamente capas de arena fina y grava, donde se desarrolla una biocapa que elimina microorganismos y mejora la calidad del agua. El flujo controlado permite una filtración eficiente, reteniendo contaminantes físicos y biológicos. En algunos diseños, se incorporan materiales adicionales (como compuestos de hierro) para potenciar la remoción de contaminantes químicos como el arsénico.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/section&gt;
-      &lt;/div&gt;
-    &lt;/main&gt;
-    
-    &lt;footer&gt;
-      &lt;p&gt;&amp;copy; 2023 Biosand Filters Inc.&lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/body&gt;</description>
-        <pubDate>Thu, 23 Feb 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2023/02/23/FLAI2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/02/23/FLAI2/</guid>
+
+      &lt;section id=&quot;benefits1&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;h1 class=&quot;about_taital&quot;&gt;Beneficios del &lt;span style=&quot;color: #ff3f5c;&quot;&gt;FLAI&lt;/span&gt;&lt;/h1&gt;
+            &lt;ul class=&quot;ul_fba2&quot;&gt;
+              &lt;li&gt;Bajo costo en comparación con sistemas convencionales&lt;/li&gt;
+              &lt;li&gt;Apto para uso comunitario (decenas de familias, escuelas o centros de salud)&lt;/li&gt;
+              &lt;li&gt;No requiere electricidad ni químicos en su operación básica&lt;/li&gt;
+              &lt;li&gt;Alta eficiencia en la remoción de patógenos&lt;/li&gt;
+              &lt;li&gt;Posibilidad de adaptación para remover contaminantes como arsénico&lt;/li&gt;
+              &lt;li&gt;Fácil operación y mantenimiento comunitario&lt;/li&gt;
+              &lt;li&gt;Larga vida útil y escalabilidad&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.JPG&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 AguaSan&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+</description>
+        <pubDate>Thu, 23 Feb 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/flai/2023/02/23/FLAI2/</link>
+        <guid isPermaLink="true">http://localhost:4000/flai/2023/02/23/FLAI2/</guid>
         
+        
+        <category>FLAI</category>
         
       </item>
     
@@ -132,7 +137,7 @@
             &lt;div class=&quot;readmore_bt&quot;&gt;&lt;a href=&quot;&quot; class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-md-6&quot;&gt;
-          &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.jpg&quot;&gt;&lt;/div&gt;
+          &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.JPG&quot;&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/section&gt;
@@ -144,7 +149,7 @@
   &lt;/footer&gt;
 &lt;/body&gt;
 </description>
-        <pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 22 Feb 2023 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/fba/2023/02/22/FBA/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2023/02/22/FBA/</guid>
         
@@ -260,7 +265,7 @@
         &amp;copy; 2023 Water Crisis | All rights reserved
     &lt;/footer&gt;
     </description>
-        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/crisis/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/crisis/</guid>
         
@@ -322,7 +327,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </description>
-        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</guid>
         
@@ -450,7 +455,7 @@
           &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
             &lt;h2 class=&quot;h2_impacto&quot;&gt;Capacitación a nuestros usuarios finales&lt;/h2&gt;
             &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
-            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/capacitacion.jpg&quot; alt=&quot;&quot;&gt;
+            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/capacitacion.JPG&quot; alt=&quot;&quot;&gt;
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row&quot; &gt;
@@ -480,7 +485,7 @@
     &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
         &amp;copy; 2023 Water Crisis | All rights reserved
     &lt;/footer&gt;</description>
-        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
         
