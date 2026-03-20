@@ -1,105 +1,401 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Crisis</title>
-    <style>
-        /* Custom styles go here */
-    </style>
-</head>
-<body>
+<style>
+  .crisis-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .crisis-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: bottom;
+    top: 0; left: 0;
+  }
+  .crisis-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10,30,60,0.78) 100%);
+  }
+  .crisis-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 40px;
+  }
+  .crisis-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .crisis-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
 
-        <div style="height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;">
-            <img style="object-position: bottom; height: 150%;" src="/img/crisis/portada_crisis.jpg" alt="Slide 2"  >
-        </div>
+  .crisis-stat-strip {
+    background: #0d3f6b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .crisis-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .crisis-stat:last-child { border-right: none; }
+  .crisis-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #5ec4ff;
+    line-height: 1;
+    display: block;
+  }
+  .crisis-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        
-    <div class="container" style="margin-top: 25px;"> 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto"> La Crisis de Agua en el Perú</h2>
+  .crisis-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .crisis-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 18px;
+  }
 
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 1 Back</h2>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto">Nuestro impacto</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 2 Back</h2>
-                          <p>This is the back of box 2.</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto">¿Como puedes ayudar?</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 3 Back</h2>
-                          <p>This is the back of box 3.</p>
-                        </div>
-                      </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-                <h1 class="mb-4">La crisis de agua: Los datos</h1>
-                <p>Según el Ministerio de Vivienda, Construcción y Saneamiento, existen aproximadamente <b>1,175,828</b> ciudadanos que aún no cuentan con agua potable para sus hogares.  </p>
-                <img class="image_2" style="width: auto;" src="/img/crisis/mapa_agua_potable.png" alt="">
-            </div>
-            <div class="col-md-4" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-                <h2 class="mb-4">Población con/sin cobertura</h2>
-                <img class="image_2" style="width: auto;" src="/img/crisis/agua_potable_chart.png" alt="">
-            </div>
-        </div>
+  .crisis-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #1a6ea8;
+    height: 100%;
+  }
+  .crisis-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .crisis-card h3 {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 10px;
+  }
+  .crisis-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .crisis-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #c0392b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .alert-box {
+    background: #fff3cd;
+    border-left: 5px solid #e67e22;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #7d4e00;
+  }
+  .alert-box strong { color: #c0392b; }
+
+  .geography-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+  .geography-bar .label {
+    min-width: 80px;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #333;
+  }
+  .geography-bar .bar-track {
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+  }
+  .geography-bar .bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 0.82em;
+    font-weight: 700;
+    color: white;
+    transition: width 1s;
+  }
+  .bar-urban   { background: #1a6ea8; }
+  .bar-rural   { background: #c0392b; }
+  .bar-selva   { background: #c0392b; }
+  .geography-bar .pct {
+    min-width: 46px;
+    font-weight: 800;
+    font-size: 1em;
+    text-align: right;
+    color: #333;
+  }
+
+  .disease-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .disease-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.97em;
+    color: #444;
+  }
+  .disease-list li:last-child { border-bottom: none; }
+  .disease-list li .dicon { font-size: 1.5em; min-width: 32px; }
+
+  .quote-crisis {
+    background: #e8f4fd;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    font-style: italic;
+    color: #1a4a70;
+    font-size: 1.05em;
+    margin: 24px 0;
+  }
+
+  .cta-crisis {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-crisis h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-crisis p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="crisis-hero">
+  <img src="/img/crisis/portada_crisis.jpg" alt="Crisis de agua en Perú">
+  <div class="crisis-hero-overlay"></div>
+  <div class="crisis-hero-text">
+    <h1>💧 La Crisis Invisible del Agua</h1>
+    <p>Millones de peruanos no tienen acceso a agua segura. Esta es su realidad — y la razón por la que AguaSan existe.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="crisis-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">8M+</span>
+        <span class="clabel">peruanos sin agua potable segura</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">44%</span>
+        <span class="clabel">de rurales con agua de red</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">1°</span>
+        <span class="clabel">causa de hospitalización infantil: diarrea</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">S/.80</span>
+        <span class="clabel">gasto mensual familiar en agua de camión</span>
+      </div>
     </div>
-    <div class="jumbotron text-center">
-        <h1>Impacto </h1>
-        <p>Water scarcity affects more than 2 billion people worldwide. Learn more about this crisis and what you can do to help.</p>
-      </div>
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Impacto Ecónomico</h2>
-            <p>The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Impacto en la Salud</h2>
-            <p>The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.</p>
-          </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SECCIÓN 1: EL PROBLEMA -->
+  <div class="crisis-section">
+    <h2>🌊 El agua que llega… y la que no</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Según el Ministerio de Vivienda, Construcción y Saneamiento, más de <strong>1,175,828 hogares</strong> carecen de conexión de agua potable en el Perú. Pero la cifra real de personas que beben agua no segura es mucho mayor: pozos abiertos, ríos, acequias y camiones cisternas son la única fuente hídrica de millones de familias.</p>
+        <div class="alert-box">
+          La <strong>brecha urbano-rural</strong> es enorme: mientras en Lima el 97% de hogares tiene agua de red, en regiones como Loreto y Ucayali ese porcentaje baja al <strong>30–40%</strong>.
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Solución de filtros de agua</h2>
-            <p>The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Solución de filtros de agua</h2>
-            <p>There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.</p>
-          </div>
+        <p>En zonas rurales y de selva, las comunidades no solo carecen de infraestructura — en muchos casos deben caminar horas para recoger agua que luego resulta no apta para el consumo.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/img/crisis/mapa_agua_potable.png" style="max-width:100%; border-radius:10px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);" alt="Mapa acceso agua potable Perú">
+        <p style="font-size:0.82em; color:#888; margin-top:8px;">Fuente: Ministerio de Vivienda, Construcción y Saneamiento</p>
+      </div>
+    </div>
+
+    <!-- GEOGRAPHY BARS -->
+    <h3 style="color:#0d3f6b; margin: 30px 0 16px; font-weight:700;">Cobertura de agua por zona geográfica</h3>
+    <div class="geography-bar">
+      <span class="label">Urbano</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-urban" style="width:93%">93%</div>
+      </div>
+      <span class="pct">93%</span>
+    </div>
+    <div class="geography-bar">
+      <span class="label">Rural sierra</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-rural" style="width:58%">58%</div>
+      </div>
+      <span class="pct">58%</span>
+    </div>
+    <div class="geography-bar">
+      <span class="label">Selva</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-selva" style="width:35%">35%</div>
+      </div>
+      <span class="pct">35%</span>
+    </div>
+    <p style="font-size:0.83em; color:#888; margin-top:8px;">Fuente: ENDES 2022 — INEI</p>
+  </div>
+
+  <!-- SECCIÓN 2: SALUD -->
+  <div class="crisis-section">
+    <h2>🏥 El costo humano: salud que se va por el caño</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="disease-list">
+          <li>
+            <span class="dicon">👶</span>
+            <span>La diarrea es la <strong>segunda causa de muerte</strong> en niños menores de 5 años en zonas rurales del Perú.</span>
+          </li>
+          <li>
+            <span class="dicon">🦠</span>
+            <span>El <strong>40% de las enfermedades</strong> en comunidades rurales peruanas están directamente relacionadas con el agua contaminada.</span>
+          </li>
+          <li>
+            <span class="dicon">🏚️</span>
+            <span>Las comunidades sin saneamiento básico tienen <strong>3 veces más</strong> probabilidades de sufrir brotes de cólera y fiebre tifoidea.</span>
+          </li>
+          <li>
+            <span class="dicon">📉</span>
+            <span>La desnutrición crónica infantil —fuertemente ligada al agua contaminada— afecta al <strong>26% de niños rurales</strong> peruanos.</span>
+          </li>
+          <li>
+            <span class="dicon">🧪</span>
+            <span>En zonas andinas, el arsénico y el plomo en el agua subterránea afectan el desarrollo neurológico de miles de niños.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#c0392b;">
+          <span class="card-icon">⚕️</span>
+          <span class="big-figure">25%</span>
+          <h3>de la mortalidad infantil rural</h3>
+          <p>está asociada a enfermedades de origen hídrico — diarrea, cólera, hepatitis A y parasitosis intestinal. Son muertes prevenibles con agua limpia.</p>
+        </div>
+        <div class="quote-crisis">
+          "Tomamos agua del río porque no hay otra. Sabemos que nos puede enfermar, pero ¿qué más hacemos?"
+          <br><span style="font-size:0.88em; font-style:normal; color:#1a6ea8; font-weight:700;">— Testimonio, comunidad nativa, Ucayali</span>
         </div>
       </div>
-    <footer class="bg-secondary text-white text-center py-3 mt-5">
-        &copy; 2023 Water Crisis | All rights reserved
-    </footer>
-    
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3: IMPACTO ECONÓMICO -->
+  <div class="crisis-section">
+    <h2>💸 El doble castigo: pagar más por agua peor</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">🚛</span>
+          <h3>Camión cisterna: hasta 10× más caro</h3>
+          <p>Familias sin red de agua pagan entre <strong>S/. 50 y S/. 120 al mes</strong> por camiones cisterna — agua que no siempre es apta para beber.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">⏱️</span>
+          <h3>Horas perdidas cada día</h3>
+          <p>Mujeres y niñas dedican un promedio de <strong>2 a 4 horas diarias</strong> a recolectar agua en zonas sin acceso a red. Tiempo que no se invierte en educación ni trabajo.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">🏥</span>
+          <h3>Gastos médicos evitables</h3>
+          <p>Una familia rural puede gastar hasta <strong>S/. 400 al año</strong> en atención médica por enfermedades relacionadas con el agua contaminada. El filtro les costaría lo mismo por toda una vida.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="/img/crisis/agua_potable_chart.png" style="max-width:100%; border-radius:10px;" alt="Gráfico cobertura agua potable">
+      </div>
+      <div class="col-md-6" style="display:flex; align-items:center;">
+        <div>
+          <h3 style="color:#0d3f6b; font-weight:800;">La paradoja del agua pobre</h3>
+          <p>Los que menos tienen, pagan más por agua de peor calidad. Las familias con acceso a red pagan tarifas subsidiadas; los pobres rurales compran agua cara a revendedores informales o caminan kilómetros para recogerla de fuentes no tratadas.</p>
+          <p>Esta desigualdad estructural mantiene a las comunidades más vulnerables en un ciclo de enfermedad y pobreza del que es muy difícil escapar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4: ZONAS MÁS AFECTADAS -->
+  <div class="crisis-section">
+    <h2>📍 Las regiones más golpeadas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#e67e22;">
+          <span class="card-icon">🌿</span>
+          <h3>Selva amazónica</h3>
+          <p>Loreto, Ucayali, Madre de Dios y Amazonas concentran las brechas más críticas. La dispersión geográfica, la falta de vías y los ríos como única conexión hacen que la infraestructura convencional sea inviable o enormemente costosa.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#e67e22;">
+          <span class="card-icon">🏔️</span>
+          <h3>Andes rurales y comunidades nativas</h3>
+          <p>Huancavelica, Ayacucho, Apurímac y Puno tienen tasas de acceso a agua segura por debajo del 50% en zonas rurales. Comunidades campesinas e indígenas son las últimas en recibir servicios básicos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alert-box" style="margin-top:8px;">
+      <strong>4,500+</strong> centros poblados rurales en el Perú aún no cuentan con ningún sistema de agua potable. Son comunidades que existen fuera del mapa de los servicios básicos.
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-crisis">
+    <h3>La solución existe. Solo hace falta llevarla.</h3>
+    <p>Los filtros bioarena como el Filtro Vita pueden transformar la realidad de una familia en días — sin electricidad, sin químicos, sin esperar décadas a que llegue la infraestructura.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->

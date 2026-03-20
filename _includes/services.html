@@ -26,80 +26,227 @@
         
 
         </div>
+        <style>
+          .nav-card {
+            display: block;
+            border-radius: 16px;
+            padding: 36px 28px 30px;
+            margin: 12px 8px 24px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+          }
+          .nav-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+          }
+          .nav-card::before {
+            content: '';
+            position: absolute;
+            top: -40px; right: -40px;
+            width: 130px; height: 130px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+          }
+          .nav-card-crisis  { background: linear-gradient(135deg, #1565c0 0%, #0d3f6b 100%); }
+          .nav-card-impacto { background: linear-gradient(135deg, #00897b 0%, #00574b 100%); }
+          .nav-card-ayuda   { background: linear-gradient(135deg, #e65100 0%, #bf360c 100%); }
+          .nav-card .nc-icon {
+            font-size: 2.6em;
+            margin-bottom: 14px;
+            display: block;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+          }
+          .nav-card h3 {
+            font-size: 1.25em;
+            font-weight: 800;
+            margin: 0 0 10px;
+            color: white;
+          }
+          .nav-card p {
+            font-size: 0.92em;
+            opacity: 0.88;
+            margin: 0 0 18px;
+            line-height: 1.55;
+            color: white;
+          }
+          .nav-card .nc-cta {
+            display: inline-block;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 20px;
+            padding: 6px 18px;
+            font-size: 0.88em;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.02em;
+            transition: background 0.18s;
+          }
+          .nav-card:hover .nc-cta {
+            background: rgba(255,255,255,0.30);
+          }
+        </style>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal9"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2> La Crisis de Agua en el Perú</h2>
-
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 1 Back</h2>
-                        </div>
-                      </div>
-                    </div>
+                  <a class="nav-card nav-card-crisis portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                    <span class="nc-icon">🌊</span>
+                    <h3>La Crisis del Agua en el Perú</h3>
+                    <p>Más de 8 millones de peruanos no tienen acceso a agua segura. Conoce la magnitud del problema.</p>
+                    <span class="nc-cta">Ver datos →</span>
                   </a>
                 </div>
                 <div class="col-md-4">
-                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal10"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2>Nuestro impacto</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 2 Back</h2>
-                          <p>This is the back of box 2.</p>
-                        </div>
-                      </div>
-                    </div>
+                  <a class="nav-card nav-card-impacto portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                    <span class="nc-icon">📊</span>
+                    <h3>Nuestro Impacto</h3>
+                    <p>+2,500 filtros entregados, 11 comunidades transformadas. Estos son los resultados de nuestro trabajo.</p>
+                    <span class="nc-cta">Ver impacto →</span>
                   </a>
                 </div>
                 <div class="col-md-4">
-                    <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2>¿Como puedes ayudar?</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 3 Back</h2>
-                          <p>This is the back of box 3.</p>
-                        </div>
-                      </div>
-                    </a>
-                    </div>
+                  <a class="nav-card nav-card-ayuda page-scroll" href="#ayuda">
+                    <span class="nc-icon">💙</span>
+                    <h3>¿Cómo puedes ayudar?</h3>
+                    <p>Con tu apoyo podemos llevar agua limpia a más familias en los lugares más remotos del Perú.</p>
+                    <span class="nc-cta">Únete →</span>
+                  </a>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row" style="background-color: #f7f7f7;">    
+        <style>
+          .product-section {
+            background: #f8fafc;
+            padding: 60px 0 40px;
+          }
+          .product-section .section-heading {
+            color: #0d3f6b;
+          }
+          .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+          }
+          .product-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+          }
+          .product-card-body {
+            padding: 28px 26px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+          }
+          .product-card-badge {
+            display: inline-block;
+            font-size: 0.78em;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-bottom: 12px;
+          }
+          .badge-fba  { background: #dbeafe; color: #0d3f6b; }
+          .badge-flai { background: #dcfce7; color: #1b5e20; }
+          .product-card h3 {
+            font-size: 1.35em;
+            font-weight: 900;
+            margin: 0 0 10px;
+            color: #111;
+          }
+          .product-card h3 span { color: #1a6ea8; }
+          .product-card p {
+            color: #555;
+            font-size: 0.97em;
+            line-height: 1.65;
+            margin: 0 0 18px;
+            flex: 1;
+          }
+          .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-bottom: 20px;
+          }
+          .product-tag {
+            background: #f0f4f8;
+            color: #444;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 0.82em;
+            font-weight: 600;
+          }
+          .product-cta {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 0.95em;
+            text-decoration: none;
+            transition: opacity 0.18s, transform 0.18s;
+            align-self: flex-start;
+          }
+          .product-cta:hover { opacity: 0.85; transform: translateY(-2px); text-decoration: none; }
+          .cta-fba-btn  { background: #1a6ea8; color: white !important; }
+          .cta-flai-btn { background: #388e3c; color: white !important; }
+        </style>
+        <div class="container product-section">
+            <div class="row">
                 <div class="col-lg-12 text-center servicios1">
-                    <h2 class="section-heading">Productos</h2>
-                </div>
-<!-- mODIFICACIÓN -->
-                <div class="col-md-6">
-                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA FAMILIAR </span> (FBA)</h1>
-                    <p class="about_text">Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.</p>
-                    <div class="readmore_bt"><a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">Read More</a></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image_2" style = "max-width: 100%;"><img src="{{site.baseurl}}/img/products/fba1.jpg"></div>
+                    <h2 class="section-heading">Nuestros Productos</h2>
+                    <h3 class="section-subheading text-muted" style="margin-bottom:36px;">Tecnología probada, sin electricidad, sin químicos — adaptada para los lugares donde más se necesita.</h3>
                 </div>
             </div>
-            <div class="row"  style="background-color: #f7f7f7;">
+            <div class="row">
                 <div class="col-md-6">
-                    <div class="image_2" style = "max-width: 100%;"><img src="{{site.baseurl}}/img/products/flai1.JPG"></div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+                    <div class="product-card-body">
+                      <span class="product-card-badge badge-fba">💧 Uso doméstico</span>
+                      <h3>Filtro Bioarena <span>Familiar</span> (FBA)</h3>
+                      <p>Diseñado para el hogar. Con capacidad de 15–20 litros por uso, elimina bacterias, protozoos y turbidez sin ninguna fuente de energía. Fabricado en bidón de polietileno, cabe en una canoa y llega a donde ningún sistema convencional puede.</p>
+                      <div class="product-tags">
+                        <span class="product-tag">🏠 1 hogar</span>
+                        <span class="product-tag">⚡ Sin electricidad</span>
+                        <span class="product-tag">💊 Sin químicos</span>
+                        <span class="product-tag">⏳ 15 años de vida</span>
+                        <span class="product-tag">🚤 Transportable</span>
+                      </div>
+                      <a href="#portfolioModal6" class="product-cta cta-fba-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA COMUNITARIO </span> (FLAI)</h1>
-                    <p class="about_text"> cucu El filtro bioarena comunitario, con una capacidad de producción de más de 2000L/día, es un producto ideal para instituciones, colegios y centros poblados. Tiene el mismo funcionamiento mediante capas filtrantes que el filtro FBA, la única diferencia son los 3 tanques que posee: uno de recepción, capta de la fuente hídrica sin tratar; el de tratamiento, es el que tiene las capas filtrantes; y el de almacenamiento, que guarda el agua tratada.</p>
-                    <div class="readmore_bt"><a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">Read More</a></div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="{{site.baseurl}}/img/products/flai1.JPG" alt="Filtro FLAI Comunitario">
+                    <div class="product-card-body">
+                      <span class="product-card-badge badge-flai">🌿 Uso comunitario</span>
+                      <h3>Filtro Lento de Arena <span style="color:#388e3c;">Intermitente</span> (FLAI)</h3>
+                      <p>La solución para comunidades, escuelas y postas de salud. Produce más de 2,000 litros al día con un sistema de 3 tanques — recepción, tratamiento y almacenamiento — que opera completamente por gravedad.</p>
+                      <div class="product-tags">
+                        <span class="product-tag">🏘️ 100+ personas</span>
+                        <span class="product-tag">⚡ Sin electricidad</span>
+                        <span class="product-tag">🧪 Remueve arsénico</span>
+                        <span class="product-tag">🏫 Para escuelas</span>
+                        <span class="product-tag">🏥 Para postas</span>
+                      </div>
+                      <a href="#portfolioModal7" class="product-cta cta-flai-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                    </div>
+                  </div>
                 </div>
-
-
-
-
             </div>
 
                                

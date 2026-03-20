@@ -12,150 +12,427 @@ category: FBA
 description: no tanto xd
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Crisis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-</head>
-<body>
+<style>
+  .impacto-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .impacto-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center;
+    top: 0; left: 0;
+  }
+  .impacto-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,40,20,0.15) 0%, rgba(0,60,40,0.80) 100%);
+  }
+  .impacto-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .impacto-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .impacto-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 660px;
+    margin: 0 auto;
+  }
 
-        <div style="height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;">
-            <img style="object-position: bottom; height: 150%;" src="{{site.baseurl}}/img/impacto/portada_impacto.jpg" alt="Slide 2"  >
-        </div>
+  .impacto-stat-strip {
+    background: #00574b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .impacto-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .impacto-stat:last-child { border-right: none; }
+  .impacto-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #80cbc4;
+    line-height: 1;
+    display: block;
+  }
+  .impacto-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal9"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto"> La Crisis de Agua en el Perú</h2>
+  .impacto-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .impacto-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 18px;
+  }
 
-                    </div>
-                    <div class="flip-box-back">
-                      <h2>Box 1 Back</h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal10"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto">Nuestro impacto</h2>
-                    </div>
-                    <div class="flip-box-back">
-                      <h2>Box 2 Back</h2>
-                      <p>This is the back of box 2.</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-                <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto">¿Como puedes ayudar?</h2>
-                    </div>
-                    <div class="flip-box-back">
-                      <h2 class="h2_impacto">Box 3 Back</h2>
-                      <p>This is the back of box 3.</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-            </div>
+  .impacto-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #00897b;
+    height: 100%;
+  }
+  .impacto-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .impacto-card h3 {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 10px;
+  }
+  .impacto-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .impacto-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #00897b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 5px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #1b5e20;
+  }
+  .highlight-green strong { color: #00574b; }
+
+  .approach-step {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  .approach-step .step-icon {
+    font-size: 2.2em;
+    min-width: 52px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .approach-step h4 {
+    font-weight: 800;
+    color: #00574b;
+    margin: 0 0 5px;
+  }
+  .approach-step p {
+    color: #555;
+    font-size: 0.97em;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .testimonial-impacto {
+    background: #f0faf8;
+    border-left: 4px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-impacto blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-impacto .author {
+    font-weight: 700;
+    color: #00897b;
+    font-size: 0.9em;
+  }
+
+  .region-badge {
+    display: inline-block;
+    background: #e0f2f1;
+    color: #00574b;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.88em;
+    font-weight: 700;
+    margin: 4px 3px;
+  }
+
+  .video-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    margin: 10px 0;
+  }
+  .video-wrap video {
+    width: 100%;
+    display: block;
+  }
+
+  .cta-impacto {
+    background: linear-gradient(135deg, #00897b, #00574b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-impacto h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-impacto p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="impacto-hero">
+  <img src="{{site.baseurl}}/img/impacto/portada_impacto.jpg" alt="Impacto AguaSAN">
+  <div class="impacto-hero-overlay"></div>
+  <div class="impacto-hero-text">
+    <h1>📊 El Impacto de AguaSAN</h1>
+    <p>Filtros instalados, familias transformadas, comunidades con agua segura. Estos son los resultados de años de trabajo en campo.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="impacto-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">2,500+</span>
+        <span class="clabel">filtros entregados</span>
       </div>
-    <div class="container mt-5">
-        <div class="row">
-          <div class="counter-up">
-            <div class="content">
-              <div class="box">
-                <div class="icon"><i class="fas fa-filter"></i></div>
-                <div class="counter">+2500</div>
-                <div class="text">Filtros entregados</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-tint"></i></div>
-                <div class="counter">+ 10000</div>
-                <div class="text">Familias con agua de calidad</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <div class="counter">11</div>
-                <div class="text">Comunidades Trabajadas</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-award"></i></div>
-                <div class="counter">2</div>
-                <div class="text">Premios recibidos </div>
-              </div>
-            </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">10,000+</span>
+        <span class="clabel">personas con agua segura</span>
+      </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">11</span>
+        <span class="clabel">comunidades trabajadas</span>
+      </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">2</span>
+        <span class="clabel">premios recibidos</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-          </div>
-          <script>
-            $(document).ready(function(){
-              $('.counter').counterUp({
-                delay: 10,
-                time: 3000
-              });
-            });
-            </script>
-            <div class="col-md-8">
-                <h1 class="mb-4">El impacto de AguaSan</h1>
-                <p>Nosotros hemos atendido más de 10,000 personas en diversas comunidades del Perú, como lo son:</p>
-                <p>Nuestros proyectos son integrales,  </p>
-            </div>
-            <div class="col-md-4" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-                <img class="image_2" src="{{site.baseurl}}/img/impacto/agualimpia_sucia.jpg" alt="">
-            </div>
+<div class="container">
+
+  <!-- SECCIÓN 1: ALCANCE -->
+  <div class="impacto-section">
+    <h2>🗺️ ¿Dónde hemos llegado?</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>AguaSAN ha llevado soluciones de agua segura a comunidades rurales, nativas y periurbanas a lo largo del Perú — lugares donde la infraestructura convencional no llega o tardaría décadas en hacerlo.</p>
+        <div class="highlight-green">
+          Nuestro trabajo se concentra en las regiones con mayor brecha hídrica: <strong>selva amazónica, sierra rural y comunidades nativas</strong>, donde el acceso a agua segura transforma vidas de manera inmediata y sostenible.
         </div>
-    </div>   
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-            <h2 class="h2_impacto">Involucramiento con las comunidades</h2>
-            <p>The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.</p>
-            <img class="image_2 image_impacto" src="{{site.baseurl}}/img/impacto/problematica_agua.jpg" alt="">
-          </div>
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-            <h2 class="h2_impacto">Capacitación a nuestros usuarios finales</h2>
-            <p>The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.</p>
-            <img class="image_2 image_impacto" src="{{site.baseurl}}/img/impacto/capacitacion.JPG" alt="">
+        <p style="margin-top:12px;"><strong>Comunidades y regiones atendidas:</strong></p>
+        <div>
+          <span class="region-badge">📍 Purús, Ucayali</span>
+          <span class="region-badge">📍 Loreto</span>
+          <span class="region-badge">📍 Amazonas</span>
+          <span class="region-badge">📍 Huancavelica</span>
+          <span class="region-badge">📍 Ayacucho</span>
+          <span class="region-badge">📍 Lima rural</span>
+          <span class="region-badge">📍 Junín</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="{{site.baseurl}}/img/impacto/agualimpia_sucia.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Agua limpia vs agua contaminada">
+        <p style="font-size:0.82em; color:#888; margin-top:8px;">El antes y el después de filtrar el agua con el Filtro Vita</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2: CÓMO TRABAJAMOS -->
+  <div class="impacto-section">
+    <h2>🤝 Nuestra metodología: más que entregar un filtro</h2>
+    <p>Cada proyecto de AguaSAN sigue un proceso integral que garantiza que el filtro funcione correctamente y que la comunidad pueda mantenerlo de forma autónoma.</p>
+    <div class="row" style="margin-top:24px;">
+      <div class="col-md-6">
+        <div class="approach-step">
+          <div class="step-icon">🔍</div>
+          <div>
+            <h4>Diagnóstico comunitario</h4>
+            <p>Evaluamos la calidad del agua, las necesidades reales de cada familia y las condiciones logísticas del territorio antes de diseñar la solución.</p>
           </div>
         </div>
-        <div class="row" >
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-            <h2>Reducción del 44% de enfermedades diarreicas</h2>
-            <p>The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.</p>
-            <img class="image_2 image_impacto" src="{{site.baseurl}}/img/impacto/diarrea.jpg" alt="">
+        <div class="approach-step">
+          <div class="step-icon">🏗️</div>
+          <div>
+            <h4>Fabricación y transporte</h4>
+            <p>Los filtros se fabrican con materiales locales y se transportan hasta las comunidades más remotas, incluso por vía fluvial o a pie.</p>
           </div>
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-            <h2>Soluciones prácticas y económicas</h2>
-            <p>There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.</p>
-            <div class = "col-md-6">
-            <img class="image_2" style = "width: 100%; " src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png" alt=""></div>
-            <div class = "col-md-6">
-            <img class="image_2" style = "width: 100%; " src="{{site.baseurl}}/img/impacto/FILTRO_FLAI.png" alt=""></div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">🎓</div>
+          <div>
+            <h4>Capacitación en campo</h4>
+            <p>Talleres presenciales con cada familia para enseñar el uso correcto, el mantenimiento de la biocapa y la higiene del agua almacenada.</p>
           </div>
         </div>
       </div>
-      <div class="jumbotron text-center">
-        <h2>Nuestros Testimonios</h2>
+      <div class="col-md-6">
+        <div class="approach-step">
+          <div class="step-icon">🏠</div>
+          <div>
+            <h4>Instalación hogar por hogar</h4>
+            <p>Cada filtro se instala directamente en la vivienda del beneficiario, asegurándonos de que quede bien posicionado y con las capas correctas.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">📋</div>
+          <div>
+            <h4>Encuesta y seguimiento</h4>
+            <p>Al terminar la implementación, recogemos testimonios y datos de cada familia para medir el impacto real y mejorar futuras intervenciones.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">🌱</div>
+          <div>
+            <h4>Autonomía sostenible</h4>
+            <p>El objetivo final es que la comunidad pueda operar y mantener el sistema sin depender de nosotros. Cada intervención construye capacidad local.</p>
+          </div>
+        </div>
       </div>
-      <video width="640" height="360" controls >
-        <source src="{{site.baseurl}}/img/impacto/preguntas.mp4" type="video/mp4">
-      </video>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/impacto/problematica_agua.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Problemática agua en comunidades">
+      </div>
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/impacto/capacitacion.JPG"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Capacitación comunitaria">
+      </div>
+    </div>
+  </div>
 
+  <!-- SECCIÓN 3: RESULTADOS EN SALUD -->
+  <div class="impacto-section">
+    <h2>💚 Lo que cambia cuando el agua es segura</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">📉</span>
+          <span class="big-figure">44%</span>
+          <h3>Reducción de enfermedades diarreicas</h3>
+          <p>En comunidades con Filtro Vita activo, los casos de diarrea infantil disminuyen significativamente en los primeros meses de uso.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">👶</span>
+          <span class="big-figure">0 ⚡</span>
+          <h3>Sin electricidad ni químicos</h3>
+          <p>Nuestros filtros funcionan por gravedad — ideales para comunidades sin red eléctrica. Solo agua, arena y biología.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">💰</span>
+          <span class="big-figure">10×</span>
+          <h3>Más económico que alternativas</h3>
+          <p>Un Filtro Vita cuesta una fracción de lo que una familia gasta en camiones cisterna o atención médica por enfermedades hídricas al año.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/impacto/diarrea.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Reducción enfermedades">
+      </div>
+      <div class="col-md-6" style="display:flex; align-items:center;">
+        <div>
+          <h3 style="color:#00574b; font-weight:800;">Nuestros filtros — dos soluciones para cada escala</h3>
+          <div class="row" style="margin-top:14px;">
+            <div class="col-sm-6 text-center">
+              <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png" style="max-height:130px; object-fit:contain;" alt="Filtro FBA">
+              <p style="font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;">FBA — Familiar<br><span style="font-weight:400; color:#666;">15–20 L/uso</span></p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <img src="{{site.baseurl}}/img/impacto/FILTRO_FLAI.png" style="max-height:130px; object-fit:contain;" alt="Filtro FLAI">
+              <p style="font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;">FLAI — Comunitario<br><span style="font-weight:400; color:#666;">2,000+ L/día</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer class="bg-secondary text-white text-center py-3 mt-5">
-        &copy; 2023 Water Crisis | All rights reserved
-    </footer>
+  <!-- SECCIÓN 4: TESTIMONIOS Y VIDEO -->
+  <div class="impacto-section">
+    <h2>🗣️ Las voces de las comunidades</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-impacto">
+          <blockquote>"El agua limpia alarga la vida."</blockquote>
+          <div class="author">— Zenia Castillo, Comunidad Nuevo San Martín, Purús</div>
+        </div>
+        <div class="testimonial-impacto">
+          <blockquote>"El filtro vita nos permite vivir tranquilos y sanos."</blockquote>
+          <div class="author">— Rubén Jijida Bachara, Comunidad Bufeo, Ucayali</div>
+        </div>
+        <div class="testimonial-impacto">
+          <blockquote>"Con agua limpia cuidamos nuestra salud. Cuando tomas agua limpia no te enfermas."</blockquote>
+          <div class="author">— Asís Salomón Castillo, Comunidad Bufeo, Ucayali</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="video-wrap">
+          <video controls>
+            <source src="{{site.baseurl}}/img/impacto/preguntas.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p style="font-size:0.85em; color:#888; margin-top:8px; text-align:center;">Testimonios en campo — comunidades beneficiarias de AguaSAN</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-impacto">
+    <h3>Cada filtro es una familia protegida.</h3>
+    <p>Con tu apoyo podemos llegar a más comunidades que hoy beben agua contaminada sin ninguna alternativa.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#00574b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->

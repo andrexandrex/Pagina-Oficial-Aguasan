@@ -202,80 +202,227 @@ setTimeout(showSlides, 5000);
         
 
         </div>
+        <style>
+          .nav-card {
+            display: block;
+            border-radius: 16px;
+            padding: 36px 28px 30px;
+            margin: 12px 8px 24px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+          }
+          .nav-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+            color: white;
+            text-decoration: none;
+          }
+          .nav-card::before {
+            content: '';
+            position: absolute;
+            top: -40px; right: -40px;
+            width: 130px; height: 130px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+          }
+          .nav-card-crisis  { background: linear-gradient(135deg, #1565c0 0%, #0d3f6b 100%); }
+          .nav-card-impacto { background: linear-gradient(135deg, #00897b 0%, #00574b 100%); }
+          .nav-card-ayuda   { background: linear-gradient(135deg, #e65100 0%, #bf360c 100%); }
+          .nav-card .nc-icon {
+            font-size: 2.6em;
+            margin-bottom: 14px;
+            display: block;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+          }
+          .nav-card h3 {
+            font-size: 1.25em;
+            font-weight: 800;
+            margin: 0 0 10px;
+            color: white;
+          }
+          .nav-card p {
+            font-size: 0.92em;
+            opacity: 0.88;
+            margin: 0 0 18px;
+            line-height: 1.55;
+            color: white;
+          }
+          .nav-card .nc-cta {
+            display: inline-block;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 20px;
+            padding: 6px 18px;
+            font-size: 0.88em;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.02em;
+            transition: background 0.18s;
+          }
+          .nav-card:hover .nc-cta {
+            background: rgba(255,255,255,0.30);
+          }
+        </style>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal9"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2> La Crisis de Agua en el Perú</h2>
-
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 1 Back</h2>
-                        </div>
-                      </div>
-                    </div>
+                  <a class="nav-card nav-card-crisis portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                    <span class="nc-icon">🌊</span>
+                    <h3>La Crisis del Agua en el Perú</h3>
+                    <p>Más de 8 millones de peruanos no tienen acceso a agua segura. Conoce la magnitud del problema.</p>
+                    <span class="nc-cta">Ver datos →</span>
                   </a>
                 </div>
                 <div class="col-md-4">
-                  <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal10"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2>Nuestro impacto</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 2 Back</h2>
-                          <p>This is the back of box 2.</p>
-                        </div>
-                      </div>
-                    </div>
+                  <a class="nav-card nav-card-impacto portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                    <span class="nc-icon">📊</span>
+                    <h3>Nuestro Impacto</h3>
+                    <p>+2,500 filtros entregados, 11 comunidades transformadas. Estos son los resultados de nuestro trabajo.</p>
+                    <span class="nc-cta">Ver impacto →</span>
                   </a>
                 </div>
                 <div class="col-md-4">
-                    <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2>¿Como puedes ayudar?</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 3 Back</h2>
-                          <p>This is the back of box 3.</p>
-                        </div>
-                      </div>
-                    </a>
-                    </div>
+                  <a class="nav-card nav-card-ayuda page-scroll" href="#ayuda">
+                    <span class="nc-icon">💙</span>
+                    <h3>¿Cómo puedes ayudar?</h3>
+                    <p>Con tu apoyo podemos llevar agua limpia a más familias en los lugares más remotos del Perú.</p>
+                    <span class="nc-cta">Únete →</span>
+                  </a>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row" style="background-color: #f7f7f7;">    
+        <style>
+          .product-section {
+            background: #f8fafc;
+            padding: 60px 0 40px;
+          }
+          .product-section .section-heading {
+            color: #0d3f6b;
+          }
+          .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+          }
+          .product-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+          }
+          .product-card-body {
+            padding: 28px 26px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+          }
+          .product-card-badge {
+            display: inline-block;
+            font-size: 0.78em;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-bottom: 12px;
+          }
+          .badge-fba  { background: #dbeafe; color: #0d3f6b; }
+          .badge-flai { background: #dcfce7; color: #1b5e20; }
+          .product-card h3 {
+            font-size: 1.35em;
+            font-weight: 900;
+            margin: 0 0 10px;
+            color: #111;
+          }
+          .product-card h3 span { color: #1a6ea8; }
+          .product-card p {
+            color: #555;
+            font-size: 0.97em;
+            line-height: 1.65;
+            margin: 0 0 18px;
+            flex: 1;
+          }
+          .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-bottom: 20px;
+          }
+          .product-tag {
+            background: #f0f4f8;
+            color: #444;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 0.82em;
+            font-weight: 600;
+          }
+          .product-cta {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 0.95em;
+            text-decoration: none;
+            transition: opacity 0.18s, transform 0.18s;
+            align-self: flex-start;
+          }
+          .product-cta:hover { opacity: 0.85; transform: translateY(-2px); text-decoration: none; }
+          .cta-fba-btn  { background: #1a6ea8; color: white !important; }
+          .cta-flai-btn { background: #388e3c; color: white !important; }
+        </style>
+        <div class="container product-section">
+            <div class="row">
                 <div class="col-lg-12 text-center servicios1">
-                    <h2 class="section-heading">Productos</h2>
-                </div>
-<!-- mODIFICACIÓN -->
-                <div class="col-md-6">
-                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA FAMILIAR </span> (FBA)</h1>
-                    <p class="about_text">Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.</p>
-                    <div class="readmore_bt"><a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">Read More</a></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="image_2" style = "max-width: 100%;"><img src="/img/products/fba1.jpg"></div>
+                    <h2 class="section-heading">Nuestros Productos</h2>
+                    <h3 class="section-subheading text-muted" style="margin-bottom:36px;">Tecnología probada, sin electricidad, sin químicos — adaptada para los lugares donde más se necesita.</h3>
                 </div>
             </div>
-            <div class="row"  style="background-color: #f7f7f7;">
+            <div class="row">
                 <div class="col-md-6">
-                    <div class="image_2" style = "max-width: 100%;"><img src="/img/products/flai1.JPG"></div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+                    <div class="product-card-body">
+                      <span class="product-card-badge badge-fba">💧 Uso doméstico</span>
+                      <h3>Filtro Bioarena <span>Familiar</span> (FBA)</h3>
+                      <p>Diseñado para el hogar. Con capacidad de 15–20 litros por uso, elimina bacterias, protozoos y turbidez sin ninguna fuente de energía. Fabricado en bidón de polietileno, cabe en una canoa y llega a donde ningún sistema convencional puede.</p>
+                      <div class="product-tags">
+                        <span class="product-tag">🏠 1 hogar</span>
+                        <span class="product-tag">⚡ Sin electricidad</span>
+                        <span class="product-tag">💊 Sin químicos</span>
+                        <span class="product-tag">⏳ 15 años de vida</span>
+                        <span class="product-tag">🚤 Transportable</span>
+                      </div>
+                      <a href="#portfolioModal6" class="product-cta cta-fba-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="about_taital">FILTRO <span style="color: #ff3f5c;">BIOARENA COMUNITARIO </span> (FLAI)</h1>
-                    <p class="about_text"> cucu El filtro bioarena comunitario, con una capacidad de producción de más de 2000L/día, es un producto ideal para instituciones, colegios y centros poblados. Tiene el mismo funcionamiento mediante capas filtrantes que el filtro FBA, la única diferencia son los 3 tanques que posee: uno de recepción, capta de la fuente hídrica sin tratar; el de tratamiento, es el que tiene las capas filtrantes; y el de almacenamiento, que guarda el agua tratada.</p>
-                    <div class="readmore_bt"><a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">Read More</a></div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="/img/products/flai1.JPG" alt="Filtro FLAI Comunitario">
+                    <div class="product-card-body">
+                      <span class="product-card-badge badge-flai">🌿 Uso comunitario</span>
+                      <h3>Filtro Lento de Arena <span style="color:#388e3c;">Intermitente</span> (FLAI)</h3>
+                      <p>La solución para comunidades, escuelas y postas de salud. Produce más de 2,000 litros al día con un sistema de 3 tanques — recepción, tratamiento y almacenamiento — que opera completamente por gravedad.</p>
+                      <div class="product-tags">
+                        <span class="product-tag">🏘️ 100+ personas</span>
+                        <span class="product-tag">⚡ Sin electricidad</span>
+                        <span class="product-tag">🧪 Remueve arsénico</span>
+                        <span class="product-tag">🏫 Para escuelas</span>
+                        <span class="product-tag">🏥 Para postas</span>
+                      </div>
+                      <a href="#portfolioModal7" class="product-cta cta-flai-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                    </div>
+                  </div>
                 </div>
-
-
-
-
             </div>
 
                                
@@ -315,29 +462,14 @@ setTimeout(showSlides, 5000);
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Proyectos</h2>
+                    <h3 class="section-subheading text-muted">Historias reales de comunidades que hoy acceden a agua segura.</h3>
                 </div>
             </div>
             <div class="row">
             
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/flai_1.JPG" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>FLAI</h4>
-                        <p class="text-muted">Filtro bioarena comunitario</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -346,13 +478,13 @@ setTimeout(showSlides, 5000);
                         <img src="img/portfolio/fba_1.JPG" class="img-responsive img-centered" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>FBA</h4>
-                        <p class="text-muted">Filtro bioarena familiar</p>
+                        <h4>Lurigancho-Chosica 2024</h4>
+                        <p class="text-muted">Remoción de arsénico en Los Girasoles y Los Frutales</p>
                     </div>
                 </div>
             
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -361,38 +493,8 @@ setTimeout(showSlides, 5000);
                         <img src="img/portfolio/banner.jpg" class="img-responsive img-centered" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Crisis</h4>
-                        <p class="text-muted">en el Pery</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/social_1.JPG" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Parte Social</h4>
-                        <p class="text-muted">Aceptación del filtro</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/impacto.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Nuestro Impacto</h4>
-                        <p class="text-muted">en el Perú</p>
+                        <h4>Purús 2024</h4>
+                        <p class="text-muted">Filtros Vita en comunidades nativas</p>
                     </div>
                 </div>
             
@@ -902,6 +1004,754 @@ setTimeout(showSlides, 5000);
      <!-- Portfolio Modals -->
 
  
+    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lurigancho-Chosica 2024</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+  .luri-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .luri-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .luri-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(100,40,0,0.10) 0%, rgba(120,50,0,0.82) 100%);
+  }
+  .luri-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .luri-hero-text h1 {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .luri-hero-text p {
+    font-size: 1.12em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .luri-hero-text .meta {
+    margin-top: 14px;
+    font-size: 0.93em;
+    opacity: 0.75;
+  }
+
+  .luri-stat-strip {
+    background: #7c2d12;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .luri-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .luri-stat:last-child { border-right: none; }
+  .luri-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #fbbf24; line-height: 1; display: block; }
+  .luri-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .luri-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .luri-section h2 { font-size: 1.7em; font-weight: 800; color: #7c2d12; margin-bottom: 18px; }
+
+  .luri-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #b45309;
+    height: 100%;
+  }
+  .luri-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .luri-card h3 { font-size: 1.05em; font-weight: 800; color: #7c2d12; margin-bottom: 8px; }
+  .luri-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+  .luri-card .big-figure { font-size: 2em; font-weight: 900; color: #b45309; display: block; margin-bottom: 6px; }
+
+  .alert-amber {
+    background: #fffbeb;
+    border-left: 5px solid #f59e0b;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #78350f;
+    font-size: 1em;
+  }
+  .alert-amber strong { color: #b45309; }
+
+  .highlight-orange {
+    background: #fff7ed;
+    border-left: 5px solid #ea580c;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #7c2d12;
+    font-size: 1em;
+  }
+
+  /* Diseño experimental — tabla de grupos */
+  .exp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-top: 8px;
+  }
+  .exp-table th {
+    background: #7c2d12;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+  }
+  .exp-table td {
+    padding: 11px 16px;
+    font-size: 0.93em;
+    border-bottom: 1px solid #f0ebe5;
+    vertical-align: middle;
+  }
+  .exp-table tr:last-child td { border-bottom: none; }
+  .exp-table tr:nth-child(even) td { background: #fef9f5; }
+  .exp-table .tag-treatment {
+    display: inline-block; background: #fef3c7; color: #92400e;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+  .exp-table .tag-control {
+    display: inline-block; background: #f3f4f6; color: #374151;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+
+  /* Barra de resultado */
+  .result-bar-wrap { margin-bottom: 18px; }
+  .result-bar-wrap .rb-label {
+    display: flex; justify-content: space-between;
+    font-size: 0.92em; font-weight: 700; color: #333; margin-bottom: 5px;
+  }
+  .result-bar-track {
+    background: #e5e7eb; border-radius: 20px; height: 24px; overflow: hidden;
+  }
+  .result-bar-fill {
+    height: 100%; border-radius: 20px;
+    display: flex; align-items: center;
+    padding-left: 12px; font-size: 0.8em;
+    font-weight: 800; color: white;
+  }
+  .rb-success { background: linear-gradient(90deg, #b45309, #f59e0b); }
+  .rb-partial { background: #9ca3af; }
+
+  .testimonial-luri {
+    background: #fff7ed;
+    border-left: 4px solid #b45309;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-luri blockquote {
+    font-style: italic; color: #333; margin: 0 0 8px;
+    font-size: 1em; border: none; padding: 0;
+  }
+  .testimonial-luri .author { font-weight: 700; color: #b45309; font-size: 0.9em; }
+
+  .partner-logos-luri {
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: center;
+    gap: 28px; padding: 20px 0;
+  }
+  .partner-logos-luri img {
+    max-height: 55px; max-width: 130px;
+    object-fit: contain; filter: grayscale(25%);
+  }
+
+  .cta-luri {
+    background: linear-gradient(135deg, #b45309, #7c2d12);
+    color: white; border-radius: 14px; padding: 38px 30px;
+    text-align: center; margin: 40px 0 10px;
+  }
+  .cta-luri h3 { font-size: 1.55em; font-weight: 800; margin-bottom: 10px; }
+  .cta-luri p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="luri-hero">
+  <img src="{{site.baseurl}}/img/impacto/portada_impacto.jpg" alt="Lurigancho-Chosica implementación filtros">
+  <div class="luri-hero-overlay"></div>
+  <div class="luri-hero-text">
+    <h1>🧪 Agua sin Arsénico en Lurigancho-Chosica</h1>
+    <p>32 filtros, dos asentamientos humanos, un contaminante silencioso. La historia de cómo AguaSAN llevó tecnología de remoción de arsénico a Los Girasoles y Los Frutales.</p>
+    <p class="meta">📍 San Antonio de Pedregal II, Lurigancho-Chosica, Lima &nbsp;|&nbsp; 🗓️ 2024</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="luri-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">32</span>
+        <span class="clabel">filtros instalados (30 FBA + 2 FLAI)</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">90%</span>
+        <span class="clabel">de filtros alcanzaron límites DIGESA</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">2</span>
+        <span class="clabel">AA.HH. beneficiados</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">0.01</span>
+        <span class="clabel">mg/L límite As — DS 031-2012-SA</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EL PROBLEMA -->
+  <div class="luri-section">
+    <h2>⚠️ El problema invisible: arsénico en el agua</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>En los asentamientos humanos <strong>Los Girasoles</strong> y <strong>Los Frutales</strong>, en la comunidad San Antonio de Pedregal II, el agua disponible para consumo humano enfrenta una doble amenaza:</p>
+        <div class="alert-amber">
+          <strong>1. Contaminación por arsénico:</strong> presente de forma natural en las fuentes de agua subterránea de la zona, el arsénico es un carcinógeno sin olor ni color — imposible de detectar sin análisis de laboratorio. La exposición crónica produce daños en piel, hígado, riñones y sistema nervioso.
+        </div>
+        <div class="alert-amber">
+          <strong>2. Contaminación por materia orgánica:</strong> la ausencia de alcantarillado y la presencia de silos sin mantenimiento contaminan las fuentes de agua con bacterias y patógenos fecales, ocasionando malestares estomacales frecuentes en la población.
+        </div>
+        <p>La combinación de ambas amenazas convierte el acceso al agua en un riesgo de salud pública silencioso que afecta especialmente a niños y adultos mayores.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="luri-card" style="border-color:#c0392b; margin-top:0;">
+          <span class="card-icon">🧬</span>
+          <h3>¿Por qué el arsénico es tan peligroso?</h3>
+          <p>El arsénico inorgánico es clasificado por la OMS como carcinógeno del Grupo 1. No tiene sabor ni olor. La exposición prolongada —incluso a bajas concentraciones— está asociada a cáncer de piel, pulmón y vejiga, además de daño neurológico en niños.</p>
+        </div>
+        <div class="luri-card" style="border-color:#b45309; margin-top:0;">
+          <span class="card-icon">📋</span>
+          <h3>El estándar peruano</h3>
+          <p>El DS N° 031-2012-SA del Ministerio de Salud (DIGESA) establece un límite máximo de <strong>0.01 mg/L (10 ppb)</strong> de arsénico en agua para consumo humano — el mismo umbral de la OMS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LA SOLUCIÓN: IONES DE HIERRO -->
+  <div class="luri-section">
+    <h2>🔬 La solución: iones de hierro en el filtro bioarena</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>El Filtro Bioarena convencional es excelente removiendo bacterias y protozoos, pero el arsénico es un contaminante químico que requiere un mecanismo adicional. La innovación de AguaSAN en este proyecto: <strong>incorporar una capa de arena recubierta con iones de hierro</strong> dentro del filtro.</p>
+        <p>El hierro actúa como adsorbente natural: el arsénico disuelto en el agua se adhiere a los óxidos de hierro a medida que pasa por la capa filtrante, quedando atrapado y sin llegar al agua tratada.</p>
+        <div class="highlight-orange">
+          El proyecto también evaluó <strong>dónde colocar la capa de hierro</strong> dentro del filtro — en la parte superior o inferior — para determinar la configuración más eficaz. Un diseño experimental riguroso con grupos de tratamiento y control.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png"
+             style="max-width:100%; max-height:300px; object-fit:contain; display:block; margin:0 auto;"
+             alt="Filtro FBA con iones de hierro">
+        <p style="font-size:0.82em; color:#888; text-align:center; margin-top:8px;">Filtro FBA — la capa de hierro se integra dentro de las capas de arena</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISEÑO EXPERIMENTAL -->
+  <div class="luri-section">
+    <h2>🧫 Diseño experimental: grupos de tratamiento y control</h2>
+    <p>Este proyecto no solo instaló filtros — fue un estudio controlado para medir la eficacia de distintas configuraciones de la capa de hierro en condiciones reales de uso comunitario.</p>
+
+    <table class="exp-table" style="margin-bottom:24px;">
+      <thead>
+        <tr>
+          <th>Tipo de filtro</th>
+          <th>Configuración</th>
+          <th>Cantidad</th>
+          <th>Grupo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Iones de hierro — capa superior</td>
+          <td>~10 filtros</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Iones de hierro — capa inferior</td>
+          <td>~10 filtros</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Sin iones de hierro (estándar)</td>
+          <td>10 filtros</td>
+          <td><span class="tag-control">Control</span></td>
+        </tr>
+        <tr>
+          <td>🌿 FLAI (comunitario)</td>
+          <td>Iones de hierro — capa superior</td>
+          <td>1 filtro</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>🌿 FLAI (comunitario)</td>
+          <td>Sin iones de hierro (estándar)</td>
+          <td>1 filtro</td>
+          <td><span class="tag-control">Control</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-orange">
+      Esta metodología permite a AguaSAN obtener evidencia científica real sobre qué configuración funciona mejor en campo — no solo en laboratorio — para replicar el modelo más efectivo en futuras implementaciones.
+    </div>
+  </div>
+
+  <!-- RESULTADOS -->
+  <div class="luri-section">
+    <h2>📊 Resultados: el 90% lo logró</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Tras el período de evaluación, los análisis de calidad del agua revelaron resultados contundentes:</p>
+
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros que alcanzaron límite DIGESA (≤ 0.01 mg/L As)</span><span>90%</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill rb-success" style="width:90%">90%</div>
+          </div>
+        </div>
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros con hierro — eficacia en remoción de As</span><span>Alta</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill rb-success" style="width:88%">Muy eficaz</div>
+          </div>
+        </div>
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros control — remoción bacteriológica</span><span>✓</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill" style="width:95%; background:#1a6ea8;">Eficaz (patógenos)</div>
+          </div>
+        </div>
+
+        <div class="highlight-orange" style="margin-top:20px;">
+          El <strong>90% de los filtros instalados</strong> logró llevar el agua por debajo del límite de arsénico establecido por DIGESA en el DS N° 031-2012-SA — cumpliendo el estándar nacional e internacional de agua segura.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="luri-card" style="margin-top:0;">
+          <span class="card-icon">🏆</span>
+          <span class="big-figure">90%</span>
+          <h3>de éxito en remoción de arsénico</h3>
+          <p>Los filtros con iones de hierro demostraron ser altamente eficaces eliminando arsénico hasta alcanzar los límites requeridos por el Ministerio de Salud del Perú.</p>
+        </div>
+        <div class="luri-card" style="margin-top:0;">
+          <span class="card-icon">🦠</span>
+          <h3>Doble protección</h3>
+          <p>Además del arsénico, todos los filtros —incluidos los controles— mantuvieron su eficacia comprobada en la remoción de bacterias y parásitos provenientes de la contaminación fecal por ausencia de alcantarillado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACTO EN LA COMUNIDAD -->
+  <div class="luri-section">
+    <h2>🏘️ Una comunidad que no podía ver su problema</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>A diferencia de zonas donde el agua visiblemente sucia alerta a las familias, en Los Girasoles y Los Frutales el agua <em>parecía</em> normal. El arsénico y los patógenos fecales son invisibles. Las familias bebían agua contaminada sin saberlo — y atribuían los malestares estomacales a otras causas.</p>
+        <p>AguaSAN trabajó con la comunidad no solo para instalar filtros, sino para <strong>hacer visible el problema</strong>: análisis de agua, talleres de educación sanitaria y la entrega de resultados individualizados a cada familia fueron parte central del proyecto.</p>
+        <div class="alert-amber">
+          La capacitación incluyó explicaciones sobre el arsénico, su origen geológico en la zona, los riesgos de exposición crónica y el rol de los iones de hierro en el filtro. Las familias pasaron de desconocer el problema a ser <strong>guardianas activas de su agua</strong>.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/impacto/capacitacion.JPG"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Capacitación comunitaria Lurigancho">
+        <p style="font-size:0.82em; color:#888; margin-top:8px; text-align:center;">Capacitación a familias beneficiarias — uso y mantenimiento del filtro</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALIADOS -->
+  <div class="luri-section">
+    <h2>🤝 Aliados del proyecto</h2>
+    <p>Este proyecto fue posible gracias a la articulación de equipos técnicos, instituciones académicas y organizaciones comprometidas con el agua segura en el Perú:</p>
+    <div class="partner-logos-luri">
+      <img src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSAN">
+      <img src="{{site.baseurl}}/img/logos/cawst-logo-full.png" alt="CAWST">
+      <img src="{{site.baseurl}}/img/logos/UNALM_logo.png" alt="UNALM">
+      <img src="{{site.baseurl}}/img/logos/Innovate_logo.png" alt="Innovate">
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-luri">
+    <h3>El arsénico no se ve. Pero la solución sí existe.</h3>
+    <p>Miles de familias en Lima y el resto del Perú beben agua con arsénico sin saberlo. Ayúdanos a llegar a más comunidades con esta tecnología.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#7c2d12; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
+
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Purús 2024</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+  .purus-hero {
+    background: linear-gradient(135deg, #1a6ea8 0%, #0d3f6b 100%);
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .purus-hero h1 { font-size: 2.4em; font-weight: 800; margin-bottom: 10px; }
+  .purus-hero p  { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+  .stat-box {
+    background: #fff;
+    border: 2px solid #1a6ea8;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .stat-box .number { font-size: 2.8em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
+
+  .story-section { padding: 40px 0; border-bottom: 1px solid #eee; }
+  .story-section h2 { color: #1a6ea8; font-weight: 700; margin-bottom: 20px; }
+
+  .timeline-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    gap: 16px;
+  }
+  .timeline-icon {
+    font-size: 2em;
+    min-width: 48px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .timeline-text h4 { margin: 0 0 4px; font-weight: 700; color: #0d3f6b; }
+  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; }
+
+  .testimonial-card {
+    background: #f0f7ff;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .testimonial-card blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
+
+  .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
+  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(30%); }
+
+  .highlight-box {
+    background: #e8f4fd;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    font-size: 1.05em;
+    color: #1a4a70;
+  }
+  .highlight-box strong { color: #1a6ea8; }
+</style>
+
+<body>
+
+<!-- HERO -->
+<div class="purus-hero">
+  <h1>💧 Agua Limpia para el Pueblo Purús</h1>
+  <p>37 familias en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.</p>
+  <p style="margin-top:14px; font-size:0.95em; opacity:0.75;">📍 Puerto Esperanza, Ucayali &nbsp;|&nbsp; 🗓️ Febrero 2024</p>
+</div>
+
+<div class="container">
+
+  <!-- STATS ROW -->
+  <div class="row text-center" style="margin-bottom:40px;">
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">37</div>
+        <div class="label">🏠 Filtros instalados</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">2</div>
+        <div class="label">🌿 Comunidades beneficiadas</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">200+</div>
+        <div class="label">👨‍👩‍👧‍👦 Personas con agua segura</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">0</div>
+        <div class="label">⚡ Electricidad requerida</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EL PROBLEMA -->
+  <div class="story-section">
+    <h2>🌊 El reto: agua turbia, salud frágil</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>Las comunidades de <strong>Bufeo</strong> y <strong>Nuevo San Martín</strong>, ubicadas en el corazón de la selva purureña, enfrentaban una realidad cotidiana que muchos ignoramos: el agua que bebían llegaba de pozos abiertos, llenos de insectos, hojas y sedimentos del río.</p>
+        <p>Para llegar a estas comunidades hay que surcar ríos por horas en bote. No hay carreteras. No hay red de agua potable. Las enfermedades diarreicas —especialmente en niños— eran constantes.</p>
+        <div class="highlight-box">
+          <strong>"A veces tomamos agua con gusano, agua de río con basura. Por eso es importante filtrar el agua."</strong><br>
+          <span style="font-size:0.88em;">— Cristina Sálamo, Comunidad Nuevo San Martín</span>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/crisis/mapa_agua_potable.png" style="max-width:100%; border-radius:8px;" alt="Mapa acceso agua">
+      </div>
+    </div>
+  </div>
+
+  <!-- LA SOLUCIÓN -->
+  <div class="story-section">
+    <h2>🔬 La solución: el Filtro Vita</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png" style="max-width:100%; border-radius:8px;" alt="Filtro Vita">
+      </div>
+      <div class="col-md-7">
+        <p>El <strong>Filtro Vita</strong> es una adaptación del filtro bioarena de concreto, ingeniada para caber en un bidón de polietileno de alta densidad. Liviano, transportable en bote, sin electricidad, sin químicos. Perfecto para la Amazonía.</p>
+        <p>Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una <em>biocapa</em> de microorganismos vivos elimina patógenos y purifica el agua de forma natural.</p>
+        <ul style="padding-left:20px; color:#333;">
+          <li>✅ Elimina bacterias y parásitos</li>
+          <li>✅ Sin electricidad ni químicos</li>
+          <li>✅ Fabricado con materiales locales</li>
+          <li>✅ Caudal de 0.3–0.5 L/minuto</li>
+          <li>✅ Fácil mantenimiento comunitario</li>
+          <li>✅ Larga vida útil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- EL VIAJE -->
+  <div class="story-section">
+    <h2>🚤 El viaje: logística en la selva</h2>
+    <p>Implementar este proyecto no fue sencillo. Cada paso requirió planificación, trabajo en equipo y la invaluable colaboración de las organizaciones locales.</p>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🔍</div>
+      <div class="timeline-text">
+        <h4>Evaluación y planificación</h4>
+        <p>Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🏖️</div>
+      <div class="timeline-text">
+        <h4>Selección y preparación de arena</h4>
+        <p>La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo de filtración. Cada costal fue empaquetado y etiquetado.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🚤</div>
+      <div class="timeline-text">
+        <h4>Transporte fluvial</h4>
+        <p>Los 37 bidones y costales de arena viajaron en bote por los ríos del Purús. Miembros de las propias comunidades ayudaron a llevar los materiales desde el embarcadero hasta cada hogar.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🎓</div>
+      <div class="timeline-text">
+        <h4>Capacitación comunitaria</h4>
+        <p>AguaSAN, junto a FECONAPU, Yaqua y DAS Perú, organizó talleres presenciales en Bufeo y Nuevo San Martín. Las familias aprendieron a usar, mantener y cuidar su filtro — empoderándolas como guardianas de su propio recurso hídrico.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🏠</div>
+      <div class="timeline-text">
+        <h4>Instalación hogar por hogar</h4>
+        <p>Cada filtro fue instalado directamente en la vivienda del beneficiario: 12 en Bufeo, 23 en Nuevo San Martín, y 2 adicionales como puntos de demostración en la Asociación Pro-Purús y FECONAPU.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">📋</div>
+      <div class="timeline-text">
+        <h4>Encuesta y seguimiento</h4>
+        <p>Al entregar cada filtro, el equipo realizó una encuesta individualizada con cada familia. Sus testimonios fueron el indicador más poderoso del éxito del proyecto.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VOCES -->
+  <div class="story-section">
+    <h2>🗣️ Las voces que más importan</h2>
+    <p>De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote>"El agua limpia alarga la vida."</blockquote>
+          <div class="author">— Zenia Castillo, Nuevo San Martín</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"El filtro vita nos permite vivir tranquilos y sanos."</blockquote>
+          <div class="author">— Rubén Jijida Bachara, Comunidad Bufeo</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Mis hijos sufren de diarrea constantemente. Ahora sé que van a mejorar con el Filtro Vita."</blockquote>
+          <div class="author">— Elvita Torres, Nuevo San Martín</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote>"El filtro vita es importante porque nos cuida la salud y nuestros hijos para que crezcan bien y no estén yendo al hospital."</blockquote>
+          <div class="author">— Franklin Salomón López, Comunidad Bufeo</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Con agua limpia cuidamos nuestra salud."</blockquote>
+          <div class="author">— Verónica Tachiana, Nuevo San Martín</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"El agua limpia es lo más importante. Cuando tomas agua limpia no te enfermas; si tomas agua contaminada, se presentarán diferentes enfermedades."</blockquote>
+          <div class="author">— Asís Salomón Castillo, Comunidad Bufeo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACTO -->
+  <div class="story-section">
+    <h2>📊 El impacto en números</h2>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">12</div>
+          <div class="label">🏡 Hogares en Bufeo</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">23</div>
+          <div class="label">🏡 Hogares en Nuevo San Martín</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">2</div>
+          <div class="label">🏛️ Puntos de demostración</div>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:24px;">
+      Este proyecto no solo entregó 37 filtros — estableció un <strong>modelo de colaboración replicable</strong> entre ONGs, organizaciones indígenas locales y comunidades, demostrando que la unión de esfuerzos puede brindar soluciones sostenibles de acceso al agua en los lugares más remotos del Perú.
+    </div>
+  </div>
+
+  <!-- ALIADOS -->
+  <div class="story-section">
+    <h2>🤝 Aliados que hicieron posible este sueño</h2>
+    <p>Este proyecto fue posible gracias a la articulación de múltiples actores comprometidos con el acceso al agua en el Perú:</p>
+    <div class="partner-logos">
+      <img src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSAN">
+      <img src="{{site.baseurl}}/img/logos/cawst-logo-full.png" alt="CAWST">
+      <img src="{{site.baseurl}}/img/logos/Innovate_logo.png" alt="Innovate">
+      <img src="{{site.baseurl}}/img/logos/UNALM_logo.png" alt="UNALM">
+    </div>
+    <p class="text-center text-muted" style="font-size:0.9em; margin-top:8px;">
+      AguaSAN &nbsp;·&nbsp; Yaqua &nbsp;·&nbsp; Asociación Pro-Purús &nbsp;·&nbsp; FECONAPU &nbsp;·&nbsp; DAS Perú
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center" style="padding: 40px 0 20px;">
+    <h3 style="color:#1a6ea8;">¿Quieres ser parte de la siguiente historia?</h3>
+    <p style="color:#555; max-width:500px; margin: 10px auto 24px;">Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.</p>
+    <a href="#ayuda" class="btn btn-primary btn-lg page-scroll">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
+</body>
+
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -920,70 +1770,348 @@ setTimeout(showSlides, 5000);
                     </div>
                 </div>
             </div>
-            <body class="body_fba">
-  <header class="header_fba">
-    <h1 style="margin-left: 15%;">Filtro Lento de Arena Intermitente</h1>
-    <nav class="nav_fba">
-      <ul class="ul_fba">
-        <li class="li_fba"><a class="page-scroll" href="#what1">¿Qué es?</a></li>
-        <li class="li_fba"><a class="page-scroll" href="#how1">¿Cómo funciona?</a></li>
-        <li class="li_fba"><a class="page-scroll" href="#benefits1">Beneficios</a></li>
-      </ul>
-    </nav>
-  </header>
+            <style>
+  .flai-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .flai-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 40%;
+    top: 0; left: 0;
+  }
+  .flai-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(20,60,20,0.15) 0%, rgba(20,80,50,0.82) 100%);
+  }
+  .flai-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .flai-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .flai-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
 
-  <main>
-    <div class="container">
-      <section id="what1">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="about_taital">¿Qué es un <span style="color: #ff3f5c;">Filtro Lento de Arena Intermitente</span> (FLAI)?</h1>
-            <p class="about_text">Un Filtro Lento de Arena Intermitente (FLAI) es un sistema de tratamiento de agua a mayor escala diseñado para abastecer de agua segura a comunidades agrupadas, como colegios, postas de salud o conjuntos de familias. Basado en el mismo principio de filtración lenta que el filtro bioarena, el FLAI utiliza capas de arena y grava junto con procesos biológicos para remover patógenos, sólidos suspendidos y, en algunos casos, contaminantes como el arsénico. Su diseño permite tratar mayores volúmenes de agua de manera continua o intermitente, adaptándose a las necesidades comunitarias.</p>
-          </div>
-          <div class="col-md-6">
-            <div style="max-width: 100%;"><img style="max-width: 98%;" src="{{site.baseurl}}/img/portfolio/FILTRO_FBA.png"></div>
-          </div>
-        </div>
-      </section>
+  .flai-stat-strip {
+    background: #1b5e20;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .flai-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .flai-stat:last-child { border-right: none; }
+  .flai-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #a5d6a7; line-height: 1; display: block; }
+  .flai-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
 
-      <section id="how1">
-        <div class="row">
-          <div class="col-md-6">
-            <div style="max-width: 100%;"><img style="max-width: 98%;" src="{{site.baseurl}}/img/portfolio/funcionamiento_filtro.jpg"></div>
-          </div>
-          <div class="col-md-6">
-            <h1 class="about_taital">¿Cómo funciona un <span style="color: #ff3f5c;">FLAI</span>?</h1>
-            <p class="about_text">El agua ingresa al sistema y atraviesa lentamente capas de arena fina y grava, donde se desarrolla una biocapa que elimina microorganismos y mejora la calidad del agua. El flujo controlado permite una filtración eficiente, reteniendo contaminantes físicos y biológicos. En algunos diseños, se incorporan materiales adicionales (como compuestos de hierro) para potenciar la remoción de contaminantes químicos como el arsénico.</p>
-          </div>
-        </div>
-      </section>
+  .flai-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .flai-section h2 { font-size: 1.7em; font-weight: 800; color: #1b5e20; margin-bottom: 18px; }
 
-      <section id="benefits1">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="about_taital">Beneficios del <span style="color: #ff3f5c;">FLAI</span></h1>
-            <ul class="ul_fba2">
-              <li>Bajo costo en comparación con sistemas convencionales</li>
-              <li>Apto para uso comunitario (decenas de familias, escuelas o centros de salud)</li>
-              <li>No requiere electricidad ni químicos en su operación básica</li>
-              <li>Alta eficiencia en la remoción de patógenos</li>
-              <li>Posibilidad de adaptación para remover contaminantes como arsénico</li>
-              <li>Fácil operación y mantenimiento comunitario</li>
-              <li>Larga vida útil y escalabilidad</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div style="max-width: 100%;"><img style="max-width: 98%;" src="{{site.baseurl}}/img/products/flai1.JPG"></div>
-          </div>
-        </div>
-      </section>
+  .flai-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #388e3c;
+  }
+  .flai-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .flai-card h3 { font-size: 1.05em; font-weight: 800; color: #1b5e20; margin-bottom: 8px; }
+  .flai-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+
+  .tank-step {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .tank-step:last-child { border-bottom: none; }
+  .tank-step .tk-icon {
+    min-width: 44px; height: 44px;
+    background: #388e3c; color: white;
+    border-radius: 10px; display: flex;
+    align-items: center; justify-content: center;
+    font-size: 1.4em; flex-shrink: 0;
+  }
+  .tank-step h4 { font-weight: 800; color: #1b5e20; margin: 0 0 4px; }
+  .tank-step p  { color: #555; font-size: 0.93em; margin: 0; line-height: 1.55; }
+
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 5px solid #388e3c;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1b5e20;
+    font-size: 1em;
+  }
+
+  .compare-row {
+    display: flex; gap: 12px; align-items: stretch;
+    margin-bottom: 14px;
+  }
+  .compare-label {
+    min-width: 90px; font-weight: 700; font-size: 0.9em;
+    color: #333; display: flex; align-items: center;
+  }
+  .compare-fba, .compare-flai {
+    flex: 1; border-radius: 8px; padding: 10px 14px;
+    font-size: 0.9em; line-height: 1.45;
+  }
+  .compare-fba  { background: #e3f2fd; color: #0d3f6b; border: 1px solid #bbdefb; }
+  .compare-flai { background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
+  .compare-header { font-weight: 800; font-size: 0.82em; text-transform: uppercase; margin-bottom: 3px; }
+
+  .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .spec-table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.96em; }
+  .spec-table td:first-child { font-weight: 700; color: #1b5e20; width: 48%; }
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .use-case-badge {
+    display: inline-block;
+    background: #e8f5e9; color: #1b5e20;
+    border-radius: 20px; padding: 6px 16px;
+    font-size: 0.9em; font-weight: 700;
+    margin: 4px 3px; border: 1px solid #c8e6c9;
+  }
+
+  .cta-flai {
+    background: linear-gradient(135deg, #388e3c, #1b5e20);
+    color: white; border-radius: 14px; padding: 36px 28px;
+    text-align: center; margin: 36px 0 10px;
+  }
+  .cta-flai h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
+  .cta-flai p  { opacity: 0.88; margin-bottom: 20px; }
+</style>
+
+<!-- HERO -->
+<div class="flai-hero">
+  <img src="{{site.baseurl}}/img/portfolio/flai_1.jpg" alt="Filtro Lento de Arena Intermitente FLAI">
+  <div class="flai-hero-overlay"></div>
+  <div class="flai-hero-text">
+    <h1>🌿 Filtro Lento de Arena Intermitente (FLAI)</h1>
+    <p>Agua segura a escala comunitaria — para escuelas, postas de salud y grupos de familias en los lugares más remotos del Perú.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="flai-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 flai-stat">
+        <span class="cnum">2,000+</span>
+        <span class="clabel">litros por día</span>
+      </div>
+      <div class="col-sm-3 flai-stat">
+        <span class="cnum">100+</span>
+        <span class="clabel">personas abastecidas</span>
+      </div>
+      <div class="col-sm-3 flai-stat">
+        <span class="cnum">0 ⚡</span>
+        <span class="clabel">electricidad requerida</span>
+      </div>
+      <div class="col-sm-3 flai-stat">
+        <span class="cnum">3</span>
+        <span class="clabel">tanques integrados</span>
+      </div>
     </div>
-  </main>
+  </div>
+</div>
 
-  <footer>
-    <p>&copy; 2023 AguaSan</p>
-  </footer>
-</body>
+<div class="container">
+
+  <!-- QUÉ ES -->
+  <div class="flai-section">
+    <h2>🔍 ¿Qué es el FLAI?</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>El <strong>Filtro Lento de Arena Intermitente (FLAI)</strong> es la solución comunitaria de AguaSAN: un sistema de tratamiento de agua a mayor escala diseñado para abastecer a grupos de familias, escuelas, postas de salud o comunidades enteras.</p>
+        <p>Basado en el mismo principio de filtración lenta que el FBA, el FLAI escala la tecnología a un sistema de <strong>tres tanques</strong> que permite tratar caudales de más de 2,000 litros al día — sin electricidad, sin químicos, con materiales locales.</p>
+        <div class="highlight-green">
+          El FLAI es ideal cuando el FBA familiar no es suficiente: comunidades agrupadas, instituciones o zonas donde una sola fuente centralizada puede abastecer a decenas de familias.
+        </div>
+        <p><strong>Casos de uso ideales:</strong></p>
+        <div>
+          <span class="use-case-badge">🏫 Escuelas rurales</span>
+          <span class="use-case-badge">🏥 Postas de salud</span>
+          <span class="use-case-badge">🏘️ Comunidades nativas</span>
+          <span class="use-case-badge">⛪ Centros comunitarios</span>
+          <span class="use-case-badge">👨‍👩‍👧 Grupos de familias</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FLAI.png"
+             style="max-width:100%; max-height:340px; object-fit:contain;"
+             alt="Diagrama Filtro FLAI">
+      </div>
+    </div>
+  </div>
+
+  <!-- CÓMO FUNCIONA: 3 TANQUES -->
+  <div class="flai-section">
+    <h2>⚙️ Los 3 tanques: así funciona el FLAI</h2>
+    <p>A diferencia del FBA doméstico, el FLAI opera con un sistema integrado de tres módulos que trabajan en secuencia:</p>
+    <div class="row" style="margin-top:22px;">
+      <div class="col-md-7">
+        <div class="tank-step">
+          <div class="tk-icon">1️⃣</div>
+          <div>
+            <h4>Tanque de recepción</h4>
+            <p>Capta el agua cruda desde la fuente hídrica — río, pozo, acequia o lluvia — y la retiene antes del tratamiento. Actúa como pre-sedimentación de partículas gruesas.</p>
+          </div>
+        </div>
+        <div class="tank-step">
+          <div class="tk-icon">2️⃣</div>
+          <div>
+            <h4>Tanque de tratamiento (filtración)</h4>
+            <p>El corazón del sistema. El agua desciende por capas de arena fina y grava donde la <strong>biocapa</strong> elimina bacterias, protozoos y turbidez. En versiones avanzadas, se incorporan materiales de hierro para remover arsénico y metales pesados.</p>
+          </div>
+        </div>
+        <div class="tank-step">
+          <div class="tk-icon">3️⃣</div>
+          <div>
+            <h4>Tanque de almacenamiento</h4>
+            <p>Guarda el agua ya tratada, lista para distribuir. Protege el agua limpia de la recontaminación y permite un acceso continuo incluso cuando el filtro no está en operación activa.</p>
+          </div>
+        </div>
+        <div class="highlight-green" style="margin-top:16px;">
+          El flujo es totalmente por <strong>gravedad</strong>. No hay bombas, no hay energía, no hay piezas mecánicas que puedan fallar.
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="{{site.baseurl}}/img/products/flai1.JPG"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Sistema FLAI instalado">
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFICIOS -->
+  <div class="flai-section">
+    <h2>✅ ¿Por qué el FLAI?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">🏘️</span>
+          <h3>Escala comunitaria real</h3>
+          <p>Un solo sistema puede abastecer a 100+ personas. Ideal para escuelas, postas de salud y comunidades donde el filtro doméstico no es suficiente.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">🧪</span>
+          <h3>Versatilidad ante contaminantes</h3>
+          <p>Con modificaciones al material filtrante, el FLAI puede remover arsénico, hierro y otros metales pesados comunes en fuentes andinas — algo que el FBA doméstico no puede a esta escala.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">🔩</span>
+          <h3>Sin piezas mecánicas</h3>
+          <p>Todo el sistema opera por gravedad. Sin bombas, sin motores, sin nada que requiera repuestos difíciles de conseguir en zonas remotas.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">🌍</span>
+          <h3>Materiales locales</h3>
+          <p>Arena, grava y los contenedores se consiguen localmente, reduciendo costos de transporte y permitiendo que la comunidad reponga materiales de forma autónoma.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">📈</span>
+          <h3>Escalable y adaptable</h3>
+          <p>El diseño puede ampliarse para tratar más volumen o adaptarse a diferentes fuentes hídricas y necesidades de calidad de agua sin cambiar el principio de funcionamiento.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flai-card">
+          <span class="card-icon">🎓</span>
+          <h3>Operación comunitaria</h3>
+          <p>Con una capacitación básica, la propia comunidad puede operar y mantener el sistema. AguaSAN entrena a operadores locales como parte de cada proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FBA vs FLAI -->
+  <div class="flai-section">
+    <h2>⚖️ FBA vs FLAI: ¿cuál necesita tu comunidad?</h2>
+    <div style="margin-top:16px;">
+      <div class="compare-row">
+        <div class="compare-label"></div>
+        <div class="compare-fba"><div class="compare-header">💧 FBA — Familiar</div></div>
+        <div class="compare-flai"><div class="compare-header">🌿 FLAI — Comunitario</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Capacidad</div>
+        <div class="compare-fba">15 – 20 L por uso</div>
+        <div class="compare-flai">2,000+ L/día</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Escala</div>
+        <div class="compare-fba">1 hogar (5 personas)</div>
+        <div class="compare-flai">100+ personas</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Operación</div>
+        <div class="compare-fba">Individual, en casa</div>
+        <div class="compare-flai">Centralizada, comunitaria</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Contaminantes</div>
+        <div class="compare-fba">Bacterias, protozoos, turbidez</div>
+        <div class="compare-flai">+ arsénico y metales pesados (con adaptación)</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label">Instalación</div>
+        <div class="compare-fba">1 bidón, hogar</div>
+        <div class="compare-flai">3 tanques, espacio central</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPECIFICACIONES -->
+  <div class="flai-section">
+    <h2>📐 Especificaciones técnicas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Caudal de producción</td><td>2,000+ L/día</td></tr>
+          <tr><td>Personas abastecidas</td><td>100 – 200+ personas</td></tr>
+          <tr><td>Electricidad requerida</td><td>Ninguna</td></tr>
+          <tr><td>Módulos</td><td>3 tanques (recepción, tratamiento, almacenamiento)</td></tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Remoción de bacterias</td><td>Hasta 99%</td></tr>
+          <tr><td>Remoción de protozoos</td><td>Hasta 99.9%</td></tr>
+          <tr><td>Remoción de arsénico</td><td>Sí (con material de hierro adicional)</td></tr>
+          <tr><td>Material</td><td>Local (arena, grava, contenedores)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-flai">
+    <h3>Agua segura para toda una comunidad.</h3>
+    <p>Un FLAI puede transformar la salud de una escuela, una posta o un barrio entero. Únete a nuestra misión.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#1b5e20; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
 
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
@@ -1007,67 +2135,295 @@ setTimeout(showSlides, 5000);
                     </div>
                 </div>
             </div>
-            <body class = "body_fba" >
-  <header class="header_fba">
-    <h1 style = "margin-left: 15%;">Biosand Filters</h1>
-    <nav class="nav_fba">
-      <ul class = "ul_fba">
-        <li class = "li_fba" ><a  class="page-scroll" href="#what1">What is it?</a></li>
-        <li class = "li_fba"><a  class="page-scroll" href="#how1">How does it work?</a></li>
-        <li class = "li_fba"><a  class="page-scroll" href="#benefits1">Benefits</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <div class="container">
-      <section id="what1">
-        <div class="row">    
-<!-- mODIFICACIÓN -->
-          <div class="col-md-6">
-              <h1 class="about_taital">Qué es un Filtro  <span style="color: #ff3f5c;">Bioarena Familiar </span>(FBA)? </h1>
-              <p class="about_text">Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.</p>
-          <div class="col-md-6">
-              <div style = "max-width: 100%;"><img style = "max-width: 98%;" src="{{site.baseurl}}/img/portfolio/FILTRO_FBA.png"></div>
-          </div>
+            <style>
+  .fba-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .fba-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .fba-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,50,100,0.15) 0%, rgba(10,50,120,0.82) 100%);
+  }
+  .fba-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .fba-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .fba-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
+
+  .fba-stat-strip {
+    background: #0d3f6b;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .fba-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .fba-stat:last-child { border-right: none; }
+  .fba-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .fba-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .fba-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .fba-section h2 { font-size: 1.7em; font-weight: 800; color: #0d3f6b; margin-bottom: 18px; }
+
+  .fba-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #1a6ea8;
+  }
+  .fba-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .fba-card h3 { font-size: 1.05em; font-weight: 800; color: #0d3f6b; margin-bottom: 8px; }
+  .fba-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+
+  .layer-step {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 14px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .layer-step:last-child { border-bottom: none; }
+  .layer-step .ls-num {
+    min-width: 36px; height: 36px;
+    background: #1a6ea8; color: white;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    font-weight: 900; font-size: 1em; flex-shrink: 0;
+  }
+  .layer-step h4 { font-weight: 800; color: #0d3f6b; margin: 0 0 3px; font-size: 1em; }
+  .layer-step p  { color: #555; font-size: 0.93em; margin: 0; line-height: 1.55; }
+
+  .highlight-blue {
+    background: #e8f4fd;
+    border-left: 5px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1a4a70;
+    font-size: 1em;
+  }
+  .highlight-blue strong { color: #0d3f6b; }
+
+  .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .spec-table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.96em; }
+  .spec-table td:first-child { font-weight: 700; color: #0d3f6b; width: 45%; }
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .cta-fba {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white; border-radius: 14px; padding: 36px 28px;
+    text-align: center; margin: 36px 0 10px;
+  }
+  .cta-fba h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
+  .cta-fba p  { opacity: 0.88; margin-bottom: 20px; }
+</style>
+
+<!-- HERO -->
+<div class="fba-hero">
+  <img src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+  <div class="fba-hero-overlay"></div>
+  <div class="fba-hero-text">
+    <h1>💧 Filtro Bioarena Familiar (FBA)</h1>
+    <p>Agua segura en cada hogar — sin electricidad, sin químicos, sin complicaciones. La solución doméstica de AguaSAN.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="fba-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">20 L</span>
+        <span class="clabel">por uso, por familia</span>
       </div>
-      </section>
-    <section id="how1">
-      <div class="row">
-          <div class="col-md-6">
-              <div  style = "max-width: 100%;"><img  style = "max-width: 98%;" src="{{site.baseurl}}/img/portfolio/funcionamiento_filtro.jpg"></div>
-          </div>
-          <div  class="col-md-6">
-              <h1 class="about_taital">How does a Biosand Filter work? <span style="color: #ff3f5c;"> </span> </h1>
-              <p class="about_text">El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.</p>
-          </div>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">15 años</span>
+        <span class="clabel">de vida útil</span>
       </div>
-    </section>
-    <section id ="benefits1">
-      <div  class="row">
-        <div class="col-md-6">
-            <h1 class="about_taital">Benefits of Biosand Filters <span style="color: #ff3f5c;"> </span> </h1>
-            <ul class = "ul_fba2">
-              <li >Bajo costo y bajo mantenimiento</li>
-              <li>Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia</li>
-              <li>No requiere electricidad ni productos químicos.</li>
-              <li>Fácil de usar y operar</li>
-              <li>Tiempo de vida de 15 años</li>
-            </ul>
-            <div class="readmore_bt"><a href="" class="portfolio-link" data-toggle="modal">Read More</a></div>
-        </div>
-        <div class="col-md-6">
-          <div style = "max-width: 100%;"><img  style = "max-width: 98%;" src="{{site.baseurl}}/img/products/flai1.JPG"></div>
-        </div>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">0 ⚡</span>
+        <span class="clabel">electricidad requerida</span>
       </div>
-    </section>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">99%</span>
+        <span class="clabel">eliminación de bacterias</span>
+      </div>
     </div>
-  </main>
-  
-  <footer>
-    <p>&copy; 2023 Biosand Filters Inc.</p>
-  </footer>
-</body>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- QUÉ ES -->
+  <div class="fba-section">
+    <h2>🔍 ¿Qué es el Filtro Bioarena Familiar?</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>El <strong>Filtro Bioarena Familiar (FBA)</strong> es una adaptación doméstica del filtro lento de arena, diseñada para tratar el agua en el punto de uso dentro del hogar. Basado en tecnología desarrollada por el Dr. David Manz (CAWST) en los años 90, es hoy uno de los sistemas de tratamiento de agua más probados y adoptados en comunidades rurales de todo el mundo.</p>
+        <p>El modelo de AguaSAN adapta este principio a un <strong>bidón de polietileno de alta densidad</strong> — liviano, transportable, ideal para zonas remotas de la Amazonía y la sierra peruana donde no llega la red de agua ni la electricidad.</p>
+        <div class="highlight-blue">
+          Una familia de 5 personas necesita en promedio <strong>20 litros de agua segura al día</strong>. El FBA lo entrega sin costo operativo, sin recambios, sin nada más que arena y biología.
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png"
+             style="max-width:100%; max-height:320px; object-fit:contain;"
+             alt="Diagrama Filtro FBA">
+      </div>
+    </div>
+  </div>
+
+  <!-- CÓMO FUNCIONA -->
+  <div class="fba-section">
+    <h2>⚙️ ¿Cómo funciona?</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/portfolio/funcionamiento_filtro.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Funcionamiento del filtro bioarena">
+      </div>
+      <div class="col-md-7">
+        <p style="margin-bottom:20px;">El agua se vierte manualmente por la parte superior y desciende por gravedad a través de las capas filtrantes. El proceso combina <strong>filtración física</strong> y <strong>acción biológica</strong> para producir agua segura.</p>
+        <div class="layer-step">
+          <div class="ls-num">1</div>
+          <div>
+            <h4>Agua cruda (entrada)</h4>
+            <p>El agua sin tratar, ya sea de río, pozo o lluvia, se vierte en la parte superior del bidón.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">2</div>
+          <div>
+            <h4>Biocapa (Schmutzdecke)</h4>
+            <p>Una delgada capa de microorganismos vivos en la superficie de la arena que captura y digiere patógenos, es el corazón del filtro.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">3</div>
+          <div>
+            <h4>Arena fina</h4>
+            <p>Retiene partículas, turbidez, protozoos y quistes. Tamaño efectivo (TE) calibrado para garantizar el caudal correcto.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">4</div>
+          <div>
+            <h4>Grava gruesa</h4>
+            <p>Soporte estructural que evita que la arena tape la salida y permite el flujo uniforme hacia el caño.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">5</div>
+          <div>
+            <h4>Agua tratada (salida)</h4>
+            <p>El agua filtrada sale por un caño en la base del bidón, lista para beber directamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFICIOS -->
+  <div class="fba-section">
+    <h2>✅ ¿Por qué el FBA?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">💰</span>
+          <h3>Bajo costo total</h3>
+          <p>Una fracción del costo de un sistema convencional. Sin recambios, sin insumos químicos, sin facturas de electricidad. El costo más alto es la instalación inicial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🚤</span>
+          <h3>Transportable a cualquier lugar</h3>
+          <p>El bidón de polietileno pesa poco y cabe en una canoa. Ha llegado a comunidades en el Purús, Loreto y la sierra alta sin ningún vehículo especial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🌱</span>
+          <h3>Sin insumos externos</h3>
+          <p>Una vez instalado, el filtro no necesita químicos, filtros de repuesto ni energía. La biocapa se regenera sola si se usa con regularidad.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🦠</span>
+          <h3>Eliminación probada de patógenos</h3>
+          <p>Elimina hasta el 99% de bacterias (E. coli), el 99.9% de protozoos y reduce significativamente virus y turbidez cuando la biocapa está madura.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🔧</span>
+          <h3>Mantenimiento sencillo</h3>
+          <p>Solo requiere "raspado" superficial (swirl & dump) cuando el caudal baja. Cualquier miembro de la familia puede hacerlo tras una breve capacitación.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">⏳</span>
+          <h3>15 años de vida útil</h3>
+          <p>Con un mantenimiento correcto, el bidón y la arena tienen una vida útil de más de 15 años. Inversión única, beneficio para toda una generación.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPECIFICACIONES TÉCNICAS -->
+  <div class="fba-section">
+    <h2>📐 Especificaciones técnicas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Capacidad por uso</td><td>15 – 20 litros</td></tr>
+          <tr><td>Caudal de salida</td><td>0.3 – 0.5 L/minuto</td></tr>
+          <tr><td>Vida útil</td><td>+15 años</td></tr>
+          <tr><td>Electricidad requerida</td><td>Ninguna</td></tr>
+          <tr><td>Químicos requeridos</td><td>Ninguno</td></tr>
+          <tr><td>Escala de uso</td><td>Familiar (1 hogar)</td></tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Remoción de bacterias (E. coli)</td><td>Hasta 99%</td></tr>
+          <tr><td>Remoción de protozoos</td><td>Hasta 99.9%</td></tr>
+          <tr><td>Reducción de turbidez</td><td>Alta</td></tr>
+          <tr><td>Material del contenedor</td><td>HDPE (polietileno alta densidad)</td></tr>
+          <tr><td>Mantenimiento</td><td>Swirl & dump cuando baja caudal</td></tr>
+          <tr><td>Tecnología base</td><td>CAWST / Dr. David Manz</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-fba">
+    <h3>Lleva agua segura a una familia.</h3>
+    <p>Con tu apoyo podemos fabricar e instalar más filtros FBA en las comunidades que más lo necesitan.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
 
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
@@ -1091,111 +2447,408 @@ setTimeout(showSlides, 5000);
                     </div>
                 </div>
             </div>
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Crisis</title>
-    <style>
-        /* Custom styles go here */
-    </style>
-</head>
-<body>
+            <style>
+  .crisis-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .crisis-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: bottom;
+    top: 0; left: 0;
+  }
+  .crisis-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10,30,60,0.78) 100%);
+  }
+  .crisis-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 40px;
+  }
+  .crisis-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .crisis-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
 
-        <div style="height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;">
-            <img style="object-position: bottom; height: 150%;" src="{{site.baseurl}}/img/crisis/portada_crisis.jpg" alt="Slide 2"  >
-        </div>
+  .crisis-stat-strip {
+    background: #0d3f6b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .crisis-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .crisis-stat:last-child { border-right: none; }
+  .crisis-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #5ec4ff;
+    line-height: 1;
+    display: block;
+  }
+  .crisis-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        
-    <div class="container" style="margin-top: 25px;"> 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto"> La Crisis de Agua en el Perú</h2>
+  .crisis-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .crisis-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 18px;
+  }
 
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 1 Back</h2>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto">Nuestro impacto</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 2 Back</h2>
-                          <p>This is the back of box 2.</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <h2 class="h2_impacto">¿Como puedes ayudar?</h2>
-                        </div>
-                        <div class="flip-box-back">
-                          <h2>Box 3 Back</h2>
-                          <p>This is the back of box 3.</p>
-                        </div>
-                      </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-                <h1 class="mb-4">La crisis de agua: Los datos</h1>
-                <p>Según el Ministerio de Vivienda, Construcción y Saneamiento, existen aproximadamente <b>1,175,828</b> ciudadanos que aún no cuentan con agua potable para sus hogares.  </p>
-                <img class="image_2" style="width: auto;" src="{{site.baseurl}}/img/crisis/mapa_agua_potable.png" alt="">
-            </div>
-            <div class="col-md-4" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-                <h2 class="mb-4">Población con/sin cobertura</h2>
-                <img class="image_2" style="width: auto;" src="{{site.baseurl}}/img/crisis/agua_potable_chart.png" alt="">
-            </div>
-        </div>
+  .crisis-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #1a6ea8;
+    height: 100%;
+  }
+  .crisis-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .crisis-card h3 {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 10px;
+  }
+  .crisis-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .crisis-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #c0392b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .alert-box {
+    background: #fff3cd;
+    border-left: 5px solid #e67e22;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #7d4e00;
+  }
+  .alert-box strong { color: #c0392b; }
+
+  .geography-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+  .geography-bar .label {
+    min-width: 80px;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #333;
+  }
+  .geography-bar .bar-track {
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+  }
+  .geography-bar .bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 0.82em;
+    font-weight: 700;
+    color: white;
+    transition: width 1s;
+  }
+  .bar-urban   { background: #1a6ea8; }
+  .bar-rural   { background: #c0392b; }
+  .bar-selva   { background: #c0392b; }
+  .geography-bar .pct {
+    min-width: 46px;
+    font-weight: 800;
+    font-size: 1em;
+    text-align: right;
+    color: #333;
+  }
+
+  .disease-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .disease-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.97em;
+    color: #444;
+  }
+  .disease-list li:last-child { border-bottom: none; }
+  .disease-list li .dicon { font-size: 1.5em; min-width: 32px; }
+
+  .quote-crisis {
+    background: #e8f4fd;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    font-style: italic;
+    color: #1a4a70;
+    font-size: 1.05em;
+    margin: 24px 0;
+  }
+
+  .cta-crisis {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-crisis h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-crisis p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="crisis-hero">
+  <img src="{{site.baseurl}}/img/crisis/portada_crisis.jpg" alt="Crisis de agua en Perú">
+  <div class="crisis-hero-overlay"></div>
+  <div class="crisis-hero-text">
+    <h1>💧 La Crisis Invisible del Agua</h1>
+    <p>Millones de peruanos no tienen acceso a agua segura. Esta es su realidad — y la razón por la que AguaSan existe.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="crisis-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">8M+</span>
+        <span class="clabel">peruanos sin agua potable segura</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">44%</span>
+        <span class="clabel">de rurales con agua de red</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">1°</span>
+        <span class="clabel">causa de hospitalización infantil: diarrea</span>
+      </div>
+      <div class="col-sm-3 crisis-stat">
+        <span class="cnum">S/.80</span>
+        <span class="clabel">gasto mensual familiar en agua de camión</span>
+      </div>
     </div>
-    <div class="jumbotron text-center">
-        <h1>Impacto </h1>
-        <p>Water scarcity affects more than 2 billion people worldwide. Learn more about this crisis and what you can do to help.</p>
-      </div>
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Impacto Ecónomico</h2>
-            <p>The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Impacto en la Salud</h2>
-            <p>The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.</p>
-          </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SECCIÓN 1: EL PROBLEMA -->
+  <div class="crisis-section">
+    <h2>🌊 El agua que llega… y la que no</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Según el Ministerio de Vivienda, Construcción y Saneamiento, más de <strong>1,175,828 hogares</strong> carecen de conexión de agua potable en el Perú. Pero la cifra real de personas que beben agua no segura es mucho mayor: pozos abiertos, ríos, acequias y camiones cisternas son la única fuente hídrica de millones de familias.</p>
+        <div class="alert-box">
+          La <strong>brecha urbano-rural</strong> es enorme: mientras en Lima el 97% de hogares tiene agua de red, en regiones como Loreto y Ucayali ese porcentaje baja al <strong>30–40%</strong>.
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Solución de filtros de agua</h2>
-            <p>The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Solución de filtros de agua</h2>
-            <p>There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.</p>
-          </div>
+        <p>En zonas rurales y de selva, las comunidades no solo carecen de infraestructura — en muchos casos deben caminar horas para recoger agua que luego resulta no apta para el consumo.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{{site.baseurl}}/img/crisis/mapa_agua_potable.png" style="max-width:100%; border-radius:10px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);" alt="Mapa acceso agua potable Perú">
+        <p style="font-size:0.82em; color:#888; margin-top:8px;">Fuente: Ministerio de Vivienda, Construcción y Saneamiento</p>
+      </div>
+    </div>
+
+    <!-- GEOGRAPHY BARS -->
+    <h3 style="color:#0d3f6b; margin: 30px 0 16px; font-weight:700;">Cobertura de agua por zona geográfica</h3>
+    <div class="geography-bar">
+      <span class="label">Urbano</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-urban" style="width:93%">93%</div>
+      </div>
+      <span class="pct">93%</span>
+    </div>
+    <div class="geography-bar">
+      <span class="label">Rural sierra</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-rural" style="width:58%">58%</div>
+      </div>
+      <span class="pct">58%</span>
+    </div>
+    <div class="geography-bar">
+      <span class="label">Selva</span>
+      <div class="bar-track">
+        <div class="bar-fill bar-selva" style="width:35%">35%</div>
+      </div>
+      <span class="pct">35%</span>
+    </div>
+    <p style="font-size:0.83em; color:#888; margin-top:8px;">Fuente: ENDES 2022 — INEI</p>
+  </div>
+
+  <!-- SECCIÓN 2: SALUD -->
+  <div class="crisis-section">
+    <h2>🏥 El costo humano: salud que se va por el caño</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="disease-list">
+          <li>
+            <span class="dicon">👶</span>
+            <span>La diarrea es la <strong>segunda causa de muerte</strong> en niños menores de 5 años en zonas rurales del Perú.</span>
+          </li>
+          <li>
+            <span class="dicon">🦠</span>
+            <span>El <strong>40% de las enfermedades</strong> en comunidades rurales peruanas están directamente relacionadas con el agua contaminada.</span>
+          </li>
+          <li>
+            <span class="dicon">🏚️</span>
+            <span>Las comunidades sin saneamiento básico tienen <strong>3 veces más</strong> probabilidades de sufrir brotes de cólera y fiebre tifoidea.</span>
+          </li>
+          <li>
+            <span class="dicon">📉</span>
+            <span>La desnutrición crónica infantil —fuertemente ligada al agua contaminada— afecta al <strong>26% de niños rurales</strong> peruanos.</span>
+          </li>
+          <li>
+            <span class="dicon">🧪</span>
+            <span>En zonas andinas, el arsénico y el plomo en el agua subterránea afectan el desarrollo neurológico de miles de niños.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#c0392b;">
+          <span class="card-icon">⚕️</span>
+          <span class="big-figure">25%</span>
+          <h3>de la mortalidad infantil rural</h3>
+          <p>está asociada a enfermedades de origen hídrico — diarrea, cólera, hepatitis A y parasitosis intestinal. Son muertes prevenibles con agua limpia.</p>
+        </div>
+        <div class="quote-crisis">
+          "Tomamos agua del río porque no hay otra. Sabemos que nos puede enfermar, pero ¿qué más hacemos?"
+          <br><span style="font-size:0.88em; font-style:normal; color:#1a6ea8; font-weight:700;">— Testimonio, comunidad nativa, Ucayali</span>
         </div>
       </div>
-    <footer class="bg-secondary text-white text-center py-3 mt-5">
-        &copy; 2023 Water Crisis | All rights reserved
-    </footer>
-    
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3: IMPACTO ECONÓMICO -->
+  <div class="crisis-section">
+    <h2>💸 El doble castigo: pagar más por agua peor</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">🚛</span>
+          <h3>Camión cisterna: hasta 10× más caro</h3>
+          <p>Familias sin red de agua pagan entre <strong>S/. 50 y S/. 120 al mes</strong> por camiones cisterna — agua que no siempre es apta para beber.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">⏱️</span>
+          <h3>Horas perdidas cada día</h3>
+          <p>Mujeres y niñas dedican un promedio de <strong>2 a 4 horas diarias</strong> a recolectar agua en zonas sin acceso a red. Tiempo que no se invierte en educación ni trabajo.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="crisis-card">
+          <span class="card-icon">🏥</span>
+          <h3>Gastos médicos evitables</h3>
+          <p>Una familia rural puede gastar hasta <strong>S/. 400 al año</strong> en atención médica por enfermedades relacionadas con el agua contaminada. El filtro les costaría lo mismo por toda una vida.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/crisis/agua_potable_chart.png" style="max-width:100%; border-radius:10px;" alt="Gráfico cobertura agua potable">
+      </div>
+      <div class="col-md-6" style="display:flex; align-items:center;">
+        <div>
+          <h3 style="color:#0d3f6b; font-weight:800;">La paradoja del agua pobre</h3>
+          <p>Los que menos tienen, pagan más por agua de peor calidad. Las familias con acceso a red pagan tarifas subsidiadas; los pobres rurales compran agua cara a revendedores informales o caminan kilómetros para recogerla de fuentes no tratadas.</p>
+          <p>Esta desigualdad estructural mantiene a las comunidades más vulnerables en un ciclo de enfermedad y pobreza del que es muy difícil escapar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 4: ZONAS MÁS AFECTADAS -->
+  <div class="crisis-section">
+    <h2>📍 Las regiones más golpeadas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#e67e22;">
+          <span class="card-icon">🌿</span>
+          <h3>Selva amazónica</h3>
+          <p>Loreto, Ucayali, Madre de Dios y Amazonas concentran las brechas más críticas. La dispersión geográfica, la falta de vías y los ríos como única conexión hacen que la infraestructura convencional sea inviable o enormemente costosa.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="crisis-card" style="border-color:#e67e22;">
+          <span class="card-icon">🏔️</span>
+          <h3>Andes rurales y comunidades nativas</h3>
+          <p>Huancavelica, Ayacucho, Apurímac y Puno tienen tasas de acceso a agua segura por debajo del 50% en zonas rurales. Comunidades campesinas e indígenas son las últimas en recibir servicios básicos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alert-box" style="margin-top:8px;">
+      <strong>4,500+</strong> centros poblados rurales en el Perú aún no cuentan con ningún sistema de agua potable. Son comunidades que existen fuera del mapa de los servicios básicos.
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-crisis">
+    <h3>La solución existe. Solo hace falta llevarla.</h3>
+    <p>Los filtros bioarena como el Filtro Vita pueden transformar la realidad de una familia en días — sin electricidad, sin químicos, sin esperar décadas a que llegue la infraestructura.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
+
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
     </div>
@@ -1291,153 +2944,431 @@ setTimeout(showSlides, 5000);
                     </div>
                 </div>
             </div>
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Crisis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-</head>
-<body>
+            <style>
+  .impacto-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .impacto-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center;
+    top: 0; left: 0;
+  }
+  .impacto-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,40,20,0.15) 0%, rgba(0,60,40,0.80) 100%);
+  }
+  .impacto-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .impacto-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .impacto-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 660px;
+    margin: 0 auto;
+  }
 
-        <div style="height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;">
-            <img style="object-position: bottom; height: 150%;" src="/img/impacto/portada_impacto.jpg" alt="Slide 2"  >
-        </div>
+  .impacto-stat-strip {
+    background: #00574b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .impacto-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .impacto-stat:last-child { border-right: none; }
+  .impacto-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #80cbc4;
+    line-height: 1;
+    display: block;
+  }
+  .impacto-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal9"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto"> La Crisis de Agua en el Perú</h2>
+  .impacto-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .impacto-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 18px;
+  }
 
-                    </div>
-                    <div class="flip-box-back">
-                      <h2>Box 1 Back</h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal10"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto">Nuestro impacto</h2>
-                    </div>
-                    <div class="flip-box-back">
-                      <h2>Box 2 Back</h2>
-                      <p>This is the back of box 2.</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-                <a class="page-scroll" href="#ayuda"><div class="flip-box">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                      <h2 class="h2_impacto">¿Como puedes ayudar?</h2>
-                    </div>
-                    <div class="flip-box-back">
-                      <h2 class="h2_impacto">Box 3 Back</h2>
-                      <p>This is the back of box 3.</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-            </div>
+  .impacto-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #00897b;
+    height: 100%;
+  }
+  .impacto-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .impacto-card h3 {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 10px;
+  }
+  .impacto-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .impacto-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #00897b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 5px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #1b5e20;
+  }
+  .highlight-green strong { color: #00574b; }
+
+  .approach-step {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  .approach-step .step-icon {
+    font-size: 2.2em;
+    min-width: 52px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .approach-step h4 {
+    font-weight: 800;
+    color: #00574b;
+    margin: 0 0 5px;
+  }
+  .approach-step p {
+    color: #555;
+    font-size: 0.97em;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .testimonial-impacto {
+    background: #f0faf8;
+    border-left: 4px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-impacto blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-impacto .author {
+    font-weight: 700;
+    color: #00897b;
+    font-size: 0.9em;
+  }
+
+  .region-badge {
+    display: inline-block;
+    background: #e0f2f1;
+    color: #00574b;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.88em;
+    font-weight: 700;
+    margin: 4px 3px;
+  }
+
+  .video-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    margin: 10px 0;
+  }
+  .video-wrap video {
+    width: 100%;
+    display: block;
+  }
+
+  .cta-impacto {
+    background: linear-gradient(135deg, #00897b, #00574b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-impacto h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-impacto p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="impacto-hero">
+  <img src="/img/impacto/portada_impacto.jpg" alt="Impacto AguaSAN">
+  <div class="impacto-hero-overlay"></div>
+  <div class="impacto-hero-text">
+    <h1>📊 El Impacto de AguaSAN</h1>
+    <p>Filtros instalados, familias transformadas, comunidades con agua segura. Estos son los resultados de años de trabajo en campo.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="impacto-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">2,500+</span>
+        <span class="clabel">filtros entregados</span>
       </div>
-    <div class="container mt-5">
-        <div class="row">
-          <div class="counter-up">
-            <div class="content">
-              <div class="box">
-                <div class="icon"><i class="fas fa-filter"></i></div>
-                <div class="counter">+2500</div>
-                <div class="text">Filtros entregados</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-tint"></i></div>
-                <div class="counter">+ 10000</div>
-                <div class="text">Familias con agua de calidad</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <div class="counter">11</div>
-                <div class="text">Comunidades Trabajadas</div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fas fa-award"></i></div>
-                <div class="counter">2</div>
-                <div class="text">Premios recibidos </div>
-              </div>
-            </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">10,000+</span>
+        <span class="clabel">personas con agua segura</span>
+      </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">11</span>
+        <span class="clabel">comunidades trabajadas</span>
+      </div>
+      <div class="col-sm-3 impacto-stat">
+        <span class="cnum">2</span>
+        <span class="clabel">premios recibidos</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-          </div>
-          <script>
-            $(document).ready(function(){
-              $('.counter').counterUp({
-                delay: 10,
-                time: 3000
-              });
-            });
-            </script>
-            <div class="col-md-8">
-                <h1 class="mb-4">El impacto de AguaSan</h1>
-                <p>Nosotros hemos atendido más de 10,000 personas en diversas comunidades del Perú, como lo son:</p>
-                <p>Nuestros proyectos son integrales,  </p>
-            </div>
-            <div class="col-md-4" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-                <img class="image_2" src="/img/impacto/agualimpia_sucia.jpg" alt="">
-            </div>
+<div class="container">
+
+  <!-- SECCIÓN 1: ALCANCE -->
+  <div class="impacto-section">
+    <h2>🗺️ ¿Dónde hemos llegado?</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>AguaSAN ha llevado soluciones de agua segura a comunidades rurales, nativas y periurbanas a lo largo del Perú — lugares donde la infraestructura convencional no llega o tardaría décadas en hacerlo.</p>
+        <div class="highlight-green">
+          Nuestro trabajo se concentra en las regiones con mayor brecha hídrica: <strong>selva amazónica, sierra rural y comunidades nativas</strong>, donde el acceso a agua segura transforma vidas de manera inmediata y sostenible.
         </div>
-    </div>   
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-            <h2 class="h2_impacto">Involucramiento con las comunidades</h2>
-            <p>The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.</p>
-            <img class="image_2 image_impacto" src="/img/impacto/problematica_agua.jpg" alt="">
-          </div>
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;">
-            <h2 class="h2_impacto">Capacitación a nuestros usuarios finales</h2>
-            <p>The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.</p>
-            <img class="image_2 image_impacto" src="/img/impacto/capacitacion.JPG" alt="">
+        <p style="margin-top:12px;"><strong>Comunidades y regiones atendidas:</strong></p>
+        <div>
+          <span class="region-badge">📍 Purús, Ucayali</span>
+          <span class="region-badge">📍 Loreto</span>
+          <span class="region-badge">📍 Amazonas</span>
+          <span class="region-badge">📍 Huancavelica</span>
+          <span class="region-badge">📍 Ayacucho</span>
+          <span class="region-badge">📍 Lima rural</span>
+          <span class="region-badge">📍 Junín</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="/img/impacto/agualimpia_sucia.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Agua limpia vs agua contaminada">
+        <p style="font-size:0.82em; color:#888; margin-top:8px;">El antes y el después de filtrar el agua con el Filtro Vita</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2: CÓMO TRABAJAMOS -->
+  <div class="impacto-section">
+    <h2>🤝 Nuestra metodología: más que entregar un filtro</h2>
+    <p>Cada proyecto de AguaSAN sigue un proceso integral que garantiza que el filtro funcione correctamente y que la comunidad pueda mantenerlo de forma autónoma.</p>
+    <div class="row" style="margin-top:24px;">
+      <div class="col-md-6">
+        <div class="approach-step">
+          <div class="step-icon">🔍</div>
+          <div>
+            <h4>Diagnóstico comunitario</h4>
+            <p>Evaluamos la calidad del agua, las necesidades reales de cada familia y las condiciones logísticas del territorio antes de diseñar la solución.</p>
           </div>
         </div>
-        <div class="row" >
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-            <h2>Reducción del 44% de enfermedades diarreicas</h2>
-            <p>The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.</p>
-            <img class="image_2 image_impacto" src="/img/impacto/diarrea.jpg" alt="">
+        <div class="approach-step">
+          <div class="step-icon">🏗️</div>
+          <div>
+            <h4>Fabricación y transporte</h4>
+            <p>Los filtros se fabrican con materiales locales y se transportan hasta las comunidades más remotas, incluso por vía fluvial o a pie.</p>
           </div>
-          <div class="col-md-6" style="display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;">
-            <h2>Soluciones prácticas y económicas</h2>
-            <p>There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.</p>
-            <div class = "col-md-6">
-            <img class="image_2" style = "width: 100%; " src="/img/impacto/FILTRO_FBA.png" alt=""></div>
-            <div class = "col-md-6">
-            <img class="image_2" style = "width: 100%; " src="/img/impacto/FILTRO_FLAI.png" alt=""></div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">🎓</div>
+          <div>
+            <h4>Capacitación en campo</h4>
+            <p>Talleres presenciales con cada familia para enseñar el uso correcto, el mantenimiento de la biocapa y la higiene del agua almacenada.</p>
           </div>
         </div>
       </div>
-      <div class="jumbotron text-center">
-        <h2>Nuestros Testimonios</h2>
+      <div class="col-md-6">
+        <div class="approach-step">
+          <div class="step-icon">🏠</div>
+          <div>
+            <h4>Instalación hogar por hogar</h4>
+            <p>Cada filtro se instala directamente en la vivienda del beneficiario, asegurándonos de que quede bien posicionado y con las capas correctas.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">📋</div>
+          <div>
+            <h4>Encuesta y seguimiento</h4>
+            <p>Al terminar la implementación, recogemos testimonios y datos de cada familia para medir el impacto real y mejorar futuras intervenciones.</p>
+          </div>
+        </div>
+        <div class="approach-step">
+          <div class="step-icon">🌱</div>
+          <div>
+            <h4>Autonomía sostenible</h4>
+            <p>El objetivo final es que la comunidad pueda operar y mantener el sistema sin depender de nosotros. Cada intervención construye capacidad local.</p>
+          </div>
+        </div>
       </div>
-      <video width="640" height="360" controls >
-        <source src="/img/impacto/preguntas.mp4" type="video/mp4">
-      </video>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="/img/impacto/problematica_agua.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Problemática agua en comunidades">
+      </div>
+      <div class="col-md-6">
+        <img src="/img/impacto/capacitacion.JPG"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Capacitación comunitaria">
+      </div>
+    </div>
+  </div>
 
+  <!-- SECCIÓN 3: RESULTADOS EN SALUD -->
+  <div class="impacto-section">
+    <h2>💚 Lo que cambia cuando el agua es segura</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">📉</span>
+          <span class="big-figure">44%</span>
+          <h3>Reducción de enfermedades diarreicas</h3>
+          <p>En comunidades con Filtro Vita activo, los casos de diarrea infantil disminuyen significativamente en los primeros meses de uso.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">👶</span>
+          <span class="big-figure">0 ⚡</span>
+          <h3>Sin electricidad ni químicos</h3>
+          <p>Nuestros filtros funcionan por gravedad — ideales para comunidades sin red eléctrica. Solo agua, arena y biología.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impacto-card">
+          <span class="card-icon">💰</span>
+          <span class="big-figure">10×</span>
+          <h3>Más económico que alternativas</h3>
+          <p>Un Filtro Vita cuesta una fracción de lo que una familia gasta en camiones cisterna o atención médica por enfermedades hídricas al año.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-md-6">
+        <img src="/img/impacto/diarrea.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Reducción enfermedades">
+      </div>
+      <div class="col-md-6" style="display:flex; align-items:center;">
+        <div>
+          <h3 style="color:#00574b; font-weight:800;">Nuestros filtros — dos soluciones para cada escala</h3>
+          <div class="row" style="margin-top:14px;">
+            <div class="col-sm-6 text-center">
+              <img src="/img/impacto/FILTRO_FBA.png" style="max-height:130px; object-fit:contain;" alt="Filtro FBA">
+              <p style="font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;">FBA — Familiar<br><span style="font-weight:400; color:#666;">15–20 L/uso</span></p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <img src="/img/impacto/FILTRO_FLAI.png" style="max-height:130px; object-fit:contain;" alt="Filtro FLAI">
+              <p style="font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;">FLAI — Comunitario<br><span style="font-weight:400; color:#666;">2,000+ L/día</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer class="bg-secondary text-white text-center py-3 mt-5">
-        &copy; 2023 Water Crisis | All rights reserved
-    </footer>
+  <!-- SECCIÓN 4: TESTIMONIOS Y VIDEO -->
+  <div class="impacto-section">
+    <h2>🗣️ Las voces de las comunidades</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-impacto">
+          <blockquote>"El agua limpia alarga la vida."</blockquote>
+          <div class="author">— Zenia Castillo, Comunidad Nuevo San Martín, Purús</div>
+        </div>
+        <div class="testimonial-impacto">
+          <blockquote>"El filtro vita nos permite vivir tranquilos y sanos."</blockquote>
+          <div class="author">— Rubén Jijida Bachara, Comunidad Bufeo, Ucayali</div>
+        </div>
+        <div class="testimonial-impacto">
+          <blockquote>"Con agua limpia cuidamos nuestra salud. Cuando tomas agua limpia no te enfermas."</blockquote>
+          <div class="author">— Asís Salomón Castillo, Comunidad Bufeo, Ucayali</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="video-wrap">
+          <video controls>
+            <source src="/img/impacto/preguntas.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p style="font-size:0.85em; color:#888; margin-top:8px; text-align:center;">Testimonios en campo — comunidades beneficiarias de AguaSAN</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-impacto">
+    <h3>Cada filtro es una familia protegida.</h3>
+    <p>Con tu apoyo podemos llegar a más comunidades que hoy beben agua contaminada sin ninguna alternativa.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#00574b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
+
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
     </div>

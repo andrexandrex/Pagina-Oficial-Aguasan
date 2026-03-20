@@ -1,0 +1,306 @@
+---
+title: Purús 2024
+subtitle: Filtros Vita en comunidades nativas
+layout: default
+modal-id: 11
+date: 2024-02-01
+thumbnail: banner.jpg
+alt: Implementación Filtros Vita Purús
+show_in_portfolio: true
+category: Implementación
+---
+
+<style>
+  .purus-hero {
+    background: linear-gradient(135deg, #1a6ea8 0%, #0d3f6b 100%);
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .purus-hero h1 { font-size: 2.4em; font-weight: 800; margin-bottom: 10px; }
+  .purus-hero p  { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+  .stat-box {
+    background: #fff;
+    border: 2px solid #1a6ea8;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .stat-box .number { font-size: 2.8em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
+
+  .story-section { padding: 40px 0; border-bottom: 1px solid #eee; }
+  .story-section h2 { color: #1a6ea8; font-weight: 700; margin-bottom: 20px; }
+
+  .timeline-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    gap: 16px;
+  }
+  .timeline-icon {
+    font-size: 2em;
+    min-width: 48px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .timeline-text h4 { margin: 0 0 4px; font-weight: 700; color: #0d3f6b; }
+  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; }
+
+  .testimonial-card {
+    background: #f0f7ff;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .testimonial-card blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
+
+  .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
+  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(30%); }
+
+  .highlight-box {
+    background: #e8f4fd;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    font-size: 1.05em;
+    color: #1a4a70;
+  }
+  .highlight-box strong { color: #1a6ea8; }
+</style>
+
+<body>
+
+<!-- HERO -->
+<div class="purus-hero">
+  <h1>💧 Agua Limpia para el Pueblo Purús</h1>
+  <p>37 familias en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.</p>
+  <p style="margin-top:14px; font-size:0.95em; opacity:0.75;">📍 Puerto Esperanza, Ucayali &nbsp;|&nbsp; 🗓️ Febrero 2024</p>
+</div>
+
+<div class="container">
+
+  <!-- STATS ROW -->
+  <div class="row text-center" style="margin-bottom:40px;">
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">37</div>
+        <div class="label">🏠 Filtros instalados</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">2</div>
+        <div class="label">🌿 Comunidades beneficiadas</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">200+</div>
+        <div class="label">👨‍👩‍👧‍👦 Personas con agua segura</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-box">
+        <div class="number">0</div>
+        <div class="label">⚡ Electricidad requerida</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EL PROBLEMA -->
+  <div class="story-section">
+    <h2>🌊 El reto: agua turbia, salud frágil</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>Las comunidades de <strong>Bufeo</strong> y <strong>Nuevo San Martín</strong>, ubicadas en el corazón de la selva purureña, enfrentaban una realidad cotidiana que muchos ignoramos: el agua que bebían llegaba de pozos abiertos, llenos de insectos, hojas y sedimentos del río.</p>
+        <p>Para llegar a estas comunidades hay que surcar ríos por horas en bote. No hay carreteras. No hay red de agua potable. Las enfermedades diarreicas —especialmente en niños— eran constantes.</p>
+        <div class="highlight-box">
+          <strong>"A veces tomamos agua con gusano, agua de río con basura. Por eso es importante filtrar el agua."</strong><br>
+          <span style="font-size:0.88em;">— Cristina Sálamo, Comunidad Nuevo San Martín</span>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/crisis/mapa_agua_potable.png" style="max-width:100%; border-radius:8px;" alt="Mapa acceso agua">
+      </div>
+    </div>
+  </div>
+
+  <!-- LA SOLUCIÓN -->
+  <div class="story-section">
+    <h2>🔬 La solución: el Filtro Vita</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png" style="max-width:100%; border-radius:8px;" alt="Filtro Vita">
+      </div>
+      <div class="col-md-7">
+        <p>El <strong>Filtro Vita</strong> es una adaptación del filtro bioarena de concreto, ingeniada para caber en un bidón de polietileno de alta densidad. Liviano, transportable en bote, sin electricidad, sin químicos. Perfecto para la Amazonía.</p>
+        <p>Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una <em>biocapa</em> de microorganismos vivos elimina patógenos y purifica el agua de forma natural.</p>
+        <ul style="padding-left:20px; color:#333;">
+          <li>✅ Elimina bacterias y parásitos</li>
+          <li>✅ Sin electricidad ni químicos</li>
+          <li>✅ Fabricado con materiales locales</li>
+          <li>✅ Caudal de 0.3–0.5 L/minuto</li>
+          <li>✅ Fácil mantenimiento comunitario</li>
+          <li>✅ Larga vida útil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- EL VIAJE -->
+  <div class="story-section">
+    <h2>🚤 El viaje: logística en la selva</h2>
+    <p>Implementar este proyecto no fue sencillo. Cada paso requirió planificación, trabajo en equipo y la invaluable colaboración de las organizaciones locales.</p>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🔍</div>
+      <div class="timeline-text">
+        <h4>Evaluación y planificación</h4>
+        <p>Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🏖️</div>
+      <div class="timeline-text">
+        <h4>Selección y preparación de arena</h4>
+        <p>La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo de filtración. Cada costal fue empaquetado y etiquetado.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🚤</div>
+      <div class="timeline-text">
+        <h4>Transporte fluvial</h4>
+        <p>Los 37 bidones y costales de arena viajaron en bote por los ríos del Purús. Miembros de las propias comunidades ayudaron a llevar los materiales desde el embarcadero hasta cada hogar.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🎓</div>
+      <div class="timeline-text">
+        <h4>Capacitación comunitaria</h4>
+        <p>AguaSAN, junto a FECONAPU, Yaqua y DAS Perú, organizó talleres presenciales en Bufeo y Nuevo San Martín. Las familias aprendieron a usar, mantener y cuidar su filtro — empoderándolas como guardianas de su propio recurso hídrico.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">🏠</div>
+      <div class="timeline-text">
+        <h4>Instalación hogar por hogar</h4>
+        <p>Cada filtro fue instalado directamente en la vivienda del beneficiario: 12 en Bufeo, 23 en Nuevo San Martín, y 2 adicionales como puntos de demostración en la Asociación Pro-Purús y FECONAPU.</p>
+      </div>
+    </div>
+
+    <div class="timeline-step">
+      <div class="timeline-icon">📋</div>
+      <div class="timeline-text">
+        <h4>Encuesta y seguimiento</h4>
+        <p>Al entregar cada filtro, el equipo realizó una encuesta individualizada con cada familia. Sus testimonios fueron el indicador más poderoso del éxito del proyecto.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VOCES -->
+  <div class="story-section">
+    <h2>🗣️ Las voces que más importan</h2>
+    <p>De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote>"El agua limpia alarga la vida."</blockquote>
+          <div class="author">— Zenia Castillo, Nuevo San Martín</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"El filtro vita nos permite vivir tranquilos y sanos."</blockquote>
+          <div class="author">— Rubén Jijida Bachara, Comunidad Bufeo</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Mis hijos sufren de diarrea constantemente. Ahora sé que van a mejorar con el Filtro Vita."</blockquote>
+          <div class="author">— Elvita Torres, Nuevo San Martín</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote>"El filtro vita es importante porque nos cuida la salud y nuestros hijos para que crezcan bien y no estén yendo al hospital."</blockquote>
+          <div class="author">— Franklin Salomón López, Comunidad Bufeo</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Con agua limpia cuidamos nuestra salud."</blockquote>
+          <div class="author">— Verónica Tachiana, Nuevo San Martín</div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"El agua limpia es lo más importante. Cuando tomas agua limpia no te enfermas; si tomas agua contaminada, se presentarán diferentes enfermedades."</blockquote>
+          <div class="author">— Asís Salomón Castillo, Comunidad Bufeo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACTO -->
+  <div class="story-section">
+    <h2>📊 El impacto en números</h2>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">12</div>
+          <div class="label">🏡 Hogares en Bufeo</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">23</div>
+          <div class="label">🏡 Hogares en Nuevo San Martín</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="stat-box">
+          <div class="number">2</div>
+          <div class="label">🏛️ Puntos de demostración</div>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:24px;">
+      Este proyecto no solo entregó 37 filtros — estableció un <strong>modelo de colaboración replicable</strong> entre ONGs, organizaciones indígenas locales y comunidades, demostrando que la unión de esfuerzos puede brindar soluciones sostenibles de acceso al agua en los lugares más remotos del Perú.
+    </div>
+  </div>
+
+  <!-- ALIADOS -->
+  <div class="story-section">
+    <h2>🤝 Aliados que hicieron posible este sueño</h2>
+    <p>Este proyecto fue posible gracias a la articulación de múltiples actores comprometidos con el acceso al agua en el Perú:</p>
+    <div class="partner-logos">
+      <img src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSAN">
+      <img src="{{site.baseurl}}/img/logos/cawst-logo-full.png" alt="CAWST">
+      <img src="{{site.baseurl}}/img/logos/Innovate_logo.png" alt="Innovate">
+      <img src="{{site.baseurl}}/img/logos/UNALM_logo.png" alt="UNALM">
+    </div>
+    <p class="text-center text-muted" style="font-size:0.9em; margin-top:8px;">
+      AguaSAN &nbsp;·&nbsp; Yaqua &nbsp;·&nbsp; Asociación Pro-Purús &nbsp;·&nbsp; FECONAPU &nbsp;·&nbsp; DAS Perú
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center" style="padding: 40px 0 20px;">
+    <h3 style="color:#1a6ea8;">¿Quieres ser parte de la siguiente historia?</h3>
+    <p style="color:#555; max-width:500px; margin: 10px auto 24px;">Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.</p>
+    <a href="#ayuda" class="btn btn-primary btn-lg page-scroll">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->
+</body>
