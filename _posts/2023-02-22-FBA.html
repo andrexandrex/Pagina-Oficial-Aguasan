@@ -5,70 +5,298 @@ modal-id: 6
 layout: default
 date: 2023-02-22
 thumbnail: fba_1.JPG
-alt: image-alt
+alt: Filtro Bioarena Familiar
 project-date: April 2014
 client: Start Bootstrap
 category: FBA
 ---
 
-<body class = "body_fba" >
-  <header class="header_fba">
-    <h1 style = "margin-left: 15%;">Biosand Filters</h1>
-    <nav class="nav_fba">
-      <ul class = "ul_fba">
-        <li class = "li_fba" ><a  class="page-scroll" href="#what1">What is it?</a></li>
-        <li class = "li_fba"><a  class="page-scroll" href="#how1">How does it work?</a></li>
-        <li class = "li_fba"><a  class="page-scroll" href="#benefits1">Benefits</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <div class="container">
-      <section id="what1">
-        <div class="row">    
-<!-- mODIFICACIÓN -->
-          <div class="col-md-6">
-              <h1 class="about_taital">Qué es un Filtro  <span style="color: #ff3f5c;">Bioarena Familiar </span>(FBA)? </h1>
-              <p class="about_text">Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.</p>
-          <div class="col-md-6">
-              <div style = "max-width: 100%;"><img style = "max-width: 98%;" src="{{site.baseurl}}/img/portfolio/FILTRO_FBA.png"></div>
-          </div>
+<style>
+  .fba-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .fba-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .fba-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,50,100,0.15) 0%, rgba(10,50,120,0.82) 100%);
+  }
+  .fba-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .fba-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .fba-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
+
+  .fba-stat-strip {
+    background: #0d3f6b;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .fba-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .fba-stat:last-child { border-right: none; }
+  .fba-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .fba-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .fba-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .fba-section h2 { font-size: 1.7em; font-weight: 800; color: #0d3f6b; margin-bottom: 18px; }
+
+  .fba-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #1a6ea8;
+  }
+  .fba-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .fba-card h3 { font-size: 1.05em; font-weight: 800; color: #0d3f6b; margin-bottom: 8px; }
+  .fba-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+
+  .layer-step {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 14px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .layer-step:last-child { border-bottom: none; }
+  .layer-step .ls-num {
+    min-width: 36px; height: 36px;
+    background: #1a6ea8; color: white;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    font-weight: 900; font-size: 1em; flex-shrink: 0;
+  }
+  .layer-step h4 { font-weight: 800; color: #0d3f6b; margin: 0 0 3px; font-size: 1em; }
+  .layer-step p  { color: #555; font-size: 0.93em; margin: 0; line-height: 1.55; }
+
+  .highlight-blue {
+    background: #e8f4fd;
+    border-left: 5px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1a4a70;
+    font-size: 1em;
+  }
+  .highlight-blue strong { color: #0d3f6b; }
+
+  .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .spec-table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.96em; }
+  .spec-table td:first-child { font-weight: 700; color: #0d3f6b; width: 45%; }
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .cta-fba {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white; border-radius: 14px; padding: 36px 28px;
+    text-align: center; margin: 36px 0 10px;
+  }
+  .cta-fba h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
+  .cta-fba p  { opacity: 0.88; margin-bottom: 20px; }
+</style>
+
+<!-- HERO -->
+<div class="fba-hero">
+  <img src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+  <div class="fba-hero-overlay"></div>
+  <div class="fba-hero-text">
+    <h1>💧 Filtro Bioarena Familiar (FBA)</h1>
+    <p>Agua segura en cada hogar — sin electricidad, sin químicos, sin complicaciones. La solución doméstica de AguaSAN.</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="fba-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">20 L</span>
+        <span class="clabel">por uso, por familia</span>
       </div>
-      </section>
-    <section id="how1">
-      <div class="row">
-          <div class="col-md-6">
-              <div  style = "max-width: 100%;"><img  style = "max-width: 98%;" src="{{site.baseurl}}/img/portfolio/funcionamiento_filtro.jpg"></div>
-          </div>
-          <div  class="col-md-6">
-              <h1 class="about_taital">How does a Biosand Filter work? <span style="color: #ff3f5c;"> </span> </h1>
-              <p class="about_text">El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.</p>
-          </div>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">15 años</span>
+        <span class="clabel">de vida útil</span>
       </div>
-    </section>
-    <section id ="benefits1">
-      <div  class="row">
-        <div class="col-md-6">
-            <h1 class="about_taital">Benefits of Biosand Filters <span style="color: #ff3f5c;"> </span> </h1>
-            <ul class = "ul_fba2">
-              <li >Bajo costo y bajo mantenimiento</li>
-              <li>Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia</li>
-              <li>No requiere electricidad ni productos químicos.</li>
-              <li>Fácil de usar y operar</li>
-              <li>Tiempo de vida de 15 años</li>
-            </ul>
-            <div class="readmore_bt"><a href="" class="portfolio-link" data-toggle="modal">Read More</a></div>
-        </div>
-        <div class="col-md-6">
-          <div style = "max-width: 100%;"><img  style = "max-width: 98%;" src="{{site.baseurl}}/img/products/flai1.JPG"></div>
-        </div>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">0 ⚡</span>
+        <span class="clabel">electricidad requerida</span>
       </div>
-    </section>
+      <div class="col-sm-3 fba-stat">
+        <span class="cnum">99%</span>
+        <span class="clabel">eliminación de bacterias</span>
+      </div>
     </div>
-  </main>
-  
-  <footer>
-    <p>&copy; 2023 Biosand Filters Inc.</p>
-  </footer>
-</body>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- QUÉ ES -->
+  <div class="fba-section">
+    <h2>🔍 ¿Qué es el Filtro Bioarena Familiar?</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>El <strong>Filtro Bioarena Familiar (FBA)</strong> es una adaptación doméstica del filtro lento de arena, diseñada para tratar el agua en el punto de uso dentro del hogar. Basado en tecnología desarrollada por el Dr. David Manz (CAWST) en los años 90, es hoy uno de los sistemas de tratamiento de agua más probados y adoptados en comunidades rurales de todo el mundo.</p>
+        <p>El modelo de AguaSAN adapta este principio a un <strong>bidón de polietileno de alta densidad</strong> — liviano, transportable, ideal para zonas remotas de la Amazonía y la sierra peruana donde no llega la red de agua ni la electricidad.</p>
+        <div class="highlight-blue">
+          Una familia de 5 personas necesita en promedio <strong>20 litros de agua segura al día</strong>. El FBA lo entrega sin costo operativo, sin recambios, sin nada más que arena y biología.
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png"
+             style="max-width:100%; max-height:320px; object-fit:contain;"
+             alt="Diagrama Filtro FBA">
+      </div>
+    </div>
+  </div>
+
+  <!-- CÓMO FUNCIONA -->
+  <div class="fba-section">
+    <h2>⚙️ ¿Cómo funciona?</h2>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/portfolio/funcionamiento_filtro.jpg"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Funcionamiento del filtro bioarena">
+      </div>
+      <div class="col-md-7">
+        <p style="margin-bottom:20px;">El agua se vierte manualmente por la parte superior y desciende por gravedad a través de las capas filtrantes. El proceso combina <strong>filtración física</strong> y <strong>acción biológica</strong> para producir agua segura.</p>
+        <div class="layer-step">
+          <div class="ls-num">1</div>
+          <div>
+            <h4>Agua cruda (entrada)</h4>
+            <p>El agua sin tratar, ya sea de río, pozo o lluvia, se vierte en la parte superior del bidón.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">2</div>
+          <div>
+            <h4>Biocapa (Schmutzdecke)</h4>
+            <p>Una delgada capa de microorganismos vivos en la superficie de la arena que captura y digiere patógenos, es el corazón del filtro.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">3</div>
+          <div>
+            <h4>Arena fina</h4>
+            <p>Retiene partículas, turbidez, protozoos y quistes. Tamaño efectivo (TE) calibrado para garantizar el caudal correcto.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">4</div>
+          <div>
+            <h4>Grava gruesa</h4>
+            <p>Soporte estructural que evita que la arena tape la salida y permite el flujo uniforme hacia el caño.</p>
+          </div>
+        </div>
+        <div class="layer-step">
+          <div class="ls-num">5</div>
+          <div>
+            <h4>Agua tratada (salida)</h4>
+            <p>El agua filtrada sale por un caño en la base del bidón, lista para beber directamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFICIOS -->
+  <div class="fba-section">
+    <h2>✅ ¿Por qué el FBA?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">💰</span>
+          <h3>Bajo costo total</h3>
+          <p>Una fracción del costo de un sistema convencional. Sin recambios, sin insumos químicos, sin facturas de electricidad. El costo más alto es la instalación inicial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🚤</span>
+          <h3>Transportable a cualquier lugar</h3>
+          <p>El bidón de polietileno pesa poco y cabe en una canoa. Ha llegado a comunidades en el Purús, Loreto y la sierra alta sin ningún vehículo especial.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🌱</span>
+          <h3>Sin insumos externos</h3>
+          <p>Una vez instalado, el filtro no necesita químicos, filtros de repuesto ni energía. La biocapa se regenera sola si se usa con regularidad.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🦠</span>
+          <h3>Eliminación probada de patógenos</h3>
+          <p>Elimina hasta el 99% de bacterias (E. coli), el 99.9% de protozoos y reduce significativamente virus y turbidez cuando la biocapa está madura.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">🔧</span>
+          <h3>Mantenimiento sencillo</h3>
+          <p>Solo requiere "raspado" superficial (swirl & dump) cuando el caudal baja. Cualquier miembro de la familia puede hacerlo tras una breve capacitación.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fba-card">
+          <span class="card-icon">⏳</span>
+          <h3>15 años de vida útil</h3>
+          <p>Con un mantenimiento correcto, el bidón y la arena tienen una vida útil de más de 15 años. Inversión única, beneficio para toda una generación.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPECIFICACIONES TÉCNICAS -->
+  <div class="fba-section">
+    <h2>📐 Especificaciones técnicas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Capacidad por uso</td><td>15 – 20 litros</td></tr>
+          <tr><td>Caudal de salida</td><td>0.3 – 0.5 L/minuto</td></tr>
+          <tr><td>Vida útil</td><td>+15 años</td></tr>
+          <tr><td>Electricidad requerida</td><td>Ninguna</td></tr>
+          <tr><td>Químicos requeridos</td><td>Ninguno</td></tr>
+          <tr><td>Escala de uso</td><td>Familiar (1 hogar)</td></tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="spec-table">
+          <tr><td>Remoción de bacterias (E. coli)</td><td>Hasta 99%</td></tr>
+          <tr><td>Remoción de protozoos</td><td>Hasta 99.9%</td></tr>
+          <tr><td>Reducción de turbidez</td><td>Alta</td></tr>
+          <tr><td>Material del contenedor</td><td>HDPE (polietileno alta densidad)</td></tr>
+          <tr><td>Mantenimiento</td><td>Swirl & dump cuando baja caudal</td></tr>
+          <tr><td>Tecnología base</td><td>CAWST / Dr. David Manz</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-fba">
+    <h3>Lleva agua segura a una familia.</h3>
+    <p>Con tu apoyo podemos fabricar e instalar más filtros FBA en las comunidades que más lo necesitan.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->

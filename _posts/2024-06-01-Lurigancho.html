@@ -1,0 +1,420 @@
+---
+title: Lurigancho-Chosica 2024
+subtitle: Remoción de arsénico en Los Girasoles y Los Frutales
+layout: default
+modal-id: 12
+date: 2024-06-01
+thumbnail: fba_1.JPG
+alt: Implementación filtros FBA y FLAI Lurigancho-Chosica
+show_in_portfolio: true
+category: Implementación
+---
+
+<style>
+  .luri-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .luri-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .luri-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(100,40,0,0.10) 0%, rgba(120,50,0,0.82) 100%);
+  }
+  .luri-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .luri-hero-text h1 {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .luri-hero-text p {
+    font-size: 1.12em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .luri-hero-text .meta {
+    margin-top: 14px;
+    font-size: 0.93em;
+    opacity: 0.75;
+  }
+
+  .luri-stat-strip {
+    background: #7c2d12;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .luri-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .luri-stat:last-child { border-right: none; }
+  .luri-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #fbbf24; line-height: 1; display: block; }
+  .luri-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .luri-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .luri-section h2 { font-size: 1.7em; font-weight: 800; color: #7c2d12; margin-bottom: 18px; }
+
+  .luri-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #b45309;
+    height: 100%;
+  }
+  .luri-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .luri-card h3 { font-size: 1.05em; font-weight: 800; color: #7c2d12; margin-bottom: 8px; }
+  .luri-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+  .luri-card .big-figure { font-size: 2em; font-weight: 900; color: #b45309; display: block; margin-bottom: 6px; }
+
+  .alert-amber {
+    background: #fffbeb;
+    border-left: 5px solid #f59e0b;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #78350f;
+    font-size: 1em;
+  }
+  .alert-amber strong { color: #b45309; }
+
+  .highlight-orange {
+    background: #fff7ed;
+    border-left: 5px solid #ea580c;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #7c2d12;
+    font-size: 1em;
+  }
+
+  /* Diseño experimental — tabla de grupos */
+  .exp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-top: 8px;
+  }
+  .exp-table th {
+    background: #7c2d12;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+  }
+  .exp-table td {
+    padding: 11px 16px;
+    font-size: 0.93em;
+    border-bottom: 1px solid #f0ebe5;
+    vertical-align: middle;
+  }
+  .exp-table tr:last-child td { border-bottom: none; }
+  .exp-table tr:nth-child(even) td { background: #fef9f5; }
+  .exp-table .tag-treatment {
+    display: inline-block; background: #fef3c7; color: #92400e;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+  .exp-table .tag-control {
+    display: inline-block; background: #f3f4f6; color: #374151;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+
+  /* Barra de resultado */
+  .result-bar-wrap { margin-bottom: 18px; }
+  .result-bar-wrap .rb-label {
+    display: flex; justify-content: space-between;
+    font-size: 0.92em; font-weight: 700; color: #333; margin-bottom: 5px;
+  }
+  .result-bar-track {
+    background: #e5e7eb; border-radius: 20px; height: 24px; overflow: hidden;
+  }
+  .result-bar-fill {
+    height: 100%; border-radius: 20px;
+    display: flex; align-items: center;
+    padding-left: 12px; font-size: 0.8em;
+    font-weight: 800; color: white;
+  }
+  .rb-success { background: linear-gradient(90deg, #b45309, #f59e0b); }
+  .rb-partial { background: #9ca3af; }
+
+  .testimonial-luri {
+    background: #fff7ed;
+    border-left: 4px solid #b45309;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-luri blockquote {
+    font-style: italic; color: #333; margin: 0 0 8px;
+    font-size: 1em; border: none; padding: 0;
+  }
+  .testimonial-luri .author { font-weight: 700; color: #b45309; font-size: 0.9em; }
+
+  .partner-logos-luri {
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: center;
+    gap: 28px; padding: 20px 0;
+  }
+  .partner-logos-luri img {
+    max-height: 55px; max-width: 130px;
+    object-fit: contain; filter: grayscale(25%);
+  }
+
+  .cta-luri {
+    background: linear-gradient(135deg, #b45309, #7c2d12);
+    color: white; border-radius: 14px; padding: 38px 30px;
+    text-align: center; margin: 40px 0 10px;
+  }
+  .cta-luri h3 { font-size: 1.55em; font-weight: 800; margin-bottom: 10px; }
+  .cta-luri p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
+
+<!-- HERO -->
+<div class="luri-hero">
+  <img src="{{site.baseurl}}/img/impacto/portada_impacto.jpg" alt="Lurigancho-Chosica implementación filtros">
+  <div class="luri-hero-overlay"></div>
+  <div class="luri-hero-text">
+    <h1>🧪 Agua sin Arsénico en Lurigancho-Chosica</h1>
+    <p>32 filtros, dos asentamientos humanos, un contaminante silencioso. La historia de cómo AguaSAN llevó tecnología de remoción de arsénico a Los Girasoles y Los Frutales.</p>
+    <p class="meta">📍 San Antonio de Pedregal II, Lurigancho-Chosica, Lima &nbsp;|&nbsp; 🗓️ 2024</p>
+  </div>
+</div>
+
+<!-- STAT STRIP -->
+<div class="luri-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">32</span>
+        <span class="clabel">filtros instalados (30 FBA + 2 FLAI)</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">90%</span>
+        <span class="clabel">de filtros alcanzaron límites DIGESA</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">2</span>
+        <span class="clabel">AA.HH. beneficiados</span>
+      </div>
+      <div class="col-sm-3 luri-stat">
+        <span class="cnum">0.01</span>
+        <span class="clabel">mg/L límite As — DS 031-2012-SA</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- EL PROBLEMA -->
+  <div class="luri-section">
+    <h2>⚠️ El problema invisible: arsénico en el agua</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>En los asentamientos humanos <strong>Los Girasoles</strong> y <strong>Los Frutales</strong>, en la comunidad San Antonio de Pedregal II, el agua disponible para consumo humano enfrenta una doble amenaza:</p>
+        <div class="alert-amber">
+          <strong>1. Contaminación por arsénico:</strong> presente de forma natural en las fuentes de agua subterránea de la zona, el arsénico es un carcinógeno sin olor ni color — imposible de detectar sin análisis de laboratorio. La exposición crónica produce daños en piel, hígado, riñones y sistema nervioso.
+        </div>
+        <div class="alert-amber">
+          <strong>2. Contaminación por materia orgánica:</strong> la ausencia de alcantarillado y la presencia de silos sin mantenimiento contaminan las fuentes de agua con bacterias y patógenos fecales, ocasionando malestares estomacales frecuentes en la población.
+        </div>
+        <p>La combinación de ambas amenazas convierte el acceso al agua en un riesgo de salud pública silencioso que afecta especialmente a niños y adultos mayores.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="luri-card" style="border-color:#c0392b; margin-top:0;">
+          <span class="card-icon">🧬</span>
+          <h3>¿Por qué el arsénico es tan peligroso?</h3>
+          <p>El arsénico inorgánico es clasificado por la OMS como carcinógeno del Grupo 1. No tiene sabor ni olor. La exposición prolongada —incluso a bajas concentraciones— está asociada a cáncer de piel, pulmón y vejiga, además de daño neurológico en niños.</p>
+        </div>
+        <div class="luri-card" style="border-color:#b45309; margin-top:0;">
+          <span class="card-icon">📋</span>
+          <h3>El estándar peruano</h3>
+          <p>El DS N° 031-2012-SA del Ministerio de Salud (DIGESA) establece un límite máximo de <strong>0.01 mg/L (10 ppb)</strong> de arsénico en agua para consumo humano — el mismo umbral de la OMS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LA SOLUCIÓN: IONES DE HIERRO -->
+  <div class="luri-section">
+    <h2>🔬 La solución: iones de hierro en el filtro bioarena</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>El Filtro Bioarena convencional es excelente removiendo bacterias y protozoos, pero el arsénico es un contaminante químico que requiere un mecanismo adicional. La innovación de AguaSAN en este proyecto: <strong>incorporar una capa de arena recubierta con iones de hierro</strong> dentro del filtro.</p>
+        <p>El hierro actúa como adsorbente natural: el arsénico disuelto en el agua se adhiere a los óxidos de hierro a medida que pasa por la capa filtrante, quedando atrapado y sin llegar al agua tratada.</p>
+        <div class="highlight-orange">
+          El proyecto también evaluó <strong>dónde colocar la capa de hierro</strong> dentro del filtro — en la parte superior o inferior — para determinar la configuración más eficaz. Un diseño experimental riguroso con grupos de tratamiento y control.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{{site.baseurl}}/img/impacto/FILTRO_FBA.png"
+             style="max-width:100%; max-height:300px; object-fit:contain; display:block; margin:0 auto;"
+             alt="Filtro FBA con iones de hierro">
+        <p style="font-size:0.82em; color:#888; text-align:center; margin-top:8px;">Filtro FBA — la capa de hierro se integra dentro de las capas de arena</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISEÑO EXPERIMENTAL -->
+  <div class="luri-section">
+    <h2>🧫 Diseño experimental: grupos de tratamiento y control</h2>
+    <p>Este proyecto no solo instaló filtros — fue un estudio controlado para medir la eficacia de distintas configuraciones de la capa de hierro en condiciones reales de uso comunitario.</p>
+
+    <table class="exp-table" style="margin-bottom:24px;">
+      <thead>
+        <tr>
+          <th>Tipo de filtro</th>
+          <th>Configuración</th>
+          <th>Cantidad</th>
+          <th>Grupo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Iones de hierro — capa superior</td>
+          <td>~10 filtros</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Iones de hierro — capa inferior</td>
+          <td>~10 filtros</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>💧 FBA (familiar)</td>
+          <td>Sin iones de hierro (estándar)</td>
+          <td>10 filtros</td>
+          <td><span class="tag-control">Control</span></td>
+        </tr>
+        <tr>
+          <td>🌿 FLAI (comunitario)</td>
+          <td>Iones de hierro — capa superior</td>
+          <td>1 filtro</td>
+          <td><span class="tag-treatment">Tratamiento</span></td>
+        </tr>
+        <tr>
+          <td>🌿 FLAI (comunitario)</td>
+          <td>Sin iones de hierro (estándar)</td>
+          <td>1 filtro</td>
+          <td><span class="tag-control">Control</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-orange">
+      Esta metodología permite a AguaSAN obtener evidencia científica real sobre qué configuración funciona mejor en campo — no solo en laboratorio — para replicar el modelo más efectivo en futuras implementaciones.
+    </div>
+  </div>
+
+  <!-- RESULTADOS -->
+  <div class="luri-section">
+    <h2>📊 Resultados: el 90% lo logró</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Tras el período de evaluación, los análisis de calidad del agua revelaron resultados contundentes:</p>
+
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros que alcanzaron límite DIGESA (≤ 0.01 mg/L As)</span><span>90%</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill rb-success" style="width:90%">90%</div>
+          </div>
+        </div>
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros con hierro — eficacia en remoción de As</span><span>Alta</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill rb-success" style="width:88%">Muy eficaz</div>
+          </div>
+        </div>
+        <div class="result-bar-wrap">
+          <div class="rb-label"><span>Filtros control — remoción bacteriológica</span><span>✓</span></div>
+          <div class="result-bar-track">
+            <div class="result-bar-fill" style="width:95%; background:#1a6ea8;">Eficaz (patógenos)</div>
+          </div>
+        </div>
+
+        <div class="highlight-orange" style="margin-top:20px;">
+          El <strong>90% de los filtros instalados</strong> logró llevar el agua por debajo del límite de arsénico establecido por DIGESA en el DS N° 031-2012-SA — cumpliendo el estándar nacional e internacional de agua segura.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="luri-card" style="margin-top:0;">
+          <span class="card-icon">🏆</span>
+          <span class="big-figure">90%</span>
+          <h3>de éxito en remoción de arsénico</h3>
+          <p>Los filtros con iones de hierro demostraron ser altamente eficaces eliminando arsénico hasta alcanzar los límites requeridos por el Ministerio de Salud del Perú.</p>
+        </div>
+        <div class="luri-card" style="margin-top:0;">
+          <span class="card-icon">🦠</span>
+          <h3>Doble protección</h3>
+          <p>Además del arsénico, todos los filtros —incluidos los controles— mantuvieron su eficacia comprobada en la remoción de bacterias y parásitos provenientes de la contaminación fecal por ausencia de alcantarillado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACTO EN LA COMUNIDAD -->
+  <div class="luri-section">
+    <h2>🏘️ Una comunidad que no podía ver su problema</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <p>A diferencia de zonas donde el agua visiblemente sucia alerta a las familias, en Los Girasoles y Los Frutales el agua <em>parecía</em> normal. El arsénico y los patógenos fecales son invisibles. Las familias bebían agua contaminada sin saberlo — y atribuían los malestares estomacales a otras causas.</p>
+        <p>AguaSAN trabajó con la comunidad no solo para instalar filtros, sino para <strong>hacer visible el problema</strong>: análisis de agua, talleres de educación sanitaria y la entrega de resultados individualizados a cada familia fueron parte central del proyecto.</p>
+        <div class="alert-amber">
+          La capacitación incluyó explicaciones sobre el arsénico, su origen geológico en la zona, los riesgos de exposición crónica y el rol de los iones de hierro en el filtro. Las familias pasaron de desconocer el problema a ser <strong>guardianas activas de su agua</strong>.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="{{site.baseurl}}/img/impacto/capacitacion.JPG"
+             style="max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Capacitación comunitaria Lurigancho">
+        <p style="font-size:0.82em; color:#888; margin-top:8px; text-align:center;">Capacitación a familias beneficiarias — uso y mantenimiento del filtro</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALIADOS -->
+  <div class="luri-section">
+    <h2>🤝 Aliados del proyecto</h2>
+    <p>Este proyecto fue posible gracias a la articulación de equipos técnicos, instituciones académicas y organizaciones comprometidas con el agua segura en el Perú:</p>
+    <div class="partner-logos-luri">
+      <img src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSAN">
+      <img src="{{site.baseurl}}/img/logos/cawst-logo-full.png" alt="CAWST">
+      <img src="{{site.baseurl}}/img/logos/UNALM_logo.png" alt="UNALM">
+      <img src="{{site.baseurl}}/img/logos/Innovate_logo.png" alt="Innovate">
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-luri">
+    <h3>El arsénico no se ve. Pero la solución sí existe.</h3>
+    <p>Miles de familias en Lima y el resto del Perú beben agua con arsénico sin saberlo. Ayúdanos a llegar a más comunidades con esta tecnología.</p>
+    <a href="#ayuda" class="btn btn-lg" style="background:white; color:#7c2d12; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
+  </div>
+
+</div><!-- /container -->

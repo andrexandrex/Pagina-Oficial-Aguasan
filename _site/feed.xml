@@ -5,76 +5,1080 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 19 Mar 2026 20:03:37 -0600</pubDate>
-    <lastBuildDate>Thu, 19 Mar 2026 20:03:37 -0600</lastBuildDate>
+    <pubDate>Thu, 19 Mar 2026 22:28:47 -0600</pubDate>
+    <lastBuildDate>Thu, 19 Mar 2026 22:28:47 -0600</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
-        <title>FLAI</title>
-        <description>&lt;body class=&quot;body_fba&quot;&gt;
-  &lt;header class=&quot;header_fba&quot;&gt;
-    &lt;h1 style=&quot;margin-left: 15%;&quot;&gt;Filtro Lento de Arena Intermitente&lt;/h1&gt;
-    &lt;nav class=&quot;nav_fba&quot;&gt;
-      &lt;ul class=&quot;ul_fba&quot;&gt;
-        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;¿Qué es?&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;¿Cómo funciona?&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;li_fba&quot;&gt;&lt;a class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Beneficios&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
+        <title>Lurigancho-Chosica 2024</title>
+        <description>&lt;style&gt;
+  .luri-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .luri-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .luri-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(100,40,0,0.10) 0%, rgba(120,50,0,0.82) 100%);
+  }
+  .luri-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .luri-hero-text h1 {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .luri-hero-text p {
+    font-size: 1.12em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .luri-hero-text .meta {
+    margin-top: 14px;
+    font-size: 0.93em;
+    opacity: 0.75;
+  }
 
-  &lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;section id=&quot;what1&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h1 class=&quot;about_taital&quot;&gt;¿Qué es un &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Filtro Lento de Arena Intermitente&lt;/span&gt; (FLAI)?&lt;/h1&gt;
-            &lt;p class=&quot;about_text&quot;&gt;Un Filtro Lento de Arena Intermitente (FLAI) es un sistema de tratamiento de agua a mayor escala diseñado para abastecer de agua segura a comunidades agrupadas, como colegios, postas de salud o conjuntos de familias. Basado en el mismo principio de filtración lenta que el filtro bioarena, el FLAI utiliza capas de arena y grava junto con procesos biológicos para remover patógenos, sólidos suspendidos y, en algunos casos, contaminantes como el arsénico. Su diseño permite tratar mayores volúmenes de agua de manera continua o intermitente, adaptándose a las necesidades comunitarias.&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
+  .luri-stat-strip {
+    background: #7c2d12;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .luri-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .luri-stat:last-child { border-right: none; }
+  .luri-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #fbbf24; line-height: 1; display: block; }
+  .luri-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
 
-      &lt;section id=&quot;how1&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h1 class=&quot;about_taital&quot;&gt;¿Cómo funciona un &lt;span style=&quot;color: #ff3f5c;&quot;&gt;FLAI&lt;/span&gt;?&lt;/h1&gt;
-            &lt;p class=&quot;about_text&quot;&gt;El agua ingresa al sistema y atraviesa lentamente capas de arena fina y grava, donde se desarrolla una biocapa que elimina microorganismos y mejora la calidad del agua. El flujo controlado permite una filtración eficiente, reteniendo contaminantes físicos y biológicos. En algunos diseños, se incorporan materiales adicionales (como compuestos de hierro) para potenciar la remoción de contaminantes químicos como el arsénico.&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
+  .luri-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .luri-section h2 { font-size: 1.7em; font-weight: 800; color: #7c2d12; margin-bottom: 18px; }
 
-      &lt;section id=&quot;benefits1&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h1 class=&quot;about_taital&quot;&gt;Beneficios del &lt;span style=&quot;color: #ff3f5c;&quot;&gt;FLAI&lt;/span&gt;&lt;/h1&gt;
-            &lt;ul class=&quot;ul_fba2&quot;&gt;
-              &lt;li&gt;Bajo costo en comparación con sistemas convencionales&lt;/li&gt;
-              &lt;li&gt;Apto para uso comunitario (decenas de familias, escuelas o centros de salud)&lt;/li&gt;
-              &lt;li&gt;No requiere electricidad ni químicos en su operación básica&lt;/li&gt;
-              &lt;li&gt;Alta eficiencia en la remoción de patógenos&lt;/li&gt;
-              &lt;li&gt;Posibilidad de adaptación para remover contaminantes como arsénico&lt;/li&gt;
-              &lt;li&gt;Fácil operación y mantenimiento comunitario&lt;/li&gt;
-              &lt;li&gt;Larga vida útil y escalabilidad&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;div style=&quot;max-width: 100%;&quot;&gt;&lt;img style=&quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.JPG&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/section&gt;
+  .luri-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #b45309;
+    height: 100%;
+  }
+  .luri-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .luri-card h3 { font-size: 1.05em; font-weight: 800; color: #7c2d12; margin-bottom: 8px; }
+  .luri-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+  .luri-card .big-figure { font-size: 2em; font-weight: 900; color: #b45309; display: block; margin-bottom: 6px; }
+
+  .alert-amber {
+    background: #fffbeb;
+    border-left: 5px solid #f59e0b;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #78350f;
+    font-size: 1em;
+  }
+  .alert-amber strong { color: #b45309; }
+
+  .highlight-orange {
+    background: #fff7ed;
+    border-left: 5px solid #ea580c;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #7c2d12;
+    font-size: 1em;
+  }
+
+  /* Diseño experimental — tabla de grupos */
+  .exp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-top: 8px;
+  }
+  .exp-table th {
+    background: #7c2d12;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+  }
+  .exp-table td {
+    padding: 11px 16px;
+    font-size: 0.93em;
+    border-bottom: 1px solid #f0ebe5;
+    vertical-align: middle;
+  }
+  .exp-table tr:last-child td { border-bottom: none; }
+  .exp-table tr:nth-child(even) td { background: #fef9f5; }
+  .exp-table .tag-treatment {
+    display: inline-block; background: #fef3c7; color: #92400e;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+  .exp-table .tag-control {
+    display: inline-block; background: #f3f4f6; color: #374151;
+    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
+  }
+
+  /* Barra de resultado */
+  .result-bar-wrap { margin-bottom: 18px; }
+  .result-bar-wrap .rb-label {
+    display: flex; justify-content: space-between;
+    font-size: 0.92em; font-weight: 700; color: #333; margin-bottom: 5px;
+  }
+  .result-bar-track {
+    background: #e5e7eb; border-radius: 20px; height: 24px; overflow: hidden;
+  }
+  .result-bar-fill {
+    height: 100%; border-radius: 20px;
+    display: flex; align-items: center;
+    padding-left: 12px; font-size: 0.8em;
+    font-weight: 800; color: white;
+  }
+  .rb-success { background: linear-gradient(90deg, #b45309, #f59e0b); }
+  .rb-partial { background: #9ca3af; }
+
+  .testimonial-luri {
+    background: #fff7ed;
+    border-left: 4px solid #b45309;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-luri blockquote {
+    font-style: italic; color: #333; margin: 0 0 8px;
+    font-size: 1em; border: none; padding: 0;
+  }
+  .testimonial-luri .author { font-weight: 700; color: #b45309; font-size: 0.9em; }
+
+  .partner-logos-luri {
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: center;
+    gap: 28px; padding: 20px 0;
+  }
+  .partner-logos-luri img {
+    max-height: 55px; max-width: 130px;
+    object-fit: contain; filter: grayscale(25%);
+  }
+
+  .cta-luri {
+    background: linear-gradient(135deg, #b45309, #7c2d12);
+    color: white; border-radius: 14px; padding: 38px 30px;
+    text-align: center; margin: 40px 0 10px;
+  }
+  .cta-luri h3 { font-size: 1.55em; font-weight: 800; margin-bottom: 10px; }
+  .cta-luri p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+&lt;/style&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;luri-hero&quot;&gt;
+  &lt;img src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Lurigancho-Chosica implementación filtros&quot;&gt;
+  &lt;div class=&quot;luri-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;luri-hero-text&quot;&gt;
+    &lt;h1&gt;🧪 Agua sin Arsénico en Lurigancho-Chosica&lt;/h1&gt;
+    &lt;p&gt;32 filtros, dos asentamientos humanos, un contaminante silencioso. La historia de cómo AguaSAN llevó tecnología de remoción de arsénico a Los Girasoles y Los Frutales.&lt;/p&gt;
+    &lt;p class=&quot;meta&quot;&gt;📍 San Antonio de Pedregal II, Lurigancho-Chosica, Lima &amp;nbsp;|&amp;nbsp; 🗓️ 2024&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;luri-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;32&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;filtros instalados (30 FBA + 2 FLAI)&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;90%&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;de filtros alcanzaron límites DIGESA&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;AA.HH. beneficiados&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;0.01&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;mg/L límite As — DS 031-2012-SA&lt;/span&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;footer&gt;
-    &lt;p&gt;&amp;copy; 2023 AguaSan&lt;/p&gt;
-  &lt;/footer&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- EL PROBLEMA --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;⚠️ El problema invisible: arsénico en el agua&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;En los asentamientos humanos &lt;strong&gt;Los Girasoles&lt;/strong&gt; y &lt;strong&gt;Los Frutales&lt;/strong&gt;, en la comunidad San Antonio de Pedregal II, el agua disponible para consumo humano enfrenta una doble amenaza:&lt;/p&gt;
+        &lt;div class=&quot;alert-amber&quot;&gt;
+          &lt;strong&gt;1. Contaminación por arsénico:&lt;/strong&gt; presente de forma natural en las fuentes de agua subterránea de la zona, el arsénico es un carcinógeno sin olor ni color — imposible de detectar sin análisis de laboratorio. La exposición crónica produce daños en piel, hígado, riñones y sistema nervioso.
+        &lt;/div&gt;
+        &lt;div class=&quot;alert-amber&quot;&gt;
+          &lt;strong&gt;2. Contaminación por materia orgánica:&lt;/strong&gt; la ausencia de alcantarillado y la presencia de silos sin mantenimiento contaminan las fuentes de agua con bacterias y patógenos fecales, ocasionando malestares estomacales frecuentes en la población.
+        &lt;/div&gt;
+        &lt;p&gt;La combinación de ambas amenazas convierte el acceso al agua en un riesgo de salud pública silencioso que afecta especialmente a niños y adultos mayores.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5&quot;&gt;
+        &lt;div class=&quot;luri-card&quot; style=&quot;border-color:#c0392b; margin-top:0;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🧬&lt;/span&gt;
+          &lt;h3&gt;¿Por qué el arsénico es tan peligroso?&lt;/h3&gt;
+          &lt;p&gt;El arsénico inorgánico es clasificado por la OMS como carcinógeno del Grupo 1. No tiene sabor ni olor. La exposición prolongada —incluso a bajas concentraciones— está asociada a cáncer de piel, pulmón y vejiga, además de daño neurológico en niños.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;luri-card&quot; style=&quot;border-color:#b45309; margin-top:0;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;📋&lt;/span&gt;
+          &lt;h3&gt;El estándar peruano&lt;/h3&gt;
+          &lt;p&gt;El DS N° 031-2012-SA del Ministerio de Salud (DIGESA) establece un límite máximo de &lt;strong&gt;0.01 mg/L (10 ppb)&lt;/strong&gt; de arsénico en agua para consumo humano — el mismo umbral de la OMS.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- LA SOLUCIÓN: IONES DE HIERRO --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;🔬 La solución: iones de hierro en el filtro bioarena&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;p&gt;El Filtro Bioarena convencional es excelente removiendo bacterias y protozoos, pero el arsénico es un contaminante químico que requiere un mecanismo adicional. La innovación de AguaSAN en este proyecto: &lt;strong&gt;incorporar una capa de arena recubierta con iones de hierro&lt;/strong&gt; dentro del filtro.&lt;/p&gt;
+        &lt;p&gt;El hierro actúa como adsorbente natural: el arsénico disuelto en el agua se adhiere a los óxidos de hierro a medida que pasa por la capa filtrante, quedando atrapado y sin llegar al agua tratada.&lt;/p&gt;
+        &lt;div class=&quot;highlight-orange&quot;&gt;
+          El proyecto también evaluó &lt;strong&gt;dónde colocar la capa de hierro&lt;/strong&gt; dentro del filtro — en la parte superior o inferior — para determinar la configuración más eficaz. Un diseño experimental riguroso con grupos de tratamiento y control.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot;
+             style=&quot;max-width:100%; max-height:300px; object-fit:contain; display:block; margin:0 auto;&quot;
+             alt=&quot;Filtro FBA con iones de hierro&quot;&gt;
+        &lt;p style=&quot;font-size:0.82em; color:#888; text-align:center; margin-top:8px;&quot;&gt;Filtro FBA — la capa de hierro se integra dentro de las capas de arena&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- DISEÑO EXPERIMENTAL --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;🧫 Diseño experimental: grupos de tratamiento y control&lt;/h2&gt;
+    &lt;p&gt;Este proyecto no solo instaló filtros — fue un estudio controlado para medir la eficacia de distintas configuraciones de la capa de hierro en condiciones reales de uso comunitario.&lt;/p&gt;
+
+    &lt;table class=&quot;exp-table&quot; style=&quot;margin-bottom:24px;&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Tipo de filtro&lt;/th&gt;
+          &lt;th&gt;Configuración&lt;/th&gt;
+          &lt;th&gt;Cantidad&lt;/th&gt;
+          &lt;th&gt;Grupo&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
+          &lt;td&gt;Iones de hierro — capa superior&lt;/td&gt;
+          &lt;td&gt;~10 filtros&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
+          &lt;td&gt;Iones de hierro — capa inferior&lt;/td&gt;
+          &lt;td&gt;~10 filtros&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
+          &lt;td&gt;Sin iones de hierro (estándar)&lt;/td&gt;
+          &lt;td&gt;10 filtros&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;tag-control&quot;&gt;Control&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;🌿 FLAI (comunitario)&lt;/td&gt;
+          &lt;td&gt;Iones de hierro — capa superior&lt;/td&gt;
+          &lt;td&gt;1 filtro&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;🌿 FLAI (comunitario)&lt;/td&gt;
+          &lt;td&gt;Sin iones de hierro (estándar)&lt;/td&gt;
+          &lt;td&gt;1 filtro&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;tag-control&quot;&gt;Control&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;div class=&quot;highlight-orange&quot;&gt;
+      Esta metodología permite a AguaSAN obtener evidencia científica real sobre qué configuración funciona mejor en campo — no solo en laboratorio — para replicar el modelo más efectivo en futuras implementaciones.
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- RESULTADOS --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;📊 Resultados: el 90% lo logró&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;p&gt;Tras el período de evaluación, los análisis de calidad del agua revelaron resultados contundentes:&lt;/p&gt;
+
+        &lt;div class=&quot;result-bar-wrap&quot;&gt;
+          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros que alcanzaron límite DIGESA (≤ 0.01 mg/L As)&lt;/span&gt;&lt;span&gt;90%&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;result-bar-track&quot;&gt;
+            &lt;div class=&quot;result-bar-fill rb-success&quot; style=&quot;width:90%&quot;&gt;90%&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;result-bar-wrap&quot;&gt;
+          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros con hierro — eficacia en remoción de As&lt;/span&gt;&lt;span&gt;Alta&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;result-bar-track&quot;&gt;
+            &lt;div class=&quot;result-bar-fill rb-success&quot; style=&quot;width:88%&quot;&gt;Muy eficaz&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;result-bar-wrap&quot;&gt;
+          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros control — remoción bacteriológica&lt;/span&gt;&lt;span&gt;✓&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;result-bar-track&quot;&gt;
+            &lt;div class=&quot;result-bar-fill&quot; style=&quot;width:95%; background:#1a6ea8;&quot;&gt;Eficaz (patógenos)&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;highlight-orange&quot; style=&quot;margin-top:20px;&quot;&gt;
+          El &lt;strong&gt;90% de los filtros instalados&lt;/strong&gt; logró llevar el agua por debajo del límite de arsénico establecido por DIGESA en el DS N° 031-2012-SA — cumpliendo el estándar nacional e internacional de agua segura.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;luri-card&quot; style=&quot;margin-top:0;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🏆&lt;/span&gt;
+          &lt;span class=&quot;big-figure&quot;&gt;90%&lt;/span&gt;
+          &lt;h3&gt;de éxito en remoción de arsénico&lt;/h3&gt;
+          &lt;p&gt;Los filtros con iones de hierro demostraron ser altamente eficaces eliminando arsénico hasta alcanzar los límites requeridos por el Ministerio de Salud del Perú.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;luri-card&quot; style=&quot;margin-top:0;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🦠&lt;/span&gt;
+          &lt;h3&gt;Doble protección&lt;/h3&gt;
+          &lt;p&gt;Además del arsénico, todos los filtros —incluidos los controles— mantuvieron su eficacia comprobada en la remoción de bacterias y parásitos provenientes de la contaminación fecal por ausencia de alcantarillado.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- IMPACTO EN LA COMUNIDAD --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;🏘️ Una comunidad que no podía ver su problema&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;A diferencia de zonas donde el agua visiblemente sucia alerta a las familias, en Los Girasoles y Los Frutales el agua &lt;em&gt;parecía&lt;/em&gt; normal. El arsénico y los patógenos fecales son invisibles. Las familias bebían agua contaminada sin saberlo — y atribuían los malestares estomacales a otras causas.&lt;/p&gt;
+        &lt;p&gt;AguaSAN trabajó con la comunidad no solo para instalar filtros, sino para &lt;strong&gt;hacer visible el problema&lt;/strong&gt;: análisis de agua, talleres de educación sanitaria y la entrega de resultados individualizados a cada familia fueron parte central del proyecto.&lt;/p&gt;
+        &lt;div class=&quot;alert-amber&quot;&gt;
+          La capacitación incluyó explicaciones sobre el arsénico, su origen geológico en la zona, los riesgos de exposición crónica y el rol de los iones de hierro en el filtro. Las familias pasaron de desconocer el problema a ser &lt;strong&gt;guardianas activas de su agua&lt;/strong&gt;.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5&quot;&gt;
+        &lt;img src=&quot;/img/impacto/capacitacion.JPG&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Capacitación comunitaria Lurigancho&quot;&gt;
+        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px; text-align:center;&quot;&gt;Capacitación a familias beneficiarias — uso y mantenimiento del filtro&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ALIADOS --&gt;
+  &lt;div class=&quot;luri-section&quot;&gt;
+    &lt;h2&gt;🤝 Aliados del proyecto&lt;/h2&gt;
+    &lt;p&gt;Este proyecto fue posible gracias a la articulación de equipos técnicos, instituciones académicas y organizaciones comprometidas con el agua segura en el Perú:&lt;/p&gt;
+    &lt;div class=&quot;partner-logos-luri&quot;&gt;
+      &lt;img src=&quot;/img/LOGO_AGUASAN.png&quot; alt=&quot;AguaSAN&quot;&gt;
+      &lt;img src=&quot;/img/logos/cawst-logo-full.png&quot; alt=&quot;CAWST&quot;&gt;
+      &lt;img src=&quot;/img/logos/UNALM_logo.png&quot; alt=&quot;UNALM&quot;&gt;
+      &lt;img src=&quot;/img/logos/Innovate_logo.png&quot; alt=&quot;Innovate&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;cta-luri&quot;&gt;
+    &lt;h3&gt;El arsénico no se ve. Pero la solución sí existe.&lt;/h3&gt;
+    &lt;p&gt;Miles de familias en Lima y el resto del Perú beben agua con arsénico sin saberlo. Ayúdanos a llegar a más comunidades con esta tecnología.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#7c2d12; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
+</description>
+        <pubDate>Sat, 01 Jun 2024 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/implementaci%C3%B3n/2024/06/01/Lurigancho/</link>
+        <guid isPermaLink="true">http://localhost:4000/implementaci%C3%B3n/2024/06/01/Lurigancho/</guid>
+        
+        
+        <category>Implementación</category>
+        
+      </item>
+    
+      <item>
+        <title>Purús 2024</title>
+        <description>&lt;style&gt;
+  .purus-hero {
+    background: linear-gradient(135deg, #1a6ea8 0%, #0d3f6b 100%);
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .purus-hero h1 { font-size: 2.4em; font-weight: 800; margin-bottom: 10px; }
+  .purus-hero p  { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+  .stat-box {
+    background: #fff;
+    border: 2px solid #1a6ea8;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .stat-box .number { font-size: 2.8em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
+
+  .story-section { padding: 40px 0; border-bottom: 1px solid #eee; }
+  .story-section h2 { color: #1a6ea8; font-weight: 700; margin-bottom: 20px; }
+
+  .timeline-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    gap: 16px;
+  }
+  .timeline-icon {
+    font-size: 2em;
+    min-width: 48px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .timeline-text h4 { margin: 0 0 4px; font-weight: 700; color: #0d3f6b; }
+  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; }
+
+  .testimonial-card {
+    background: #f0f7ff;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .testimonial-card blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
+
+  .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
+  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(30%); }
+
+  .highlight-box {
+    background: #e8f4fd;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    font-size: 1.05em;
+    color: #1a4a70;
+  }
+  .highlight-box strong { color: #1a6ea8; }
+&lt;/style&gt;
+
+&lt;body&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;purus-hero&quot;&gt;
+  &lt;h1&gt;💧 Agua Limpia para el Pueblo Purús&lt;/h1&gt;
+  &lt;p&gt;37 familias en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.&lt;/p&gt;
+  &lt;p style=&quot;margin-top:14px; font-size:0.95em; opacity:0.75;&quot;&gt;📍 Puerto Esperanza, Ucayali &amp;nbsp;|&amp;nbsp; 🗓️ Febrero 2024&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- STATS ROW --&gt;
+  &lt;div class=&quot;row text-center&quot; style=&quot;margin-bottom:40px;&quot;&gt;
+    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+      &lt;div class=&quot;stat-box&quot;&gt;
+        &lt;div class=&quot;number&quot;&gt;37&lt;/div&gt;
+        &lt;div class=&quot;label&quot;&gt;🏠 Filtros instalados&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+      &lt;div class=&quot;stat-box&quot;&gt;
+        &lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;label&quot;&gt;🌿 Comunidades beneficiadas&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+      &lt;div class=&quot;stat-box&quot;&gt;
+        &lt;div class=&quot;number&quot;&gt;200+&lt;/div&gt;
+        &lt;div class=&quot;label&quot;&gt;👨‍👩‍👧‍👦 Personas con agua segura&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+      &lt;div class=&quot;stat-box&quot;&gt;
+        &lt;div class=&quot;number&quot;&gt;0&lt;/div&gt;
+        &lt;div class=&quot;label&quot;&gt;⚡ Electricidad requerida&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- EL PROBLEMA --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🌊 El reto: agua turbia, salud frágil&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;Las comunidades de &lt;strong&gt;Bufeo&lt;/strong&gt; y &lt;strong&gt;Nuevo San Martín&lt;/strong&gt;, ubicadas en el corazón de la selva purureña, enfrentaban una realidad cotidiana que muchos ignoramos: el agua que bebían llegaba de pozos abiertos, llenos de insectos, hojas y sedimentos del río.&lt;/p&gt;
+        &lt;p&gt;Para llegar a estas comunidades hay que surcar ríos por horas en bote. No hay carreteras. No hay red de agua potable. Las enfermedades diarreicas —especialmente en niños— eran constantes.&lt;/p&gt;
+        &lt;div class=&quot;highlight-box&quot;&gt;
+          &lt;strong&gt;&quot;A veces tomamos agua con gusano, agua de río con basura. Por eso es importante filtrar el agua.&quot;&lt;/strong&gt;&lt;br&gt;
+          &lt;span style=&quot;font-size:0.88em;&quot;&gt;— Cristina Sálamo, Comunidad Nuevo San Martín&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5&quot;&gt;
+        &lt;img src=&quot;/img/crisis/mapa_agua_potable.png&quot; style=&quot;max-width:100%; border-radius:8px;&quot; alt=&quot;Mapa acceso agua&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- LA SOLUCIÓN --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🔬 La solución: el Filtro Vita&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-5&quot;&gt;
+        &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot; style=&quot;max-width:100%; border-radius:8px;&quot; alt=&quot;Filtro Vita&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;El &lt;strong&gt;Filtro Vita&lt;/strong&gt; es una adaptación del filtro bioarena de concreto, ingeniada para caber en un bidón de polietileno de alta densidad. Liviano, transportable en bote, sin electricidad, sin químicos. Perfecto para la Amazonía.&lt;/p&gt;
+        &lt;p&gt;Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una &lt;em&gt;biocapa&lt;/em&gt; de microorganismos vivos elimina patógenos y purifica el agua de forma natural.&lt;/p&gt;
+        &lt;ul style=&quot;padding-left:20px; color:#333;&quot;&gt;
+          &lt;li&gt;✅ Elimina bacterias y parásitos&lt;/li&gt;
+          &lt;li&gt;✅ Sin electricidad ni químicos&lt;/li&gt;
+          &lt;li&gt;✅ Fabricado con materiales locales&lt;/li&gt;
+          &lt;li&gt;✅ Caudal de 0.3–0.5 L/minuto&lt;/li&gt;
+          &lt;li&gt;✅ Fácil mantenimiento comunitario&lt;/li&gt;
+          &lt;li&gt;✅ Larga vida útil&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- EL VIAJE --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🚤 El viaje: logística en la selva&lt;/h2&gt;
+    &lt;p&gt;Implementar este proyecto no fue sencillo. Cada paso requirió planificación, trabajo en equipo y la invaluable colaboración de las organizaciones locales.&lt;/p&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;🔍&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Evaluación y planificación&lt;/h4&gt;
+        &lt;p&gt;Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;🏖️&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Selección y preparación de arena&lt;/h4&gt;
+        &lt;p&gt;La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo de filtración. Cada costal fue empaquetado y etiquetado.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;🚤&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Transporte fluvial&lt;/h4&gt;
+        &lt;p&gt;Los 37 bidones y costales de arena viajaron en bote por los ríos del Purús. Miembros de las propias comunidades ayudaron a llevar los materiales desde el embarcadero hasta cada hogar.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;🎓&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Capacitación comunitaria&lt;/h4&gt;
+        &lt;p&gt;AguaSAN, junto a FECONAPU, Yaqua y DAS Perú, organizó talleres presenciales en Bufeo y Nuevo San Martín. Las familias aprendieron a usar, mantener y cuidar su filtro — empoderándolas como guardianas de su propio recurso hídrico.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;🏠&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Instalación hogar por hogar&lt;/h4&gt;
+        &lt;p&gt;Cada filtro fue instalado directamente en la vivienda del beneficiario: 12 en Bufeo, 23 en Nuevo San Martín, y 2 adicionales como puntos de demostración en la Asociación Pro-Purús y FECONAPU.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot;&gt;
+      &lt;div class=&quot;timeline-icon&quot;&gt;📋&lt;/div&gt;
+      &lt;div class=&quot;timeline-text&quot;&gt;
+        &lt;h4&gt;Encuesta y seguimiento&lt;/h4&gt;
+        &lt;p&gt;Al entregar cada filtro, el equipo realizó una encuesta individualizada con cada familia. Sus testimonios fueron el indicador más poderoso del éxito del proyecto.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- VOCES --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🗣️ Las voces que más importan&lt;/h2&gt;
+    &lt;p&gt;De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:&lt;/p&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;El agua limpia alarga la vida.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Zenia Castillo, Nuevo San Martín&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;El filtro vita nos permite vivir tranquilos y sanos.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Rubén Jijida Bachara, Comunidad Bufeo&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;Mis hijos sufren de diarrea constantemente. Ahora sé que van a mejorar con el Filtro Vita.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Elvita Torres, Nuevo San Martín&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;El filtro vita es importante porque nos cuida la salud y nuestros hijos para que crezcan bien y no estén yendo al hospital.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Franklin Salomón López, Comunidad Bufeo&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;Con agua limpia cuidamos nuestra salud.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Verónica Tachiana, Nuevo San Martín&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-card&quot;&gt;
+          &lt;blockquote&gt;&quot;El agua limpia es lo más importante. Cuando tomas agua limpia no te enfermas; si tomas agua contaminada, se presentarán diferentes enfermedades.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Asís Salomón Castillo, Comunidad Bufeo&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- IMPACTO --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;📊 El impacto en números&lt;/h2&gt;
+    &lt;div class=&quot;row text-center&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;stat-box&quot;&gt;
+          &lt;div class=&quot;number&quot;&gt;12&lt;/div&gt;
+          &lt;div class=&quot;label&quot;&gt;🏡 Hogares en Bufeo&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;stat-box&quot;&gt;
+          &lt;div class=&quot;number&quot;&gt;23&lt;/div&gt;
+          &lt;div class=&quot;label&quot;&gt;🏡 Hogares en Nuevo San Martín&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;stat-box&quot;&gt;
+          &lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
+          &lt;div class=&quot;label&quot;&gt;🏛️ Puntos de demostración&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;highlight-box&quot; style=&quot;margin-top:24px;&quot;&gt;
+      Este proyecto no solo entregó 37 filtros — estableció un &lt;strong&gt;modelo de colaboración replicable&lt;/strong&gt; entre ONGs, organizaciones indígenas locales y comunidades, demostrando que la unión de esfuerzos puede brindar soluciones sostenibles de acceso al agua en los lugares más remotos del Perú.
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ALIADOS --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🤝 Aliados que hicieron posible este sueño&lt;/h2&gt;
+    &lt;p&gt;Este proyecto fue posible gracias a la articulación de múltiples actores comprometidos con el acceso al agua en el Perú:&lt;/p&gt;
+    &lt;div class=&quot;partner-logos&quot;&gt;
+      &lt;img src=&quot;/img/LOGO_AGUASAN.png&quot; alt=&quot;AguaSAN&quot;&gt;
+      &lt;img src=&quot;/img/logos/cawst-logo-full.png&quot; alt=&quot;CAWST&quot;&gt;
+      &lt;img src=&quot;/img/logos/Innovate_logo.png&quot; alt=&quot;Innovate&quot;&gt;
+      &lt;img src=&quot;/img/logos/UNALM_logo.png&quot; alt=&quot;UNALM&quot;&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;text-center text-muted&quot; style=&quot;font-size:0.9em; margin-top:8px;&quot;&gt;
+      AguaSAN &amp;nbsp;·&amp;nbsp; Yaqua &amp;nbsp;·&amp;nbsp; Asociación Pro-Purús &amp;nbsp;·&amp;nbsp; FECONAPU &amp;nbsp;·&amp;nbsp; DAS Perú
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;text-center&quot; style=&quot;padding: 40px 0 20px;&quot;&gt;
+    &lt;h3 style=&quot;color:#1a6ea8;&quot;&gt;¿Quieres ser parte de la siguiente historia?&lt;/h3&gt;
+    &lt;p style=&quot;color:#555; max-width:500px; margin: 10px auto 24px;&quot;&gt;Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-primary btn-lg page-scroll&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
 &lt;/body&gt;
+</description>
+        <pubDate>Thu, 01 Feb 2024 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/implementaci%C3%B3n/2024/02/01/Purus/</link>
+        <guid isPermaLink="true">http://localhost:4000/implementaci%C3%B3n/2024/02/01/Purus/</guid>
+        
+        
+        <category>Implementación</category>
+        
+      </item>
+    
+      <item>
+        <title>FLAI</title>
+        <description>&lt;style&gt;
+  .flai-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .flai-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 40%;
+    top: 0; left: 0;
+  }
+  .flai-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(20,60,20,0.15) 0%, rgba(20,80,50,0.82) 100%);
+  }
+  .flai-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .flai-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .flai-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
+
+  .flai-stat-strip {
+    background: #1b5e20;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .flai-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .flai-stat:last-child { border-right: none; }
+  .flai-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #a5d6a7; line-height: 1; display: block; }
+  .flai-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .flai-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .flai-section h2 { font-size: 1.7em; font-weight: 800; color: #1b5e20; margin-bottom: 18px; }
+
+  .flai-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #388e3c;
+  }
+  .flai-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .flai-card h3 { font-size: 1.05em; font-weight: 800; color: #1b5e20; margin-bottom: 8px; }
+  .flai-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+
+  .tank-step {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .tank-step:last-child { border-bottom: none; }
+  .tank-step .tk-icon {
+    min-width: 44px; height: 44px;
+    background: #388e3c; color: white;
+    border-radius: 10px; display: flex;
+    align-items: center; justify-content: center;
+    font-size: 1.4em; flex-shrink: 0;
+  }
+  .tank-step h4 { font-weight: 800; color: #1b5e20; margin: 0 0 4px; }
+  .tank-step p  { color: #555; font-size: 0.93em; margin: 0; line-height: 1.55; }
+
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 5px solid #388e3c;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1b5e20;
+    font-size: 1em;
+  }
+
+  .compare-row {
+    display: flex; gap: 12px; align-items: stretch;
+    margin-bottom: 14px;
+  }
+  .compare-label {
+    min-width: 90px; font-weight: 700; font-size: 0.9em;
+    color: #333; display: flex; align-items: center;
+  }
+  .compare-fba, .compare-flai {
+    flex: 1; border-radius: 8px; padding: 10px 14px;
+    font-size: 0.9em; line-height: 1.45;
+  }
+  .compare-fba  { background: #e3f2fd; color: #0d3f6b; border: 1px solid #bbdefb; }
+  .compare-flai { background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
+  .compare-header { font-weight: 800; font-size: 0.82em; text-transform: uppercase; margin-bottom: 3px; }
+
+  .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .spec-table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.96em; }
+  .spec-table td:first-child { font-weight: 700; color: #1b5e20; width: 48%; }
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .use-case-badge {
+    display: inline-block;
+    background: #e8f5e9; color: #1b5e20;
+    border-radius: 20px; padding: 6px 16px;
+    font-size: 0.9em; font-weight: 700;
+    margin: 4px 3px; border: 1px solid #c8e6c9;
+  }
+
+  .cta-flai {
+    background: linear-gradient(135deg, #388e3c, #1b5e20);
+    color: white; border-radius: 14px; padding: 36px 28px;
+    text-align: center; margin: 36px 0 10px;
+  }
+  .cta-flai h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
+  .cta-flai p  { opacity: 0.88; margin-bottom: 20px; }
+&lt;/style&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;flai-hero&quot;&gt;
+  &lt;img src=&quot;/img/portfolio/flai_1.jpg&quot; alt=&quot;Filtro Lento de Arena Intermitente FLAI&quot;&gt;
+  &lt;div class=&quot;flai-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;flai-hero-text&quot;&gt;
+    &lt;h1&gt;🌿 Filtro Lento de Arena Intermitente (FLAI)&lt;/h1&gt;
+    &lt;p&gt;Agua segura a escala comunitaria — para escuelas, postas de salud y grupos de familias en los lugares más remotos del Perú.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;flai-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 flai-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;2,000+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;litros por día&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 flai-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;100+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;personas abastecidas&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 flai-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;0 ⚡&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;electricidad requerida&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 flai-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;3&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;tanques integrados&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- QUÉ ES --&gt;
+  &lt;div class=&quot;flai-section&quot;&gt;
+    &lt;h2&gt;🔍 ¿Qué es el FLAI?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;El &lt;strong&gt;Filtro Lento de Arena Intermitente (FLAI)&lt;/strong&gt; es la solución comunitaria de AguaSAN: un sistema de tratamiento de agua a mayor escala diseñado para abastecer a grupos de familias, escuelas, postas de salud o comunidades enteras.&lt;/p&gt;
+        &lt;p&gt;Basado en el mismo principio de filtración lenta que el FBA, el FLAI escala la tecnología a un sistema de &lt;strong&gt;tres tanques&lt;/strong&gt; que permite tratar caudales de más de 2,000 litros al día — sin electricidad, sin químicos, con materiales locales.&lt;/p&gt;
+        &lt;div class=&quot;highlight-green&quot;&gt;
+          El FLAI es ideal cuando el FBA familiar no es suficiente: comunidades agrupadas, instituciones o zonas donde una sola fuente centralizada puede abastecer a decenas de familias.
+        &lt;/div&gt;
+        &lt;p&gt;&lt;strong&gt;Casos de uso ideales:&lt;/strong&gt;&lt;/p&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;use-case-badge&quot;&gt;🏫 Escuelas rurales&lt;/span&gt;
+          &lt;span class=&quot;use-case-badge&quot;&gt;🏥 Postas de salud&lt;/span&gt;
+          &lt;span class=&quot;use-case-badge&quot;&gt;🏘️ Comunidades nativas&lt;/span&gt;
+          &lt;span class=&quot;use-case-badge&quot;&gt;⛪ Centros comunitarios&lt;/span&gt;
+          &lt;span class=&quot;use-case-badge&quot;&gt;👨‍👩‍👧 Grupos de familias&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+        &lt;img src=&quot;/img/impacto/FILTRO_FLAI.png&quot;
+             style=&quot;max-width:100%; max-height:340px; object-fit:contain;&quot;
+             alt=&quot;Diagrama Filtro FLAI&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CÓMO FUNCIONA: 3 TANQUES --&gt;
+  &lt;div class=&quot;flai-section&quot;&gt;
+    &lt;h2&gt;⚙️ Los 3 tanques: así funciona el FLAI&lt;/h2&gt;
+    &lt;p&gt;A diferencia del FBA doméstico, el FLAI opera con un sistema integrado de tres módulos que trabajan en secuencia:&lt;/p&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:22px;&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;div class=&quot;tank-step&quot;&gt;
+          &lt;div class=&quot;tk-icon&quot;&gt;1️⃣&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Tanque de recepción&lt;/h4&gt;
+            &lt;p&gt;Capta el agua cruda desde la fuente hídrica — río, pozo, acequia o lluvia — y la retiene antes del tratamiento. Actúa como pre-sedimentación de partículas gruesas.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tank-step&quot;&gt;
+          &lt;div class=&quot;tk-icon&quot;&gt;2️⃣&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Tanque de tratamiento (filtración)&lt;/h4&gt;
+            &lt;p&gt;El corazón del sistema. El agua desciende por capas de arena fina y grava donde la &lt;strong&gt;biocapa&lt;/strong&gt; elimina bacterias, protozoos y turbidez. En versiones avanzadas, se incorporan materiales de hierro para remover arsénico y metales pesados.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tank-step&quot;&gt;
+          &lt;div class=&quot;tk-icon&quot;&gt;3️⃣&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Tanque de almacenamiento&lt;/h4&gt;
+            &lt;p&gt;Guarda el agua ya tratada, lista para distribuir. Protege el agua limpia de la recontaminación y permite un acceso continuo incluso cuando el filtro no está en operación activa.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;highlight-green&quot; style=&quot;margin-top:16px;&quot;&gt;
+          El flujo es totalmente por &lt;strong&gt;gravedad&lt;/strong&gt;. No hay bombas, no hay energía, no hay piezas mecánicas que puedan fallar.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+        &lt;img src=&quot;/img/products/flai1.JPG&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Sistema FLAI instalado&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- BENEFICIOS --&gt;
+  &lt;div class=&quot;flai-section&quot;&gt;
+    &lt;h2&gt;✅ ¿Por qué el FLAI?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🏘️&lt;/span&gt;
+          &lt;h3&gt;Escala comunitaria real&lt;/h3&gt;
+          &lt;p&gt;Un solo sistema puede abastecer a 100+ personas. Ideal para escuelas, postas de salud y comunidades donde el filtro doméstico no es suficiente.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🧪&lt;/span&gt;
+          &lt;h3&gt;Versatilidad ante contaminantes&lt;/h3&gt;
+          &lt;p&gt;Con modificaciones al material filtrante, el FLAI puede remover arsénico, hierro y otros metales pesados comunes en fuentes andinas — algo que el FBA doméstico no puede a esta escala.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🔩&lt;/span&gt;
+          &lt;h3&gt;Sin piezas mecánicas&lt;/h3&gt;
+          &lt;p&gt;Todo el sistema opera por gravedad. Sin bombas, sin motores, sin nada que requiera repuestos difíciles de conseguir en zonas remotas.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🌍&lt;/span&gt;
+          &lt;h3&gt;Materiales locales&lt;/h3&gt;
+          &lt;p&gt;Arena, grava y los contenedores se consiguen localmente, reduciendo costos de transporte y permitiendo que la comunidad reponga materiales de forma autónoma.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;📈&lt;/span&gt;
+          &lt;h3&gt;Escalable y adaptable&lt;/h3&gt;
+          &lt;p&gt;El diseño puede ampliarse para tratar más volumen o adaptarse a diferentes fuentes hídricas y necesidades de calidad de agua sin cambiar el principio de funcionamiento.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;flai-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🎓&lt;/span&gt;
+          &lt;h3&gt;Operación comunitaria&lt;/h3&gt;
+          &lt;p&gt;Con una capacitación básica, la propia comunidad puede operar y mantener el sistema. AguaSAN entrena a operadores locales como parte de cada proyecto.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- FBA vs FLAI --&gt;
+  &lt;div class=&quot;flai-section&quot;&gt;
+    &lt;h2&gt;⚖️ FBA vs FLAI: ¿cuál necesita tu comunidad?&lt;/h2&gt;
+    &lt;div style=&quot;margin-top:16px;&quot;&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;&lt;div class=&quot;compare-header&quot;&gt;💧 FBA — Familiar&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;&lt;div class=&quot;compare-header&quot;&gt;🌿 FLAI — Comunitario&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;Capacidad&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;15 – 20 L por uso&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;2,000+ L/día&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;Escala&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;1 hogar (5 personas)&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;100+ personas&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;Operación&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;Individual, en casa&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;Centralizada, comunitaria&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;Contaminantes&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;Bacterias, protozoos, turbidez&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;+ arsénico y metales pesados (con adaptación)&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;compare-row&quot;&gt;
+        &lt;div class=&quot;compare-label&quot;&gt;Instalación&lt;/div&gt;
+        &lt;div class=&quot;compare-fba&quot;&gt;1 bidón, hogar&lt;/div&gt;
+        &lt;div class=&quot;compare-flai&quot;&gt;3 tanques, espacio central&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ESPECIFICACIONES --&gt;
+  &lt;div class=&quot;flai-section&quot;&gt;
+    &lt;h2&gt;📐 Especificaciones técnicas&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;table class=&quot;spec-table&quot;&gt;
+          &lt;tr&gt;&lt;td&gt;Caudal de producción&lt;/td&gt;&lt;td&gt;2,000+ L/día&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Personas abastecidas&lt;/td&gt;&lt;td&gt;100 – 200+ personas&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Electricidad requerida&lt;/td&gt;&lt;td&gt;Ninguna&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Módulos&lt;/td&gt;&lt;td&gt;3 tanques (recepción, tratamiento, almacenamiento)&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;table class=&quot;spec-table&quot;&gt;
+          &lt;tr&gt;&lt;td&gt;Remoción de bacterias&lt;/td&gt;&lt;td&gt;Hasta 99%&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Remoción de protozoos&lt;/td&gt;&lt;td&gt;Hasta 99.9%&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Remoción de arsénico&lt;/td&gt;&lt;td&gt;Sí (con material de hierro adicional)&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Material&lt;/td&gt;&lt;td&gt;Local (arena, grava, contenedores)&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;cta-flai&quot;&gt;
+    &lt;h3&gt;Agua segura para toda una comunidad.&lt;/h3&gt;
+    &lt;p&gt;Un FLAI puede transformar la salud de una escuela, una posta o un barrio entero. Únete a nuestra misión.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#1b5e20; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Thu, 23 Feb 2023 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/flai/2023/02/23/FLAI2/</link>
@@ -87,67 +1091,295 @@
     
       <item>
         <title>FBA</title>
-        <description>&lt;body class = &quot;body_fba&quot; &gt;
-  &lt;header class=&quot;header_fba&quot;&gt;
-    &lt;h1 style = &quot;margin-left: 15%;&quot;&gt;Biosand Filters&lt;/h1&gt;
-    &lt;nav class=&quot;nav_fba&quot;&gt;
-      &lt;ul class = &quot;ul_fba&quot;&gt;
-        &lt;li class = &quot;li_fba&quot; &gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#what1&quot;&gt;What is it?&lt;/a&gt;&lt;/li&gt;
-        &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#how1&quot;&gt;How does it work?&lt;/a&gt;&lt;/li&gt;
-        &lt;li class = &quot;li_fba&quot;&gt;&lt;a  class=&quot;page-scroll&quot; href=&quot;#benefits1&quot;&gt;Benefits&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
-  
-  &lt;main&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;section id=&quot;what1&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;    
-&lt;!-- mODIFICACIÓN --&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-              &lt;h1 class=&quot;about_taital&quot;&gt;Qué es un Filtro  &lt;span style=&quot;color: #ff3f5c;&quot;&gt;Bioarena Familiar &lt;/span&gt;(FBA)? &lt;/h1&gt;
-              &lt;p class=&quot;about_text&quot;&gt;Un filtro de bioarena es un dispositivo simple de tratamiento de agua que utiliza arena, grava y procesos biológicos para eliminar las impurezas del agua potable. Fue desarrollado en la década de 1990 por el Dr. David Manz y el Dr. John Lloyd, y ahora se usa en muchas partes del mundo para proporcionar agua potable segura. Con una capacidad de 15 a 20L por uso, el filtro bioarena es ideal para los hogares. Es una adaptación del filtro lento tradicional que se encarga de remover gran parte de los agentes contaminantes.&lt;/p&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-              &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/FILTRO_FBA.png&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
+        <description>&lt;style&gt;
+  .fba-hero {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .fba-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0; left: 0;
+  }
+  .fba-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,50,100,0.15) 0%, rgba(10,50,120,0.82) 100%);
+  }
+  .fba-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .fba-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .fba-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
+
+  .fba-stat-strip {
+    background: #0d3f6b;
+    padding: 26px 0;
+    margin-bottom: 44px;
+  }
+  .fba-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .fba-stat:last-child { border-right: none; }
+  .fba-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .fba-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
+
+  .fba-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
+  .fba-section h2 { font-size: 1.7em; font-weight: 800; color: #0d3f6b; margin-bottom: 18px; }
+
+  .fba-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    border-top: 4px solid #1a6ea8;
+  }
+  .fba-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
+  .fba-card h3 { font-size: 1.05em; font-weight: 800; color: #0d3f6b; margin-bottom: 8px; }
+  .fba-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+
+  .layer-step {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 14px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .layer-step:last-child { border-bottom: none; }
+  .layer-step .ls-num {
+    min-width: 36px; height: 36px;
+    background: #1a6ea8; color: white;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    font-weight: 900; font-size: 1em; flex-shrink: 0;
+  }
+  .layer-step h4 { font-weight: 800; color: #0d3f6b; margin: 0 0 3px; font-size: 1em; }
+  .layer-step p  { color: #555; font-size: 0.93em; margin: 0; line-height: 1.55; }
+
+  .highlight-blue {
+    background: #e8f4fd;
+    border-left: 5px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    color: #1a4a70;
+    font-size: 1em;
+  }
+  .highlight-blue strong { color: #0d3f6b; }
+
+  .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .spec-table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.96em; }
+  .spec-table td:first-child { font-weight: 700; color: #0d3f6b; width: 45%; }
+  .spec-table tr:last-child td { border-bottom: none; }
+
+  .cta-fba {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white; border-radius: 14px; padding: 36px 28px;
+    text-align: center; margin: 36px 0 10px;
+  }
+  .cta-fba h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
+  .cta-fba p  { opacity: 0.88; margin-bottom: 20px; }
+&lt;/style&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;fba-hero&quot;&gt;
+  &lt;img src=&quot;/img/products/fba1.jpg&quot; alt=&quot;Filtro Bioarena Familiar FBA&quot;&gt;
+  &lt;div class=&quot;fba-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fba-hero-text&quot;&gt;
+    &lt;h1&gt;💧 Filtro Bioarena Familiar (FBA)&lt;/h1&gt;
+    &lt;p&gt;Agua segura en cada hogar — sin electricidad, sin químicos, sin complicaciones. La solución doméstica de AguaSAN.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;fba-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 fba-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;20 L&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;por uso, por familia&lt;/span&gt;
       &lt;/div&gt;
-      &lt;/section&gt;
-    &lt;section id=&quot;how1&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-              &lt;div  style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div  class=&quot;col-md-6&quot;&gt;
-              &lt;h1 class=&quot;about_taital&quot;&gt;How does a Biosand Filter work? &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
-              &lt;p class=&quot;about_text&quot;&gt;El agua se vierte en la parte superior del filtro, donde pasa a través de una capa de grava, una capa de arena fina y una capa de arena gruesa. Los microorganismos que viven en la arena y la grava ayudan a descomponer y eliminar las impurezas del agua. Luego, el agua filtrada se recoge en un recipiente en el fondo del filtro.&lt;/p&gt;
-          &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 fba-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;15 años&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;de vida útil&lt;/span&gt;
       &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section id =&quot;benefits1&quot;&gt;
-      &lt;div  class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h1 class=&quot;about_taital&quot;&gt;Benefits of Biosand Filters &lt;span style=&quot;color: #ff3f5c;&quot;&gt; &lt;/span&gt; &lt;/h1&gt;
-            &lt;ul class = &quot;ul_fba2&quot;&gt;
-              &lt;li &gt;Bajo costo y bajo mantenimiento&lt;/li&gt;
-              &lt;li&gt;Puede proporcionar agua potable segura en áreas con acceso limitado a agua limpia&lt;/li&gt;
-              &lt;li&gt;No requiere electricidad ni productos químicos.&lt;/li&gt;
-              &lt;li&gt;Fácil de usar y operar&lt;/li&gt;
-              &lt;li&gt;Tiempo de vida de 15 años&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;div class=&quot;readmore_bt&quot;&gt;&lt;a href=&quot;&quot; class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-6&quot;&gt;
-          &lt;div style = &quot;max-width: 100%;&quot;&gt;&lt;img  style = &quot;max-width: 98%;&quot; src=&quot;/img/products/flai1.JPG&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 fba-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;0 ⚡&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;electricidad requerida&lt;/span&gt;
       &lt;/div&gt;
-    &lt;/section&gt;
+      &lt;div class=&quot;col-sm-3 fba-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;99%&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;eliminación de bacterias&lt;/span&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/main&gt;
-  
-  &lt;footer&gt;
-    &lt;p&gt;&amp;copy; 2023 Biosand Filters Inc.&lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/body&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- QUÉ ES --&gt;
+  &lt;div class=&quot;fba-section&quot;&gt;
+    &lt;h2&gt;🔍 ¿Qué es el Filtro Bioarena Familiar?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;El &lt;strong&gt;Filtro Bioarena Familiar (FBA)&lt;/strong&gt; es una adaptación doméstica del filtro lento de arena, diseñada para tratar el agua en el punto de uso dentro del hogar. Basado en tecnología desarrollada por el Dr. David Manz (CAWST) en los años 90, es hoy uno de los sistemas de tratamiento de agua más probados y adoptados en comunidades rurales de todo el mundo.&lt;/p&gt;
+        &lt;p&gt;El modelo de AguaSAN adapta este principio a un &lt;strong&gt;bidón de polietileno de alta densidad&lt;/strong&gt; — liviano, transportable, ideal para zonas remotas de la Amazonía y la sierra peruana donde no llega la red de agua ni la electricidad.&lt;/p&gt;
+        &lt;div class=&quot;highlight-blue&quot;&gt;
+          Una familia de 5 personas necesita en promedio &lt;strong&gt;20 litros de agua segura al día&lt;/strong&gt;. El FBA lo entrega sin costo operativo, sin recambios, sin nada más que arena y biología.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+        &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot;
+             style=&quot;max-width:100%; max-height:320px; object-fit:contain;&quot;
+             alt=&quot;Diagrama Filtro FBA&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CÓMO FUNCIONA --&gt;
+  &lt;div class=&quot;fba-section&quot;&gt;
+    &lt;h2&gt;⚙️ ¿Cómo funciona?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-5&quot;&gt;
+        &lt;img src=&quot;/img/portfolio/funcionamiento_filtro.jpg&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Funcionamiento del filtro bioarena&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p style=&quot;margin-bottom:20px;&quot;&gt;El agua se vierte manualmente por la parte superior y desciende por gravedad a través de las capas filtrantes. El proceso combina &lt;strong&gt;filtración física&lt;/strong&gt; y &lt;strong&gt;acción biológica&lt;/strong&gt; para producir agua segura.&lt;/p&gt;
+        &lt;div class=&quot;layer-step&quot;&gt;
+          &lt;div class=&quot;ls-num&quot;&gt;1&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Agua cruda (entrada)&lt;/h4&gt;
+            &lt;p&gt;El agua sin tratar, ya sea de río, pozo o lluvia, se vierte en la parte superior del bidón.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layer-step&quot;&gt;
+          &lt;div class=&quot;ls-num&quot;&gt;2&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Biocapa (Schmutzdecke)&lt;/h4&gt;
+            &lt;p&gt;Una delgada capa de microorganismos vivos en la superficie de la arena que captura y digiere patógenos, es el corazón del filtro.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layer-step&quot;&gt;
+          &lt;div class=&quot;ls-num&quot;&gt;3&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Arena fina&lt;/h4&gt;
+            &lt;p&gt;Retiene partículas, turbidez, protozoos y quistes. Tamaño efectivo (TE) calibrado para garantizar el caudal correcto.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layer-step&quot;&gt;
+          &lt;div class=&quot;ls-num&quot;&gt;4&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Grava gruesa&lt;/h4&gt;
+            &lt;p&gt;Soporte estructural que evita que la arena tape la salida y permite el flujo uniforme hacia el caño.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;layer-step&quot;&gt;
+          &lt;div class=&quot;ls-num&quot;&gt;5&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Agua tratada (salida)&lt;/h4&gt;
+            &lt;p&gt;El agua filtrada sale por un caño en la base del bidón, lista para beber directamente.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- BENEFICIOS --&gt;
+  &lt;div class=&quot;fba-section&quot;&gt;
+    &lt;h2&gt;✅ ¿Por qué el FBA?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;💰&lt;/span&gt;
+          &lt;h3&gt;Bajo costo total&lt;/h3&gt;
+          &lt;p&gt;Una fracción del costo de un sistema convencional. Sin recambios, sin insumos químicos, sin facturas de electricidad. El costo más alto es la instalación inicial.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🚤&lt;/span&gt;
+          &lt;h3&gt;Transportable a cualquier lugar&lt;/h3&gt;
+          &lt;p&gt;El bidón de polietileno pesa poco y cabe en una canoa. Ha llegado a comunidades en el Purús, Loreto y la sierra alta sin ningún vehículo especial.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🌱&lt;/span&gt;
+          &lt;h3&gt;Sin insumos externos&lt;/h3&gt;
+          &lt;p&gt;Una vez instalado, el filtro no necesita químicos, filtros de repuesto ni energía. La biocapa se regenera sola si se usa con regularidad.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🦠&lt;/span&gt;
+          &lt;h3&gt;Eliminación probada de patógenos&lt;/h3&gt;
+          &lt;p&gt;Elimina hasta el 99% de bacterias (E. coli), el 99.9% de protozoos y reduce significativamente virus y turbidez cuando la biocapa está madura.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🔧&lt;/span&gt;
+          &lt;h3&gt;Mantenimiento sencillo&lt;/h3&gt;
+          &lt;p&gt;Solo requiere &quot;raspado&quot; superficial (swirl &amp; dump) cuando el caudal baja. Cualquier miembro de la familia puede hacerlo tras una breve capacitación.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;fba-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;⏳&lt;/span&gt;
+          &lt;h3&gt;15 años de vida útil&lt;/h3&gt;
+          &lt;p&gt;Con un mantenimiento correcto, el bidón y la arena tienen una vida útil de más de 15 años. Inversión única, beneficio para toda una generación.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ESPECIFICACIONES TÉCNICAS --&gt;
+  &lt;div class=&quot;fba-section&quot;&gt;
+    &lt;h2&gt;📐 Especificaciones técnicas&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;table class=&quot;spec-table&quot;&gt;
+          &lt;tr&gt;&lt;td&gt;Capacidad por uso&lt;/td&gt;&lt;td&gt;15 – 20 litros&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Caudal de salida&lt;/td&gt;&lt;td&gt;0.3 – 0.5 L/minuto&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Vida útil&lt;/td&gt;&lt;td&gt;+15 años&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Electricidad requerida&lt;/td&gt;&lt;td&gt;Ninguna&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Químicos requeridos&lt;/td&gt;&lt;td&gt;Ninguno&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Escala de uso&lt;/td&gt;&lt;td&gt;Familiar (1 hogar)&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;table class=&quot;spec-table&quot;&gt;
+          &lt;tr&gt;&lt;td&gt;Remoción de bacterias (E. coli)&lt;/td&gt;&lt;td&gt;Hasta 99%&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Remoción de protozoos&lt;/td&gt;&lt;td&gt;Hasta 99.9%&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Reducción de turbidez&lt;/td&gt;&lt;td&gt;Alta&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Material del contenedor&lt;/td&gt;&lt;td&gt;HDPE (polietileno alta densidad)&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Mantenimiento&lt;/td&gt;&lt;td&gt;Swirl &amp; dump cuando baja caudal&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Tecnología base&lt;/td&gt;&lt;td&gt;CAWST / Dr. David Manz&lt;/td&gt;&lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;cta-fba&quot;&gt;
+    &lt;h3&gt;Lleva agua segura a una familia.&lt;/h3&gt;
+    &lt;p&gt;Con tu apoyo podemos fabricar e instalar más filtros FBA en las comunidades que más lo necesitan.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Wed, 22 Feb 2023 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/fba/2023/02/22/FBA/</link>
@@ -160,111 +1392,408 @@
     
       <item>
         <title>Crisis</title>
-        <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Water Crisis&lt;/title&gt;
-    &lt;style&gt;
-        /* Custom styles go here */
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+        <description>&lt;style&gt;
+  .crisis-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .crisis-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: bottom;
+    top: 0; left: 0;
+  }
+  .crisis-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10,30,60,0.78) 100%);
+  }
+  .crisis-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 40px;
+  }
+  .crisis-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .crisis-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 680px;
+    margin: 0 auto;
+  }
 
-        &lt;div style=&quot;height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;&quot;&gt;
-            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;/img/crisis/portada_crisis.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
-        &lt;/div&gt;
+  .crisis-stat-strip {
+    background: #0d3f6b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .crisis-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .crisis-stat:last-child { border-right: none; }
+  .crisis-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #5ec4ff;
+    line-height: 1;
+    display: block;
+  }
+  .crisis-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        
-    &lt;div class=&quot;container&quot; style=&quot;margin-top: 25px;&quot;&gt; 
-            &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-md-4&quot;&gt;
-                    &lt;div class=&quot;flip-box&quot;&gt;
-                      &lt;div class=&quot;flip-box-inner&quot;&gt;
-                        &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2 class=&quot;h2_impacto&quot;&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+  .crisis-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .crisis-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 18px;
+  }
 
-                        &lt;/div&gt;
-                        &lt;div class=&quot;flip-box-back&quot;&gt;
-                          &lt;h2&gt;Box 1 Back&lt;/h2&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-md-4&quot;&gt;
-                    &lt;div class=&quot;flip-box&quot;&gt;
-                      &lt;div class=&quot;flip-box-inner&quot;&gt;
-                        &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2 class=&quot;h2_impacto&quot;&gt;Nuestro impacto&lt;/h2&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;flip-box-back&quot;&gt;
-                          &lt;h2&gt;Box 2 Back&lt;/h2&gt;
-                          &lt;p&gt;This is the back of box 2.&lt;/p&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-md-4&quot;&gt;
-                    &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                      &lt;div class=&quot;flip-box-inner&quot;&gt;
-                        &lt;div class=&quot;flip-box-front&quot;&gt;
-                          &lt;h2 class=&quot;h2_impacto&quot;&gt;¿Como puedes ayudar?&lt;/h2&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;flip-box-back&quot;&gt;
-                          &lt;h2&gt;Box 3 Back&lt;/h2&gt;
-                          &lt;p&gt;This is the back of box 3.&lt;/p&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;div class=&quot;container mt-5&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-md-8&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
-                &lt;h1 class=&quot;mb-4&quot;&gt;La crisis de agua: Los datos&lt;/h1&gt;
-                &lt;p&gt;Según el Ministerio de Vivienda, Construcción y Saneamiento, existen aproximadamente &lt;b&gt;1,175,828&lt;/b&gt; ciudadanos que aún no cuentan con agua potable para sus hogares.  &lt;/p&gt;
-                &lt;img class=&quot;image_2&quot; style=&quot;width: auto;&quot; src=&quot;/img/crisis/mapa_agua_potable.png&quot; alt=&quot;&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;col-md-4&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
-                &lt;h2 class=&quot;mb-4&quot;&gt;Población con/sin cobertura&lt;/h2&gt;
-                &lt;img class=&quot;image_2&quot; style=&quot;width: auto;&quot; src=&quot;/img/crisis/agua_potable_chart.png&quot; alt=&quot;&quot;&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+  .crisis-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #1a6ea8;
+    height: 100%;
+  }
+  .crisis-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .crisis-card h3 {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: #0d3f6b;
+    margin-bottom: 10px;
+  }
+  .crisis-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .crisis-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #c0392b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .alert-box {
+    background: #fff3cd;
+    border-left: 5px solid #e67e22;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #7d4e00;
+  }
+  .alert-box strong { color: #c0392b; }
+
+  .geography-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+  .geography-bar .label {
+    min-width: 80px;
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #333;
+  }
+  .geography-bar .bar-track {
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+  }
+  .geography-bar .bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 0.82em;
+    font-weight: 700;
+    color: white;
+    transition: width 1s;
+  }
+  .bar-urban   { background: #1a6ea8; }
+  .bar-rural   { background: #c0392b; }
+  .bar-selva   { background: #c0392b; }
+  .geography-bar .pct {
+    min-width: 46px;
+    font-weight: 800;
+    font-size: 1em;
+    text-align: right;
+    color: #333;
+  }
+
+  .disease-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .disease-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.97em;
+    color: #444;
+  }
+  .disease-list li:last-child { border-bottom: none; }
+  .disease-list li .dicon { font-size: 1.5em; min-width: 32px; }
+
+  .quote-crisis {
+    background: #e8f4fd;
+    border-left: 4px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    font-style: italic;
+    color: #1a4a70;
+    font-size: 1.05em;
+    margin: 24px 0;
+  }
+
+  .cta-crisis {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-crisis h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-crisis p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+&lt;/style&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;crisis-hero&quot;&gt;
+  &lt;img src=&quot;/img/crisis/portada_crisis.jpg&quot; alt=&quot;Crisis de agua en Perú&quot;&gt;
+  &lt;div class=&quot;crisis-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;crisis-hero-text&quot;&gt;
+    &lt;h1&gt;💧 La Crisis Invisible del Agua&lt;/h1&gt;
+    &lt;p&gt;Millones de peruanos no tienen acceso a agua segura. Esta es su realidad — y la razón por la que AguaSan existe.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;crisis-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 crisis-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;8M+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;peruanos sin agua potable segura&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 crisis-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;44%&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;de rurales con agua de red&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 crisis-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;1°&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;causa de hospitalización infantil: diarrea&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 crisis-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;S/.80&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;gasto mensual familiar en agua de camión&lt;/span&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;jumbotron text-center&quot;&gt;
-        &lt;h1&gt;Impacto &lt;/h1&gt;
-        &lt;p&gt;Water scarcity affects more than 2 billion people worldwide. Learn more about this crisis and what you can do to help.&lt;/p&gt;
-      &lt;/div&gt;
-    
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Impacto Ecónomico&lt;/h2&gt;
-            &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Impacto en la Salud&lt;/h2&gt;
-            &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
-          &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- SECCIÓN 1: EL PROBLEMA --&gt;
+  &lt;div class=&quot;crisis-section&quot;&gt;
+    &lt;h2&gt;🌊 El agua que llega… y la que no&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;p&gt;Según el Ministerio de Vivienda, Construcción y Saneamiento, más de &lt;strong&gt;1,175,828 hogares&lt;/strong&gt; carecen de conexión de agua potable en el Perú. Pero la cifra real de personas que beben agua no segura es mucho mayor: pozos abiertos, ríos, acequias y camiones cisternas son la única fuente hídrica de millones de familias.&lt;/p&gt;
+        &lt;div class=&quot;alert-box&quot;&gt;
+          La &lt;strong&gt;brecha urbano-rural&lt;/strong&gt; es enorme: mientras en Lima el 97% de hogares tiene agua de red, en regiones como Loreto y Ucayali ese porcentaje baja al &lt;strong&gt;30–40%&lt;/strong&gt;.
         &lt;/div&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Solución de filtros de agua&lt;/h2&gt;
-            &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot;&gt;
-            &lt;h2&gt;Solución de filtros de agua&lt;/h2&gt;
-            &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
-          &lt;/div&gt;
+        &lt;p&gt;En zonas rurales y de selva, las comunidades no solo carecen de infraestructura — en muchos casos deben caminar horas para recoger agua que luego resulta no apta para el consumo.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6 text-center&quot;&gt;
+        &lt;img src=&quot;/img/crisis/mapa_agua_potable.png&quot; style=&quot;max-width:100%; border-radius:10px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);&quot; alt=&quot;Mapa acceso agua potable Perú&quot;&gt;
+        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px;&quot;&gt;Fuente: Ministerio de Vivienda, Construcción y Saneamiento&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- GEOGRAPHY BARS --&gt;
+    &lt;h3 style=&quot;color:#0d3f6b; margin: 30px 0 16px; font-weight:700;&quot;&gt;Cobertura de agua por zona geográfica&lt;/h3&gt;
+    &lt;div class=&quot;geography-bar&quot;&gt;
+      &lt;span class=&quot;label&quot;&gt;Urbano&lt;/span&gt;
+      &lt;div class=&quot;bar-track&quot;&gt;
+        &lt;div class=&quot;bar-fill bar-urban&quot; style=&quot;width:93%&quot;&gt;93%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;pct&quot;&gt;93%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;geography-bar&quot;&gt;
+      &lt;span class=&quot;label&quot;&gt;Rural sierra&lt;/span&gt;
+      &lt;div class=&quot;bar-track&quot;&gt;
+        &lt;div class=&quot;bar-fill bar-rural&quot; style=&quot;width:58%&quot;&gt;58%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;pct&quot;&gt;58%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;geography-bar&quot;&gt;
+      &lt;span class=&quot;label&quot;&gt;Selva&lt;/span&gt;
+      &lt;div class=&quot;bar-track&quot;&gt;
+        &lt;div class=&quot;bar-fill bar-selva&quot; style=&quot;width:35%&quot;&gt;35%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;pct&quot;&gt;35%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;font-size:0.83em; color:#888; margin-top:8px;&quot;&gt;Fuente: ENDES 2022 — INEI&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- SECCIÓN 2: SALUD --&gt;
+  &lt;div class=&quot;crisis-section&quot;&gt;
+    &lt;h2&gt;🏥 El costo humano: salud que se va por el caño&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;ul class=&quot;disease-list&quot;&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;dicon&quot;&gt;👶&lt;/span&gt;
+            &lt;span&gt;La diarrea es la &lt;strong&gt;segunda causa de muerte&lt;/strong&gt; en niños menores de 5 años en zonas rurales del Perú.&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;dicon&quot;&gt;🦠&lt;/span&gt;
+            &lt;span&gt;El &lt;strong&gt;40% de las enfermedades&lt;/strong&gt; en comunidades rurales peruanas están directamente relacionadas con el agua contaminada.&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;dicon&quot;&gt;🏚️&lt;/span&gt;
+            &lt;span&gt;Las comunidades sin saneamiento básico tienen &lt;strong&gt;3 veces más&lt;/strong&gt; probabilidades de sufrir brotes de cólera y fiebre tifoidea.&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;dicon&quot;&gt;📉&lt;/span&gt;
+            &lt;span&gt;La desnutrición crónica infantil —fuertemente ligada al agua contaminada— afecta al &lt;strong&gt;26% de niños rurales&lt;/strong&gt; peruanos.&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;dicon&quot;&gt;🧪&lt;/span&gt;
+            &lt;span&gt;En zonas andinas, el arsénico y el plomo en el agua subterránea afectan el desarrollo neurológico de miles de niños.&lt;/span&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot; style=&quot;border-color:#c0392b;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;⚕️&lt;/span&gt;
+          &lt;span class=&quot;big-figure&quot;&gt;25%&lt;/span&gt;
+          &lt;h3&gt;de la mortalidad infantil rural&lt;/h3&gt;
+          &lt;p&gt;está asociada a enfermedades de origen hídrico — diarrea, cólera, hepatitis A y parasitosis intestinal. Son muertes prevenibles con agua limpia.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;quote-crisis&quot;&gt;
+          &quot;Tomamos agua del río porque no hay otra. Sabemos que nos puede enfermar, pero ¿qué más hacemos?&quot;
+          &lt;br&gt;&lt;span style=&quot;font-size:0.88em; font-style:normal; color:#1a6ea8; font-weight:700;&quot;&gt;— Testimonio, comunidad nativa, Ucayali&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-    &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
-        &amp;copy; 2023 Water Crisis | All rights reserved
-    &lt;/footer&gt;
-    </description>
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- SECCIÓN 3: IMPACTO ECONÓMICO --&gt;
+  &lt;div class=&quot;crisis-section&quot;&gt;
+    &lt;h2&gt;💸 El doble castigo: pagar más por agua peor&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🚛&lt;/span&gt;
+          &lt;h3&gt;Camión cisterna: hasta 10× más caro&lt;/h3&gt;
+          &lt;p&gt;Familias sin red de agua pagan entre &lt;strong&gt;S/. 50 y S/. 120 al mes&lt;/strong&gt; por camiones cisterna — agua que no siempre es apta para beber.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;⏱️&lt;/span&gt;
+          &lt;h3&gt;Horas perdidas cada día&lt;/h3&gt;
+          &lt;p&gt;Mujeres y niñas dedican un promedio de &lt;strong&gt;2 a 4 horas diarias&lt;/strong&gt; a recolectar agua en zonas sin acceso a red. Tiempo que no se invierte en educación ni trabajo.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🏥&lt;/span&gt;
+          &lt;h3&gt;Gastos médicos evitables&lt;/h3&gt;
+          &lt;p&gt;Una familia rural puede gastar hasta &lt;strong&gt;S/. 400 al año&lt;/strong&gt; en atención médica por enfermedades relacionadas con el agua contaminada. El filtro les costaría lo mismo por toda una vida.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:10px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/crisis/agua_potable_chart.png&quot; style=&quot;max-width:100%; border-radius:10px;&quot; alt=&quot;Gráfico cobertura agua potable&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot; style=&quot;display:flex; align-items:center;&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 style=&quot;color:#0d3f6b; font-weight:800;&quot;&gt;La paradoja del agua pobre&lt;/h3&gt;
+          &lt;p&gt;Los que menos tienen, pagan más por agua de peor calidad. Las familias con acceso a red pagan tarifas subsidiadas; los pobres rurales compran agua cara a revendedores informales o caminan kilómetros para recogerla de fuentes no tratadas.&lt;/p&gt;
+          &lt;p&gt;Esta desigualdad estructural mantiene a las comunidades más vulnerables en un ciclo de enfermedad y pobreza del que es muy difícil escapar.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- SECCIÓN 4: ZONAS MÁS AFECTADAS --&gt;
+  &lt;div class=&quot;crisis-section&quot;&gt;
+    &lt;h2&gt;📍 Las regiones más golpeadas&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot; style=&quot;border-color:#e67e22;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🌿&lt;/span&gt;
+          &lt;h3&gt;Selva amazónica&lt;/h3&gt;
+          &lt;p&gt;Loreto, Ucayali, Madre de Dios y Amazonas concentran las brechas más críticas. La dispersión geográfica, la falta de vías y los ríos como única conexión hacen que la infraestructura convencional sea inviable o enormemente costosa.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;crisis-card&quot; style=&quot;border-color:#e67e22;&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;🏔️&lt;/span&gt;
+          &lt;h3&gt;Andes rurales y comunidades nativas&lt;/h3&gt;
+          &lt;p&gt;Huancavelica, Ayacucho, Apurímac y Puno tienen tasas de acceso a agua segura por debajo del 50% en zonas rurales. Comunidades campesinas e indígenas son las últimas en recibir servicios básicos.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert-box&quot; style=&quot;margin-top:8px;&quot;&gt;
+      &lt;strong&gt;4,500+&lt;/strong&gt; centros poblados rurales en el Perú aún no cuentan con ningún sistema de agua potable. Son comunidades que existen fuera del mapa de los servicios básicos.
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;cta-crisis&quot;&gt;
+    &lt;h3&gt;La solución existe. Solo hace falta llevarla.&lt;/h3&gt;
+    &lt;p&gt;Los filtros bioarena como el Filtro Vita pueden transformar la realidad de una familia en días — sin electricidad, sin químicos, sin esperar décadas a que llegue la infraestructura.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
+</description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/crisis/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/crisis/</guid>
@@ -338,153 +1867,431 @@
     
       <item>
         <title>Nuestro Impacto</title>
-        <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Water Crisis&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot;/&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
+        <description>&lt;style&gt;
+  .impacto-hero {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .impacto-hero img {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center;
+    top: 0; left: 0;
+  }
+  .impacto-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,40,20,0.15) 0%, rgba(0,60,40,0.80) 100%);
+  }
+  .impacto-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 20px 44px;
+  }
+  .impacto-hero-text h1 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .impacto-hero-text p {
+    font-size: 1.15em;
+    opacity: 0.92;
+    max-width: 660px;
+    margin: 0 auto;
+  }
 
-        &lt;div style=&quot;height: 600px; overflow: hidden;display: flex; justify-content: center; width: 100%;&quot;&gt;
-            &lt;img style=&quot;object-position: bottom; height: 150%;&quot; src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Slide 2&quot;  &gt;
-        &lt;/div&gt;
+  .impacto-stat-strip {
+    background: #00574b;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+  .impacto-stat {
+    text-align: center;
+    color: white;
+    padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .impacto-stat:last-child { border-right: none; }
+  .impacto-stat .cnum {
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #80cbc4;
+    line-height: 1;
+    display: block;
+  }
+  .impacto-stat .clabel {
+    font-size: 0.88em;
+    opacity: 0.85;
+    margin-top: 5px;
+    display: block;
+  }
 
-        &lt;div class=&quot;container&quot;&gt;
-          &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col-md-4&quot;&gt;
-              &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal9&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                  &lt;div class=&quot;flip-box-inner&quot;&gt;
-                    &lt;div class=&quot;flip-box-front&quot;&gt;
-                      &lt;h2 class=&quot;h2_impacto&quot;&gt; La Crisis de Agua en el Perú&lt;/h2&gt;
+  .impacto-section {
+    padding: 44px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .impacto-section h2 {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 18px;
+  }
 
-                    &lt;/div&gt;
-                    &lt;div class=&quot;flip-box-back&quot;&gt;
-                      &lt;h2&gt;Box 1 Back&lt;/h2&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/a&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;col-md-4&quot;&gt;
-              &lt;a  class=&quot;portfolio-link&quot; data-toggle=&quot;modal&quot; href=&quot;#portfolioModal10&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                  &lt;div class=&quot;flip-box-inner&quot;&gt;
-                    &lt;div class=&quot;flip-box-front&quot;&gt;
-                      &lt;h2 class=&quot;h2_impacto&quot;&gt;Nuestro impacto&lt;/h2&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;flip-box-back&quot;&gt;
-                      &lt;h2&gt;Box 2 Back&lt;/h2&gt;
-                      &lt;p&gt;This is the back of box 2.&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/a&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;col-md-4&quot;&gt;
-                &lt;a class=&quot;page-scroll&quot; href=&quot;#ayuda&quot;&gt;&lt;div class=&quot;flip-box&quot;&gt;
-                  &lt;div class=&quot;flip-box-inner&quot;&gt;
-                    &lt;div class=&quot;flip-box-front&quot;&gt;
-                      &lt;h2 class=&quot;h2_impacto&quot;&gt;¿Como puedes ayudar?&lt;/h2&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;flip-box-back&quot;&gt;
-                      &lt;h2 class=&quot;h2_impacto&quot;&gt;Box 3 Back&lt;/h2&gt;
-                      &lt;p&gt;This is the back of box 3.&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/a&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+  .impacto-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 28px 22px;
+    margin-bottom: 22px;
+    border-top: 4px solid #00897b;
+    height: 100%;
+  }
+  .impacto-card .card-icon {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .impacto-card h3 {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #00574b;
+    margin-bottom: 10px;
+  }
+  .impacto-card p {
+    color: #555;
+    font-size: 0.97em;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .impacto-card .big-figure {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #00897b;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .highlight-green {
+    background: #e8f5e9;
+    border-left: 5px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1.02em;
+    color: #1b5e20;
+  }
+  .highlight-green strong { color: #00574b; }
+
+  .approach-step {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+  .approach-step .step-icon {
+    font-size: 2.2em;
+    min-width: 52px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .approach-step h4 {
+    font-weight: 800;
+    color: #00574b;
+    margin: 0 0 5px;
+  }
+  .approach-step p {
+    color: #555;
+    font-size: 0.97em;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .testimonial-impacto {
+    background: #f0faf8;
+    border-left: 4px solid #00897b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 16px;
+  }
+  .testimonial-impacto blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 8px;
+    font-size: 1em;
+    border: none;
+    padding: 0;
+  }
+  .testimonial-impacto .author {
+    font-weight: 700;
+    color: #00897b;
+    font-size: 0.9em;
+  }
+
+  .region-badge {
+    display: inline-block;
+    background: #e0f2f1;
+    color: #00574b;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.88em;
+    font-weight: 700;
+    margin: 4px 3px;
+  }
+
+  .video-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    margin: 10px 0;
+  }
+  .video-wrap video {
+    width: 100%;
+    display: block;
+  }
+
+  .cta-impacto {
+    background: linear-gradient(135deg, #00897b, #00574b);
+    color: white;
+    border-radius: 14px;
+    padding: 38px 30px;
+    text-align: center;
+    margin: 40px 0 10px;
+  }
+  .cta-impacto h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-impacto p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+&lt;/style&gt;
+
+&lt;!-- HERO --&gt;
+&lt;div class=&quot;impacto-hero&quot;&gt;
+  &lt;img src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Impacto AguaSAN&quot;&gt;
+  &lt;div class=&quot;impacto-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;impacto-hero-text&quot;&gt;
+    &lt;h1&gt;📊 El Impacto de AguaSAN&lt;/h1&gt;
+    &lt;p&gt;Filtros instalados, familias transformadas, comunidades con agua segura. Estos son los resultados de años de trabajo en campo.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;impacto-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 impacto-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;2,500+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;filtros entregados&lt;/span&gt;
       &lt;/div&gt;
-    &lt;div class=&quot;container mt-5&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;counter-up&quot;&gt;
-            &lt;div class=&quot;content&quot;&gt;
-              &lt;div class=&quot;box&quot;&gt;
-                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-filter&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                &lt;div class=&quot;counter&quot;&gt;+2500&lt;/div&gt;
-                &lt;div class=&quot;text&quot;&gt;Filtros entregados&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;box&quot;&gt;
-                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-tint&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                &lt;div class=&quot;counter&quot;&gt;+ 10000&lt;/div&gt;
-                &lt;div class=&quot;text&quot;&gt;Familias con agua de calidad&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;box&quot;&gt;
-                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                &lt;div class=&quot;counter&quot;&gt;11&lt;/div&gt;
-                &lt;div class=&quot;text&quot;&gt;Comunidades Trabajadas&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;box&quot;&gt;
-                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                &lt;div class=&quot;counter&quot;&gt;2&lt;/div&gt;
-                &lt;div class=&quot;text&quot;&gt;Premios recibidos &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 impacto-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;10,000+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;personas con agua segura&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 impacto-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;11&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;comunidades trabajadas&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 impacto-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;premios recibidos&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-          &lt;/div&gt;
-          &lt;script&gt;
-            $(document).ready(function(){
-              $(&apos;.counter&apos;).counterUp({
-                delay: 10,
-                time: 3000
-              });
-            });
-            &lt;/script&gt;
-            &lt;div class=&quot;col-md-8&quot;&gt;
-                &lt;h1 class=&quot;mb-4&quot;&gt;El impacto de AguaSan&lt;/h1&gt;
-                &lt;p&gt;Nosotros hemos atendido más de 10,000 personas en diversas comunidades del Perú, como lo son:&lt;/p&gt;
-                &lt;p&gt;Nuestros proyectos son integrales,  &lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;col-md-4&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
-                &lt;img class=&quot;image_2&quot; src=&quot;/img/impacto/agualimpia_sucia.jpg&quot; alt=&quot;&quot;&gt;
-            &lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+  &lt;!-- SECCIÓN 1: ALCANCE --&gt;
+  &lt;div class=&quot;impacto-section&quot;&gt;
+    &lt;h2&gt;🗺️ ¿Dónde hemos llegado?&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-7&quot;&gt;
+        &lt;p&gt;AguaSAN ha llevado soluciones de agua segura a comunidades rurales, nativas y periurbanas a lo largo del Perú — lugares donde la infraestructura convencional no llega o tardaría décadas en hacerlo.&lt;/p&gt;
+        &lt;div class=&quot;highlight-green&quot;&gt;
+          Nuestro trabajo se concentra en las regiones con mayor brecha hídrica: &lt;strong&gt;selva amazónica, sierra rural y comunidades nativas&lt;/strong&gt;, donde el acceso a agua segura transforma vidas de manera inmediata y sostenible.
         &lt;/div&gt;
-    &lt;/div&gt;   
-      &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
-            &lt;h2 class=&quot;h2_impacto&quot;&gt;Involucramiento con las comunidades&lt;/h2&gt;
-            &lt;p&gt;The water crisis refers to the lack of sufficient, safe, and affordable water for drinking, cooking, and sanitation. The crisis affects billions of people around the world, particularly in developing countries.&lt;/p&gt;
-            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/problematica_agua.jpg&quot; alt=&quot;&quot;&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;align-items: flex-end;&quot;&gt;
-            &lt;h2 class=&quot;h2_impacto&quot;&gt;Capacitación a nuestros usuarios finales&lt;/h2&gt;
-            &lt;p&gt;The water crisis is caused by a combination of factors, including population growth, climate change, and pollution. In some regions, water is also used inefficiently or unsustainably, exacerbating the problem.&lt;/p&gt;
-            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/capacitacion.JPG&quot; alt=&quot;&quot;&gt;
+        &lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;strong&gt;Comunidades y regiones atendidas:&lt;/strong&gt;&lt;/p&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Purús, Ucayali&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Loreto&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Amazonas&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Huancavelica&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Ayacucho&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Lima rural&lt;/span&gt;
+          &lt;span class=&quot;region-badge&quot;&gt;📍 Junín&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+        &lt;img src=&quot;/img/impacto/agualimpia_sucia.jpg&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Agua limpia vs agua contaminada&quot;&gt;
+        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px;&quot;&gt;El antes y el después de filtrar el agua con el Filtro Vita&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- SECCIÓN 2: CÓMO TRABAJAMOS --&gt;
+  &lt;div class=&quot;impacto-section&quot;&gt;
+    &lt;h2&gt;🤝 Nuestra metodología: más que entregar un filtro&lt;/h2&gt;
+    &lt;p&gt;Cada proyecto de AguaSAN sigue un proceso integral que garantiza que el filtro funcione correctamente y que la comunidad pueda mantenerlo de forma autónoma.&lt;/p&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:24px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;🔍&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Diagnóstico comunitario&lt;/h4&gt;
+            &lt;p&gt;Evaluamos la calidad del agua, las necesidades reales de cada familia y las condiciones logísticas del territorio antes de diseñar la solución.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;row&quot; &gt;
-          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
-            &lt;h2&gt;Reducción del 44% de enfermedades diarreicas&lt;/h2&gt;
-            &lt;p&gt;The water crisis has far-reaching consequences for human health, economic development, and the environment. Lack of access to safe water and sanitation facilities contributes to the spread of diseases and can lead to malnutrition, poverty, and social inequality.&lt;/p&gt;
-            &lt;img class=&quot;image_2 image_impacto&quot; src=&quot;/img/impacto/diarrea.jpg&quot; alt=&quot;&quot;&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;🏗️&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Fabricación y transporte&lt;/h4&gt;
+            &lt;p&gt;Los filtros se fabrican con materiales locales y se transportan hasta las comunidades más remotas, incluso por vía fluvial o a pie.&lt;/p&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;col-md-6&quot; style=&quot;display: flex;flex-wrap: wrap;flex-direction: row-reverse;justify-content: space-around;&quot;&gt;
-            &lt;h2&gt;Soluciones prácticas y económicas&lt;/h2&gt;
-            &lt;p&gt;There are many solutions to the water crisis, including water conservation, improved water management, and investment in infrastructure and technology. Individual actions, such as reducing water usage and supporting organizations that work to provide clean water, can also make a difference.&lt;/p&gt;
-            &lt;div class = &quot;col-md-6&quot;&gt;
-            &lt;img class=&quot;image_2&quot; style = &quot;width: 100%; &quot; src=&quot;/img/impacto/FILTRO_FBA.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
-            &lt;div class = &quot;col-md-6&quot;&gt;
-            &lt;img class=&quot;image_2&quot; style = &quot;width: 100%; &quot; src=&quot;/img/impacto/FILTRO_FLAI.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;🎓&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Capacitación en campo&lt;/h4&gt;
+            &lt;p&gt;Talleres presenciales con cada familia para enseñar el uso correcto, el mantenimiento de la biocapa y la higiene del agua almacenada.&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;jumbotron text-center&quot;&gt;
-        &lt;h2&gt;Nuestros Testimonios&lt;/h2&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;🏠&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Instalación hogar por hogar&lt;/h4&gt;
+            &lt;p&gt;Cada filtro se instala directamente en la vivienda del beneficiario, asegurándonos de que quede bien posicionado y con las capas correctas.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;📋&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Encuesta y seguimiento&lt;/h4&gt;
+            &lt;p&gt;Al terminar la implementación, recogemos testimonios y datos de cada familia para medir el impacto real y mejorar futuras intervenciones.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;approach-step&quot;&gt;
+          &lt;div class=&quot;step-icon&quot;&gt;🌱&lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4&gt;Autonomía sostenible&lt;/h4&gt;
+            &lt;p&gt;El objetivo final es que la comunidad pueda operar y mantener el sistema sin depender de nosotros. Cada intervención construye capacidad local.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
-      &lt;video width=&quot;640&quot; height=&quot;360&quot; controls &gt;
-        &lt;source src=&quot;/img/impacto/preguntas.mp4&quot; type=&quot;video/mp4&quot;&gt;
-      &lt;/video&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:10px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/impacto/problematica_agua.jpg&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Problemática agua en comunidades&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/impacto/capacitacion.JPG&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Capacitación comunitaria&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 
+  &lt;!-- SECCIÓN 3: RESULTADOS EN SALUD --&gt;
+  &lt;div class=&quot;impacto-section&quot;&gt;
+    &lt;h2&gt;💚 Lo que cambia cuando el agua es segura&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;impacto-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;📉&lt;/span&gt;
+          &lt;span class=&quot;big-figure&quot;&gt;44%&lt;/span&gt;
+          &lt;h3&gt;Reducción de enfermedades diarreicas&lt;/h3&gt;
+          &lt;p&gt;En comunidades con Filtro Vita activo, los casos de diarrea infantil disminuyen significativamente en los primeros meses de uso.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;impacto-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;👶&lt;/span&gt;
+          &lt;span class=&quot;big-figure&quot;&gt;0 ⚡&lt;/span&gt;
+          &lt;h3&gt;Sin electricidad ni químicos&lt;/h3&gt;
+          &lt;p&gt;Nuestros filtros funcionan por gravedad — ideales para comunidades sin red eléctrica. Solo agua, arena y biología.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;impacto-card&quot;&gt;
+          &lt;span class=&quot;card-icon&quot;&gt;💰&lt;/span&gt;
+          &lt;span class=&quot;big-figure&quot;&gt;10×&lt;/span&gt;
+          &lt;h3&gt;Más económico que alternativas&lt;/h3&gt;
+          &lt;p&gt;Un Filtro Vita cuesta una fracción de lo que una familia gasta en camiones cisterna o atención médica por enfermedades hídricas al año.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:10px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/impacto/diarrea.jpg&quot;
+             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Reducción enfermedades&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot; style=&quot;display:flex; align-items:center;&quot;&gt;
+        &lt;div&gt;
+          &lt;h3 style=&quot;color:#00574b; font-weight:800;&quot;&gt;Nuestros filtros — dos soluciones para cada escala&lt;/h3&gt;
+          &lt;div class=&quot;row&quot; style=&quot;margin-top:14px;&quot;&gt;
+            &lt;div class=&quot;col-sm-6 text-center&quot;&gt;
+              &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot; style=&quot;max-height:130px; object-fit:contain;&quot; alt=&quot;Filtro FBA&quot;&gt;
+              &lt;p style=&quot;font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;&quot;&gt;FBA — Familiar&lt;br&gt;&lt;span style=&quot;font-weight:400; color:#666;&quot;&gt;15–20 L/uso&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-6 text-center&quot;&gt;
+              &lt;img src=&quot;/img/impacto/FILTRO_FLAI.png&quot; style=&quot;max-height:130px; object-fit:contain;&quot; alt=&quot;Filtro FLAI&quot;&gt;
+              &lt;p style=&quot;font-weight:700; color:#00574b; margin-top:8px; font-size:0.9em;&quot;&gt;FLAI — Comunitario&lt;br&gt;&lt;span style=&quot;font-weight:400; color:#666;&quot;&gt;2,000+ L/día&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 
-    &lt;footer class=&quot;bg-secondary text-white text-center py-3 mt-5&quot;&gt;
-        &amp;copy; 2023 Water Crisis | All rights reserved
-    &lt;/footer&gt;</description>
+  &lt;!-- SECCIÓN 4: TESTIMONIOS Y VIDEO --&gt;
+  &lt;div class=&quot;impacto-section&quot;&gt;
+    &lt;h2&gt;🗣️ Las voces de las comunidades&lt;/h2&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;testimonial-impacto&quot;&gt;
+          &lt;blockquote&gt;&quot;El agua limpia alarga la vida.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Zenia Castillo, Comunidad Nuevo San Martín, Purús&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-impacto&quot;&gt;
+          &lt;blockquote&gt;&quot;El filtro vita nos permite vivir tranquilos y sanos.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Rubén Jijida Bachara, Comunidad Bufeo, Ucayali&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;testimonial-impacto&quot;&gt;
+          &lt;blockquote&gt;&quot;Con agua limpia cuidamos nuestra salud. Cuando tomas agua limpia no te enfermas.&quot;&lt;/blockquote&gt;
+          &lt;div class=&quot;author&quot;&gt;— Asís Salomón Castillo, Comunidad Bufeo, Ucayali&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;video-wrap&quot;&gt;
+          &lt;video controls&gt;
+            &lt;source src=&quot;/img/impacto/preguntas.mp4&quot; type=&quot;video/mp4&quot;&gt;
+          &lt;/video&gt;
+        &lt;/div&gt;
+        &lt;p style=&quot;font-size:0.85em; color:#888; margin-top:8px; text-align:center;&quot;&gt;Testimonios en campo — comunidades beneficiarias de AguaSAN&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CTA --&gt;
+  &lt;div class=&quot;cta-impacto&quot;&gt;
+    &lt;h3&gt;Cada filtro es una familia protegida.&lt;/h3&gt;
+    &lt;p&gt;Con tu apoyo podemos llegar a más comunidades que hoy beben agua contaminada sin ninguna alternativa.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#00574b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /container --&gt;
+</description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
         <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
