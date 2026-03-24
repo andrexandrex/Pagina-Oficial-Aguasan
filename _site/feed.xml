@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 19 Mar 2026 22:28:47 -0600</pubDate>
-    <lastBuildDate>Thu, 19 Mar 2026 22:28:47 -0600</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2026 00:11:23 -0600</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2026 00:11:23 -0600</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -433,51 +433,86 @@
         <title>Purús 2024</title>
         <description>&lt;style&gt;
   .purus-hero {
-    background: linear-gradient(135deg, #1a6ea8 0%, #0d3f6b 100%);
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .purus-hero img {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center 20%;
+    top: 0; left: 0;
+  }
+  .purus-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,40,90,0.10) 0%, rgba(10,40,90,0.80) 100%);
+  }
+  .purus-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
     color: white;
-    padding: 60px 0 40px;
-    text-align: center;
-    margin-bottom: 40px;
+    padding: 0 20px 48px;
   }
-  .purus-hero h1 { font-size: 2.4em; font-weight: 800; margin-bottom: 10px; }
-  .purus-hero p  { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+  .purus-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .purus-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 660px; margin: 0 auto; }
+  .purus-hero-text .meta { font-size: 0.92em; opacity: 0.75; margin-top: 10px; }
 
-  .stat-box {
-    background: #fff;
-    border: 2px solid #1a6ea8;
-    border-radius: 12px;
-    padding: 24px 16px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  .purus-stat-strip {
+    background: #0d3f6b;
+    padding: 26px 0;
+    margin-bottom: 44px;
   }
-  .stat-box .number { font-size: 2.8em; font-weight: 900; color: #1a6ea8; line-height: 1; }
-  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
+  .purus-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .purus-stat:last-child { border-right: none; }
+  .purus-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .purus-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
 
-  .story-section { padding: 40px 0; border-bottom: 1px solid #eee; }
-  .story-section h2 { color: #1a6ea8; font-weight: 700; margin-bottom: 20px; }
+  .story-section { padding: 44px 0; border-bottom: 1px solid #eaeaea; }
+  .story-section h2 { color: #0d3f6b; font-weight: 800; font-size: 1.7em; margin-bottom: 18px; }
+
+  .highlight-box {
+    background: #e8f4fd;
+    border-left: 5px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1em;
+    color: #1a4a70;
+  }
+  .highlight-box strong { color: #0d3f6b; }
 
   .timeline-step {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 28px;
-    gap: 16px;
+    margin-bottom: 30px;
+    gap: 18px;
   }
   .timeline-icon {
     font-size: 2em;
-    min-width: 48px;
+    min-width: 50px;
     text-align: center;
     line-height: 1.2;
+    flex-shrink: 0;
   }
-  .timeline-text h4 { margin: 0 0 4px; font-weight: 700; color: #0d3f6b; }
-  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; }
+  .timeline-text h4 { margin: 0 0 5px; font-weight: 800; color: #0d3f6b; font-size: 1.05em; }
+  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; line-height: 1.6; }
 
   .testimonial-card {
     background: #f0f7ff;
     border-left: 4px solid #1a6ea8;
     border-radius: 8px;
     padding: 18px 20px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
   .testimonial-card blockquote {
     font-style: italic;
@@ -490,57 +525,90 @@
   .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
 
   .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
-  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(30%); }
+  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(20%); }
 
-  .highlight-box {
-    background: #e8f4fd;
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin: 20px 0;
-    font-size: 1.05em;
-    color: #1a4a70;
+  .stat-box {
+    background: #fff;
+    border: 2px solid #1a6ea8;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
-  .highlight-box strong { color: #1a6ea8; }
-&lt;/style&gt;
+  .stat-box .number { font-size: 2.6em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
 
-&lt;body&gt;
+  .gallery-row { margin: 22px 0; }
+  .gallery-row img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+    object-fit: cover;
+    height: 220px;
+  }
+  .gallery-caption {
+    font-size: 0.82em;
+    color: #888;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .vita-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .vita-feature .vi { font-size: 1.5em; min-width: 32px; text-align: center; flex-shrink: 0; }
+  .vita-feature div h5 { margin: 0 0 2px; font-weight: 800; color: #0d3f6b; font-size: 0.97em; }
+  .vita-feature div p  { margin: 0; color: #555; font-size: 0.92em; line-height: 1.5; }
+
+  .cta-purus {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white; border-radius: 14px; padding: 38px 30px;
+    text-align: center; margin: 40px 0 10px;
+  }
+  .cta-purus h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-purus p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+&lt;/style&gt;
 
 &lt;!-- HERO --&gt;
 &lt;div class=&quot;purus-hero&quot;&gt;
-  &lt;h1&gt;💧 Agua Limpia para el Pueblo Purús&lt;/h1&gt;
-  &lt;p&gt;37 familias en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.&lt;/p&gt;
-  &lt;p style=&quot;margin-top:14px; font-size:0.95em; opacity:0.75;&quot;&gt;📍 Puerto Esperanza, Ucayali &amp;nbsp;|&amp;nbsp; 🗓️ Febrero 2024&lt;/p&gt;
+  &lt;img src=&quot;/img/purus/Portada.jpg&quot; alt=&quot;Implementación Filtro Vita Purús&quot;&gt;
+  &lt;div class=&quot;purus-hero-overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;purus-hero-text&quot;&gt;
+    &lt;h1&gt;💧 Agua Limpia para el Pueblo Purús&lt;/h1&gt;
+    &lt;p&gt;35 hogares en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.&lt;/p&gt;
+    &lt;p class=&quot;meta&quot;&gt;📍 Puerto Esperanza, Ucayali &amp;nbsp;|&amp;nbsp; 🗓️ Febrero 2024&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-  &lt;!-- STATS ROW --&gt;
-  &lt;div class=&quot;row text-center&quot; style=&quot;margin-bottom:40px;&quot;&gt;
-    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
-      &lt;div class=&quot;stat-box&quot;&gt;
-        &lt;div class=&quot;number&quot;&gt;37&lt;/div&gt;
-        &lt;div class=&quot;label&quot;&gt;🏠 Filtros instalados&lt;/div&gt;
+&lt;!-- STAT STRIP --&gt;
+&lt;div class=&quot;purus-stat-strip&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;37&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;filtros instalados&lt;/span&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
-      &lt;div class=&quot;stat-box&quot;&gt;
-        &lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
-        &lt;div class=&quot;label&quot;&gt;🌿 Comunidades beneficiadas&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;comunidades beneficiadas&lt;/span&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
-      &lt;div class=&quot;stat-box&quot;&gt;
-        &lt;div class=&quot;number&quot;&gt;200+&lt;/div&gt;
-        &lt;div class=&quot;label&quot;&gt;👨‍👩‍👧‍👦 Personas con agua segura&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;200+&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;personas con agua segura&lt;/span&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
-      &lt;div class=&quot;stat-box&quot;&gt;
-        &lt;div class=&quot;number&quot;&gt;0&lt;/div&gt;
-        &lt;div class=&quot;label&quot;&gt;⚡ Electricidad requerida&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
+        &lt;span class=&quot;cnum&quot;&gt;0 ⚡&lt;/span&gt;
+        &lt;span class=&quot;clabel&quot;&gt;electricidad requerida&lt;/span&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;container&quot;&gt;
 
   &lt;!-- EL PROBLEMA --&gt;
   &lt;div class=&quot;story-section&quot;&gt;
@@ -554,8 +622,11 @@
           &lt;span style=&quot;font-size:0.88em;&quot;&gt;— Cristina Sálamo, Comunidad Nuevo San Martín&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-5&quot;&gt;
-        &lt;img src=&quot;/img/crisis/mapa_agua_potable.png&quot; style=&quot;max-width:100%; border-radius:8px;&quot; alt=&quot;Mapa acceso agua&quot;&gt;
+      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
+        &lt;img src=&quot;/img/purus/mapa_purus.png&quot;
+             style=&quot;max-width:100%; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
+             alt=&quot;Mapa ruta Purús — Bufeo y Nuevo San Martín&quot;&gt;
+        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px;&quot;&gt;Ruta fluvial hasta las comunidades de Bufeo y Nuevo San Martín, Purús&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -564,20 +635,47 @@
   &lt;div class=&quot;story-section&quot;&gt;
     &lt;h2&gt;🔬 La solución: el Filtro Vita&lt;/h2&gt;
     &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-5&quot;&gt;
-        &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot; style=&quot;max-width:100%; border-radius:8px;&quot; alt=&quot;Filtro Vita&quot;&gt;
+      &lt;div class=&quot;col-md-4 text-center&quot;&gt;
+        &lt;img src=&quot;/img/purus/filtro_vita_logo.png&quot;
+             style=&quot;max-width:100%; max-height:280px; object-fit:contain;&quot;
+             alt=&quot;Filtro Vita — AguaSAN&quot;&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-7&quot;&gt;
-        &lt;p&gt;El &lt;strong&gt;Filtro Vita&lt;/strong&gt; es una adaptación del filtro bioarena de concreto, ingeniada para caber en un bidón de polietileno de alta densidad. Liviano, transportable en bote, sin electricidad, sin químicos. Perfecto para la Amazonía.&lt;/p&gt;
+      &lt;div class=&quot;col-md-8&quot;&gt;
+        &lt;p&gt;El &lt;strong&gt;Filtro Vita&lt;/strong&gt; es una adaptación del filtro bioarena de concreto, ingeniada para la realidad de la selva amazónica. Su diseño en &lt;strong&gt;bidón de polietileno de alta densidad (HDPE)&lt;/strong&gt; lo hace liviano, apilable y transportable en canoa, motocar o a pie — sin electricidad, sin químicos.&lt;/p&gt;
         &lt;p&gt;Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una &lt;em&gt;biocapa&lt;/em&gt; de microorganismos vivos elimina patógenos y purifica el agua de forma natural.&lt;/p&gt;
-        &lt;ul style=&quot;padding-left:20px; color:#333;&quot;&gt;
-          &lt;li&gt;✅ Elimina bacterias y parásitos&lt;/li&gt;
-          &lt;li&gt;✅ Sin electricidad ni químicos&lt;/li&gt;
-          &lt;li&gt;✅ Fabricado con materiales locales&lt;/li&gt;
-          &lt;li&gt;✅ Caudal de 0.3–0.5 L/minuto&lt;/li&gt;
-          &lt;li&gt;✅ Fácil mantenimiento comunitario&lt;/li&gt;
-          &lt;li&gt;✅ Larga vida útil&lt;/li&gt;
-        &lt;/ul&gt;
+
+        &lt;div class=&quot;vita-feature&quot;&gt;
+          &lt;div class=&quot;vi&quot;&gt;📦&lt;/div&gt;
+          &lt;div&gt;&lt;h5&gt;Transportable y apilable&lt;/h5&gt;&lt;p&gt;Los bidones HDPE son ligeros y se apilan fácilmente — pueden cargarse en bote, en motocar o a hombros hasta el último hogar de la comunidad.&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;vita-feature&quot;&gt;
+          &lt;div class=&quot;vi&quot;&gt;🪣&lt;/div&gt;
+          &lt;div&gt;&lt;h5&gt;Balde con tapa para agua tratada&lt;/h5&gt;&lt;p&gt;Cada kit incluye un balde con tapa para almacenar el agua filtrada libre de recontaminación, garantizando la calidad hasta el momento del consumo.&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;vita-feature&quot;&gt;
+          &lt;div class=&quot;vi&quot;&gt;🦠&lt;/div&gt;
+          &lt;div&gt;&lt;h5&gt;Eliminación probada de patógenos&lt;/h5&gt;&lt;p&gt;Elimina bacterias, parásitos y turbidez mediante filtración física y biológica. Sin recambios ni insumos externos.&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;vita-feature&quot;&gt;
+          &lt;div class=&quot;vi&quot;&gt;⏳&lt;/div&gt;
+          &lt;div&gt;&lt;h5&gt;+15 años de vida útil&lt;/h5&gt;&lt;p&gt;Con mantenimiento básico (swirl &amp; dump) que cualquier familia puede hacer, el filtro funciona por más de quince años.&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Filtros acumulados foto --&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-top:28px;&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/filtros_acumulados.jpg&quot;
+             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:300px;&quot;
+             alt=&quot;Filtros Vita listos para ser distribuidos&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Los 37 bidones Filtro Vita listos para distribución antes de su traslado a las comunidades&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/ETIQUETA FILTRO.png&quot;
+             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:contain; max-height:300px; background:#f8f8f8;&quot;
+             alt=&quot;Etiqueta Filtro Vita con instrucciones&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Cada filtro lleva su etiqueta con instrucciones de uso, financiado por Yaqua y con la participación activa de las comunidades&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -591,27 +689,39 @@
       &lt;div class=&quot;timeline-icon&quot;&gt;🔍&lt;/div&gt;
       &lt;div class=&quot;timeline-text&quot;&gt;
         &lt;h4&gt;Evaluación y planificación&lt;/h4&gt;
-        &lt;p&gt;Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística.&lt;/p&gt;
+        &lt;p&gt;Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística del proyecto.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;timeline-step&quot;&gt;
       &lt;div class=&quot;timeline-icon&quot;&gt;🏖️&lt;/div&gt;
       &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Selección y preparación de arena&lt;/h4&gt;
-        &lt;p&gt;La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo de filtración. Cada costal fue empaquetado y etiquetado.&lt;/p&gt;
+        &lt;h4&gt;Selección, preparación y adaptación de los filtros&lt;/h4&gt;
+        &lt;p&gt;La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo. Se utilizaron envases de &lt;strong&gt;polietileno de alta densidad (HDPE)&lt;/strong&gt; y baldes con tapa para el almacenamiento del agua tratada. Cada filtro fue ensamblado, etiquetado y listo para su traslado.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;timeline-step&quot;&gt;
       &lt;div class=&quot;timeline-icon&quot;&gt;🚤&lt;/div&gt;
       &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Transporte fluvial&lt;/h4&gt;
-        &lt;p&gt;Los 37 bidones y costales de arena viajaron en bote por los ríos del Purús. Miembros de las propias comunidades ayudaron a llevar los materiales desde el embarcadero hasta cada hogar.&lt;/p&gt;
+        &lt;h4&gt;Transporte hasta las comunidades&lt;/h4&gt;
+        &lt;p&gt;Los bidones y costales de arena viajaron primero en motocar y luego en bote por los ríos del Purús, adaptándose a las condiciones climáticas. Miembros de las propias comunidades colaboraron cargando los materiales desde el embarcadero hasta cada hogar.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
-    &lt;div class=&quot;timeline-step&quot;&gt;
+    &lt;!-- Galería de transporte --&gt;
+    &lt;div class=&quot;gallery-row row&quot; style=&quot;margin-left:68px;&quot;&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/galeria1_transportacion.jpg&quot; alt=&quot;Cargando filtros en motocar&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Carga de los bidones Filtro Vita en motocar para el traslado inicial&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/galeria1_transportancion.jpg&quot; alt=&quot;Comunidad cargando materiales&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Miembros de la comunidad trasladando los materiales a pie hasta los hogares&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;timeline-step&quot; style=&quot;margin-top:28px;&quot;&gt;
       &lt;div class=&quot;timeline-icon&quot;&gt;🎓&lt;/div&gt;
       &lt;div class=&quot;timeline-text&quot;&gt;
         &lt;h4&gt;Capacitación comunitaria&lt;/h4&gt;
@@ -619,11 +729,21 @@
       &lt;/div&gt;
     &lt;/div&gt;
 
+    &lt;!-- Foto capacitación --&gt;
+    &lt;div class=&quot;row&quot; style=&quot;margin-left:68px; margin-bottom:28px;&quot;&gt;
+      &lt;div class=&quot;col-md-10&quot;&gt;
+        &lt;img src=&quot;/img/purus/capacitacion.jpg&quot;
+             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:320px;&quot;
+             alt=&quot;Capacitación comunitaria Purús&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Taller de capacitación en campo con las familias beneficiarias&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
     &lt;div class=&quot;timeline-step&quot;&gt;
       &lt;div class=&quot;timeline-icon&quot;&gt;🏠&lt;/div&gt;
       &lt;div class=&quot;timeline-text&quot;&gt;
         &lt;h4&gt;Instalación hogar por hogar&lt;/h4&gt;
-        &lt;p&gt;Cada filtro fue instalado directamente en la vivienda del beneficiario: 12 en Bufeo, 23 en Nuevo San Martín, y 2 adicionales como puntos de demostración en la Asociación Pro-Purús y FECONAPU.&lt;/p&gt;
+        &lt;p&gt;Se instalaron &lt;strong&gt;35 filtros en hogares&lt;/strong&gt; de Bufeo y Nuevo San Martín, con &lt;strong&gt;2 filtros adicionales&lt;/strong&gt; en las instalaciones de la Asociación Pro-Purús y la FECONAPU como puntos de demostración y réplica para la comunidad.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -636,11 +756,26 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
+  &lt;!-- BENEFICIARIOS --&gt;
+  &lt;div class=&quot;story-section&quot;&gt;
+    &lt;h2&gt;🙌 Los beneficiarios&lt;/h2&gt;
+    &lt;p&gt;Cada bidón azul representa una familia que ya no bebe del río. Estas son algunas de las personas que hoy tienen agua segura en casa.&lt;/p&gt;
+    &lt;div class=&quot;gallery-row row&quot;&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/beneficiario1.jpg&quot; alt=&quot;Beneficiario 1 con su Filtro Vita&quot; style=&quot;height:300px;&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Beneficiario de la comunidad Bufeo con su Filtro Vita instalado&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-6&quot;&gt;
+        &lt;img src=&quot;/img/purus/beneficiario2.jpg&quot; alt=&quot;Beneficiario 2 con su Filtro Vita&quot; style=&quot;height:300px;&quot;&gt;
+        &lt;p class=&quot;gallery-caption&quot;&gt;Beneficiario de la comunidad Nuevo San Martín con su Filtro Vita&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
   &lt;!-- VOCES --&gt;
   &lt;div class=&quot;story-section&quot;&gt;
     &lt;h2&gt;🗣️ Las voces que más importan&lt;/h2&gt;
     &lt;p&gt;De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:&lt;/p&gt;
-
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-md-6&quot;&gt;
         &lt;div class=&quot;testimonial-card&quot;&gt;
@@ -673,7 +808,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;!-- IMPACTO --&gt;
+  &lt;!-- IMPACTO EN NÚMEROS --&gt;
   &lt;div class=&quot;story-section&quot;&gt;
     &lt;h2&gt;📊 El impacto en números&lt;/h2&gt;
     &lt;div class=&quot;row text-center&quot;&gt;
@@ -717,14 +852,13 @@
   &lt;/div&gt;
 
   &lt;!-- CTA --&gt;
-  &lt;div class=&quot;text-center&quot; style=&quot;padding: 40px 0 20px;&quot;&gt;
-    &lt;h3 style=&quot;color:#1a6ea8;&quot;&gt;¿Quieres ser parte de la siguiente historia?&lt;/h3&gt;
-    &lt;p style=&quot;color:#555; max-width:500px; margin: 10px auto 24px;&quot;&gt;Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-primary btn-lg page-scroll&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+  &lt;div class=&quot;cta-purus&quot;&gt;
+    &lt;h3&gt;¿Quieres ser parte de la siguiente historia?&lt;/h3&gt;
+    &lt;p&gt;Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.&lt;/p&gt;
+    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;&lt;!-- /container --&gt;
-&lt;/body&gt;
 </description>
         <pubDate>Thu, 01 Feb 2024 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/implementaci%C3%B3n/2024/02/01/Purus/</link>
