@@ -503,85 +503,322 @@ setTimeout(showSlides, 5000);
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<style>
+  #about { padding: 80px 0 60px; background: #f8fafc; }
+  #about .section-heading { color: #0d3f6b; }
+  #about .section-subheading { max-width: 620px; margin: 0 auto 60px; }
+
+  /* ── Spine timeline ───────────────────────────────────────────── */
+  .spine-timeline {
+    position: relative;
+    padding: 10px 0 30px;
+  }
+  .spine-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #b8d9f5 0%, #1a6ea8 30%, #0d3f6b 100%);
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  /* ── Each row ─────────────────────────────────────────────────── */
+  .tl-row {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  /* Content panel — half width minus circle space */
+  .tl-panel {
+    width: calc(50% - 56px);
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 22px 24px;
+    position: relative;
+    z-index: 1;
+  }
+  /* Arrow pointer toward spine */
+  .tl-panel::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    border: 10px solid transparent;
+  }
+  .tl-row.tl-l .tl-panel::after {
+    right: -18px;
+    border-left-color: #fff;
+  }
+  .tl-row.tl-r .tl-panel::after {
+    left: -18px;
+    border-right-color: #fff;
+  }
+
+  /* Spacer on the opposite side */
+  .tl-spacer { width: calc(50% - 56px); }
+
+  /* Circle image in the middle */
+  .tl-circle {
+    width: 112px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 14px;
+    z-index: 2;
+    position: relative;
+  }
+  .tl-circle img {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1a6ea8;
+    box-shadow: 0 0 0 4px #e8f4fd, 0 4px 14px rgba(0,0,0,0.15);
+    background: #fff;
+  }
+  .tl-circle .tl-end-circle {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 4px #1a6ea8, 0 4px 14px rgba(0,0,0,0.20);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 0.65em;
+    font-weight: 800;
+    line-height: 1.3;
+    padding: 8px;
+  }
+
+  /* Panel typography */
+  .tl-panel .tl-year {
+    font-size: 0.8em; font-weight: 700;
+    color: #1a6ea8; margin-bottom: 2px; display: block;
+  }
+  .tl-panel h4 {
+    font-size: 1.05em; font-weight: 800;
+    color: #0d3f6b; margin: 0 0 10px;
+    line-height: 1.35;
+  }
+  .tl-panel p {
+    font-size: 0.91em; color: #555;
+    line-height: 1.65; margin: 0 0 10px;
+  }
+  .tl-panel p:last-child { margin-bottom: 0; }
+
+  /* Badges & pills */
+  .tl-badge {
+    display: inline-block;
+    background: #e8f4fd; color: #1a6ea8;
+    border-radius: 20px; padding: 2px 11px;
+    font-size: 0.75em; font-weight: 700;
+    margin-bottom: 8px; border: 1px solid #b8d9f5;
+  }
+  .tl-pills { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 5px; }
+  .tl-pill {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #0d3f6b; color: #fff;
+    border-radius: 7px; padding: 4px 11px;
+    font-size: 0.78em; font-weight: 700;
+  }
+
+  /* Callout / quote */
+  .tl-quote {
+    background: #f0f7ff;
+    border-left: 3px solid #1a6ea8;
+    border-radius: 0 7px 7px 0;
+    padding: 9px 13px;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.88em;
+    color: #1a4a70;
+  }
+
+  /* Grant tag */
+  .tl-grant {
+    background: #fff8e1; border: 1px solid #ffe082;
+    border-radius: 7px; padding: 8px 12px;
+    margin-top: 10px; font-size: 0.83em; color: #7c4700;
+  }
+  .tl-grant strong { color: #e65100; }
+
+  /* Arrow numbers row */
+  .tl-growth {
+    display: flex; align-items: center;
+    flex-wrap: wrap; gap: 6px;
+    margin-top: 12px;
+  }
+  .tl-growth .from { font-size: 1.6em; font-weight: 900; color: #bbb; line-height: 1; }
+  .tl-growth .to   { font-size: 1.6em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .tl-growth .arr  { font-size: 1.3em; color: #aaa; }
+  .tl-growth small { display: block; font-size: 0.7em; color: #999; }
+
+  /* Bullet list inside panel */
+  .tl-panel ul {
+    padding-left: 16px; margin: 8px 0 0;
+    font-size: 0.89em; color: #555; line-height: 1.9;
+  }
+
+  /* ── Mobile: single column ────────────────────────────────────── */
+  @media (max-width: 767px) {
+    .spine-timeline::before { left: 36px; }
+    .tl-row { flex-direction: column !important; padding-left: 90px; }
+    .tl-circle { position: absolute; left: 0; top: 0; width: 72px; padding-top: 10px; }
+    .tl-circle img, .tl-circle .tl-end-circle { width: 64px; height: 64px; }
+    .tl-spacer { display: none; }
+    .tl-panel { width: 100%; }
+    .tl-panel::after { display: none; }
+  }
+</style>
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Nuestra Historia</h2>
+        <h3 class="section-subheading text-muted">
+          De 65 filtros y una sola comunidad a 2,500 filtros y 10,000 personas con agua segura.
+        </h3>
+      </div>
+    </div>
+
+    <div class="spine-timeline">
+
+      <!-- ── 1: LEFT ─── 2007 Piloto ───────────────────────────── -->
+      <div class="tl-row tl-l">
+        <div class="tl-panel">
+          <span class="tl-badge">🌱 Los primeros pasos</span>
+          <span class="tl-year">2007</span>
+          <h4>Proyecto Piloto — Comunidad 27 de Junio</h4>
+          <p>Todo comenzó con una comunidad y una pregunta: ¿puede un filtro de arena salvar vidas? AguaSAN instaló sus primeros filtros bioarena en hogares reales. Instalar 65 filtros tomó <strong>1.5 años</strong> — aprendimos que el tiempo de implementación no es técnico, es humano.</p>
+          <div class="tl-quote">
+            "El reto no era el filtro. Era ganarse la confianza de la comunidad."
+          </div>
+          <div class="tl-pills">
+            <span class="tl-pill">🏠 65 filtros</span>
+            <span class="tl-pill">📍 1 comunidad</span>
+            <span class="tl-pill">⏱️ 1.5 años</span>
+          </div>
         </div>
-    </section>
+        <div class="tl-circle">
+          <img src="img/about/2.jpg" alt="Proyecto piloto 27 de Junio">
+        </div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- ── 2: RIGHT ── 2009-2010 CAWST + Rotary ─────────────── -->
+      <div class="tl-row tl-r">
+        <div class="tl-spacer"></div>
+        <div class="tl-circle">
+          <img src="img/about/3.jpg" alt="CAWST y Rotary">
+        </div>
+        <div class="tl-panel">
+          <span class="tl-badge">🌍 Red global, impacto local</span>
+          <span class="tl-year">2009 – 2010</span>
+          <h4>CAWST, Rotary y el poder de la alianza</h4>
+          <p>AguaSAN obtuvo conocimiento técnico de <strong>CAWST</strong> y el apoyo de <strong>Rotary International</strong> para escalar. Participamos en la <strong>9ª Convención Internacional de CAWST</strong> y presentamos en el Congreso Mundial de Rotary 2010.</p>
+          <div class="tl-quote">
+            El agente comunitario de salud fue clave: sin su rol no existe adopción sostenida.
+          </div>
+          <div class="tl-pills">
+            <span class="tl-pill">🏫 Capacitación CAWST</span>
+            <span class="tl-pill">🌀 Rotary International</span>
+            <span class="tl-pill">🎯 Meta: 2,500 filtros</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 3: LEFT ─── 2010-2013 Heavy metals ───────────────── -->
+      <div class="tl-row tl-l">
+        <div class="tl-panel">
+          <span class="tl-badge">🔬 Innovación tecnológica</span>
+          <span class="tl-year">2010 – 2013</span>
+          <h4>Adaptando el filtro para remover metales pesados</h4>
+          <p>Descubrimos que en varias comunidades el agua contenía <strong>arsénico y hierro</strong>. AguaSAN lideró la investigación para adaptar el filtro con una capa especial, en alianza con <strong>UNALM</strong> y la empresa privada <strong>LAS</strong>.</p>
+          <div class="tl-grant">
+            <strong>FINCyT 10-FINCYT-PITEI-2010</strong> &nbsp;·&nbsp; <strong>USD 110,251</strong><br>
+            <em>Remoción de metales pesados en filtros bioarena familiares</em>
+          </div>
+          <div class="tl-pills">
+            <span class="tl-pill">🏛️ UNALM + FINCyT</span>
+            <span class="tl-pill">⚗️ Primer prototipo</span>
+          </div>
+        </div>
+        <div class="tl-circle">
+          <img src="img/about/4.jpg" alt="Investigación metales pesados">
+        </div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- ── 4: RIGHT ── 2014-Hoy escala ──────────────────────── -->
+      <div class="tl-row tl-r">
+        <div class="tl-spacer"></div>
+        <div class="tl-circle">
+          <img src="img/foto_implementacion.jpg" alt="Escala AguaSAN">
+        </div>
+        <div class="tl-panel">
+          <span class="tl-badge">🚀 Escala y consolidación</span>
+          <span class="tl-year">2014 – 2023</span>
+          <h4>De un proyecto a quince — de 65 filtros a 2,500</h4>
+          <p>Con metodología refinada, alianzas consolidadas y el Filtro Vita como producto estrella, AguaSAN llegó a comunidades rurales, nativas y periurbanas de la Amazonía, la sierra y la costa.</p>
+          <div class="tl-growth">
+            <div class="text-center"><span class="from">1</span><small>proyecto</small></div>
+            <span class="arr">→</span>
+            <div class="text-center"><span class="to">15</span><small>proyectos</small></div>
+            &nbsp;
+            <div class="text-center"><span class="from">65</span><small>filtros</small></div>
+            <span class="arr">→</span>
+            <div class="text-center"><span class="to">2,500</span><small>filtros</small></div>
+            &nbsp;
+            <div class="text-center"><span class="to">10,000</span><small>personas</small></div>
+          </div>
+          <div class="tl-pills" style="margin-top:12px;">
+            <span class="tl-pill">📍 11 comunidades</span>
+            <span class="tl-pill">🏆 2 premios</span>
+            <span class="tl-pill">👨‍👩‍👧 10,000 personas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 5: LEFT ─── 2024 Purús + Lurigancho ──────────────── -->
+      <div class="tl-row tl-l">
+        <div class="tl-panel">
+          <span class="tl-badge">🌊 Nuevos horizontes</span>
+          <span class="tl-year">2024</span>
+          <h4>Purús y Lurigancho-Chosica — tecnología que evoluciona</h4>
+          <p>Dos proyectos que marcan la madurez tecnológica de AguaSAN:</p>
+          <ul>
+            <li>💧 <strong>Purús, Ucayali:</strong> 37 Filtros Vita HDPE apilables en comunidades nativas de Bufeo y Nuevo San Martín — el corazón de la Amazonía.</li>
+            <li>🧪 <strong>Lurigancho-Chosica, Lima:</strong> 30 FBA con iones de hierro + 2 FLAI comunitarios para remoción de arsénico — 90% de eficacia alcanzando límites DIGESA.</li>
+          </ul>
+          <div class="tl-pills">
+            <span class="tl-pill">🌿 Selva + Costa</span>
+            <span class="tl-pill">🔬 Arsénico + biológico</span>
+            <span class="tl-pill">📦 Filtro apilable</span>
+          </div>
+        </div>
+        <div class="tl-circle">
+          <img src="img/purus/Portada.jpg" alt="Proyectos 2024">
+        </div>
+        <div class="tl-spacer"></div>
+      </div>
+
+      <!-- ── CLOSING ── Sé parte ───────────────────────────────── -->
+      <div class="tl-row" style="justify-content:center; margin-bottom:0;">
+        <div class="tl-circle" style="padding-top:0;">
+          <div class="tl-end-circle">Sé parte<br>de nuestra<br>historia</div>
+        </div>
+      </div>
+
+    </div><!-- /spine-timeline -->
+  </div>
+</section>
+
       <style>
     .fl-node-5d25e07d656b2 > .fl-row-content-wrap {
         margin-right: 34px;
@@ -1455,51 +1692,86 @@ setTimeout(showSlides, 5000);
             </div>
             <style>
   .purus-hero {
-    background: linear-gradient(135deg, #1a6ea8 0%, #0d3f6b 100%);
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .purus-hero img {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center 20%;
+    top: 0; left: 0;
+  }
+  .purus-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,40,90,0.10) 0%, rgba(10,40,90,0.80) 100%);
+  }
+  .purus-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
     color: white;
-    padding: 60px 0 40px;
-    text-align: center;
-    margin-bottom: 40px;
+    padding: 0 20px 48px;
   }
-  .purus-hero h1 { font-size: 2.4em; font-weight: 800; margin-bottom: 10px; }
-  .purus-hero p  { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+  .purus-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .purus-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 660px; margin: 0 auto; }
+  .purus-hero-text .meta { font-size: 0.92em; opacity: 0.75; margin-top: 10px; }
 
-  .stat-box {
-    background: #fff;
-    border: 2px solid #1a6ea8;
-    border-radius: 12px;
-    padding: 24px 16px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  .purus-stat-strip {
+    background: #0d3f6b;
+    padding: 26px 0;
+    margin-bottom: 44px;
   }
-  .stat-box .number { font-size: 2.8em; font-weight: 900; color: #1a6ea8; line-height: 1; }
-  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
+  .purus-stat {
+    text-align: center; color: white; padding: 8px 12px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .purus-stat:last-child { border-right: none; }
+  .purus-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .purus-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
 
-  .story-section { padding: 40px 0; border-bottom: 1px solid #eee; }
-  .story-section h2 { color: #1a6ea8; font-weight: 700; margin-bottom: 20px; }
+  .story-section { padding: 44px 0; border-bottom: 1px solid #eaeaea; }
+  .story-section h2 { color: #0d3f6b; font-weight: 800; font-size: 1.7em; margin-bottom: 18px; }
+
+  .highlight-box {
+    background: #e8f4fd;
+    border-left: 5px solid #1a6ea8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    font-size: 1em;
+    color: #1a4a70;
+  }
+  .highlight-box strong { color: #0d3f6b; }
 
   .timeline-step {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 28px;
-    gap: 16px;
+    margin-bottom: 30px;
+    gap: 18px;
   }
   .timeline-icon {
     font-size: 2em;
-    min-width: 48px;
+    min-width: 50px;
     text-align: center;
     line-height: 1.2;
+    flex-shrink: 0;
   }
-  .timeline-text h4 { margin: 0 0 4px; font-weight: 700; color: #0d3f6b; }
-  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; }
+  .timeline-text h4 { margin: 0 0 5px; font-weight: 800; color: #0d3f6b; font-size: 1.05em; }
+  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; line-height: 1.6; }
 
   .testimonial-card {
     background: #f0f7ff;
     border-left: 4px solid #1a6ea8;
     border-radius: 8px;
     padding: 18px 20px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
   .testimonial-card blockquote {
     font-style: italic;
@@ -1512,57 +1784,90 @@ setTimeout(showSlides, 5000);
   .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
 
   .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
-  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(30%); }
+  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(20%); }
 
-  .highlight-box {
-    background: #e8f4fd;
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin: 20px 0;
-    font-size: 1.05em;
-    color: #1a4a70;
+  .stat-box {
+    background: #fff;
+    border: 2px solid #1a6ea8;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
-  .highlight-box strong { color: #1a6ea8; }
-</style>
+  .stat-box .number { font-size: 2.6em; font-weight: 900; color: #1a6ea8; line-height: 1; }
+  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
 
-<body>
+  .gallery-row { margin: 22px 0; }
+  .gallery-row img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+    object-fit: cover;
+    height: 220px;
+  }
+  .gallery-caption {
+    font-size: 0.82em;
+    color: #888;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .vita-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .vita-feature .vi { font-size: 1.5em; min-width: 32px; text-align: center; flex-shrink: 0; }
+  .vita-feature div h5 { margin: 0 0 2px; font-weight: 800; color: #0d3f6b; font-size: 0.97em; }
+  .vita-feature div p  { margin: 0; color: #555; font-size: 0.92em; line-height: 1.5; }
+
+  .cta-purus {
+    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+    color: white; border-radius: 14px; padding: 38px 30px;
+    text-align: center; margin: 40px 0 10px;
+  }
+  .cta-purus h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
+  .cta-purus p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
+</style>
 
 <!-- HERO -->
 <div class="purus-hero">
-  <h1>💧 Agua Limpia para el Pueblo Purús</h1>
-  <p>37 familias en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.</p>
-  <p style="margin-top:14px; font-size:0.95em; opacity:0.75;">📍 Puerto Esperanza, Ucayali &nbsp;|&nbsp; 🗓️ Febrero 2024</p>
+  <img src="/img/purus/Portada.jpg" alt="Implementación Filtro Vita Purús">
+  <div class="purus-hero-overlay"></div>
+  <div class="purus-hero-text">
+    <h1>💧 Agua Limpia para el Pueblo Purús</h1>
+    <p>35 hogares en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.</p>
+    <p class="meta">📍 Puerto Esperanza, Ucayali &nbsp;|&nbsp; 🗓️ Febrero 2024</p>
+  </div>
 </div>
 
-<div class="container">
-
-  <!-- STATS ROW -->
-  <div class="row text-center" style="margin-bottom:40px;">
-    <div class="col-md-3 col-sm-6">
-      <div class="stat-box">
-        <div class="number">37</div>
-        <div class="label">🏠 Filtros instalados</div>
+<!-- STAT STRIP -->
+<div class="purus-stat-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 purus-stat">
+        <span class="cnum">37</span>
+        <span class="clabel">filtros instalados</span>
       </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="stat-box">
-        <div class="number">2</div>
-        <div class="label">🌿 Comunidades beneficiadas</div>
+      <div class="col-sm-3 purus-stat">
+        <span class="cnum">2</span>
+        <span class="clabel">comunidades beneficiadas</span>
       </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="stat-box">
-        <div class="number">200+</div>
-        <div class="label">👨‍👩‍👧‍👦 Personas con agua segura</div>
+      <div class="col-sm-3 purus-stat">
+        <span class="cnum">200+</span>
+        <span class="clabel">personas con agua segura</span>
       </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="stat-box">
-        <div class="number">0</div>
-        <div class="label">⚡ Electricidad requerida</div>
+      <div class="col-sm-3 purus-stat">
+        <span class="cnum">0 ⚡</span>
+        <span class="clabel">electricidad requerida</span>
       </div>
     </div>
   </div>
+</div>
+
+<div class="container">
 
   <!-- EL PROBLEMA -->
   <div class="story-section">
@@ -1576,8 +1881,11 @@ setTimeout(showSlides, 5000);
           <span style="font-size:0.88em;">— Cristina Sálamo, Comunidad Nuevo San Martín</span>
         </div>
       </div>
-      <div class="col-md-5">
-        <img src="/img/crisis/mapa_agua_potable.png" style="max-width:100%; border-radius:8px;" alt="Mapa acceso agua">
+      <div class="col-md-5 text-center">
+        <img src="/img/purus/mapa_purus.png"
+             style="max-width:100%; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,0.12);"
+             alt="Mapa ruta Purús — Bufeo y Nuevo San Martín">
+        <p style="font-size:0.82em; color:#888; margin-top:8px;">Ruta fluvial hasta las comunidades de Bufeo y Nuevo San Martín, Purús</p>
       </div>
     </div>
   </div>
@@ -1586,20 +1894,47 @@ setTimeout(showSlides, 5000);
   <div class="story-section">
     <h2>🔬 La solución: el Filtro Vita</h2>
     <div class="row">
-      <div class="col-md-5">
-        <img src="/img/impacto/FILTRO_FBA.png" style="max-width:100%; border-radius:8px;" alt="Filtro Vita">
+      <div class="col-md-4 text-center">
+        <img src="/img/purus/filtro_vita_logo.png"
+             style="max-width:100%; max-height:280px; object-fit:contain;"
+             alt="Filtro Vita — AguaSAN">
       </div>
-      <div class="col-md-7">
-        <p>El <strong>Filtro Vita</strong> es una adaptación del filtro bioarena de concreto, ingeniada para caber en un bidón de polietileno de alta densidad. Liviano, transportable en bote, sin electricidad, sin químicos. Perfecto para la Amazonía.</p>
+      <div class="col-md-8">
+        <p>El <strong>Filtro Vita</strong> es una adaptación del filtro bioarena de concreto, ingeniada para la realidad de la selva amazónica. Su diseño en <strong>bidón de polietileno de alta densidad (HDPE)</strong> lo hace liviano, apilable y transportable en canoa, motocar o a pie — sin electricidad, sin químicos.</p>
         <p>Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una <em>biocapa</em> de microorganismos vivos elimina patógenos y purifica el agua de forma natural.</p>
-        <ul style="padding-left:20px; color:#333;">
-          <li>✅ Elimina bacterias y parásitos</li>
-          <li>✅ Sin electricidad ni químicos</li>
-          <li>✅ Fabricado con materiales locales</li>
-          <li>✅ Caudal de 0.3–0.5 L/minuto</li>
-          <li>✅ Fácil mantenimiento comunitario</li>
-          <li>✅ Larga vida útil</li>
-        </ul>
+
+        <div class="vita-feature">
+          <div class="vi">📦</div>
+          <div><h5>Transportable y apilable</h5><p>Los bidones HDPE son ligeros y se apilan fácilmente — pueden cargarse en bote, en motocar o a hombros hasta el último hogar de la comunidad.</p></div>
+        </div>
+        <div class="vita-feature">
+          <div class="vi">🪣</div>
+          <div><h5>Balde con tapa para agua tratada</h5><p>Cada kit incluye un balde con tapa para almacenar el agua filtrada libre de recontaminación, garantizando la calidad hasta el momento del consumo.</p></div>
+        </div>
+        <div class="vita-feature">
+          <div class="vi">🦠</div>
+          <div><h5>Eliminación probada de patógenos</h5><p>Elimina bacterias, parásitos y turbidez mediante filtración física y biológica. Sin recambios ni insumos externos.</p></div>
+        </div>
+        <div class="vita-feature">
+          <div class="vi">⏳</div>
+          <div><h5>+15 años de vida útil</h5><p>Con mantenimiento básico (swirl & dump) que cualquier familia puede hacer, el filtro funciona por más de quince años.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filtros acumulados foto -->
+    <div class="row" style="margin-top:28px;">
+      <div class="col-md-6">
+        <img src="/img/purus/filtros_acumulados.jpg"
+             style="width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:300px;"
+             alt="Filtros Vita listos para ser distribuidos">
+        <p class="gallery-caption">Los 37 bidones Filtro Vita listos para distribución antes de su traslado a las comunidades</p>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/purus/ETIQUETA FILTRO.png"
+             style="width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:contain; max-height:300px; background:#f8f8f8;"
+             alt="Etiqueta Filtro Vita con instrucciones">
+        <p class="gallery-caption">Cada filtro lleva su etiqueta con instrucciones de uso, financiado por Yaqua y con la participación activa de las comunidades</p>
       </div>
     </div>
   </div>
@@ -1613,27 +1948,39 @@ setTimeout(showSlides, 5000);
       <div class="timeline-icon">🔍</div>
       <div class="timeline-text">
         <h4>Evaluación y planificación</h4>
-        <p>Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística.</p>
+        <p>Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística del proyecto.</p>
       </div>
     </div>
 
     <div class="timeline-step">
       <div class="timeline-icon">🏖️</div>
       <div class="timeline-text">
-        <h4>Selección y preparación de arena</h4>
-        <p>La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo de filtración. Cada costal fue empaquetado y etiquetado.</p>
+        <h4>Selección, preparación y adaptación de los filtros</h4>
+        <p>La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo. Se utilizaron envases de <strong>polietileno de alta densidad (HDPE)</strong> y baldes con tapa para el almacenamiento del agua tratada. Cada filtro fue ensamblado, etiquetado y listo para su traslado.</p>
       </div>
     </div>
 
     <div class="timeline-step">
       <div class="timeline-icon">🚤</div>
       <div class="timeline-text">
-        <h4>Transporte fluvial</h4>
-        <p>Los 37 bidones y costales de arena viajaron en bote por los ríos del Purús. Miembros de las propias comunidades ayudaron a llevar los materiales desde el embarcadero hasta cada hogar.</p>
+        <h4>Transporte hasta las comunidades</h4>
+        <p>Los bidones y costales de arena viajaron primero en motocar y luego en bote por los ríos del Purús, adaptándose a las condiciones climáticas. Miembros de las propias comunidades colaboraron cargando los materiales desde el embarcadero hasta cada hogar.</p>
       </div>
     </div>
 
-    <div class="timeline-step">
+    <!-- Galería de transporte -->
+    <div class="gallery-row row" style="margin-left:68px;">
+      <div class="col-sm-6">
+        <img src="/img/purus/galeria1_transportacion.jpg" alt="Cargando filtros en motocar">
+        <p class="gallery-caption">Carga de los bidones Filtro Vita en motocar para el traslado inicial</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="/img/purus/galeria1_transportancion.jpg" alt="Comunidad cargando materiales">
+        <p class="gallery-caption">Miembros de la comunidad trasladando los materiales a pie hasta los hogares</p>
+      </div>
+    </div>
+
+    <div class="timeline-step" style="margin-top:28px;">
       <div class="timeline-icon">🎓</div>
       <div class="timeline-text">
         <h4>Capacitación comunitaria</h4>
@@ -1641,11 +1988,21 @@ setTimeout(showSlides, 5000);
       </div>
     </div>
 
+    <!-- Foto capacitación -->
+    <div class="row" style="margin-left:68px; margin-bottom:28px;">
+      <div class="col-md-10">
+        <img src="/img/purus/capacitacion.jpg"
+             style="width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:320px;"
+             alt="Capacitación comunitaria Purús">
+        <p class="gallery-caption">Taller de capacitación en campo con las familias beneficiarias</p>
+      </div>
+    </div>
+
     <div class="timeline-step">
       <div class="timeline-icon">🏠</div>
       <div class="timeline-text">
         <h4>Instalación hogar por hogar</h4>
-        <p>Cada filtro fue instalado directamente en la vivienda del beneficiario: 12 en Bufeo, 23 en Nuevo San Martín, y 2 adicionales como puntos de demostración en la Asociación Pro-Purús y FECONAPU.</p>
+        <p>Se instalaron <strong>35 filtros en hogares</strong> de Bufeo y Nuevo San Martín, con <strong>2 filtros adicionales</strong> en las instalaciones de la Asociación Pro-Purús y la FECONAPU como puntos de demostración y réplica para la comunidad.</p>
       </div>
     </div>
 
@@ -1658,11 +2015,26 @@ setTimeout(showSlides, 5000);
     </div>
   </div>
 
+  <!-- BENEFICIARIOS -->
+  <div class="story-section">
+    <h2>🙌 Los beneficiarios</h2>
+    <p>Cada bidón azul representa una familia que ya no bebe del río. Estas son algunas de las personas que hoy tienen agua segura en casa.</p>
+    <div class="gallery-row row">
+      <div class="col-sm-6">
+        <img src="/img/purus/beneficiario1.jpg" alt="Beneficiario 1 con su Filtro Vita" style="height:300px;">
+        <p class="gallery-caption">Beneficiario de la comunidad Bufeo con su Filtro Vita instalado</p>
+      </div>
+      <div class="col-sm-6">
+        <img src="/img/purus/beneficiario2.jpg" alt="Beneficiario 2 con su Filtro Vita" style="height:300px;">
+        <p class="gallery-caption">Beneficiario de la comunidad Nuevo San Martín con su Filtro Vita</p>
+      </div>
+    </div>
+  </div>
+
   <!-- VOCES -->
   <div class="story-section">
     <h2>🗣️ Las voces que más importan</h2>
     <p>De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:</p>
-
     <div class="row">
       <div class="col-md-6">
         <div class="testimonial-card">
@@ -1695,7 +2067,7 @@ setTimeout(showSlides, 5000);
     </div>
   </div>
 
-  <!-- IMPACTO -->
+  <!-- IMPACTO EN NÚMEROS -->
   <div class="story-section">
     <h2>📊 El impacto en números</h2>
     <div class="row text-center">
@@ -1739,14 +2111,13 @@ setTimeout(showSlides, 5000);
   </div>
 
   <!-- CTA -->
-  <div class="text-center" style="padding: 40px 0 20px;">
-    <h3 style="color:#1a6ea8;">¿Quieres ser parte de la siguiente historia?</h3>
-    <p style="color:#555; max-width:500px; margin: 10px auto 24px;">Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.</p>
-    <a href="#ayuda" class="btn btn-primary btn-lg page-scroll">💙 Cómo ayudar</a>
+  <div class="cta-purus">
+    <h3>¿Quieres ser parte de la siguiente historia?</h3>
+    <p>Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.</p>
+    <a href="#ayuda" class="btn btn-lg page-scroll" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">💙 Cómo ayudar</a>
   </div>
 
 </div><!-- /container -->
-</body>
 
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
