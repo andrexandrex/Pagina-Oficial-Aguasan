@@ -36,3 +36,9 @@ Icon
 .Spotlight-V100
 .Trashes
 vendor/
+
+# Secrets (local dev)
+.env
+.dev.vars
+whatsapp-worker/node_modules/
+whatsapp-worker/.wrangler/
