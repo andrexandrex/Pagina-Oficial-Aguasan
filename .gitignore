@@ -42,3 +42,4 @@ vendor/
 .dev.vars
 whatsapp-worker/node_modules/
 whatsapp-worker/.wrangler/
+_site/whatsapp-worker/

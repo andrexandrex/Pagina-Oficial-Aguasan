@@ -62,6 +62,12 @@ address:
 markdown: kramdown
 permalink: pretty
 
+exclude:
+  - whatsapp-worker/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 #PLUGINS
 plugins:
   - jekyll-feed
