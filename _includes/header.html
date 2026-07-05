@@ -1,3 +1,24 @@
+<style>
+  /* Hero first-slide background */
+  .slide-hero { position: relative; }
+  .slide-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, #0a2d4d 0%, #0d3f6b 45%, #1a6ea8 100%);
+    z-index: 0;
+  }
+  /* Subtle dot-mesh texture overlay */
+  .slide-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .slide-hero .container { position: relative; z-index: 1; }
+  .slide-hero .intro-lead-in { color: rgba(255,255,255,0.82) !important; }
+  .slide-hero .intro-heading  { color: #ffffff !important; }
+</style>
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -23,7 +44,7 @@
                         <a class="page-scroll" href="#services">Servicios</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portafolio</a>
+                        <a href="/proyectos/">Portafolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Acerca de</a>
@@ -43,42 +64,30 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!-- Header -->
+    <!-- Header / slideshow — hidden on pages that set hide_hero: true -->
+    {% unless page.hide_hero %}
 <header>
     <div class="slideshow-container">
-      <div class="slide">
+      <div class="slide slide-hero">
+        <div class="slide-hero-bg"></div>
         <div class="container">
           <div class="intro-text">
             <div class="intro-lead-in">¡Agua de Calidad al alcance de todos!</div>
-            <div class="intro-heading">Bienvenido a AguaSan</div> 
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>           
+            <div class="intro-heading">Bienvenido a AguaSan</div>
           </div>
         </div>
       </div>
       <div class="slide">
-        <img class = "faena1"  src="{{site.baseurl}}/img/portada.jpg" alt="Slide 1">
-        <div class = "intro-text">
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
-        
+        <img class="faena1" src="{{site.baseurl}}/img/portada.jpg" alt="Comunidad con acceso a agua limpia">
       </div>
       <div class="slide">
-        <img  class = "faena1" src="{{site.baseurl}}/img/portada2.jpg" alt="Slide 2">
-        <div class = "intro-text">
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
+        <img class="faena1" src="{{site.baseurl}}/img/portada2.jpg" alt="Implementación de filtros de agua">
       </div>
       <div class="slide">
-        <img class = "faena1" src="{{site.baseurl}}/img/portada3.png" alt="Slide 2">
-        <div class = "intro-text">
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
+        <img class="faena1" src="{{site.baseurl}}/img/portada3.png" alt="Proyecto de saneamiento en comunidad rural">
       </div>
       <div class="slide">
-        <img class = "faena1" src="{{site.baseurl}}/img/portada4.jpg" alt="Slide 2">
-        <div class = "intro-text">
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
+        <img class="faena1" src="{{site.baseurl}}/img/portada4.jpg" alt="Filtros de bioarena instalados">
       </div>
     </div>
     <script>
@@ -107,3 +116,4 @@ slides[slideIndex].classList.add('active');
 setTimeout(showSlides, 5000);
     </script>
   </header>
+  {% endunless %}

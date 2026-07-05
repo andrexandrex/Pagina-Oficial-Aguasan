@@ -3,10 +3,10 @@
   <channel>
     <title>AguaSan</title>
     <description>Agua para todos los peruanos</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 04 Jul 2026 19:27:07 -0500</pubDate>
-    <lastBuildDate>Sat, 04 Jul 2026 19:27:07 -0500</lastBuildDate>
+    <link>https://Pagina-Oficial-Aguasan/</link>
+    <atom:link href="https://Pagina-Oficial-Aguasan/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 04 Jul 2026 19:56:07 -0500</pubDate>
+    <lastBuildDate>Sat, 04 Jul 2026 19:56:07 -0500</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -421,8 +421,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Sat, 01 Jun 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/implementaci%C3%B3n/2024/06/01/Lurigancho/</link>
-        <guid isPermaLink="true">http://localhost:4000/implementaci%C3%B3n/2024/06/01/Lurigancho/</guid>
+        <link>https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/06/01/Lurigancho/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/06/01/Lurigancho/</guid>
         
         
         <category>Implementación</category>
@@ -861,8 +861,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Thu, 01 Feb 2024 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/implementaci%C3%B3n/2024/02/01/Purus/</link>
-        <guid isPermaLink="true">http://localhost:4000/implementaci%C3%B3n/2024/02/01/Purus/</guid>
+        <link>https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/02/01/Purus/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/02/01/Purus/</guid>
         
         
         <category>Implementación</category>
@@ -1215,8 +1215,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Thu, 23 Feb 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/flai/2023/02/23/FLAI2/</link>
-        <guid isPermaLink="true">http://localhost:4000/flai/2023/02/23/FLAI2/</guid>
+        <link>https://Pagina-Oficial-Aguasan/flai/2023/02/23/FLAI2/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/flai/2023/02/23/FLAI2/</guid>
         
         
         <category>FLAI</category>
@@ -1516,8 +1516,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/fba/2023/02/22/FBA/</link>
-        <guid isPermaLink="true">http://localhost:4000/fba/2023/02/22/FBA/</guid>
+        <link>https://Pagina-Oficial-Aguasan/fba/2023/02/22/FBA/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2023/02/22/FBA/</guid>
         
         
         <category>FBA</category>
@@ -1929,8 +1929,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/fba/2014/07/15/crisis/</link>
-        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/crisis/</guid>
+        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/crisis/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/crisis/</guid>
         
         
         <category>FBA</category>
@@ -1991,8 +1991,8 @@
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</link>
-        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</guid>
+        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/Implementaci%C3%B3n/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/Implementaci%C3%B3n/</guid>
         
         
         <category>FBA</category>
@@ -2427,8 +2427,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
-        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
+        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/Impacto/</link>
+        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/Impacto/</guid>
         
         
         <category>FBA</category>

@@ -205,12 +205,6 @@
         </style>
         <div class="container product-section">
             <div class="row">
-                <div class="col-lg-12 text-center servicios1">
-                    <h2 class="section-heading">Nuestros Productos</h2>
-                    <h3 class="section-subheading text-muted" style="margin-bottom:36px;">Tecnología probada, sin electricidad, sin químicos — adaptada para los lugares donde más se necesita.</h3>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6">
                   <div class="product-card">
                     <img class="product-card-img" src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
@@ -253,30 +247,50 @@
 
 
             
-            <div class="row text-center" style="margin-top: 25px;">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Bajo Costo</h4>
-                    <p class="text-muted">Nuestros proyectos cuestan hasta 10 veces menos que un proyecto de agua potable tradicional. No requiere ninguna fuente de energía para operar. </p>
+            <div class="row" style="margin-top: 40px; align-items: center;">
+                <!-- Left: tagline text -->
+                <div class="col-md-5" style="padding-right: 40px;">
+                    <h2 class="section-heading" style="text-align:left; margin-top:0;">Nuestros Productos</h2>
+                    <p style="font-size:1.15em; color:#0d3f6b; font-weight:600; line-height:1.6; margin-bottom:12px;">Tecnología probada, sin electricidad, sin químicos</p>
+                    <p class="text-muted" style="font-size:0.97em; line-height:1.7;">Adaptada para los lugares donde más se necesita — comunidades rurales, zonas de difícil acceso y familias sin conexión a redes de agua convencionales.</p>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Fácil de usar</h4>
-                    <p class="text-muted">Fácil de implementar, mantener y usar. </p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-tint fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Calidad de agua asegurada</h4>
-                    <p class="text-muted">Eliminación total de microbios. Reducción de concentración de metales pesados. As, Pb, Cd...</p>
+                <!-- Right: feature tiles -->
+                <div class="col-md-7">
+                    <style>
+                      .feat-row { display:flex; align-items:flex-start; gap:16px; margin-bottom:20px; }
+                      .feat-row:last-child { margin-bottom:0; }
+                      .feat-icon {
+                        flex-shrink: 0;
+                        width: 48px; height: 48px;
+                        border-radius: 12px;
+                        background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+                        display: flex; align-items: center; justify-content: center;
+                      }
+                      .feat-icon i { color: white; font-size: 1.3em; }
+                      .feat-body h4 { font-size:1em; font-weight:800; color:#0d3f6b; margin:0 0 4px; }
+                      .feat-body p  { font-size:0.88em; color:#666; margin:0; line-height:1.55; }
+                    </style>
+                    <div class="feat-row">
+                        <div class="feat-icon"><i class="fa fa-money"></i></div>
+                        <div class="feat-body">
+                            <h4>Bajo Costo</h4>
+                            <p>Hasta 10 veces más económico que un sistema convencional. Sin fuente de energía para operar.</p>
+                        </div>
+                    </div>
+                    <div class="feat-row">
+                        <div class="feat-icon"><i class="fa fa-thumbs-up"></i></div>
+                        <div class="feat-body">
+                            <h4>Fácil de usar</h4>
+                            <p>Fácil de implementar, mantener y usar por cualquier miembro de la comunidad.</p>
+                        </div>
+                    </div>
+                    <div class="feat-row">
+                        <div class="feat-icon"><i class="fa fa-tint"></i></div>
+                        <div class="feat-body">
+                            <h4>Calidad de agua asegurada</h4>
+                            <p>Eliminación total de microbios. Reducción de metales pesados: As, Pb, Cd y más.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
