@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Proyectos — AguaSan</title>
+    <title>Nuestros Proyectos — AguaSan</title>
     <link rel="stylesheet" href="/css/agency.css">
     <link type="application/atom+xml" rel="alternate" href="https://pagina-oficial-aguasan/feed.xml" title="AguaSan" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -56,7 +56,7 @@
 
     <style>
   /* Hero first-slide background */
-  .slide-hero { position: relative; }
+  .slide-hero { position: relative; display: flex; align-items: center; justify-content: center; }
   .slide-hero-bg {
     position: absolute;
     inset: 0;
@@ -71,10 +71,21 @@
     background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
     background-size: 28px 28px;
   }
-  .slide-hero .container { position: relative; z-index: 1; }
+  .slide-hero .container { position: relative; z-index: 1; width: 100%; }
+  /* Center the intro text vertically, nudged a bit lower so it clears the fixed navbar */
+  .slide-hero .intro-text {
+    position: static;
+    transform: none;
+    top: auto; left: auto;
+    padding: 80px 15px 0;
+    margin: 0 auto;
+  }
   .slide-hero .intro-lead-in { color: rgba(255,255,255,0.82) !important; }
   .slide-hero .intro-heading  { color: #ffffff !important; }
 </style>
+
+
+
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -86,33 +97,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <a class = "page-scroll" href="#page-top"><img class="navbar-brand"  src="/img/LOGO_AGUASAN.png" alt="Slide 1"></a>
+              <a href="/"><img class="navbar-brand"  src="/img/LOGO_AGUASAN.png" alt="AguaSan"></a>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Servicios</a>
+                        <a href="/#productos">Nuestros Productos</a>
                     </li>
                     <li>
-                        <a href="/proyectos/">Portafolio</a>
+                        <a href="/#impacto">Impacto</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Acerca de</a>
+                        <a href="/proyectos/">Nuestros Proyectos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Impacto</a>
+                        <a href="/historia/">Nuestra Historia</a>
                     </li>
                     <li>
-                      <a href="">Problematica</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
+                        <a href="/#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -124,57 +132,107 @@
     
 
 
-    <!-- Page hero -->
-    <div style="background: linear-gradient(145deg, #0a2d4d, #1a6ea8); padding: 80px 0 60px; text-align: center; margin-top: 70px;">
-      <h1 style="color: white; font-size: 2.4em; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 12px;">Nuestros Proyectos</h1>
-      <p style="color: rgba(255,255,255,0.8); font-size: 1.1em; margin: 0;">Historias reales de comunidades que hoy acceden a agua segura.</p>
-      <a href="/" style="display:inline-block; margin-top: 24px; color: rgba(255,255,255,0.65); font-size: 0.9em; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px;">&larr; Volver al inicio</a>
+    <!-- Page hero — extends under the fixed navbar so the white menu stays visible -->
+    <div class="subpage-hero">
+      <div class="container">
+        <h1>Nuestros Proyectos</h1>
+        <p>Historias reales de comunidades que hoy acceden a agua segura.</p>
+        <a href="/" class="subpage-back">&larr; Volver al inicio</a>
+      </div>
     </div>
+    <style>
+      .subpage-hero {
+        background: linear-gradient(145deg, #0a2d4d 0%, #0d3f6b 45%, #1a6ea8 100%);
+        padding: 150px 0 60px;
+        text-align: center;
+      }
+      .subpage-hero h1 { color: #fff; font-size: 2.6em; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 12px; }
+      .subpage-hero p  { color: rgba(255,255,255,0.82); font-size: 1.15em; margin: 0; }
+      .subpage-back {
+        display: inline-block; margin-top: 24px;
+        color: rgba(255,255,255,0.7); font-size: 0.9em; text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.35); padding-bottom: 2px;
+      }
+      .subpage-back:hover { color: #fff; text-decoration: none; }
+    </style>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Proyectos</h2>
-                    <h3 class="section-subheading text-muted">Historias reales de comunidades que hoy acceden a agua segura.</h3>
-                </div>
-            </div>
-            <div class="row">
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/fba_1.JPG" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
+<style>
+  #portfolio { padding: 70px 0 90px; background: #fff; }
+  .proj-card {
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.10);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    margin-bottom: 30px;
+  }
+  .proj-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    text-decoration: none;
+  }
+  .proj-card-imgwrap { position: relative; overflow: hidden; height: 220px; }
+  .proj-card-imgwrap img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.3s ease;
+  }
+  .proj-card:hover .proj-card-imgwrap img { transform: scale(1.05); }
+  .proj-card-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(13,63,107,0.55), rgba(13,63,107,0));
+    opacity: 0; transition: opacity 0.22s ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .proj-card:hover .proj-card-overlay { opacity: 1; }
+  .proj-card-overlay .plus {
+    width: 54px; height: 54px; border-radius: 50%;
+    background: rgba(255,255,255,0.92); color: #0d3f6b;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5em;
+  }
+  .proj-card-body { padding: 20px 22px 22px; }
+  .proj-card-body h4 { font-size: 1.1em; font-weight: 800; color: #0d3f6b; margin: 0 0 5px; }
+  .proj-card-body p  { font-size: 0.9em; color: #888; margin: 0; }
+</style>
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-md-4 col-sm-6">
+                <a href="#portfolioModal12" class="proj-card portfolio-link" data-toggle="modal">
+                    <div class="proj-card-imgwrap">
+                        <img src="/img/portfolio/fba_1.JPG" alt="Lurigancho-Chosica 2024">
+                        <div class="proj-card-overlay"><span class="plus"><i class="fa fa-plus"></i></span></div>
+                    </div>
+                    <div class="proj-card-body">
                         <h4>Lurigancho-Chosica 2024</h4>
-                        <p class="text-muted">Remoción de arsénico en Los Girasoles y Los Frutales</p>
+                        <p>Remoción de arsénico en Los Girasoles y Los Frutales</p>
                     </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/banner.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Purús 2024</h4>
-                        <p class="text-muted">Filtros Vita en comunidades nativas</p>
-                    </div>
-                </div>
-            
+                </a>
             </div>
+        
+            <div class="col-md-4 col-sm-6">
+                <a href="#portfolioModal11" class="proj-card portfolio-link" data-toggle="modal">
+                    <div class="proj-card-imgwrap">
+                        <img src="/img/portfolio/banner.jpg" alt="Purús 2024">
+                        <div class="proj-card-overlay"><span class="plus"><i class="fa fa-plus"></i></span></div>
+                    </div>
+                    <div class="proj-card-body">
+                        <h4>Purús 2024</h4>
+                        <p>Filtros Vita en comunidades nativas</p>
+                    </div>
+                </a>
+            </div>
+        
         </div>
-    </section>
+    </div>
+</section>
 
 
       <footer>
@@ -214,9 +272,9 @@
                   </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="/politica-de-privacidad/">Política de Privacidad</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="/terminos-y-condiciones/">Términos y Condiciones</a>
                         </li>
                     </ul>
                 </div>

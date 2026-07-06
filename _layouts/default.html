@@ -15,40 +15,124 @@
     {% include header.html %}
     {% include services.html %}
 
-    <!-- Portfolio teaser — links to /proyectos/ -->
-    <section id="portfolio-teaser" style="padding: 70px 0; background: #fff;">
+    <style>
+      /* ── Explore section: Proyectos + Historia side by side ─────── */
+      .explore-section { padding: 80px 0; background: #fff; }
+      .explore-head { margin-bottom: 46px; }
+      .explore-head .section-heading { color: #0d3f6b; margin-bottom: 12px; }
+      .explore-head .section-subheading { max-width: 640px; margin: 0 auto; }
+
+      .explore-row { display: flex; flex-wrap: wrap; align-items: stretch; margin: 0 -15px; }
+      .explore-col { flex: 1 1 50%; max-width: 50%; padding: 0 15px; margin-bottom: 30px; }
+
+      .explore-panel {
+        height: 100%; display: flex; flex-direction: column;
+        background: #f8fafc; border-radius: 18px; padding: 34px 32px;
+        box-shadow: 0 4px 22px rgba(0,0,0,0.06);
+      }
+      .explore-panel-head { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+      .explore-panel-icon {
+        width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+        background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
+        color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.2em;
+      }
+      .explore-panel-head h3 { font-size: 1.3em; font-weight: 900; color: #0d3f6b; margin: 0 0 3px; }
+      .explore-panel-head p { font-size: 0.88em; color: #888; margin: 0; }
+      .explore-panel-body { flex: 1; margin-bottom: 24px; }
+      .explore-panel .teaser-btn { align-self: flex-start; }
+
+      .teaser-btn {
+        background: linear-gradient(135deg,#1a6ea8,#0d3f6b);
+        color: #fff !important; border: none; border-radius: 30px;
+        padding: 12px 34px; font-weight: 800; font-size: 0.92em;
+        letter-spacing: 0.03em; text-decoration: none; display: inline-block;
+        box-shadow: 0 8px 22px rgba(13,63,107,0.2);
+        transition: transform .2s ease, box-shadow .2s ease;
+      }
+      .teaser-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(13,63,107,0.28); color:#fff; text-decoration:none; }
+
+      /* Proyectos mini-strip */
+      .proj-strip { display: flex; gap: 10px; }
+      .proj-strip a { flex: 1; display: block; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.10); }
+      .proj-strip img { width: 100%; height: 92px; object-fit: cover; display: block; transition: transform .3s ease; }
+      .proj-strip a:hover img { transform: scale(1.08); }
+
+      /* Historia mini-timeline (compact, vertical) */
+      .hist-mini-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+      .hist-mini-row:last-child { margin-bottom: 0; }
+      .hist-mini-year { flex-shrink: 0; width: 54px; font-size: 1.15em; font-weight: 900; color: #1a6ea8; line-height: 1.3; }
+      .hist-mini-text { font-size: 0.88em; color: #666; line-height: 1.5; padding-top: 2px; }
+
+      @media (max-width: 767px) {
+        .explore-col { flex: 1 1 100%; max-width: 100%; }
+      }
+    </style>
+
+    <section id="explore-more" class="explore-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center" style="margin-bottom: 36px;">
-            <h2 class="section-heading">Nuestros Proyectos</h2>
-            <h3 class="section-subheading text-muted">Historias reales de comunidades que hoy acceden a agua segura.</h3>
+          <div class="col-lg-12 text-center explore-head">
+            <h2 class="section-heading">Conoce Más de AguaSan</h2>
+            <h3 class="section-subheading text-muted">Nuestros proyectos en comunidades reales y el camino que nos trajo hasta aquí.</h3>
           </div>
         </div>
-        <div class="row" style="margin-bottom: 40px;">
-          {% assign preview_posts = site.posts | where: "show_in_portfolio", true | limit: 3 %}
-          {% for post in preview_posts %}
-          <div class="col-md-4 col-sm-6" style="margin-bottom: 24px;">
-            <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.10); background:#fff;">
-              <img src="img/portfolio/{{ post.thumbnail }}" alt="{{ post.title }}" style="width:100%; height:200px; object-fit:cover; display:block;">
-              <div style="padding: 18px 20px 14px;">
-                <h4 style="font-size:1em; font-weight:800; color:#0d3f6b; margin:0 0 4px;">{{ post.title }}</h4>
-                <p style="font-size:0.88em; color:#888; margin:0;">{{ post.subtitle }}</p>
+
+        <div class="explore-row">
+          <!-- Nuestros Proyectos panel -->
+          <div class="explore-col">
+            <div class="explore-panel">
+              <div class="explore-panel-head">
+                <span class="explore-panel-icon"><i class="fa fa-map-marker"></i></span>
+                <div>
+                  <h3>Nuestros Proyectos</h3>
+                  <p>Historias reales de comunidades con agua segura</p>
+                </div>
               </div>
+              <div class="explore-panel-body">
+                <div class="proj-strip">
+                  {% assign preview_posts = site.posts | where: "show_in_portfolio", true | limit: 3 %}
+                  {% for post in preview_posts %}
+                  <a href="/proyectos/" title="{{ post.title }}">
+                    <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" alt="{{ post.title }}">
+                  </a>
+                  {% endfor %}
+                </div>
+              </div>
+              <a href="/proyectos/" class="teaser-btn">Ver todos los proyectos &rarr;</a>
             </div>
           </div>
-          {% endfor %}
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <a href="/proyectos/" class="btn btn-xl" style="background:linear-gradient(135deg,#1a6ea8,#0d3f6b); color:white; border:none; border-radius:30px; padding:14px 48px; font-weight:800; font-size:1em; letter-spacing:0.03em; text-decoration:none; display:inline-block;">
-              Ver todos los proyectos &rarr;
-            </a>
+
+          <!-- Nuestra Historia panel -->
+          <div class="explore-col">
+            <div class="explore-panel">
+              <div class="explore-panel-head">
+                <span class="explore-panel-icon"><i class="fa fa-clock-o"></i></span>
+                <div>
+                  <h3>Nuestra Historia</h3>
+                  <p>De 65 filtros a 2,500 filtros y 10,000 personas</p>
+                </div>
+              </div>
+              <div class="explore-panel-body">
+                <div class="hist-mini-row">
+                  <span class="hist-mini-year">2007</span>
+                  <span class="hist-mini-text">Proyecto piloto en la Comunidad 27 de Junio — los primeros 65 filtros.</span>
+                </div>
+                <div class="hist-mini-row">
+                  <span class="hist-mini-year">2013</span>
+                  <span class="hist-mini-text">Adaptamos el filtro para remover arsénico y metales pesados junto a UNALM.</span>
+                </div>
+                <div class="hist-mini-row">
+                  <span class="hist-mini-year">2024</span>
+                  <span class="hist-mini-text">15 proyectos, 11 comunidades y 10,000 personas con agua segura.</span>
+                </div>
+              </div>
+              <a href="/historia/" class="teaser-btn">Ver nuestra historia &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    {% include about.html %}
     {% include ayuda.html %}
     {% include clients.html %}
     {% include contact.html %}
