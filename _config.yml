@@ -64,6 +64,7 @@ permalink: pretty
 
 exclude:
   - whatsapp-worker/
+  - vendor/
   - Gemfile
   - Gemfile.lock
   - README.md
