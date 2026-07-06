@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nuestra Historia — AguaSan</title>
+    <link rel="stylesheet" href="/css/agency.css">
+    {% feed_meta %}
+    {% seo %}
+    {% include head.html %}
+  </head>
+
+  <body id="page-top">
+
+    {% include header.html %}
+
+    <!-- Page hero — extends under the fixed navbar so the white menu stays visible -->
+    <div class="subpage-hero">
+      <div class="container">
+        <h1>Nuestra Historia</h1>
+        <p>De 65 filtros y una comunidad a 2,500 filtros y 10,000 personas con agua segura.</p>
+        <a href="/" class="subpage-back">&larr; Volver al inicio</a>
+      </div>
+    </div>
+    <style>
+      .subpage-hero {
+        background: linear-gradient(145deg, #0a2d4d 0%, #0d3f6b 45%, #1a6ea8 100%);
+        padding: 150px 0 60px;
+        text-align: center;
+      }
+      .subpage-hero h1 { color: #fff; font-size: 2.6em; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 12px; }
+      .subpage-hero p  { color: rgba(255,255,255,0.82); font-size: 1.15em; margin: 0; max-width: 700px; margin-left: auto; margin-right: auto; }
+      .subpage-back {
+        display: inline-block; margin-top: 24px;
+        color: rgba(255,255,255,0.7); font-size: 0.9em; text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.35); padding-bottom: 2px;
+      }
+      .subpage-back:hover { color: #fff; text-decoration: none; }
+      /* On this page the timeline already provides the section heading; hide the duplicate intro block */
+      #about > .container > .row:first-child { display: none; }
+      #about { padding-top: 50px; }
+    </style>
+
+    {% include about.html %}
+
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+
+  </body>
+</html>

@@ -1,0 +1,3 @@
+WHATSAPP_ACCESS_TOKEN=your_meta_permanent_access_token
+WHATSAPP_PHONE_NUMBER_ID=your_meta_phone_number_id
+WHATSAPP_VERIFY_TOKEN=choose_any_random_string_and_reuse_it_in_meta_dashboard
