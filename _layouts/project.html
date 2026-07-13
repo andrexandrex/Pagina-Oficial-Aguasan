@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {% feed_meta %}
+    {% seo %}
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/css/project-story.css' | prepend: site.baseurl }}">
+  </head>
+  <body id="page-top" class="project-page">
+    {% include header.html %}
+    <main id="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>

@@ -3,866 +3,221 @@
   <channel>
     <title>AguaSan</title>
     <description>Agua para todos los peruanos</description>
-    <link>https://Pagina-Oficial-Aguasan/</link>
-    <atom:link href="https://Pagina-Oficial-Aguasan/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 05 Jul 2026 22:31:05 -0500</pubDate>
-    <lastBuildDate>Sun, 05 Jul 2026 22:31:05 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 13 Jul 2026 17:57:12 -0500</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2026 17:57:12 -0500</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
-        <title>Lurigancho-Chosica 2024</title>
-        <description>&lt;style&gt;
-  .luri-hero {
-    position: relative;
-    height: 420px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .luri-hero img {
-    position: absolute;
-    width: 100%;
-    height: 130%;
-    object-fit: cover;
-    object-position: center 30%;
-    top: 0; left: 0;
-  }
-  .luri-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(100,40,0,0.10) 0%, rgba(120,50,0,0.82) 100%);
-  }
-  .luri-hero-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    padding: 0 20px 44px;
-  }
-  .luri-hero-text h1 {
-    font-size: 2.3em;
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  }
-  .luri-hero-text p {
-    font-size: 1.12em;
-    opacity: 0.92;
-    max-width: 680px;
-    margin: 0 auto;
-  }
-  .luri-hero-text .meta {
-    margin-top: 14px;
-    font-size: 0.93em;
-    opacity: 0.75;
-  }
-
-  .luri-stat-strip {
-    background: #7c2d12;
-    padding: 26px 0;
-    margin-bottom: 44px;
-  }
-  .luri-stat {
-    text-align: center; color: white; padding: 8px 12px;
-    border-right: 1px solid rgba(255,255,255,0.18);
-  }
-  .luri-stat:last-child { border-right: none; }
-  .luri-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #fbbf24; line-height: 1; display: block; }
-  .luri-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
-
-  .luri-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
-  .luri-section h2 { font-size: 1.7em; font-weight: 800; color: #7c2d12; margin-bottom: 18px; }
-
-  .luri-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
-    padding: 24px 20px;
-    margin-bottom: 20px;
-    border-top: 4px solid #b45309;
-    height: 100%;
-  }
-  .luri-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
-  .luri-card h3 { font-size: 1.05em; font-weight: 800; color: #7c2d12; margin-bottom: 8px; }
-  .luri-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
-  .luri-card .big-figure { font-size: 2em; font-weight: 900; color: #b45309; display: block; margin-bottom: 6px; }
-
-  .alert-amber {
-    background: #fffbeb;
-    border-left: 5px solid #f59e0b;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin: 16px 0;
-    color: #78350f;
-    font-size: 1em;
-  }
-  .alert-amber strong { color: #b45309; }
-
-  .highlight-orange {
-    background: #fff7ed;
-    border-left: 5px solid #ea580c;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin: 16px 0;
-    color: #7c2d12;
-    font-size: 1em;
-  }
-
-  /* Diseño experimental — tabla de grupos */
-  .exp-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    margin-top: 8px;
-  }
-  .exp-table th {
-    background: #7c2d12;
-    color: white;
-    padding: 12px 16px;
-    font-size: 0.9em;
-    font-weight: 700;
-    text-align: left;
-  }
-  .exp-table td {
-    padding: 11px 16px;
-    font-size: 0.93em;
-    border-bottom: 1px solid #f0ebe5;
-    vertical-align: middle;
-  }
-  .exp-table tr:last-child td { border-bottom: none; }
-  .exp-table tr:nth-child(even) td { background: #fef9f5; }
-  .exp-table .tag-treatment {
-    display: inline-block; background: #fef3c7; color: #92400e;
-    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
-  }
-  .exp-table .tag-control {
-    display: inline-block; background: #f3f4f6; color: #374151;
-    border-radius: 12px; padding: 2px 10px; font-size: 0.82em; font-weight: 700;
-  }
-
-  /* Barra de resultado */
-  .result-bar-wrap { margin-bottom: 18px; }
-  .result-bar-wrap .rb-label {
-    display: flex; justify-content: space-between;
-    font-size: 0.92em; font-weight: 700; color: #333; margin-bottom: 5px;
-  }
-  .result-bar-track {
-    background: #e5e7eb; border-radius: 20px; height: 24px; overflow: hidden;
-  }
-  .result-bar-fill {
-    height: 100%; border-radius: 20px;
-    display: flex; align-items: center;
-    padding-left: 12px; font-size: 0.8em;
-    font-weight: 800; color: white;
-  }
-  .rb-success { background: linear-gradient(90deg, #b45309, #f59e0b); }
-  .rb-partial { background: #9ca3af; }
-
-  .testimonial-luri {
-    background: #fff7ed;
-    border-left: 4px solid #b45309;
-    border-radius: 8px;
-    padding: 18px 22px;
-    margin-bottom: 16px;
-  }
-  .testimonial-luri blockquote {
-    font-style: italic; color: #333; margin: 0 0 8px;
-    font-size: 1em; border: none; padding: 0;
-  }
-  .testimonial-luri .author { font-weight: 700; color: #b45309; font-size: 0.9em; }
-
-  .partner-logos-luri {
-    display: flex; flex-wrap: wrap;
-    align-items: center; justify-content: center;
-    gap: 28px; padding: 20px 0;
-  }
-  .partner-logos-luri img {
-    max-height: 55px; max-width: 130px;
-    object-fit: contain; filter: grayscale(25%);
-  }
-
-  .cta-luri {
-    background: linear-gradient(135deg, #b45309, #7c2d12);
-    color: white; border-radius: 14px; padding: 38px 30px;
-    text-align: center; margin: 40px 0 10px;
-  }
-  .cta-luri h3 { font-size: 1.55em; font-weight: 800; margin-bottom: 10px; }
-  .cta-luri p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
-&lt;/style&gt;
-
-&lt;!-- HERO --&gt;
-&lt;div class=&quot;luri-hero&quot;&gt;
-  &lt;img src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Lurigancho-Chosica implementación filtros&quot;&gt;
-  &lt;div class=&quot;luri-hero-overlay&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;luri-hero-text&quot;&gt;
-    &lt;h1&gt;🧪 Agua sin Arsénico en Lurigancho-Chosica&lt;/h1&gt;
-    &lt;p&gt;32 filtros, dos asentamientos humanos, un contaminante silencioso. La historia de cómo AguaSAN llevó tecnología de remoción de arsénico a Los Girasoles y Los Frutales.&lt;/p&gt;
-    &lt;p class=&quot;meta&quot;&gt;📍 San Antonio de Pedregal II, Lurigancho-Chosica, Lima &amp;nbsp;|&amp;nbsp; 🗓️ 2024&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- STAT STRIP --&gt;
-&lt;div class=&quot;luri-stat-strip&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;32&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;filtros instalados (30 FBA + 2 FLAI)&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;90%&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;de filtros alcanzaron límites DIGESA&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;2&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;AA.HH. beneficiados&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 luri-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;0.01&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;mg/L límite As — DS 031-2012-SA&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-
-  &lt;!-- EL PROBLEMA --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;⚠️ El problema invisible: arsénico en el agua&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-7&quot;&gt;
-        &lt;p&gt;En los asentamientos humanos &lt;strong&gt;Los Girasoles&lt;/strong&gt; y &lt;strong&gt;Los Frutales&lt;/strong&gt;, en la comunidad San Antonio de Pedregal II, el agua disponible para consumo humano enfrenta una doble amenaza:&lt;/p&gt;
-        &lt;div class=&quot;alert-amber&quot;&gt;
-          &lt;strong&gt;1. Contaminación por arsénico:&lt;/strong&gt; presente de forma natural en las fuentes de agua subterránea de la zona, el arsénico es un carcinógeno sin olor ni color — imposible de detectar sin análisis de laboratorio. La exposición crónica produce daños en piel, hígado, riñones y sistema nervioso.
-        &lt;/div&gt;
-        &lt;div class=&quot;alert-amber&quot;&gt;
-          &lt;strong&gt;2. Contaminación por materia orgánica:&lt;/strong&gt; la ausencia de alcantarillado y la presencia de silos sin mantenimiento contaminan las fuentes de agua con bacterias y patógenos fecales, ocasionando malestares estomacales frecuentes en la población.
-        &lt;/div&gt;
-        &lt;p&gt;La combinación de ambas amenazas convierte el acceso al agua en un riesgo de salud pública silencioso que afecta especialmente a niños y adultos mayores.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-5&quot;&gt;
-        &lt;div class=&quot;luri-card&quot; style=&quot;border-color:#c0392b; margin-top:0;&quot;&gt;
-          &lt;span class=&quot;card-icon&quot;&gt;🧬&lt;/span&gt;
-          &lt;h3&gt;¿Por qué el arsénico es tan peligroso?&lt;/h3&gt;
-          &lt;p&gt;El arsénico inorgánico es clasificado por la OMS como carcinógeno del Grupo 1. No tiene sabor ni olor. La exposición prolongada —incluso a bajas concentraciones— está asociada a cáncer de piel, pulmón y vejiga, además de daño neurológico en niños.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;luri-card&quot; style=&quot;border-color:#b45309; margin-top:0;&quot;&gt;
-          &lt;span class=&quot;card-icon&quot;&gt;📋&lt;/span&gt;
-          &lt;h3&gt;El estándar peruano&lt;/h3&gt;
-          &lt;p&gt;El DS N° 031-2012-SA del Ministerio de Salud (DIGESA) establece un límite máximo de &lt;strong&gt;0.01 mg/L (10 ppb)&lt;/strong&gt; de arsénico en agua para consumo humano — el mismo umbral de la OMS.&lt;/p&gt;
+        <title>Purús 2023–2024</title>
+        <description>&lt;article class=&quot;story&quot;&gt;
+  &lt;header class=&quot;story-hero&quot;&gt;
+    &lt;img class=&quot;story-hero-image&quot; src=&quot;/img/purus/Portada.jpg&quot; alt=&quot;Representantes locales junto a Filtros Vita en Purús&quot;&gt;
+    &lt;div class=&quot;story-hero-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-hero-content&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;span class=&quot;story-kicker&quot;&gt;Amazonía · Convenio 2023&lt;/span&gt;
+        &lt;h1&gt;Agua segura para las comunidades del río Purús&lt;/h1&gt;
+        &lt;p class=&quot;story-deck&quot;&gt;Un acuerdo entre AguaSAN, YAQUA, FECONAPU y ProPurús definió la implementación de 35 filtros familiares en dos comunidades indígenas de Ucayali.&lt;/p&gt;
+        &lt;div class=&quot;story-meta&quot;&gt;
+          &lt;span&gt;&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Bufeo y Nuevo San Martín, Purús&lt;/span&gt;
+          &lt;span&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Septiembre 2023 – febrero 2024&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;/header&gt;
 
-  &lt;!-- LA SOLUCIÓN: IONES DE HIERRO --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;🔬 La solución: iones de hierro en el filtro bioarena&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;p&gt;El Filtro Bioarena convencional es excelente removiendo bacterias y protozoos, pero el arsénico es un contaminante químico que requiere un mecanismo adicional. La innovación de AguaSAN en este proyecto: &lt;strong&gt;incorporar una capa de arena recubierta con iones de hierro&lt;/strong&gt; dentro del filtro.&lt;/p&gt;
-        &lt;p&gt;El hierro actúa como adsorbente natural: el arsénico disuelto en el agua se adhiere a los óxidos de hierro a medida que pasa por la capa filtrante, quedando atrapado y sin llegar al agua tratada.&lt;/p&gt;
-        &lt;div class=&quot;highlight-orange&quot;&gt;
-          El proyecto también evaluó &lt;strong&gt;dónde colocar la capa de hierro&lt;/strong&gt; dentro del filtro — en la parte superior o inferior — para determinar la configuración más eficaz. Un diseño experimental riguroso con grupos de tratamiento y control.
+  &lt;section class=&quot;story-stats&quot; aria-label=&quot;Cifras del alcance acordado&quot;&gt;
+    &lt;div class=&quot;container story-stat-grid&quot;&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;35&lt;/strong&gt;&lt;span&gt;filtros familiares acordados&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;span&gt;comunidades priorizadas&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;180&lt;/strong&gt;&lt;span&gt;residentes en las comunidades objetivo&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;span&gt;organizaciones firmantes&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;div class=&quot;container story-body&quot;&gt;
+    &lt;a class=&quot;story-back&quot; href=&quot;/proyectos/&quot;&gt;&amp;larr; Volver a proyectos&lt;/a&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;div class=&quot;story-status&quot;&gt;
+        &lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&lt;strong&gt;Estado documentado:&lt;/strong&gt; el archivo disponible acredita el estudio de viabilidad, el financiamiento y el convenio firmado con un cronograma de ejecución. No contiene el informe final de cierre que confirme la entrega completa de los 35 filtros; por eso esta historia distingue el alcance acordado de los resultados verificados.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;Primero medir, después diseñar&lt;/h2&gt;
+      &lt;p class=&quot;story-lead&quot;&gt;Llegar a Purús exige trabajar con la geografía, los materiales y la organización local. En mayo de 2023 el equipo técnico visitó cinco comunidades del río Purús y Puerto Esperanza para evaluar fuentes de agua, infraestructura y arena disponible.&lt;/p&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;p&gt;La evaluación incluyó Bufeo, Nuevo San Martín, Santa Rey, Nueva Luz y Cashueras. El alcance financiado se concentró finalmente en las dos primeras, donde las familias dependen de pozos someros y reportaban episodios frecuentes de enfermedad diarreica.&lt;/p&gt;
+          &lt;p&gt;Los pozos de Bufeo y Nuevo San Martín registraron pH de 5.4 y 5.43. Es una señal que justifica análisis adicionales, pero &lt;strong&gt;no demuestra por sí sola la presencia de metales pesados&lt;/strong&gt;. El informe recomienda confirmar plomo, mercurio, cadmio y cromo mediante laboratorio.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;figure class=&quot;story-media&quot;&gt;
+            &lt;img src=&quot;/img/purus/mapa_purus.png&quot; alt=&quot;Mapa de la ruta fluvial hacia Bufeo y Nuevo San Martín&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;Las comunidades se encuentran aproximadamente a una y una hora y media de Puerto Esperanza por vía fluvial.&lt;/figcaption&gt;
+          &lt;/figure&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot;
-             style=&quot;max-width:100%; max-height:300px; object-fit:contain; display:block; margin:0 auto;&quot;
-             alt=&quot;Filtro FBA con iones de hierro&quot;&gt;
-        &lt;p style=&quot;font-size:0.82em; color:#888; text-align:center; margin-top:8px;&quot;&gt;Filtro FBA — la capa de hierro se integra dentro de las capas de arena&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;El alcance del convenio&lt;/h2&gt;
+      &lt;p&gt;El 28 de septiembre de 2023 las cuatro organizaciones firmaron un convenio de cooperación con vigencia de dos años. El anexo técnico definió 35 filtros bioarena familiares y un proceso completo de acompañamiento.&lt;/p&gt;
+      &lt;div class=&quot;story-card-grid&quot;&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Nuevo San Martín&lt;/h3&gt;
+          &lt;p&gt;23 filtros para 23 familias. La comunidad tenía 118 habitantes, incluidos 31 niños, y utilizaba cuatro pozos naturales poco profundos.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-tint&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Bufeo&lt;/h3&gt;
+          &lt;p&gt;12 filtros para 12 familias. La comunidad tenía 62 habitantes y contaba con un pozo, una bomba solar y un tanque elevado.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-users&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Acompañamiento&lt;/h3&gt;
+          &lt;p&gt;Instalación, encuesta de línea base, capacitación, muestreo de agua en 20% de hogares y dos informes técnicos al donante.&lt;/p&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+      &lt;div class=&quot;story-note&quot;&gt;&lt;strong&gt;Financiamiento trazable:&lt;/strong&gt; YAQUA, legalmente Asociación Bien por Bien, formalizó el apoyo mediante desembolsos vinculados al avance del proyecto.&lt;/div&gt;
+    &lt;/section&gt;
 
-  &lt;!-- DISEÑO EXPERIMENTAL --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;🧫 Diseño experimental: grupos de tratamiento y control&lt;/h2&gt;
-    &lt;p&gt;Este proyecto no solo instaló filtros — fue un estudio controlado para medir la eficacia de distintas configuraciones de la capa de hierro en condiciones reales de uso comunitario.&lt;/p&gt;
-
-    &lt;table class=&quot;exp-table&quot; style=&quot;margin-bottom:24px;&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Tipo de filtro&lt;/th&gt;
-          &lt;th&gt;Configuración&lt;/th&gt;
-          &lt;th&gt;Cantidad&lt;/th&gt;
-          &lt;th&gt;Grupo&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
-          &lt;td&gt;Iones de hierro — capa superior&lt;/td&gt;
-          &lt;td&gt;~10 filtros&lt;/td&gt;
-          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
-          &lt;td&gt;Iones de hierro — capa inferior&lt;/td&gt;
-          &lt;td&gt;~10 filtros&lt;/td&gt;
-          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;💧 FBA (familiar)&lt;/td&gt;
-          &lt;td&gt;Sin iones de hierro (estándar)&lt;/td&gt;
-          &lt;td&gt;10 filtros&lt;/td&gt;
-          &lt;td&gt;&lt;span class=&quot;tag-control&quot;&gt;Control&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;🌿 FLAI (comunitario)&lt;/td&gt;
-          &lt;td&gt;Iones de hierro — capa superior&lt;/td&gt;
-          &lt;td&gt;1 filtro&lt;/td&gt;
-          &lt;td&gt;&lt;span class=&quot;tag-treatment&quot;&gt;Tratamiento&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;🌿 FLAI (comunitario)&lt;/td&gt;
-          &lt;td&gt;Sin iones de hierro (estándar)&lt;/td&gt;
-          &lt;td&gt;1 filtro&lt;/td&gt;
-          &lt;td&gt;&lt;span class=&quot;tag-control&quot;&gt;Control&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-
-    &lt;div class=&quot;highlight-orange&quot;&gt;
-      Esta metodología permite a AguaSAN obtener evidencia científica real sobre qué configuración funciona mejor en campo — no solo en laboratorio — para replicar el modelo más efectivo en futuras implementaciones.
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- RESULTADOS --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;📊 Resultados: el 90% lo logró&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;p&gt;Tras el período de evaluación, los análisis de calidad del agua revelaron resultados contundentes:&lt;/p&gt;
-
-        &lt;div class=&quot;result-bar-wrap&quot;&gt;
-          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros que alcanzaron límite DIGESA (≤ 0.01 mg/L As)&lt;/span&gt;&lt;span&gt;90%&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;result-bar-track&quot;&gt;
-            &lt;div class=&quot;result-bar-fill rb-success&quot; style=&quot;width:90%&quot;&gt;90%&lt;/div&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Un filtro adaptado al último tramo&lt;/h2&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4&quot;&gt;
+          &lt;figure class=&quot;story-media&quot;&gt;
+            &lt;img src=&quot;/img/purus/filtro_vita_logo.png&quot; alt=&quot;Identidad visual del Filtro Vita desarrollada para la implementación en Purús&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;Filtro Vita es el nombre usado en los materiales logísticos y visuales del proyecto amazónico.&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+          &lt;p&gt;Los materiales de planificación denominan &lt;strong&gt;Filtro Vita&lt;/strong&gt; a la adaptación transportable del filtro bioarena. El cuerpo plástico reduce peso frente al molde de concreto y responde a un territorio al que se llega por avioneta, motocar, bote y caminata. Opera por gravedad y no requiere electricidad.&lt;/p&gt;
+          &lt;div class=&quot;story-note&quot;&gt;&lt;strong&gt;Dos cifras, dos momentos:&lt;/strong&gt; una carta logística anterior gestionó el transporte de 37 “Filtros Vita”. El convenio firmado el 28 de septiembre de 2023 definió 35 FBA familiares: 23 para Nuevo San Martín y 12 para Bufeo. Esta página usa 35 como alcance contractual y conserva la evidencia visual de la etapa previa sin convertirla en cierre de instalación.&lt;/div&gt;
+          &lt;div class=&quot;story-steps&quot;&gt;
+            &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;1&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Preparar el medio filtrante&lt;/h3&gt;&lt;p&gt;La arena local fue analizada. Su coeficiente de uniformidad resultó mayor al rango recomendado, así que el informe previó comprar 50–60% de material adicional para compensar el descarte durante el tamizado.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;2&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Transportar e instalar&lt;/h3&gt;&lt;p&gt;Bidones, arena y herramientas debían viajar hasta Puerto Esperanza y luego por río a cada comunidad, con participación local en las faenas.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;3&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Capacitar y dar seguimiento&lt;/h3&gt;&lt;p&gt;El plan incluyó uso, mantenimiento, higiene, almacenamiento seguro y cloración en los casos donde la calidad de la fuente lo exigiera.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;result-bar-wrap&quot;&gt;
-          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros con hierro — eficacia en remoción de As&lt;/span&gt;&lt;span&gt;Alta&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;result-bar-track&quot;&gt;
-            &lt;div class=&quot;result-bar-fill rb-success&quot; style=&quot;width:88%&quot;&gt;Muy eficaz&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;result-bar-wrap&quot;&gt;
-          &lt;div class=&quot;rb-label&quot;&gt;&lt;span&gt;Filtros control — remoción bacteriológica&lt;/span&gt;&lt;span&gt;✓&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;result-bar-track&quot;&gt;
-            &lt;div class=&quot;result-bar-fill&quot; style=&quot;width:95%; background:#1a6ea8;&quot;&gt;Eficaz (patógenos)&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;
+          &lt;img src=&quot;/img/purus/filtros_acumulados.jpg&quot; alt=&quot;Cuerpos plásticos del Filtro Vita reunidos antes de su distribución&quot; loading=&quot;lazy&quot;&gt;
+          &lt;figcaption&gt;Fotografía curada de la etapa logística. El material original la asociaba a 37 unidades; el acuerdo final firmado define 35 FBA.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+          &lt;img src=&quot;/img/purus/ETIQUETA FILTRO.png&quot; alt=&quot;Etiqueta del Filtro Vita con instrucciones de operación&quot; loading=&quot;lazy&quot;&gt;
+          &lt;figcaption&gt;La etiqueta acompaña el equipo con instrucciones y reconocimiento de los actores del proyecto.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-        &lt;div class=&quot;highlight-orange&quot; style=&quot;margin-top:20px;&quot;&gt;
-          El &lt;strong&gt;90% de los filtros instalados&lt;/strong&gt; logró llevar el agua por debajo del límite de arsénico establecido por DIGESA en el DS N° 031-2012-SA — cumpliendo el estándar nacional e internacional de agua segura.
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;La línea BOMA: ingeniería detrás del cuerpo plástico&lt;/h2&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;p&gt;El archivo conserva una línea de investigación sobre el &lt;strong&gt;filtro BOMA&lt;/strong&gt; —esa es la grafía usada en los documentos— con manual revisado, hojas de cálculo para cuerpos de 110, 140, 240 y 260 litros, y diseños que comparan filtros plásticos con el FBA de concreto.&lt;/p&gt;
+          &lt;p&gt;El valor de esa exploración fue resolver una pregunta logística: cómo conservar los principios hidráulicos del filtro bioarena en un recipiente más liviano y disponible localmente. El diseño de referencia usa un contenedor plástico, arena fina, difusor, tubería interna y un drenaje inferior compacto.&lt;/p&gt;
+          &lt;div class=&quot;story-note story-note--amber&quot;&gt;&lt;strong&gt;Estado de la evidencia:&lt;/strong&gt; BOMA aparece como ingeniería y documentos de trabajo. El archivo revisado no demuestra que una variante BOMA específica haya sido la unidad finalmente instalada bajo el convenio de 35 FBA. Por eso se presenta como antecedente de diseño, no como resultado de implementación.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;figure class=&quot;story-media story-media--contain&quot;&gt;
+            &lt;img src=&quot;/img/purus/boma-filtro-plastico.png&quot; alt=&quot;Esquema de referencia de un filtro bioarena BOMA en recipiente plástico&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;Esquema de referencia del manual BOMA revisado en el archivo del proyecto. Fuente del diseño: Samaritan&apos;s Purse Canada, 2019; usado por AguaSAN como material de I+D.&lt;/figcaption&gt;
+          &lt;/figure&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;div class=&quot;luri-card&quot; style=&quot;margin-top:0;&quot;&gt;
-          &lt;span class=&quot;card-icon&quot;&gt;🏆&lt;/span&gt;
-          &lt;span class=&quot;big-figure&quot;&gt;90%&lt;/span&gt;
-          &lt;h3&gt;de éxito en remoción de arsénico&lt;/h3&gt;
-          &lt;p&gt;Los filtros con iones de hierro demostraron ser altamente eficaces eliminando arsénico hasta alcanzar los límites requeridos por el Ministerio de Salud del Perú.&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;luri-card&quot; style=&quot;margin-top:0;&quot;&gt;
-          &lt;span class=&quot;card-icon&quot;&gt;🦠&lt;/span&gt;
-          &lt;h3&gt;Doble protección&lt;/h3&gt;
-          &lt;p&gt;Además del arsénico, todos los filtros —incluidos los controles— mantuvieron su eficacia comprobada en la remoción de bacterias y parásitos provenientes de la contaminación fecal por ausencia de alcantarillado.&lt;/p&gt;
-        &lt;/div&gt;
+      &lt;div class=&quot;story-table-wrap&quot;&gt;
+        &lt;table class=&quot;story-table&quot;&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Elemento&lt;/th&gt;&lt;th&gt;Qué está documentado&lt;/th&gt;&lt;th&gt;Cómo debe comunicarse&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;Filtro Vita&lt;/td&gt;&lt;td&gt;Nombre, fotografías, etiquetas y gestión logística del proyecto amazónico.&lt;/td&gt;&lt;td&gt;Adaptación transportable asociada al proyecto; confirmar cantidad instalada con el informe final.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;BOMA&lt;/td&gt;&lt;td&gt;Manual, cálculos y comparaciones de cuerpos plásticos.&lt;/td&gt;&lt;td&gt;Línea de I+D y antecedente de diseño, no producto desplegado confirmado.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;FBA del convenio&lt;/td&gt;&lt;td&gt;35 unidades familiares: 23 + 12.&lt;/td&gt;&lt;td&gt;Alcance firmado; no confundir con entrega o funcionamiento final verificado.&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;/section&gt;
 
-  &lt;!-- IMPACTO EN LA COMUNIDAD --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;🏘️ Una comunidad que no podía ver su problema&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-7&quot;&gt;
-        &lt;p&gt;A diferencia de zonas donde el agua visiblemente sucia alerta a las familias, en Los Girasoles y Los Frutales el agua &lt;em&gt;parecía&lt;/em&gt; normal. El arsénico y los patógenos fecales son invisibles. Las familias bebían agua contaminada sin saberlo — y atribuían los malestares estomacales a otras causas.&lt;/p&gt;
-        &lt;p&gt;AguaSAN trabajó con la comunidad no solo para instalar filtros, sino para &lt;strong&gt;hacer visible el problema&lt;/strong&gt;: análisis de agua, talleres de educación sanitaria y la entrega de resultados individualizados a cada familia fueron parte central del proyecto.&lt;/p&gt;
-        &lt;div class=&quot;alert-amber&quot;&gt;
-          La capacitación incluyó explicaciones sobre el arsénico, su origen geológico en la zona, los riesgos de exposición crónica y el rol de los iones de hierro en el filtro. Las familias pasaron de desconocer el problema a ser &lt;strong&gt;guardianas activas de su agua&lt;/strong&gt;.
-        &lt;/div&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Calidad de agua: qué se midió y qué faltaba confirmar&lt;/h2&gt;
+      &lt;p&gt;La expedición de viabilidad midió parámetros de campo —pH, potencial redox, conductividad eléctrica y sólidos disueltos— en cinco comunidades. Esos instrumentos ayudan a decidir dónde profundizar, pero no reemplazan un análisis acreditado de metales o microorganismos.&lt;/p&gt;
+      &lt;div class=&quot;story-card-grid&quot;&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-tint&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Bufeo&lt;/h3&gt;&lt;p&gt;El pozo registró pH 5.4. La acidez fue una señal para recomendar análisis adicionales.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-tint&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Nuevo San Martín&lt;/h3&gt;&lt;p&gt;El pozo registró pH 5.43. El valor no identifica por sí solo qué metal podría estar presente.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-flask&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Pendiente de laboratorio&lt;/h3&gt;&lt;p&gt;El estudio recomendó confirmar plomo, mercurio, cadmio y cromo. El archivo revisado no contiene ese informe final para Purús.&lt;/p&gt;&lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;col-md-5&quot;&gt;
-        &lt;img src=&quot;/img/impacto/capacitacion.JPG&quot;
-             style=&quot;max-width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
-             alt=&quot;Capacitación comunitaria Lurigancho&quot;&gt;
-        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px; text-align:center;&quot;&gt;Capacitación a familias beneficiarias — uso y mantenimiento del filtro&lt;/p&gt;
+      &lt;p&gt;El aditamento de hierro desarrollado en Chosica para arsénico aparece como antecedente técnico considerado para Purús. Sin embargo, el convenio firmado describe 35 FBA familiares y el expediente no acredita que el cartucho de hierro se haya instalado en esas unidades.&lt;/p&gt;
+      &lt;div class=&quot;story-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio reservado para un análisis acreditado de calidad de agua de Purús&quot;&gt;
+        &lt;i class=&quot;fa fa-picture-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;strong&gt;Espacio reservado para análisis de Purús&lt;/strong&gt;
+        &lt;small&gt;Incorporar aquí la lámina del laboratorio acreditado cuando se confirme comunidad, fecha, código de muestra y autorización para publicarla.&lt;/small&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;/section&gt;
 
-  &lt;!-- ALIADOS --&gt;
-  &lt;div class=&quot;luri-section&quot;&gt;
-    &lt;h2&gt;🤝 Aliados del proyecto&lt;/h2&gt;
-    &lt;p&gt;Este proyecto fue posible gracias a la articulación de equipos técnicos, instituciones académicas y organizaciones comprometidas con el agua segura en el Perú:&lt;/p&gt;
-    &lt;div class=&quot;partner-logos-luri&quot;&gt;
-      &lt;img src=&quot;/img/LOGO_AGUASAN.png&quot; alt=&quot;AguaSAN&quot;&gt;
-      &lt;img src=&quot;/img/logos/cawst-logo-full.png&quot; alt=&quot;CAWST&quot;&gt;
-      &lt;img src=&quot;/img/logos/UNALM_logo.png&quot; alt=&quot;UNALM&quot;&gt;
-      &lt;img src=&quot;/img/logos/Innovate_logo.png&quot; alt=&quot;Innovate&quot;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;La evidencia externa que apoyó la decisión&lt;/h2&gt;
+      &lt;p&gt;Antes de financiar Purús, YAQUA encargó a un laboratorio acreditado por INACAL el análisis de agua filtrada del sistema de San Antonio de Pedregal, en Lurigancho-Chosica. La muestra de agosto de 2023 registró E. coli y coliformes fecales por debajo de 1.1 NMP/100 mL, turbidez menor a 0.3 NTU y ausencia detectable de los parásitos analizados.&lt;/p&gt;
+      &lt;div class=&quot;story-note story-note--amber&quot;&gt;&lt;strong&gt;Lectura correcta del dato:&lt;/strong&gt; esos resultados corresponden a Chosica, no a Purús. Funcionaron como evidencia técnica previa para decidir el financiamiento amazónico; no deben presentarse como análisis de agua de Bufeo o Nuevo San Martín.&lt;/div&gt;
+      &lt;p&gt;&lt;a class=&quot;story-button&quot; href=&quot;/proyectos/lurigancho-chosica-2022/&quot;&gt;Ver el expediente técnico de AgroSanidad&lt;/a&gt;&lt;/p&gt;
+    &lt;/section&gt;
 
-  &lt;!-- CTA --&gt;
-  &lt;div class=&quot;cta-luri&quot;&gt;
-    &lt;h3&gt;El arsénico no se ve. Pero la solución sí existe.&lt;/h3&gt;
-    &lt;p&gt;Miles de familias en Lima y el resto del Perú beben agua con arsénico sin saberlo. Ayúdanos a llegar a más comunidades con esta tecnología.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#7c2d12; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
-  &lt;/div&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;El archivo visual de la implementación&lt;/h2&gt;
+      &lt;p&gt;Se restauraron las imágenes previamente curadas del proyecto. Muestran logística, capacitación y hogares asociados al Filtro Vita; por sí solas no sustituyen el informe de cierre que debe confirmar cantidades, fechas y operación final.&lt;/p&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/purus/galeria1_transportacion.jpg&quot; alt=&quot;Bidones del proyecto Purús trasladados en motocar&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Primer tramo del traslado de cuerpos plásticos y materiales.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/purus/galeria1_transportancion.jpg&quot; alt=&quot;Personas trasladando materiales del proyecto Purús a pie&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;El último tramo combina transporte fluvial y carga a pie con apoyo local.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/purus/capacitacion.jpg&quot; alt=&quot;Jornada de capacitación del proyecto de filtros en Purús&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;El convenio incorporó formación sobre uso, higiene, mantenimiento y seguimiento.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/purus/beneficiario1.jpg&quot; alt=&quot;Persona retratada con un Filtro Vita en el archivo del proyecto Purús&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Retrato curado del archivo del proyecto; confirmar consentimiento antes de reutilizarlo en campaña paga.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/purus/beneficiario2.jpg&quot; alt=&quot;Persona retratada junto a un Filtro Vita en Purús&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;El cuerpo plástico facilita el transporte, pero la operación final debe validarse con seguimiento.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure class=&quot;story-media story-media--contain&quot;&gt;&lt;img src=&quot;/img/purus/ETIQUETA FILTRO.png&quot; alt=&quot;Etiqueta con instrucciones del Filtro Vita&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Las instrucciones visibles forman parte de la estrategia para reducir errores de operación.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
 
-&lt;/div&gt;&lt;!-- /container --&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Voces recogidas en el archivo del proyecto&lt;/h2&gt;
+      &lt;p&gt;La versión anterior de esta historia conservaba los siguientes testimonios atribuidos a participantes de Bufeo y Nuevo San Martín. Se restauran como voces de percepción y expectativa; no prueban por sí solos una mejora clínica ni sustituyen mediciones de seguimiento. Antes de una campaña paga, conviene reconfirmar consentimiento, nombre y ortografía.&lt;/p&gt;
+      &lt;div class=&quot;story-testimonials&quot;&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“El agua limpia alarga la vida.”&lt;/blockquote&gt;&lt;cite&gt;Zenia Castillo · Nuevo San Martín&lt;/cite&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“El filtro Vita nos permite vivir tranquilos y sanos.”&lt;/blockquote&gt;&lt;cite&gt;Rubén Jijida Bachara · Bufeo&lt;/cite&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“Mis hijos sufren de diarrea constantemente. Ahora sé que van a mejorar con el Filtro Vita.”&lt;/blockquote&gt;&lt;cite&gt;Elvita Torres · Nuevo San Martín&lt;/cite&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“El filtro Vita es importante porque nos cuida la salud y a nuestros hijos para que crezcan bien.”&lt;/blockquote&gt;&lt;cite&gt;Franklin Salomón López · Bufeo&lt;/cite&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“Con agua limpia cuidamos nuestra salud.”&lt;/blockquote&gt;&lt;cite&gt;Verónica Tachiana · Nuevo San Martín&lt;/cite&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-testimonial&quot;&gt;&lt;blockquote&gt;“El agua limpia es lo más importante. Si tomas agua contaminada, se presentarán diferentes enfermedades.”&lt;/blockquote&gt;&lt;cite&gt;Asís Salomón Castillo · Bufeo&lt;/cite&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Una alianza con roles claros&lt;/h2&gt;
+      &lt;p&gt;El proyecto reunió financiamiento, tecnología, representación indígena y presencia territorial en un mismo acuerdo.&lt;/p&gt;
+      &lt;div class=&quot;story-partners&quot; aria-label=&quot;Organizaciones participantes&quot;&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;AguaSAN Perú · implementación&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;YAQUA · financiamiento e impacto&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;FECONAPU · representación comunitaria&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;ProPurús · enlace territorial&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;AgroSanidad · viabilidad técnica&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;aside class=&quot;story-cta&quot;&gt;
+      &lt;h2&gt;Ayúdanos a cerrar la última milla&lt;/h2&gt;
+      &lt;p&gt;El acceso al agua segura necesita tecnología, medición y acompañamiento comunitario. Conoce cómo colaborar con los próximos proyectos.&lt;/p&gt;
+      &lt;a class=&quot;story-button&quot; href=&quot;/#contact&quot;&gt;Conversemos&lt;/a&gt;
+    &lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
 </description>
-        <pubDate>Sat, 01 Jun 2024 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/06/01/Lurigancho/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/06/01/Lurigancho/</guid>
-        
-        
-        <category>Implementación</category>
-        
-      </item>
-    
-      <item>
-        <title>Purús 2024</title>
-        <description>&lt;style&gt;
-  .purus-hero {
-    position: relative;
-    height: 420px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .purus-hero img {
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
-    object-position: center 20%;
-    top: 0; left: 0;
-  }
-  .purus-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(10,40,90,0.10) 0%, rgba(10,40,90,0.80) 100%);
-  }
-  .purus-hero-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    padding: 0 20px 48px;
-  }
-  .purus-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-  .purus-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 660px; margin: 0 auto; }
-  .purus-hero-text .meta { font-size: 0.92em; opacity: 0.75; margin-top: 10px; }
-
-  .purus-stat-strip {
-    background: #0d3f6b;
-    padding: 26px 0;
-    margin-bottom: 44px;
-  }
-  .purus-stat {
-    text-align: center; color: white; padding: 8px 12px;
-    border-right: 1px solid rgba(255,255,255,0.18);
-  }
-  .purus-stat:last-child { border-right: none; }
-  .purus-stat .cnum  { font-size: 2.5em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
-  .purus-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
-
-  .story-section { padding: 44px 0; border-bottom: 1px solid #eaeaea; }
-  .story-section h2 { color: #0d3f6b; font-weight: 800; font-size: 1.7em; margin-bottom: 18px; }
-
-  .highlight-box {
-    background: #e8f4fd;
-    border-left: 5px solid #1a6ea8;
-    border-radius: 8px;
-    padding: 18px 22px;
-    margin: 18px 0;
-    font-size: 1em;
-    color: #1a4a70;
-  }
-  .highlight-box strong { color: #0d3f6b; }
-
-  .timeline-step {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    gap: 18px;
-  }
-  .timeline-icon {
-    font-size: 2em;
-    min-width: 50px;
-    text-align: center;
-    line-height: 1.2;
-    flex-shrink: 0;
-  }
-  .timeline-text h4 { margin: 0 0 5px; font-weight: 800; color: #0d3f6b; font-size: 1.05em; }
-  .timeline-text p  { margin: 0; color: #555; font-size: 0.97em; line-height: 1.6; }
-
-  .testimonial-card {
-    background: #f0f7ff;
-    border-left: 4px solid #1a6ea8;
-    border-radius: 8px;
-    padding: 18px 20px;
-    margin-bottom: 16px;
-  }
-  .testimonial-card blockquote {
-    font-style: italic;
-    color: #333;
-    margin: 0 0 8px;
-    font-size: 1em;
-    border: none;
-    padding: 0;
-  }
-  .testimonial-card .author { font-weight: 700; color: #1a6ea8; font-size: 0.9em; }
-
-  .partner-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px 0; }
-  .partner-logos img { max-height: 60px; max-width: 140px; object-fit: contain; filter: grayscale(20%); }
-
-  .stat-box {
-    background: #fff;
-    border: 2px solid #1a6ea8;
-    border-radius: 12px;
-    padding: 24px 16px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .stat-box .number { font-size: 2.6em; font-weight: 900; color: #1a6ea8; line-height: 1; }
-  .stat-box .label  { font-size: 0.95em; color: #555; margin-top: 6px; }
-
-  .gallery-row { margin: 22px 0; }
-  .gallery-row img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
-    object-fit: cover;
-    height: 220px;
-  }
-  .gallery-caption {
-    font-size: 0.82em;
-    color: #888;
-    text-align: center;
-    margin-top: 6px;
-  }
-
-  .vita-feature {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 14px;
-  }
-  .vita-feature .vi { font-size: 1.5em; min-width: 32px; text-align: center; flex-shrink: 0; }
-  .vita-feature div h5 { margin: 0 0 2px; font-weight: 800; color: #0d3f6b; font-size: 0.97em; }
-  .vita-feature div p  { margin: 0; color: #555; font-size: 0.92em; line-height: 1.5; }
-
-  .cta-purus {
-    background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
-    color: white; border-radius: 14px; padding: 38px 30px;
-    text-align: center; margin: 40px 0 10px;
-  }
-  .cta-purus h3 { font-size: 1.6em; font-weight: 800; margin-bottom: 10px; }
-  .cta-purus p  { opacity: 0.88; margin-bottom: 22px; font-size: 1.05em; }
-&lt;/style&gt;
-
-&lt;!-- HERO --&gt;
-&lt;div class=&quot;purus-hero&quot;&gt;
-  &lt;img src=&quot;/img/purus/Portada.jpg&quot; alt=&quot;Implementación Filtro Vita Purús&quot;&gt;
-  &lt;div class=&quot;purus-hero-overlay&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;purus-hero-text&quot;&gt;
-    &lt;h1&gt;💧 Agua Limpia para el Pueblo Purús&lt;/h1&gt;
-    &lt;p&gt;35 hogares en la Amazonía peruana acceden hoy a agua segura gracias al Filtro Vita — una historia de comunidad, ciencia y compromiso.&lt;/p&gt;
-    &lt;p class=&quot;meta&quot;&gt;📍 Puerto Esperanza, Ucayali &amp;nbsp;|&amp;nbsp; 🗓️ Febrero 2024&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- STAT STRIP --&gt;
-&lt;div class=&quot;purus-stat-strip&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;37&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;filtros instalados&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;2&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;comunidades beneficiadas&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;200+&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;personas con agua segura&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-3 purus-stat&quot;&gt;
-        &lt;span class=&quot;cnum&quot;&gt;0 ⚡&lt;/span&gt;
-        &lt;span class=&quot;clabel&quot;&gt;electricidad requerida&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-
-  &lt;!-- EL PROBLEMA --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🌊 El reto: agua turbia, salud frágil&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-7&quot;&gt;
-        &lt;p&gt;Las comunidades de &lt;strong&gt;Bufeo&lt;/strong&gt; y &lt;strong&gt;Nuevo San Martín&lt;/strong&gt;, ubicadas en el corazón de la selva purureña, enfrentaban una realidad cotidiana que muchos ignoramos: el agua que bebían llegaba de pozos abiertos, llenos de insectos, hojas y sedimentos del río.&lt;/p&gt;
-        &lt;p&gt;Para llegar a estas comunidades hay que surcar ríos por horas en bote. No hay carreteras. No hay red de agua potable. Las enfermedades diarreicas —especialmente en niños— eran constantes.&lt;/p&gt;
-        &lt;div class=&quot;highlight-box&quot;&gt;
-          &lt;strong&gt;&quot;A veces tomamos agua con gusano, agua de río con basura. Por eso es importante filtrar el agua.&quot;&lt;/strong&gt;&lt;br&gt;
-          &lt;span style=&quot;font-size:0.88em;&quot;&gt;— Cristina Sálamo, Comunidad Nuevo San Martín&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-5 text-center&quot;&gt;
-        &lt;img src=&quot;/img/purus/mapa_purus.png&quot;
-             style=&quot;max-width:100%; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,0.12);&quot;
-             alt=&quot;Mapa ruta Purús — Bufeo y Nuevo San Martín&quot;&gt;
-        &lt;p style=&quot;font-size:0.82em; color:#888; margin-top:8px;&quot;&gt;Ruta fluvial hasta las comunidades de Bufeo y Nuevo San Martín, Purús&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- LA SOLUCIÓN --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🔬 La solución: el Filtro Vita&lt;/h2&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-4 text-center&quot;&gt;
-        &lt;img src=&quot;/img/purus/filtro_vita_logo.png&quot;
-             style=&quot;max-width:100%; max-height:280px; object-fit:contain;&quot;
-             alt=&quot;Filtro Vita — AguaSAN&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-8&quot;&gt;
-        &lt;p&gt;El &lt;strong&gt;Filtro Vita&lt;/strong&gt; es una adaptación del filtro bioarena de concreto, ingeniada para la realidad de la selva amazónica. Su diseño en &lt;strong&gt;bidón de polietileno de alta densidad (HDPE)&lt;/strong&gt; lo hace liviano, apilable y transportable en canoa, motocar o a pie — sin electricidad, sin químicos.&lt;/p&gt;
-        &lt;p&gt;Funciona con capas de arena fina y grava cuidadosamente seleccionadas, donde una &lt;em&gt;biocapa&lt;/em&gt; de microorganismos vivos elimina patógenos y purifica el agua de forma natural.&lt;/p&gt;
-
-        &lt;div class=&quot;vita-feature&quot;&gt;
-          &lt;div class=&quot;vi&quot;&gt;📦&lt;/div&gt;
-          &lt;div&gt;&lt;h5&gt;Transportable y apilable&lt;/h5&gt;&lt;p&gt;Los bidones HDPE son ligeros y se apilan fácilmente — pueden cargarse en bote, en motocar o a hombros hasta el último hogar de la comunidad.&lt;/p&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;vita-feature&quot;&gt;
-          &lt;div class=&quot;vi&quot;&gt;🪣&lt;/div&gt;
-          &lt;div&gt;&lt;h5&gt;Balde con tapa para agua tratada&lt;/h5&gt;&lt;p&gt;Cada kit incluye un balde con tapa para almacenar el agua filtrada libre de recontaminación, garantizando la calidad hasta el momento del consumo.&lt;/p&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;vita-feature&quot;&gt;
-          &lt;div class=&quot;vi&quot;&gt;🦠&lt;/div&gt;
-          &lt;div&gt;&lt;h5&gt;Eliminación probada de patógenos&lt;/h5&gt;&lt;p&gt;Elimina bacterias, parásitos y turbidez mediante filtración física y biológica. Sin recambios ni insumos externos.&lt;/p&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;vita-feature&quot;&gt;
-          &lt;div class=&quot;vi&quot;&gt;⏳&lt;/div&gt;
-          &lt;div&gt;&lt;h5&gt;+15 años de vida útil&lt;/h5&gt;&lt;p&gt;Con mantenimiento básico (swirl &amp; dump) que cualquier familia puede hacer, el filtro funciona por más de quince años.&lt;/p&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;!-- Filtros acumulados foto --&gt;
-    &lt;div class=&quot;row&quot; style=&quot;margin-top:28px;&quot;&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/filtros_acumulados.jpg&quot;
-             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:300px;&quot;
-             alt=&quot;Filtros Vita listos para ser distribuidos&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Los 37 bidones Filtro Vita listos para distribución antes de su traslado a las comunidades&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/ETIQUETA FILTRO.png&quot;
-             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:contain; max-height:300px; background:#f8f8f8;&quot;
-             alt=&quot;Etiqueta Filtro Vita con instrucciones&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Cada filtro lleva su etiqueta con instrucciones de uso, financiado por Yaqua y con la participación activa de las comunidades&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- EL VIAJE --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🚤 El viaje: logística en la selva&lt;/h2&gt;
-    &lt;p&gt;Implementar este proyecto no fue sencillo. Cada paso requirió planificación, trabajo en equipo y la invaluable colaboración de las organizaciones locales.&lt;/p&gt;
-
-    &lt;div class=&quot;timeline-step&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;🔍&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Evaluación y planificación&lt;/h4&gt;
-        &lt;p&gt;Se identificaron las comunidades con mayor necesidad hídrica en la cuenca del Purús y se coordinó con líderes locales, FECONAPU y la Asociación Pro-Purús para planificar el acceso y la logística del proyecto.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;timeline-step&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;🏖️&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Selección, preparación y adaptación de los filtros&lt;/h4&gt;
-        &lt;p&gt;La arena fue tamizada, lavada y secada para cumplir con los estándares técnicos: Tamaño Efectivo (TE) y Coeficiente de Uniformidad (CU) dentro de los rangos que garantizan el caudal óptimo. Se utilizaron envases de &lt;strong&gt;polietileno de alta densidad (HDPE)&lt;/strong&gt; y baldes con tapa para el almacenamiento del agua tratada. Cada filtro fue ensamblado, etiquetado y listo para su traslado.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;timeline-step&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;🚤&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Transporte hasta las comunidades&lt;/h4&gt;
-        &lt;p&gt;Los bidones y costales de arena viajaron primero en motocar y luego en bote por los ríos del Purús, adaptándose a las condiciones climáticas. Miembros de las propias comunidades colaboraron cargando los materiales desde el embarcadero hasta cada hogar.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;!-- Galería de transporte --&gt;
-    &lt;div class=&quot;gallery-row row&quot; style=&quot;margin-left:68px;&quot;&gt;
-      &lt;div class=&quot;col-sm-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/galeria1_transportacion.jpg&quot; alt=&quot;Cargando filtros en motocar&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Carga de los bidones Filtro Vita en motocar para el traslado inicial&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/galeria1_transportancion.jpg&quot; alt=&quot;Comunidad cargando materiales&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Miembros de la comunidad trasladando los materiales a pie hasta los hogares&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;timeline-step&quot; style=&quot;margin-top:28px;&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;🎓&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Capacitación comunitaria&lt;/h4&gt;
-        &lt;p&gt;AguaSAN, junto a FECONAPU, Yaqua y DAS Perú, organizó talleres presenciales en Bufeo y Nuevo San Martín. Las familias aprendieron a usar, mantener y cuidar su filtro — empoderándolas como guardianas de su propio recurso hídrico.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;!-- Foto capacitación --&gt;
-    &lt;div class=&quot;row&quot; style=&quot;margin-left:68px; margin-bottom:28px;&quot;&gt;
-      &lt;div class=&quot;col-md-10&quot;&gt;
-        &lt;img src=&quot;/img/purus/capacitacion.jpg&quot;
-             style=&quot;width:100%; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.13); object-fit:cover; max-height:320px;&quot;
-             alt=&quot;Capacitación comunitaria Purús&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Taller de capacitación en campo con las familias beneficiarias&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;timeline-step&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;🏠&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Instalación hogar por hogar&lt;/h4&gt;
-        &lt;p&gt;Se instalaron &lt;strong&gt;35 filtros en hogares&lt;/strong&gt; de Bufeo y Nuevo San Martín, con &lt;strong&gt;2 filtros adicionales&lt;/strong&gt; en las instalaciones de la Asociación Pro-Purús y la FECONAPU como puntos de demostración y réplica para la comunidad.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;timeline-step&quot;&gt;
-      &lt;div class=&quot;timeline-icon&quot;&gt;📋&lt;/div&gt;
-      &lt;div class=&quot;timeline-text&quot;&gt;
-        &lt;h4&gt;Encuesta y seguimiento&lt;/h4&gt;
-        &lt;p&gt;Al entregar cada filtro, el equipo realizó una encuesta individualizada con cada familia. Sus testimonios fueron el indicador más poderoso del éxito del proyecto.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- BENEFICIARIOS --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🙌 Los beneficiarios&lt;/h2&gt;
-    &lt;p&gt;Cada bidón azul representa una familia que ya no bebe del río. Estas son algunas de las personas que hoy tienen agua segura en casa.&lt;/p&gt;
-    &lt;div class=&quot;gallery-row row&quot;&gt;
-      &lt;div class=&quot;col-sm-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/beneficiario1.jpg&quot; alt=&quot;Beneficiario 1 con su Filtro Vita&quot; style=&quot;height:300px;&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Beneficiario de la comunidad Bufeo con su Filtro Vita instalado&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-6&quot;&gt;
-        &lt;img src=&quot;/img/purus/beneficiario2.jpg&quot; alt=&quot;Beneficiario 2 con su Filtro Vita&quot; style=&quot;height:300px;&quot;&gt;
-        &lt;p class=&quot;gallery-caption&quot;&gt;Beneficiario de la comunidad Nuevo San Martín con su Filtro Vita&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- VOCES --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🗣️ Las voces que más importan&lt;/h2&gt;
-    &lt;p&gt;De entre las decenas de testimonios recogidos familia por familia, estas palabras resumen todo:&lt;/p&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;El agua limpia alarga la vida.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Zenia Castillo, Nuevo San Martín&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;El filtro vita nos permite vivir tranquilos y sanos.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Rubén Jijida Bachara, Comunidad Bufeo&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;Mis hijos sufren de diarrea constantemente. Ahora sé que van a mejorar con el Filtro Vita.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Elvita Torres, Nuevo San Martín&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-6&quot;&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;El filtro vita es importante porque nos cuida la salud y nuestros hijos para que crezcan bien y no estén yendo al hospital.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Franklin Salomón López, Comunidad Bufeo&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;Con agua limpia cuidamos nuestra salud.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Verónica Tachiana, Nuevo San Martín&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;testimonial-card&quot;&gt;
-          &lt;blockquote&gt;&quot;El agua limpia es lo más importante. Cuando tomas agua limpia no te enfermas; si tomas agua contaminada, se presentarán diferentes enfermedades.&quot;&lt;/blockquote&gt;
-          &lt;div class=&quot;author&quot;&gt;— Asís Salomón Castillo, Comunidad Bufeo&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- IMPACTO EN NÚMEROS --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;📊 El impacto en números&lt;/h2&gt;
-    &lt;div class=&quot;row text-center&quot;&gt;
-      &lt;div class=&quot;col-sm-4&quot;&gt;
-        &lt;div class=&quot;stat-box&quot;&gt;
-          &lt;div class=&quot;number&quot;&gt;12&lt;/div&gt;
-          &lt;div class=&quot;label&quot;&gt;🏡 Hogares en Bufeo&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-4&quot;&gt;
-        &lt;div class=&quot;stat-box&quot;&gt;
-          &lt;div class=&quot;number&quot;&gt;23&lt;/div&gt;
-          &lt;div class=&quot;label&quot;&gt;🏡 Hogares en Nuevo San Martín&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-sm-4&quot;&gt;
-        &lt;div class=&quot;stat-box&quot;&gt;
-          &lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
-          &lt;div class=&quot;label&quot;&gt;🏛️ Puntos de demostración&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;highlight-box&quot; style=&quot;margin-top:24px;&quot;&gt;
-      Este proyecto no solo entregó 37 filtros — estableció un &lt;strong&gt;modelo de colaboración replicable&lt;/strong&gt; entre ONGs, organizaciones indígenas locales y comunidades, demostrando que la unión de esfuerzos puede brindar soluciones sostenibles de acceso al agua en los lugares más remotos del Perú.
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- ALIADOS --&gt;
-  &lt;div class=&quot;story-section&quot;&gt;
-    &lt;h2&gt;🤝 Aliados que hicieron posible este sueño&lt;/h2&gt;
-    &lt;p&gt;Este proyecto fue posible gracias a la articulación de múltiples actores comprometidos con el acceso al agua en el Perú:&lt;/p&gt;
-    &lt;div class=&quot;partner-logos&quot;&gt;
-      &lt;img src=&quot;/img/LOGO_AGUASAN.png&quot; alt=&quot;AguaSAN&quot;&gt;
-      &lt;img src=&quot;/img/logos/cawst-logo-full.png&quot; alt=&quot;CAWST&quot;&gt;
-      &lt;img src=&quot;/img/logos/Innovate_logo.png&quot; alt=&quot;Innovate&quot;&gt;
-      &lt;img src=&quot;/img/logos/UNALM_logo.png&quot; alt=&quot;UNALM&quot;&gt;
-    &lt;/div&gt;
-    &lt;p class=&quot;text-center text-muted&quot; style=&quot;font-size:0.9em; margin-top:8px;&quot;&gt;
-      AguaSAN &amp;nbsp;·&amp;nbsp; Yaqua &amp;nbsp;·&amp;nbsp; Asociación Pro-Purús &amp;nbsp;·&amp;nbsp; FECONAPU &amp;nbsp;·&amp;nbsp; DAS Perú
-    &lt;/p&gt;
-  &lt;/div&gt;
-
-  &lt;!-- CTA --&gt;
-  &lt;div class=&quot;cta-purus&quot;&gt;
-    &lt;h3&gt;¿Quieres ser parte de la siguiente historia?&lt;/h3&gt;
-    &lt;p&gt;Cada filtro cuesta una fracción de un sistema convencional y puede transformar la salud de una familia entera. Únete a nuestra misión.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;&lt;!-- /container --&gt;
-</description>
-        <pubDate>Thu, 01 Feb 2024 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/02/01/Purus/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/implementaci%C3%B3n/2024/02/01/Purus/</guid>
+        <pubDate>Thu, 28 Sep 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/proyectos/purus-2023/</link>
+        <guid isPermaLink="true">http://localhost:4000/proyectos/purus-2023/</guid>
         
         
         <category>Implementación</category>
@@ -1209,14 +564,14 @@
   &lt;div class=&quot;cta-flai&quot;&gt;
     &lt;h3&gt;Agua segura para toda una comunidad.&lt;/h3&gt;
     &lt;p&gt;Un FLAI puede transformar la salud de una escuela, una posta o un barrio entero. Únete a nuestra misión.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#1b5e20; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+    &lt;a href=&quot;#contact&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#1b5e20; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;Conversemos&lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Thu, 23 Feb 2023 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/flai/2023/02/23/FLAI2/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/flai/2023/02/23/FLAI2/</guid>
+        <link>http://localhost:4000/flai/2023/02/23/FLAI2/</link>
+        <guid isPermaLink="true">http://localhost:4000/flai/2023/02/23/FLAI2/</guid>
         
         
         <category>FLAI</category>
@@ -1510,17 +865,211 @@
   &lt;div class=&quot;cta-fba&quot;&gt;
     &lt;h3&gt;Lleva agua segura a una familia.&lt;/h3&gt;
     &lt;p&gt;Con tu apoyo podemos fabricar e instalar más filtros FBA en las comunidades que más lo necesitan.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+    &lt;a href=&quot;#contact&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;Conversemos&lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/fba/2023/02/22/FBA/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2023/02/22/FBA/</guid>
+        <link>http://localhost:4000/fba/2023/02/22/FBA/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2023/02/22/FBA/</guid>
         
         
         <category>FBA</category>
+        
+      </item>
+    
+      <item>
+        <title>Lurigancho-Chosica 2021–2022</title>
+        <description>&lt;article class=&quot;story&quot;&gt;
+  &lt;header class=&quot;story-hero&quot;&gt;
+    &lt;img class=&quot;story-hero-image&quot; src=&quot;/img/impacto/portada_impacto.jpg&quot; alt=&quot;Equipo y familias participantes del piloto en Lurigancho-Chosica&quot;&gt;
+    &lt;div class=&quot;story-hero-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-hero-content&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;span class=&quot;story-kicker&quot;&gt;Innovación aplicada · 2021–2022&lt;/span&gt;
+        &lt;h1&gt;Filtración familiar y comunitaria en Lurigancho-Chosica&lt;/h1&gt;
+        &lt;p class=&quot;story-deck&quot;&gt;Un piloto cofinanciado por ProInnóvate llevó filtros bioarena y filtros lentos de arena intermitentes a Los Girasoles y Los Frutales.&lt;/p&gt;
+        &lt;div class=&quot;story-meta&quot;&gt;
+          &lt;span&gt;&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; San Antonio de Pedregal II, Lima&lt;/span&gt;
+          &lt;span&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Septiembre 2021 – 2022&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;section class=&quot;story-stats&quot; aria-label=&quot;Cifras del piloto&quot;&gt;
+    &lt;div class=&quot;container story-stat-grid&quot;&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;span&gt;filtros familiares FBA&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;span&gt;filtros comunitarios FLAI&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;span&gt;sectores con convenio&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;460&lt;/strong&gt;&lt;span&gt;residentes en la zona piloto&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;div class=&quot;container story-body&quot;&gt;
+    &lt;a class=&quot;story-back&quot; href=&quot;/proyectos/&quot;&gt;&amp;larr; Volver a proyectos&lt;/a&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;div class=&quot;story-status&quot;&gt;
+        &lt;i class=&quot;fa fa-check-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&lt;strong&gt;Estado documentado:&lt;/strong&gt; el archivo contiene convenios comunitarios, informes de implementación de FBA y FLAI, materiales de capacitación y entregables del contrato ProInnóvate. Las cifras de remoción de arsénico difundidas en el pitch fueron resultados interinos y deben mantenerse diferenciadas de los análisis acreditados posteriores.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;El reto: agua de canal y una amenaza química&lt;/h2&gt;
+      &lt;p class=&quot;story-lead&quot;&gt;San Antonio de Pedregal II está a unos 36.5 km de Lima y recibe agua de un canal vinculado a la central de Moyopampa. Durante la temporada de lluvias, el agua llega con alta turbidez. El piloto buscó tratar patógenos y evaluar una solución de bajo costo para arsénico.&lt;/p&gt;
+      &lt;div class=&quot;story-card-grid&quot;&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-cloud&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Turbidez estacional&lt;/h3&gt;
+          &lt;p&gt;Entre noviembre y marzo las lluvias arrastran sedimentos hacia el canal que abastece a los hogares.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-flask&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Arsénico&lt;/h3&gt;
+          &lt;p&gt;El contaminante requiere análisis de laboratorio: no tiene olor, color ni sabor que permita detectarlo en casa.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;
+          &lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-balance-scale&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;h3&gt;Estándar nacional&lt;/h3&gt;
+          &lt;p&gt;El proyecto tomó como referencia el límite de 0.01 mg/L establecido por el D.S. 031-2010-SA.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Dos escalas, un mismo principio&lt;/h2&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+          &lt;figure class=&quot;story-media&quot;&gt;
+            &lt;img src=&quot;/img/impacto/FILTRO_FBA.png&quot; alt=&quot;Esquema del Filtro Bioarena Familiar&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;FBA: tratamiento en el hogar, con una capacidad de diseño de hasta 60 litros por día.&lt;/figcaption&gt;
+          &lt;/figure&gt;
+          &lt;h3&gt;Filtro Bioarena Familiar (FBA)&lt;/h3&gt;
+          &lt;p&gt;Treinta unidades fueron distribuidas entre hogares seleccionados: 15 en Los Girasoles y 15 en Los Frutales. El caudal promedio medido en las instalaciones de Los Girasoles fue 0.46 L/min, dentro del rango técnico de 0.4–0.6 L/min.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+          &lt;figure class=&quot;story-media&quot;&gt;
+            &lt;img src=&quot;/img/impacto/FILTRO_FLAI.png&quot; alt=&quot;Esquema del Filtro Lento de Arena Intermitente&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;FLAI: infraestructura comunitaria alimentada por gravedad, diseñada para hasta 2,500 litros por día.&lt;/figcaption&gt;
+          &lt;/figure&gt;
+          &lt;h3&gt;Filtro Lento de Arena Intermitente (FLAI)&lt;/h3&gt;
+          &lt;p&gt;Cada sector recibió una unidad comunitaria adaptada a su terreno. El equipo utilizó levantamiento con dron y modelos de pendiente para ubicar correctamente estos sistemas de flujo por gravedad.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Ingeniería y construcción en condiciones reales&lt;/h2&gt;
+      &lt;p&gt;Los filtros no llegaron como equipos cerrados. El archivo documenta fabricación de moldes, selección y transporte de arena y grava, pruebas hidráulicas, levantamiento topográfico y adaptación de cada FLAI a la pendiente disponible.&lt;/p&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/agrosanidad/preparacion-fba.jpg&quot; alt=&quot;Equipo y comunidad preparando materiales junto a filtros FBA en Los Frutales&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Preparación de medios filtrantes y cuerpos FBA en Los Frutales, julio de 2022.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/agrosanidad/instalacion-flai.jpg&quot; alt=&quot;Equipo instalando el medio filtrante en tanques del FLAI comunitario&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Instalación del FLAI: cada sistema comunitario se ajustó al sitio y funcionó por gravedad.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/agrosanidad/prototipos-laboratorio.jpg&quot; alt=&quot;Prototipos FBA y FLAI durante pruebas en La Molina&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Prototipos y moldes durante la fase de ingeniería y ensayo en La Molina.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/agrosanidad/agua-antes-despues.jpg&quot; alt=&quot;Comparación visual de agua turbia y agua clara sostenida por un participante&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;La claridad es visible, pero no demuestra ausencia de arsénico o microorganismos: eso requiere laboratorio.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Cómo funciona el aditamento para arsénico&lt;/h2&gt;
+      &lt;p&gt;El piloto no utilizó una “capa de arena con iones de hierro”. Los informes técnicos describen un &lt;strong&gt;cartucho de clavos de hierro&lt;/strong&gt;: 5 kg para cada FBA y 15 kg para cada FLAI. Al oxidarse, el hierro forma hidróxido férrico; el arsénico se adsorbe o coprecipita y queda retenido en el medio filtrante.&lt;/p&gt;
+      &lt;div class=&quot;story-steps&quot;&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;1&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Oxidación&lt;/h3&gt;&lt;p&gt;El hierro se transforma progresivamente en compuestos férricos al entrar en contacto con el agua y el oxígeno.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;2&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Adsorción y coprecipitación&lt;/h3&gt;&lt;p&gt;El arsénico se une a los hidróxidos de hierro formados en el cartucho.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;3&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Retención&lt;/h3&gt;&lt;p&gt;Las partículas resultantes quedan atrapadas en la arena fina mientras el agua continúa por gravedad.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-note&quot;&gt;&lt;strong&gt;Meta contractual:&lt;/strong&gt; el convenio de innovación estableció objetivos de al menos 95% de remoción microbiológica y 90% de remoción de arsénico. Una meta de contrato no equivale por sí sola a un resultado final certificado.&lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-5&quot;&gt;
+          &lt;figure class=&quot;story-media story-media--contain&quot;&gt;
+            &lt;img src=&quot;/img/agrosanidad/aditamento-arsenico.jpg&quot; alt=&quot;Ficha educativa original del aditamento de hierro para remover arsénico&quot; loading=&quot;lazy&quot;&gt;
+            &lt;figcaption&gt;Ficha educativa original del proyecto. La frase “más de 90%” se conserva como parte del archivo, pero debe leerse como objetivo/resultado interino, no como certificación final.&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;div class=&quot;story-table-wrap&quot;&gt;
+            &lt;table class=&quot;story-table&quot;&gt;
+              &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Escala&lt;/th&gt;&lt;th&gt;Configuración documentada&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;&lt;td&gt;FBA familiar&lt;/td&gt;&lt;td&gt;Cartucho o malla con 5 kg de clavos de hierro de 1¼–1½ pulgadas.&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;FLAI comunitario&lt;/td&gt;&lt;td&gt;Aditamento con 15 kg de clavos de hierro.&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Mecanismo&lt;/td&gt;&lt;td&gt;Oxidación a Fe(OH)₃, adsorción/coprecipitación del arsénico y retención en la arena fina.&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Referencia normativa&lt;/td&gt;&lt;td&gt;0.01 mg/L de arsénico en agua para consumo humano, D.S. 031-2010-SA.&lt;/td&gt;&lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;story-note story-note--amber&quot;&gt;&lt;strong&gt;Corrección frente a la versión anterior:&lt;/strong&gt; el expediente técnico describe clavos de hierro en un aditamento, no una “capa de arena recubierta con iones de hierro” distribuida en grupos superior/inferior.&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Del laboratorio al territorio&lt;/h2&gt;
+      &lt;div class=&quot;story-steps&quot;&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;1&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Septiembre de 2021: alianza de innovación&lt;/h3&gt;&lt;p&gt;AgroSanidad obtuvo el fondo PIMEN de ProInnóvate mediante el contrato N.º 008-FIDECOM-INNOVATEPERU-PIMEN-2021-SI, con un esquema de cofinanciamiento institucional.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;2&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Enero–marzo de 2022: ingeniería&lt;/h3&gt;&lt;p&gt;El equipo realizó pruebas hidráulicas, análisis granulométrico, diseño del aditamento y levantamiento topográfico para los sistemas comunitarios.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;3&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Mayo–julio de 2022: implementación&lt;/h3&gt;&lt;p&gt;Se instalaron 30 FBA y dos FLAI, y el 22 de mayo se realizó un taller comunitario de uso, higiene y mantenimiento.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;4&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Seguimiento&lt;/h3&gt;&lt;p&gt;Las encuestas de línea base y cierre se digitalizaron con Survey123 y puntos georreferenciados, continuando la metodología de evaluación usada por AguaSAN desde sus primeros proyectos.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;figure class=&quot;story-media&quot;&gt;
+        &lt;img src=&quot;/img/impacto/capacitacion.JPG&quot; alt=&quot;Capacitación a familias en Lurigancho-Chosica&quot; loading=&quot;lazy&quot;&gt;
+        &lt;figcaption&gt;La instalación estuvo acompañada por capacitación sobre operación, mantenimiento y almacenamiento seguro.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Qué resultados pueden afirmarse&lt;/h2&gt;
+      &lt;p&gt;Los materiales de presentación del piloto reportaron resultados iniciales de 97% de remoción de patógenos y 90% de arsénico. El artículo científico asociado permanecía en borrador en el archivo revisado, por lo que esas cifras deben citarse como &lt;strong&gt;resultados interinos&lt;/strong&gt;, no como conclusión publicada.&lt;/p&gt;
+      &lt;p&gt;En agosto de 2023, por encargo de YAQUA, un laboratorio acreditado por INACAL analizó agua filtrada del sistema de San Antonio de Pedregal. Encontró E. coli y coliformes fecales por debajo de 1.1 NMP/100 mL, coliformes totales de 2 NMP/100 mL y turbidez menor a 0.3 NTU.&lt;/p&gt;
+      &lt;div class=&quot;story-note story-note--amber&quot;&gt;&lt;strong&gt;Aprendizaje transparente:&lt;/strong&gt; el mismo análisis registró 1,900 UFC/mL de bacterias heterótrofas. La revisión técnica las relacionó probablemente con el tanque de almacenamiento y un bajo cloro residual, no con contaminación fecal. La recomendación fue limpiar y desinfectar los tanques dos o tres veces por año.&lt;/div&gt;
+      &lt;div class=&quot;story-table-wrap&quot;&gt;
+        &lt;table class=&quot;story-table&quot;&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Evidencia&lt;/th&gt;&lt;th&gt;Qué permite afirmar&lt;/th&gt;&lt;th&gt;Qué no permite afirmar&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;Convenio ProInnóvate&lt;/td&gt;&lt;td&gt;Metas de ≥95% microbiológica y ≥90% de arsénico.&lt;/td&gt;&lt;td&gt;Que las metas se alcanzaron en todos los filtros.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Informes de implementación&lt;/td&gt;&lt;td&gt;30 FBA, 2 FLAI, materiales, caudales y capacitación.&lt;/td&gt;&lt;td&gt;Un desenlace de salud de largo plazo.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Pitch / one-pager&lt;/td&gt;&lt;td&gt;Resultados iniciales comunicados de 97% y 90%.&lt;/td&gt;&lt;td&gt;Una conclusión científica publicada o certificada.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Laboratorio acreditado, agosto 2023&lt;/td&gt;&lt;td&gt;Resultado microbiológico y de turbidez de la muestra analizada.&lt;/td&gt;&lt;td&gt;Validación final de remoción de arsénico en todo el piloto.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Artículo científico en borrador&lt;/td&gt;&lt;td&gt;Metodología y datos provisionales para revisión.&lt;/td&gt;&lt;td&gt;Citarlo como publicación final revisada por pares.&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Instituciones que hicieron posible el piloto&lt;/h2&gt;
+      &lt;div class=&quot;story-partners&quot; aria-label=&quot;Organizaciones participantes&quot;&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;AgroSanidad · ejecución técnica&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;ProInnóvate / PRODUCE · cofinanciamiento&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;UNALM · investigación y GIS&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;CAWST · linaje técnico&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;Los Girasoles · comunidad&lt;/span&gt;
+        &lt;span class=&quot;story-partner&quot;&gt;Los Frutales · comunidad&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-logo-grid&quot; aria-label=&quot;Logos de organizaciones vinculadas&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/logos/LOGO_AGROSANIDAD.jpg&quot; alt=&quot;Logo AgroSanidad&quot;&gt;&lt;figcaption&gt;Ejecución técnica&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/LOGO_AGUASAN.png&quot; alt=&quot;Logo AguaSAN Perú&quot;&gt;&lt;figcaption&gt;Trayectoria social y técnica&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/logos/Innovate_logo.png&quot; alt=&quot;Logo ProInnóvate&quot;&gt;&lt;figcaption&gt;Cofinanciamiento&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/logos/UNALM_logo.png&quot; alt=&quot;Logo Universidad Nacional Agraria La Molina&quot;&gt;&lt;figcaption&gt;Investigación y GIS&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/logos/cawst-logo-full.png&quot; alt=&quot;Logo CAWST&quot;&gt;&lt;figcaption&gt;Linaje técnico&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;aside class=&quot;story-cta&quot;&gt;
+      &lt;h2&gt;La innovación se fortalece con evidencia&lt;/h2&gt;
+      &lt;p&gt;Buscamos aliados para completar validaciones, mejorar el seguimiento y llevar soluciones de agua segura a más comunidades.&lt;/p&gt;
+      &lt;a class=&quot;story-button&quot; href=&quot;/#contact&quot;&gt;Conversemos&lt;/a&gt;
+    &lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Sun, 22 May 2022 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/proyectos/lurigancho-chosica-2022/</link>
+        <guid isPermaLink="true">http://localhost:4000/proyectos/lurigancho-chosica-2022/</guid>
+        
+        
+        <category>Implementación</category>
         
       </item>
     
@@ -1923,14 +1472,14 @@
   &lt;div class=&quot;cta-crisis&quot;&gt;
     &lt;h3&gt;La solución existe. Solo hace falta llevarla.&lt;/h3&gt;
     &lt;p&gt;Los filtros bioarena como el Filtro Vita pueden transformar la realidad de una familia en días — sin electricidad, sin químicos, sin esperar décadas a que llegue la infraestructura.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+    &lt;a href=&quot;#contact&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;Conversemos&lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/crisis/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/crisis/</guid>
+        <link>http://localhost:4000/fba/2014/07/15/crisis/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/crisis/</guid>
         
         
         <category>FBA</category>
@@ -1991,8 +1540,8 @@
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/Implementaci%C3%B3n/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/Implementaci%C3%B3n/</guid>
+        <link>http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Implementaci%C3%B3n/</guid>
         
         
         <category>FBA</category>
@@ -2421,17 +1970,238 @@
   &lt;div class=&quot;cta-impacto&quot;&gt;
     &lt;h3&gt;Cada filtro es una familia protegida.&lt;/h3&gt;
     &lt;p&gt;Con tu apoyo podemos llegar a más comunidades que hoy beben agua contaminada sin ninguna alternativa.&lt;/p&gt;
-    &lt;a href=&quot;#ayuda&quot; class=&quot;btn btn-lg&quot; style=&quot;background:white; color:#00574b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;💙 Cómo ayudar&lt;/a&gt;
+    &lt;a href=&quot;#contact&quot; class=&quot;btn btn-lg page-scroll&quot; style=&quot;background:white; color:#00574b; font-weight:800; border-radius:30px; padding:12px 36px;&quot; data-dismiss=&quot;modal&quot;&gt;Conversemos&lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://Pagina-Oficial-Aguasan/fba/2014/07/15/Impacto/</link>
-        <guid isPermaLink="true">https://Pagina-Oficial-Aguasan/fba/2014/07/15/Impacto/</guid>
+        <link>http://localhost:4000/fba/2014/07/15/Impacto/</link>
+        <guid isPermaLink="true">http://localhost:4000/fba/2014/07/15/Impacto/</guid>
         
         
         <category>FBA</category>
+        
+      </item>
+    
+      <item>
+        <title>Aprender para multiplicar: Taller CAWST 2013</title>
+        <description>&lt;article class=&quot;story&quot;&gt;
+  &lt;header class=&quot;story-hero&quot;&gt;
+    &lt;img class=&quot;story-hero-image&quot; src=&quot;/img/historia/taller-cawst.jpg&quot; alt=&quot;Participantes del taller CAWST y AguaSAN de mayo de 2013&quot;&gt;
+    &lt;div class=&quot;story-hero-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-hero-content&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;span class=&quot;story-kicker&quot;&gt;Capacidad técnica · Mayo 2013&lt;/span&gt;
+      &lt;h1&gt;Cinco días para convertir conocimiento en capacidad local&lt;/h1&gt;
+      &lt;p class=&quot;story-deck&quot;&gt;AguaSAN, CAWST y la UNALM reunieron a implementadores para estudiar el filtro, preparar sus materiales y diseñar proyectos centrados en las personas.&lt;/p&gt;
+      &lt;div class=&quot;story-meta&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; La Molina, Lima&lt;/span&gt;&lt;span&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; 27–31 de mayo de 2013&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;section class=&quot;story-stats&quot;&gt;&lt;div class=&quot;container story-stat-grid&quot;&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;span&gt;días de formación&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;28 L&lt;/strong&gt;&lt;span&gt;de arena por filtro v10&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;178&lt;/strong&gt;&lt;span&gt;fotografías en el archivo del taller&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;span&gt;aliados: AguaSAN, CAWST y UNALM&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/section&gt;
+
+  &lt;div class=&quot;container story-body&quot;&gt;
+    &lt;a class=&quot;story-back&quot; href=&quot;/proyectos/&quot;&gt;&amp;larr; Volver a proyectos&lt;/a&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;div class=&quot;story-status&quot;&gt;
+        &lt;i class=&quot;fa fa-check-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&lt;strong&gt;Archivo visual:&lt;/strong&gt; las fotografías de esta página sí pertenecen al taller realizado del 27 al 31 de mayo de 2013. El archivo conserva 178 imágenes de las dos jornadas documentadas.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;Más que construir una caja de concreto&lt;/h2&gt;
+      &lt;p class=&quot;story-lead&quot;&gt;El taller utilizó el manual CAWST del Filtro Bioarena versión 10 y combinó teoría, práctica, análisis de arena, higiene y planificación de proyectos. Era una forma de estandarizar calidad sin perder la adaptación al contexto peruano.&lt;/p&gt;
+      &lt;div class=&quot;story-card-grid&quot;&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-filter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Medio filtrante&lt;/h3&gt;&lt;p&gt;Selección, lavado, secado y análisis granulométrico de arena y grava.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Construcción y control&lt;/h3&gt;&lt;p&gt;Diseño del difusor, tapa, tubería y ocho puntos críticos de inspección.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-users&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Implementación&lt;/h3&gt;&lt;p&gt;Capacitación, almacenamiento seguro, seguimiento y mensajes elegidos con la comunidad.&lt;/p&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;La arena también se diseña&lt;/h2&gt;
+      &lt;p&gt;El desempeño de un filtro depende del tamaño y uniformidad de sus granos. AguaSAN ya había construido con CAWST el primer clasificador húmedo de arena documentado en el país y en América Latina. Las pruebas de 2011 registraron tamaño efectivo de 0.16 mm, coeficiente de uniformidad de 1.94 y solo 1% de finos.&lt;/p&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/taller-arena.jpg&quot; alt=&quot;Participantes tamizando arena durante el taller&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;La práctica conectó las especificaciones técnicas con decisiones que el equipo debe tomar en campo.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/taller-materiales.jpg&quot; alt=&quot;Grava clasificada durante el taller&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Cada capa cumple una función hidráulica y debe prepararse con rangos de tamaño controlados.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;2013: capacitación y expansión regional&lt;/h2&gt;
+      &lt;p&gt;Ese mismo año, AguaSAN preparó una expansión a La Florida, El Desierto y La Cantera, en Nuevo Imperial, Cañete. El proyecto planteó atender a 150 familias y formar al menos 15 madres líderes como promotoras, llevando a otra provincia la metodología aprendida en Lima.&lt;/p&gt;
+      &lt;div class=&quot;story-note&quot;&gt;Para 2013, las fuentes institucionales ya reportaban más de 2,250 filtros implementados; el relato de CAWST de 2014 situó el alcance acumulado en más de 12,000 personas.&lt;/div&gt;
+      &lt;div class=&quot;story-partners&quot;&gt;&lt;span class=&quot;story-partner&quot;&gt;CAWST&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;AguaSAN Perú&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;UNALM&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;Promotores comunitarios&lt;/span&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;aside class=&quot;story-cta&quot;&gt;&lt;h2&gt;Compartir conocimiento multiplica el impacto&lt;/h2&gt;&lt;p&gt;Desde 2007, AguaSAN combina tecnología, formación y seguimiento para que cada solución permanezca en la comunidad.&lt;/p&gt;&lt;a class=&quot;story-button&quot; href=&quot;/historia/&quot;&gt;Explorar nuestra historia&lt;/a&gt;&lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Mon, 27 May 2013 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/proyectos/taller-cawst-2013/</link>
+        <guid isPermaLink="true">http://localhost:4000/proyectos/taller-cawst-2013/</guid>
+        
+        
+        <category>Historia</category>
+        
+      </item>
+    
+      <item>
+        <title>2012: institución y ciencia del río Rímac</title>
+        <description>&lt;article class=&quot;story&quot;&gt;
+  &lt;header class=&quot;story-hero&quot;&gt;
+    &lt;img class=&quot;story-hero-image&quot; src=&quot;/img/historia/rimac-uso-suelo.jpg&quot; alt=&quot;Mapa de uso del suelo en Lurigancho-Chosica y la cuenca del río Rímac&quot;&gt;
+    &lt;div class=&quot;story-hero-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-hero-content&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;span class=&quot;story-kicker&quot;&gt;Institución y evidencia · 2012&lt;/span&gt;
+      &lt;h1&gt;De iniciativa de campo a organización con una base científica propia&lt;/h1&gt;
+      &lt;p class=&quot;story-deck&quot;&gt;AguaSAN formalizó su estructura institucional y organizó una investigación sobre arsénico, cadmio, cromo y plomo en el río Rímac, los suelos y la agricultura del Cono Este.&lt;/p&gt;
+      &lt;div class=&quot;story-meta&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Cuenca del río Rímac y Lurigancho-Chosica&lt;/span&gt;&lt;span&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Documento técnico fechado en agosto de 2012&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;section class=&quot;story-stats&quot; aria-label=&quot;Datos del expediente 2012&quot;&gt;&lt;div class=&quot;container story-stat-grid&quot;&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;2012&lt;/strong&gt;&lt;span&gt;formalización de AguaSAN Perú&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;span&gt;metales estudiados: As, Cd, Cr y Pb&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;1996–2004&lt;/strong&gt;&lt;span&gt;serie histórica de SEDAPAL&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;2000–2004&lt;/strong&gt;&lt;span&gt;serie histórica de DIGESA&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/section&gt;
+
+  &lt;div class=&quot;container story-body&quot;&gt;
+    &lt;a class=&quot;story-back&quot; href=&quot;/proyectos/&quot;&gt;&amp;larr; Volver a proyectos&lt;/a&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;div class=&quot;story-status&quot;&gt;
+        &lt;i class=&quot;fa fa-info-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&lt;strong&gt;Lectura correcta:&lt;/strong&gt; esta página reúne dos hitos del archivo de 2012: la formalización institucional y la versión española del estudio del Rímac. Las cifras de aguas residuales describen el periodo analizado y no deben publicarse como indicadores actuales de Lima.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;Dos decisiones que permitieron crecer&lt;/h2&gt;
+      &lt;p class=&quot;story-lead&quot;&gt;Después de los pilotos de Ñaña y San Antonio, el trabajo necesitaba una estructura que pudiera firmar alianzas y una base de evidencia que explicara por qué el tratamiento domiciliario era necesario.&lt;/p&gt;
+      &lt;div class=&quot;story-card-grid&quot;&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-university&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Institucionalidad&lt;/h3&gt;&lt;p&gt;Agua y Saneamiento para Perú se constituyó como asociación sin fines de lucro. El archivo documenta su inscripción en SUNARP y su registro en APCI.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-flask&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Investigación&lt;/h3&gt;&lt;p&gt;Henry Juárez consolidó el estudio “Contaminación del río Rímac por metales pesados y efecto en la agricultura en el Cono Este de Lima Metropolitana”.&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-card&quot;&gt;&lt;span class=&quot;story-card-icon&quot;&gt;&lt;i class=&quot;fa fa-map&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;h3&gt;Territorio&lt;/h3&gt;&lt;p&gt;La investigación relacionó estaciones de monitoreo de agua con suelos, hortalizas y usos agrícolas en Lurigancho-Chosica.&lt;/p&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Qué estudió la investigación&lt;/h2&gt;
+      &lt;p&gt;El documento fue preparado con apoyo del programa AGROPOLIS / Urban Poverty &amp;amp; Environment de IDRC Canadá y Urban Harvest. SEDAPAL y DIGESA aportaron series históricas de calidad de agua. El análisis incluyó arsénico, cadmio, cromo y plomo, tanto en la cuenca como en suelos y vegetales de Carapongo.&lt;/p&gt;
+      &lt;div class=&quot;story-table-wrap&quot;&gt;
+        &lt;table class=&quot;story-table&quot;&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Componente&lt;/th&gt;&lt;th&gt;Qué aporta al relato&lt;/th&gt;&lt;th&gt;Límite de interpretación&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;SEDAPAL, 1996–2004&lt;/td&gt;&lt;td&gt;Serie de estaciones a lo largo de la cuenca del Rímac.&lt;/td&gt;&lt;td&gt;No representa por sí sola la calidad actual del río.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;DIGESA, 2000–2004&lt;/td&gt;&lt;td&gt;Complementa el seguimiento con otra red y periodo de datos.&lt;/td&gt;&lt;td&gt;Las diferencias entre fuentes requieren conservar método y año.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;Suelos y hortalizas&lt;/td&gt;&lt;td&gt;Conecta la contaminación del agua con agricultura urbana y exposición.&lt;/td&gt;&lt;td&gt;No equivale a un diagnóstico clínico de la población.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;As, Cd, Cr y Pb&lt;/td&gt;&lt;td&gt;Abre la línea posterior de adaptación del filtro para metales pesados.&lt;/td&gt;&lt;td&gt;Un filtro bioarena convencional no remueve automáticamente contaminantes disueltos.&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/rimac-arsenico-1997-2001.jpg&quot; alt=&quot;Mapas históricos de arsénico en la cuenca del Rímac entre 1997 y 2001&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Serie cartográfica de arsénico basada en datos históricos de SEDAPAL. Fuente: estudio del río Rímac, archivo AguaSAN.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/rimac-arsenico-2002-2004.jpg&quot; alt=&quot;Mapas históricos de arsénico en la cuenca del Rímac entre 2002 y 2004&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;La variación entre años es parte del hallazgo; una sola lámina no debe convertirse en diagnóstico vigente.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;El dato que necesita fecha&lt;/h2&gt;
+      &lt;p&gt;En el contexto descrito por el estudio, Lima generaba aproximadamente 19 m³/s de aguas residuales domésticas e industriales y menos del 2% recibía tratamiento. Es una cifra potente para explicar el origen del trabajo de AguaSAN, siempre que se acompañe de su periodo histórico.&lt;/p&gt;
+      &lt;div class=&quot;story-note story-note--amber&quot;&gt;&lt;strong&gt;No publicar como actualidad:&lt;/strong&gt; el expediente utiliza datos de 1996–2004 y un documento fechado en 2012. Para describir la situación de Lima hoy se necesita una estadística oficial contemporánea.&lt;/div&gt;
+      &lt;div class=&quot;story-placeholder&quot; role=&quot;img&quot; aria-label=&quot;Espacio reservado para una imagen autorizada de la formalización institucional de AguaSAN&quot;&gt;
+        &lt;i class=&quot;fa fa-picture-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;strong&gt;Espacio reservado para documento institucional&lt;/strong&gt;
+        &lt;small&gt;Añadir aquí una imagen curada de la inscripción o acta de 2012, ocultando domicilio, firmas, números personales y otros datos sensibles.&lt;/small&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;De entender el contaminante a diseñar otra solución&lt;/h2&gt;
+      &lt;p&gt;La investigación del Rímac no prueba que el filtro bioarena convencional remueva metales pesados. Su aporte fue otro: dio base a la línea de I+D que, desde 2014, evaluó aditamentos específicos de hierro para arsénico y otros metales. Esa separación entre diagnóstico y solución sigue siendo central en los proyectos recientes.&lt;/p&gt;
+      &lt;div class=&quot;story-partners&quot;&gt;&lt;span class=&quot;story-partner&quot;&gt;AguaSAN Perú&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;Urban Harvest&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;IDRC Canadá / AGROPOLIS&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;SEDAPAL&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;DIGESA&lt;/span&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;aside class=&quot;story-cta&quot;&gt;&lt;h2&gt;El siguiente paso fue multiplicar capacidad&lt;/h2&gt;&lt;p&gt;En 2013, AguaSAN y CAWST reunieron a implementadores para convertir la experiencia acumulada en metodología y control técnico.&lt;/p&gt;&lt;a class=&quot;story-button&quot; href=&quot;/proyectos/taller-cawst-2013/&quot;&gt;Continuar con el taller de 2013&lt;/a&gt;&lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Tue, 28 Aug 2012 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/proyectos/aguasan-rimac-2012/</link>
+        <guid isPermaLink="true">http://localhost:4000/proyectos/aguasan-rimac-2012/</guid>
+        
+        
+        <category>Historia</category>
+        
+      </item>
+    
+      <item>
+        <title>136 familias y un modelo de seguimiento comunitario</title>
+        <description>&lt;article class=&quot;story&quot;&gt;
+  &lt;header class=&quot;story-hero&quot;&gt;
+    &lt;img class=&quot;story-hero-image&quot; src=&quot;/img/historia/rotary-comunidad.jpg&quot; alt=&quot;Familias reunidas junto a filtros bioarena en San Antonio&quot;&gt;
+    &lt;div class=&quot;story-hero-overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-hero-content&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+      &lt;span class=&quot;story-kicker&quot;&gt;Escala con transparencia · 2010–2011&lt;/span&gt;
+      &lt;h1&gt;136 hogares, 15 promotores y cada paso documentado&lt;/h1&gt;
+      &lt;p class=&quot;story-deck&quot;&gt;San Antonio mostró que un proyecto de agua segura podía unir tecnología, formación comunitaria y seguimiento detallado.&lt;/p&gt;
+      &lt;div class=&quot;story-meta&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-map-marker&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; San Antonio, Lurigancho-Chosica&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;section class=&quot;story-stats&quot;&gt;&lt;div class=&quot;container story-stat-grid&quot;&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;136&lt;/strong&gt;&lt;span&gt;filtros y familias capacitadas&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;15&lt;/strong&gt;&lt;span&gt;promotores comunitarios&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;26&lt;/strong&gt;&lt;span&gt;muestras enviadas a DIGESA&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;story-stat&quot;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;comités comunitarios organizados&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/section&gt;
+
+  &lt;div class=&quot;container story-body&quot;&gt;
+    &lt;a class=&quot;story-back&quot; href=&quot;/proyectos/&quot;&gt;&amp;larr; Volver a proyectos&lt;/a&gt;
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;div class=&quot;story-status&quot;&gt;
+        &lt;i class=&quot;fa fa-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;p&gt;&lt;strong&gt;Archivo visual:&lt;/strong&gt; el expediente conserva listas, informes, comprobantes y resultados, pero no un conjunto fotográfico fechado con certeza en 2010–2011. Las imágenes de esta página son representativas de intervenciones históricas de AguaSAN y están separadas de la evidencia numérica.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;Un proyecto completo, de principio a fin&lt;/h2&gt;
+      &lt;p class=&quot;story-lead&quot;&gt;El Wakefield Rothe Island Rotary Club financió el proyecto mediante la subvención MG70889. EDES ejecutó las actividades y el equipo que luego consolidaría AguaSAN documentó beneficiarios, códigos de filtro, compromisos familiares y análisis de laboratorio.&lt;/p&gt;
+      &lt;div class=&quot;story-steps&quot;&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;1&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Organización&lt;/h3&gt;&lt;p&gt;Se trabajó con seis comités de San Antonio y su ampliación, registrando a cada familia y cada filtro.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;2&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Formación de promotores&lt;/h3&gt;&lt;p&gt;Trece madres y dos padres participaron en cuatro talleres para acompañar a los hogares.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;3&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Capacitación familiar&lt;/h3&gt;&lt;p&gt;Las 136 familias recibieron una jornada general antes de la inauguración del 13 de noviembre de 2010.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;story-step&quot;&gt;&lt;span class=&quot;story-step-number&quot;&gt;4&lt;/span&gt;&lt;div&gt;&lt;h3&gt;Control de calidad&lt;/h3&gt;&lt;p&gt;Veintiséis muestras de agua fueron enviadas a DIGESA para análisis.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;La familia también era parte de la solución&lt;/h2&gt;
+      &lt;p&gt;Cada hogar aportó un balde de 20 litros con tapa y caño. Ese pequeño compromiso protegía el agua tratada frente a la recontaminación y reforzaba la apropiación del sistema.&lt;/p&gt;
+      &lt;div class=&quot;story-gallery&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/rotary-entrega.jpg&quot; alt=&quot;Imagen referencial de una entrega comunitaria de filtros bioarena&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Imagen de archivo posterior, usada como referencia del modelo de entrega con capacitación.&lt;/figcaption&gt;&lt;/figure&gt;
+        &lt;figure&gt;&lt;img src=&quot;/img/historia/origen-filtro.jpg&quot; alt=&quot;Imagen referencial de filtro bioarena y almacenamiento seguro&quot; loading=&quot;lazy&quot;&gt;&lt;figcaption&gt;Imagen de archivo posterior: filtrar y almacenar de forma segura son partes inseparables del tratamiento domiciliario.&lt;/figcaption&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;story-section&quot;&gt;
+      &lt;h2&gt;Documentación que permite escalar&lt;/h2&gt;
+      &lt;p&gt;El informe técnico-financiero del 19 de enero de 2011 dejó un cierre ordenado del proyecto. Esa disciplina convirtió la experiencia en una plantilla para futuras alianzas.&lt;/p&gt;
+      &lt;div class=&quot;story-note&quot;&gt;Listas de beneficiarios, cartas de compromiso, recibos de laboratorio y registros por actividad permiten reconstruir qué se hizo, para quién y con qué respaldo.&lt;/div&gt;
+      &lt;div class=&quot;story-partners&quot;&gt;&lt;span class=&quot;story-partner&quot;&gt;Rotary International&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;EDES&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;Municipalidad de Lurigancho-Chosica&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;DIGESA&lt;/span&gt;&lt;span class=&quot;story-partner&quot;&gt;Comunidad de San Antonio&lt;/span&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;aside class=&quot;story-cta&quot;&gt;&lt;h2&gt;La confianza también se construye con datos&lt;/h2&gt;&lt;p&gt;AguaSAN mantiene la capacitación y el seguimiento como parte central de cada implementación.&lt;/p&gt;&lt;a class=&quot;story-button&quot; href=&quot;/historia/&quot;&gt;Ver nuestra evolución&lt;/a&gt;&lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</description>
+        <pubDate>Wed, 19 Jan 2011 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/proyectos/rotary-san-antonio-2011/</link>
+        <guid isPermaLink="true">http://localhost:4000/proyectos/rotary-san-antonio-2011/</guid>
+        
+        
+        <category>Historia</category>
         
       </item>
     

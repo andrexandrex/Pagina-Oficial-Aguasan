@@ -8,6 +8,7 @@ Sitio oficial de AguaSan, ONG de agua y saneamiento para comunidades peruanas. E
 - **Formulario de contacto:** sin backend propio. `_includes/contact.html` hace `fetch()` directo desde el navegador a [Web3Forms](https://web3forms.com/) (access key ya configurada en el HTML — es pública por diseño, enruta el envío, no es una credencial). Lógica en `js/contact-api.js`.
 - **Newsletter:** formulario embebido de **Brevo** (ex-Sendinblue) en `_includes/contact.html`, POST directo al form action de Brevo con `mode: "no-cors"` (evita el problema de página en blanco por redirect). Deduplicación de envíos vía `localStorage` (`nl_subscribed`) para no re-enviar confirmación al mismo correo dos veces desde el mismo navegador — la solución definitiva contra duplicados es configurar en Brevo "si el contacto ya existe → actualizar" en vez de re-confirmar.
 - **Bot de WhatsApp:** Cloudflare Worker en `whatsapp-worker/` (webhook verify + respuestas por palabra clave). Scaffold completo, **aún no desplegado** — falta que el usuario cree cuenta Cloudflare + app Meta WhatsApp Business y corra `wrangler secret put` + `wrangler deploy`.
+- **Analítica:** Google Analytics 4 configurado globalmente desde `_includes/head.html` con el ID definido en `_config.yml` (`google_analytics`). El tag solo se emite cuando `JEKYLL_ENV=production`.
 
 GitHub Pages no ejecuta PHP ni Python — por eso el formulario y el bot están diseñados para no necesitar servidor propio.
 
@@ -90,7 +91,6 @@ npm run dev
 - **Corregir enlace de WhatsApp en `_config.yml`:** está anidado en la lista `social` de una persona con `title: stack-overflow` en vez de ser un link `whatsapp` de nivel superior.
 - **Dominio personalizado para el Worker:** opcionalmente `wa.aguasanperu.org` en vez de `*.workers.dev`.
 - **Registro de envíos del formulario:** respaldo de cada envío (ej. Google Sheets) más allá del correo.
-- **Analítica:** Plausible o Google Analytics.
 - **Restringir dominio en Web3Forms/Brevo:** activar la opción de dominio permitido en ambos dashboards como mitigación real contra reuso de las keys públicas.
 
 ## Créditos

@@ -1,9 +1,7 @@
 
 <!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/agency.css">
     {% feed_meta %}
     {% seo %}
     {% include head.html %}
@@ -85,15 +83,17 @@
                 <span class="explore-panel-icon"><i class="fa fa-map-marker"></i></span>
                 <div>
                   <h3>Nuestros Proyectos</h3>
-                  <p>Historias reales de comunidades con agua segura</p>
+                  <p>Casos documentados, resultados y aprendizajes de campo</p>
                 </div>
               </div>
               <div class="explore-panel-body">
                 <div class="proj-strip">
-                  {% assign preview_posts = site.posts | where: "show_in_portfolio", true | limit: 3 %}
-                  {% for post in preview_posts %}
-                  <a href="/proyectos/" title="{{ post.title }}">
-                    <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" alt="{{ post.title }}">
+                  {% assign preview_posts = site.posts | where: "show_in_portfolio", true %}
+                  {% for post in preview_posts limit: 3 %}
+                  {% assign preview_image = post.card_image %}
+                  {% unless preview_image %}{% assign preview_image = post.thumbnail | prepend: '/img/portfolio/' %}{% endunless %}
+                  <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title | escape }}">
+                    <img src="{{ preview_image | prepend: site.baseurl }}" alt="{{ post.alt | default: post.title | escape }}" loading="lazy">
                   </a>
                   {% endfor %}
                 </div>
@@ -109,7 +109,7 @@
                 <span class="explore-panel-icon"><i class="fa fa-clock-o"></i></span>
                 <div>
                   <h3>Nuestra Historia</h3>
-                  <p>De 65 filtros a 2,500 filtros y 10,000 personas</p>
+                  <p>De un piloto comunitario a una red de innovación y alianzas</p>
                 </div>
               </div>
               <div class="explore-panel-body">
@@ -118,12 +118,12 @@
                   <span class="hist-mini-text">Proyecto piloto en la Comunidad 27 de Junio — los primeros 65 filtros.</span>
                 </div>
                 <div class="hist-mini-row">
-                  <span class="hist-mini-year">2013</span>
-                  <span class="hist-mini-text">Adaptamos el filtro para remover arsénico y metales pesados junto a UNALM.</span>
+                  <span class="hist-mini-year">2012</span>
+                  <span class="hist-mini-text">AguaSAN se constituye legalmente y consolida su base científica en el río Rímac.</span>
                 </div>
                 <div class="hist-mini-row">
-                  <span class="hist-mini-year">2024</span>
-                  <span class="hist-mini-text">15 proyectos, 11 comunidades y 10,000 personas con agua segura.</span>
+                  <span class="hist-mini-year">2023</span>
+                  <span class="hist-mini-text">Un convenio de cuatro organizaciones lleva la misión hacia las comunidades del río Purús.</span>
                 </div>
               </div>
               <a href="/historia/" class="teaser-btn">Ver nuestra historia &rarr;</a>
@@ -133,7 +133,6 @@
       </div>
     </section>
 
-    {% include ayuda.html %}
     {% include clients.html %}
     {% include contact.html %}
     {% include footer.html %}

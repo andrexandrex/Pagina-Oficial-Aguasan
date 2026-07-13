@@ -1,9 +1,10 @@
-url: https://Pagina-Oficial-Aguasan
+url: https://aguasanperu.org
 
 # Site settings
 title: AguaSan
 email: andrejuarezcastro@gmail.com
 description: "Agua para todos los peruanos"
+google_analytics: G-SDXLZYVCND
 
 
 # Team names, titles and social links
@@ -44,13 +45,11 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: instagram
-    url: https://www.instagram.com/aguasan.pe/
+    url: https://www.instagram.com/aguasan_pe/
   - title: facebook
-    url: https://www.facebook.com/AguaSANPeru
-  - title: stack-overflow
-    url: https://wa.me/51958961259
-  - title: github
-    url: http://github.com/jekyll
+    url: https://www.facebook.com/AguaYSaneamientoParaPeru/
+  - title: whatsapp
+    url: https://wa.me/974395777
 
 
 # Postal address (add as many lines as necessary)
@@ -75,4 +74,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
