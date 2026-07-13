@@ -40,6 +40,7 @@
   .proj-card-body { padding: 20px 22px 22px; }
   .proj-card-body h4 { font-size: 1.1em; font-weight: 800; color: #0d3f6b; margin: 0 0 5px; }
   .proj-card-body p  { font-size: 0.9em; color: #888; margin: 0; }
+  .proj-card-cta { display: inline-block; margin-top: 14px; color: #1a6ea8; font-size: 0.84em; font-weight: 800; }
 </style>
 
 <section id="portfolio">
@@ -47,14 +48,17 @@
         <div class="row">
         {% for post in site.posts %}{% if post.show_in_portfolio %}
             <div class="col-md-4 col-sm-6">
-                <a href="#portfolioModal{{ post.modal-id }}" class="proj-card portfolio-link" data-toggle="modal">
+                <a href="{{ post.url | prepend: site.baseurl }}" class="proj-card" aria-label="Leer: {{ post.title | escape }}">
                     <div class="proj-card-imgwrap">
-                        <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" alt="{{ post.title }}">
-                        <div class="proj-card-overlay"><span class="plus"><i class="fa fa-plus"></i></span></div>
+                        {% assign card_image = post.card_image | default: post.thumbnail | prepend: '/img/portfolio/' %}
+                        {% if post.card_image %}{% assign card_image = post.card_image %}{% endif %}
+                        <img src="{{ card_image | prepend: site.baseurl }}" alt="{{ post.alt | default: post.title | escape }}" loading="lazy">
+                        <div class="proj-card-overlay"><span class="plus"><i class="fa fa-arrow-right"></i></span></div>
                     </div>
                     <div class="proj-card-body">
                         <h4>{{ post.title }}</h4>
                         <p>{{ post.subtitle }}</p>
+                        <span class="proj-card-cta">Leer historia &rarr;</span>
                     </div>
                 </a>
             </div>
