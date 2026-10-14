@@ -15,7 +15,7 @@
       <div class="container">
         <h1>Nuestros Proyectos</h1>
         <p>Proyectos documentados, aprendizajes de campo y alianzas por el agua segura.</p>
-        <a href="/" class="subpage-back">&larr; Volver al inicio</a>
+        <a href="/" class="subpage-back">Volver al inicio</a>
       </div>
     </div>
     <style>
@@ -35,6 +35,19 @@
     </style>
 
     {% include portfolio_grid.html %}
+
+    <section class="photo-inventory-link" aria-labelledby="photo-inventory-title">
+      <div class="container text-center">
+        <h2 id="photo-inventory-title">Archivo fotográfico</h2>
+        <p>Un recorrido visual por los territorios, talleres, filtros y comunidades que aparecen en estas experiencias.</p>
+        <a class="btn btn-primary" href="{{ '/inventario-fotografico/' | prepend: site.baseurl }}">Recorrer el archivo visual</a>
+      </div>
+    </section>
+    <style>
+      .photo-inventory-link { padding: 12px 0 72px; }
+      .photo-inventory-link h2 { color: #0d3f6b; font-weight: 900; }
+      .photo-inventory-link p { max-width: 620px; margin: 0 auto 20px; color: #66747b; }
+    </style>
 
     {% include footer.html %}
     {% include js.html %}

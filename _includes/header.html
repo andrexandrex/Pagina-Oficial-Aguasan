@@ -1,32 +1,3 @@
-<style>
-  /* Hero first-slide background */
-  .slide-hero { position: relative; display: flex; align-items: center; justify-content: center; }
-  .slide-hero-bg {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(145deg, #0a2d4d 0%, #0d3f6b 45%, #1a6ea8 100%);
-    z-index: 0;
-  }
-  /* Subtle dot-mesh texture overlay */
-  .slide-hero-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
-    background-size: 28px 28px;
-  }
-  .slide-hero .container { position: relative; z-index: 1; width: 100%; }
-  /* Center the intro text vertically, nudged a bit lower so it clears the fixed navbar */
-  .slide-hero .intro-text {
-    position: static;
-    transform: none;
-    top: auto; left: auto;
-    padding: 80px 15px 0;
-    margin: 0 auto;
-  }
-  .slide-hero .intro-lead-in { color: rgba(255,255,255,0.82) !important; }
-  .slide-hero .intro-heading  { color: #ffffff !important; }
-</style>
 {% comment %} Detect homepage so nav anchors scroll in-page there but link back home from sub-pages {% endcomment %}
 {% assign on_home = false %}{% assign prefix = '/' %}
 {% if page.url == '/' or page.url == '/index.html' %}{% assign on_home = true %}{% assign prefix = '' %}{% endif %}
@@ -41,12 +12,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">
+                    <img src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSAN">
+                </a>
 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <a href="/"><img class="navbar-brand"  src="{{site.baseurl}}/img/LOGO_AGUASAN.png" alt="AguaSan"></a>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -76,14 +49,8 @@
     {% unless page.hide_hero %}
 <header>
     <div class="slideshow-container">
-      <div class="slide slide-hero">
-        <div class="slide-hero-bg"></div>
-        <div class="container">
-          <div class="intro-text">
-            <div class="intro-lead-in">¡Agua de Calidad al alcance de todos!</div>
-            <div class="intro-heading">Bienvenido a AguaSan</div>
-          </div>
-        </div>
+      <div class="slide">
+        <img class="faena1" src="{{site.baseurl}}/img/home/hero/flai-girasoles-1920.webp" alt="Sistema FLAI instalado en Lurigancho-Chosica">
       </div>
       <div class="slide">
         <img class="faena1" src="{{site.baseurl}}/img/portada.jpg" alt="Comunidad con acceso a agua limpia">
@@ -97,6 +64,11 @@
       <div class="slide">
         <img class="faena1" src="{{site.baseurl}}/img/portada4.jpg" alt="Filtros de bioarena instalados">
       </div>
+      <div class="hero-caption">
+        <p class="hero-caption-kicker">Bienvenido a AguaSAN</p>
+        <h1>¡Agua de calidad al alcance de todos!</h1>
+        <p>Soluciones de filtración por gravedad para hogares y comunidades.</p>
+      </div>
     </div>
     <script>
         let slideIndex = 0;
@@ -104,17 +76,9 @@ const slides = document.querySelectorAll('.slide');
 const header = document.querySelector('header');
 
 function showSlides() {
-  // Hide all slides
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active');
-  }
-  // Show the current slide
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].classList.add('active');
-  // Repeat the slide show every 5 seconds
+  slides.forEach(function (slide) { slide.classList.remove('active'); });
+  slideIndex = (slideIndex + 1) % slides.length;
+  slides[slideIndex].classList.add('active');
   setTimeout(showSlides, 5000);
 }
 

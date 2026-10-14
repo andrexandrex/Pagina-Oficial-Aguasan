@@ -59,6 +59,37 @@ document.addEventListener("DOMContentLoaded", function () {
   var successBox = document.getElementById("formSuccess");
   var errorBox = document.getElementById("formError");
   var submitBtn = form.querySelector(".btn-submit");
+  var whatsappLink = document.getElementById("contactWhatsApp");
+  var routeInputs = form.querySelectorAll("input[name='tipo_consulta']");
+
+  function selectedRoute() {
+    var selected = form.querySelector("input[name='tipo_consulta']:checked");
+    return selected ? selected.value : "Hogar - Filtro Vita";
+  }
+
+  function updateWhatsApp() {
+    if (!whatsappLink) return;
+    var route = selectedRoute();
+    var message = route.indexOf("Comunidad") !== -1
+      ? "Hola AguaSAN, quiero evaluar un proyecto de filtración para una comunidad o institución. Mi ubicación es: "
+      : route.indexOf("Evaluación") !== -1
+        ? "Hola AguaSAN, quiero consultar sobre una evaluación de calidad de agua. Mi ubicación es: "
+        : "Hola AguaSAN, busco una solución para mi hogar con un Filtro Vita. Mi ubicación es: ";
+    whatsappLink.href = "https://wa.me/51974395777?text=" + encodeURIComponent(message);
+  }
+
+  routeInputs.forEach(function (input) { input.addEventListener("change", updateWhatsApp); });
+  updateWhatsApp();
+
+  document.querySelectorAll("[data-inquiry='community']").forEach(function (link) {
+    link.addEventListener("click", function () {
+      var community = form.querySelector("input[value='Comunidad o institución - FLAI']");
+      if (community) {
+        community.checked = true;
+        updateWhatsApp();
+      }
+    });
+  });
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();

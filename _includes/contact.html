@@ -1,5 +1,5 @@
 <style>
-  #contact { padding: 80px 0 60px; background: #f8fafc; }
+  #contact { padding: 80px 0 60px; background: #f8fafc; scroll-margin-top: 90px; }
 
   .contact-card {
     background: #fff;
@@ -33,6 +33,19 @@
     box-shadow: 0 0 0 3px rgba(26,110,168,0.12);
   }
   #contact textarea.form-control { min-height: 130px; resize: vertical; }
+
+  .contact-route-label { display: block; color: #0d3f6b; font-weight: 800; font-size: .9em; margin: 4px 0 8px; }
+  .contact-route { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-bottom: 14px; }
+  .contact-route label { position: relative; margin: 0; cursor: pointer; }
+  .contact-route input { position: absolute; opacity: 0; pointer-events: none; }
+  .contact-route span { display: flex; min-height: 44px; align-items: center; justify-content: center; padding: 8px 6px; border: 1.5px solid #dde4ee; border-radius: 7px; color: #52616a; font-size: .78em; font-weight: 700; line-height: 1.2; text-align: center; }
+  .contact-route input:checked + span { border-color: #168b8d; background: #e8f5f3; color: #075d60; }
+  .contact-route input:focus-visible + span { outline: 3px solid rgba(22,139,141,.25); outline-offset: 2px; }
+  .contact-action-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
+  .contact-action-row button, .contact-action-row a { min-height: 48px; }
+  .contact-whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 7px; border-radius: 8px; background: #168b8d; color: #fff !important; font-weight: 800; text-decoration: none; }
+  .contact-whatsapp:hover { background: #0c7477; text-decoration: none; }
+  @media (max-width: 480px) { .contact-route { grid-template-columns: 1fr; } .contact-action-row { grid-template-columns: 1fr; } }
 
   #contact .btn-submit {
     background: linear-gradient(135deg, #1a6ea8, #0d3f6b);
@@ -244,7 +257,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Contáctenos</h2>
-        <h3 class="section-subheading text-muted">Escríbenos, súmate a nuestra red o síguenos en redes sociales.</h3>
+        <h3 class="section-subheading text-muted">Cuéntanos si buscas una solución para tu hogar, una comunidad o una evaluación de calidad de agua.</h3>
       </div>
     </div>
 
@@ -254,7 +267,7 @@
       <div class="col-md-7">
         <div class="contact-card">
           <h3>✉️ Envíanos un mensaje</h3>
-          <p class="sub">Responderemos a tu correo en menos de 48 horas.</p>
+          <p class="sub">Responderemos con las preguntas y el siguiente paso adecuado para tu caso.</p>
 
           <!-- ACTION: replace YOUR_WEB3FORMS_ACCESS_KEY with your real Web3Forms access key (web3forms.com) -->
           <form id="contactForm">
@@ -262,6 +275,13 @@
             <input type="hidden" name="access_key" value="94a22d4e-f33a-43db-9568-d55e161a46e0">
             <input type="hidden" name="subject" value="Nuevo mensaje desde aguasanperu.org">
             <input type="hidden" name="from_name" value="Formulario de contacto AguaSan">
+
+            <span class="contact-route-label">¿Qué necesitas?</span>
+            <div class="contact-route" role="radiogroup" aria-label="Tipo de consulta">
+              <label><input type="radio" name="tipo_consulta" value="Hogar - Filtro Vita" checked><span>Hogar<br>Filtro Vita</span></label>
+              <label><input type="radio" name="tipo_consulta" value="Comunidad o institución - FLAI"><span>Comunidad<br>o institución</span></label>
+              <label><input type="radio" name="tipo_consulta" value="Evaluación de calidad de agua"><span>Evaluación<br>de agua</span></label>
+            </div>
 
             <div class="row">
               <div class="col-sm-6">
@@ -277,6 +297,18 @@
             <input type="tel" name="telefono" class="form-control"
                    placeholder="Tu teléfono (opcional)">
 
+            <input type="text" name="ubicacion" class="form-control"
+                   placeholder="Distrito, provincia o comunidad *" required>
+
+            <select name="fuente_agua" class="form-control" aria-label="Fuente de agua">
+              <option value="">Fuente de agua (opcional)</option>
+              <option value="Red pública">Red pública</option>
+              <option value="Pozo">Pozo</option>
+              <option value="Río o quebrada">Río o quebrada</option>
+              <option value="Canal">Canal</option>
+              <option value="Otra o no sé">Otra o no sé</option>
+            </select>
+
             <input type="text" name="asunto" class="form-control"
                    placeholder="Asunto *" required>
 
@@ -286,7 +318,10 @@
             <!-- Honeypot anti-spam (Web3Forms reads this field name) -->
             <input type="checkbox" name="botcheck" style="display:none">
 
-            <button type="submit" class="btn-submit">💙 Enviar mensaje</button>
+            <div class="contact-action-row">
+              <button type="submit" class="btn-submit"><i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar consulta</button>
+              <a class="contact-whatsapp" id="contactWhatsApp" href="https://wa.me/51974395777?text=Hola%20AguaSAN%2C%20busco%20una%20soluci%C3%B3n%20para%20mi%20hogar." target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp</a>
+            </div>
 
             <div class="form-status success" id="formSuccess">
               ¡Mensaje enviado! Te responderemos pronto.
@@ -303,9 +338,9 @@
 
         <!--
           NEWSLETTER SETUP (one-time, ~5 min):
-          1. brevo.com → Contacts → Forms → Create a subscription form
+          1. brevo.com, Contacts, Forms, Create a subscription form
           2. Add the EMAIL field, set language to Spanish
-          3. In the "Share" step choose "Inline" → copy the action URL
+          3. In the "Share" step choose "Inline", then copy the action URL
           4. Replace YOUR_BREVO_FORM_URL below with that URL
           URL format: https://xxxxxxxx.sibforms.com/serve/XXXXXXXXXX
         -->

@@ -1,0 +1,52 @@
+---
+layout: page
+title: Inventario fotográfico
+hide_hero: true
+permalink: /inventario-fotografico/
+description: Recorrido visual por las experiencias, talleres y comunidades documentadas por AguaSAN.
+---
+
+<style>
+  .inventory-note { margin-bottom: 30px; padding: 16px 18px; border-left: 4px solid #1a6ea8; border-radius: 0 8px 8px 0; background: #eef7fd; color: #245579; line-height: 1.6; }
+  .inventory-group { margin: 42px 0 0; }
+  .inventory-group-heading { display:flex; align-items:center; gap:9px; margin-bottom:8px; color:#0d3f6b; }
+  .inventory-group-heading i { color:#1a6ea8; font-size:.85em; }
+  .inventory-group h2 { margin:0; font-size:1.35em; font-weight:900; }
+  .inventory-group p { margin-bottom:18px; color:#66747b; line-height:1.55; }
+  .inventory-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .inventory-item { position:relative; margin:0; overflow:hidden; border:1px solid #e0e8ec; border-radius:9px; background:#fff; box-shadow:0 5px 16px rgba(13,63,107,.07); }
+  .inventory-item a { position:relative; display:block; }
+  .inventory-item img { display:block; width:100%; aspect-ratio:4 / 3; object-fit:cover; transition:transform .25s ease, filter .25s ease; }
+  .inventory-open { position:absolute; right:9px; bottom:9px; display:flex; width:30px; height:30px; align-items:center; justify-content:center; border-radius:50%; background:rgba(255,255,255,.93); color:#0d3f6b; font-size:.75em; opacity:0; transform:translateY(4px); transition:opacity .2s ease, transform .2s ease; }
+  .inventory-item a:hover img, .inventory-item a:focus img { transform:scale(1.045); filter:saturate(1.05); }
+  .inventory-item a:hover .inventory-open, .inventory-item a:focus .inventory-open { opacity:1; transform:translateY(0); }
+  @media (max-width:767px) { .inventory-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media (max-width: 440px) { .inventory-grid { grid-template-columns: 1fr; } }
+</style>
+
+<div class="inventory-note">
+  Las imágenes se tomaron del archivo visual de AguaSAN y se muestran como derivados WebP optimizados para consulta. No son las piezas con marcos, logos ni fondos de publicación. La galería está organizada por experiencia para que el territorio y el proceso se entiendan antes que el nombre técnico del archivo.
+</div>
+
+{% assign inventory_files = site.static_files | where_exp: "file", "file.path contains '/img/inventario/'" %}
+{% assign inventory_posts = "post01|post02|post03|post04|post05|post07|post08|post09|post10|post11" | split: "|" %}
+{% assign inventory_titles = "Primeras familias y primeros filtros · Ñaña|Promotoras de salud y aprendizaje comunitario|Alianzas que hicieron posible la escala|Aprender para multiplicar|Investigar el agua y el arsénico|Diseñar e instalar el sistema FLAI|Aprender en la práctica con las familias|Llegar y escuchar el territorio|Diseñar el Filtro Vita para el viaje|Uso y acompañamiento comunitario" | split: "|" %}
+{% for post_code in inventory_posts %}
+  {% assign post_index = forloop.index0 %}
+  {% assign post_files = inventory_files | where_exp: "file", "file.path contains post_code" %}
+  <section class="inventory-group" aria-labelledby="inventory-{{ post_code }}">
+    <div class="inventory-group-heading"><i class="fa fa-camera" aria-hidden="true"></i><h2 id="inventory-{{ post_code }}">{{ inventory_titles[post_index] }}</h2></div>
+    <p>Una secuencia visual de las decisiones, las personas y el trabajo en campo.</p>
+    <div class="inventory-grid">
+      {% for image in post_files %}
+        <figure class="inventory-item">
+          <a href="{{ image.path | prepend: site.baseurl }}" target="_blank" rel="noopener" aria-label="Abrir una fotografía de {{ inventory_titles[post_index] | escape }}">
+            <img src="{{ image.path | prepend: site.baseurl }}" alt="{{ inventory_titles[post_index] | escape }}" loading="lazy">
+            <span class="inventory-open" aria-hidden="true"><i class="fa fa-expand"></i></span>
+            <span class="sr-only">Abrir fotografía</span>
+          </a>
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

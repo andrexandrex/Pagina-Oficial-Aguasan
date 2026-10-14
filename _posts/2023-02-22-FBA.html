@@ -1,8 +1,8 @@
 ---
 title: FBA
 subtitle: Filtro bioarena familiar
-modal-id: 6
-layout: default
+layout: product
+hide_hero: true
 date: 2023-02-22
 thumbnail: fba_1.JPG
 alt: Filtro Bioarena Familiar
@@ -14,7 +14,7 @@ category: FBA
 <style>
   .fba-hero {
     position: relative;
-    height: 380px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
@@ -40,24 +40,24 @@ category: FBA
     color: white;
     padding: 0 20px 44px;
   }
-  .fba-hero-text h1 { font-size: 2.3em; font-weight: 900; margin-bottom: 10px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+  .fba-hero-text h1 { font-size: 1.9em; font-weight: 900; margin-bottom: 8px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
   .fba-hero-text p  { font-size: 1.1em; opacity: 0.92; max-width: 640px; margin: 0 auto; }
 
   .fba-stat-strip {
     background: #0d3f6b;
-    padding: 26px 0;
-    margin-bottom: 44px;
+    padding: 19px 0;
+    margin-bottom: 28px;
   }
   .fba-stat {
     text-align: center; color: white; padding: 8px 12px;
     border-right: 1px solid rgba(255,255,255,0.18);
   }
   .fba-stat:last-child { border-right: none; }
-  .fba-stat .cnum  { font-size: 2.4em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
+  .fba-stat .cnum  { font-size: 1.9em; font-weight: 900; color: #7ec8ff; line-height: 1; display: block; }
   .fba-stat .clabel{ font-size: 0.88em; opacity: 0.85; margin-top: 5px; display: block; }
 
-  .fba-section { padding: 40px 0; border-bottom: 1px solid #eaeaea; }
-  .fba-section h2 { font-size: 1.7em; font-weight: 800; color: #0d3f6b; margin-bottom: 18px; }
+  .fba-section { padding: 28px 0; border-bottom: 1px solid #eaeaea; }
+  .fba-section h2 { font-size: 1.45em; font-weight: 800; color: #0d3f6b; margin-bottom: 15px; }
 
   .fba-card {
     background: #fff;
@@ -70,6 +70,8 @@ category: FBA
   .fba-card .card-icon { font-size: 2em; margin-bottom: 10px; display: block; }
   .fba-card h3 { font-size: 1.05em; font-weight: 800; color: #0d3f6b; margin-bottom: 8px; }
   .fba-card p  { color: #555; font-size: 0.96em; line-height: 1.6; margin: 0; }
+  .fba-benefit-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .fba-benefit-grid .fba-card { margin: 0; }
 
   .layer-step {
     display: flex; gap: 14px; align-items: flex-start;
@@ -109,15 +111,95 @@ category: FBA
   }
   .cta-fba h3 { font-size: 1.5em; font-weight: 800; margin-bottom: 10px; }
   .cta-fba p  { opacity: 0.88; margin-bottom: 20px; }
+
+  .fba-photo-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr .85fr;
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .fba-photo-grid figure { margin: 0; }
+  .fba-photo-grid img {
+    display: block;
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.11);
+  }
+  .fba-photo-grid figure:nth-child(2) img { object-position: center 42%; }
+  .fba-photo-grid figcaption {
+    margin-top: 7px;
+    color: #68767a;
+    font-size: .8em;
+    line-height: 1.4;
+  }
+  .fba-testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .fba-testimonial {
+    margin: 0;
+    padding: 18px 18px 16px;
+    border-left: 4px solid #74d6d6;
+    border-radius: 7px;
+    background: #f4fafb;
+    color: #344a50;
+    font-size: .94em;
+    line-height: 1.55;
+  }
+  .fba-testimonial p { margin: 0; }
+  .fba-testimonial cite {
+    display: block;
+    margin-top: 10px;
+    color: #68767a;
+    font-size: .78em;
+    font-style: normal;
+  }
+  .fba-reference-note {
+    margin: 12px 0 0;
+    color: #68767a;
+    font-size: .82em;
+    line-height: 1.5;
+  }
+  .fba-transition {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+    gap: 24px;
+    align-items: center;
+    padding: 22px;
+    border: 1px solid #d8eaf4;
+    border-radius: 12px;
+    background: #f7fbfe;
+  }
+  .fba-transition h3 { margin: 0 0 8px; color: #0d3f6b; font-size: 1.15em; }
+  .fba-transition p { margin: 0 0 14px; color: #475569; line-height: 1.65; }
+  .fba-transition p:last-child { margin-bottom: 0; }
+  .fba-transition img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 9px; box-shadow: 0 5px 16px rgba(13,63,107,.14); }
+  .fba-transition-caption { margin-top: 8px; color: #68767a; font-size: .8em; line-height: 1.45; }
+  .fba-transition-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+  .fba-transition-point { padding: 11px 12px; border-left: 3px solid #74d6d6; background: #fff; color: #334155; font-size: .88em; line-height: 1.45; }
+  .fba-transition-point strong { display: block; margin-bottom: 3px; color: #0d3f6b; }
+  @media (max-width: 767px) {
+    .fba-hero { height: 270px; }
+    .fba-hero-text h1 { font-size: 1.55em; }
+    .fba-photo-grid, .fba-testimonials { grid-template-columns: 1fr; }
+    .fba-benefit-grid { grid-template-columns: 1fr; }
+    .fba-photo-grid img { height: 240px; }
+    .fba-transition { grid-template-columns: 1fr; padding: 18px; }
+    .fba-transition-points { grid-template-columns: 1fr; }
+  }
 </style>
 
 <!-- HERO -->
 <div class="fba-hero">
-  <img src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+  <img src="{{site.baseurl}}/img/home/stories/fba/fba-en-cocina.png" alt="Filtro Bioarena Familiar instalado en una cocina">
   <div class="fba-hero-overlay"></div>
   <div class="fba-hero-text">
     <h1>💧 Filtro Bioarena Familiar (FBA)</h1>
-    <p>Agua segura en cada hogar — sin electricidad, sin químicos, sin complicaciones. La solución doméstica de AguaSAN.</p>
+    <p>La tecnología familiar de AguaSAN, hoy representada por el Filtro Vita de polietileno.</p>
   </div>
 </div>
 
@@ -126,20 +208,20 @@ category: FBA
   <div class="container">
     <div class="row">
       <div class="col-sm-3 fba-stat">
-        <span class="cnum">20 L</span>
-        <span class="clabel">por uso, por familia</span>
+        <span class="cnum">+60 L</span>
+        <span class="clabel">por día, referencia de diseño</span>
       </div>
       <div class="col-sm-3 fba-stat">
-        <span class="cnum">15 años</span>
-        <span class="clabel">de vida útil</span>
+        <span class="cnum">Gravedad</span>
+        <span class="clabel">sin electricidad para filtrar</span>
       </div>
       <div class="col-sm-3 fba-stat">
-        <span class="cnum">0 ⚡</span>
-        <span class="clabel">electricidad requerida</span>
+        <span class="cnum">20 años</span>
+        <span class="clabel">vida útil de referencia*</span>
       </div>
       <div class="col-sm-3 fba-stat">
-        <span class="cnum">99%</span>
-        <span class="clabel">eliminación de bacterias</span>
+        <span class="cnum">Acompañado</span>
+        <span class="clabel">instalación y capacitación</span>
       </div>
     </div>
   </div>
@@ -152,10 +234,10 @@ category: FBA
     <h2>🔍 ¿Qué es el Filtro Bioarena Familiar?</h2>
     <div class="row">
       <div class="col-md-7">
-        <p>El <strong>Filtro Bioarena Familiar (FBA)</strong> es una adaptación doméstica del filtro lento de arena, diseñada para tratar el agua en el punto de uso dentro del hogar. Basado en tecnología desarrollada por el Dr. David Manz (CAWST) en los años 90, es hoy uno de los sistemas de tratamiento de agua más probados y adoptados en comunidades rurales de todo el mundo.</p>
-        <p>El modelo de AguaSAN adapta este principio a un <strong>bidón de polietileno de alta densidad</strong> — liviano, transportable, ideal para zonas remotas de la Amazonía y la sierra peruana donde no llega la red de agua ni la electricidad.</p>
+        <p>El <strong>Filtro Bioarena Familiar (FBA)</strong> es una adaptación doméstica del filtro lento de arena, diseñada para tratar el agua en el punto de uso dentro del hogar. El modelo de AguaSAN adapta este principio a un <strong>bidón de polietileno de alta densidad</strong>, liviano y transportable.</p>
+        <p>La solución se recomienda después de revisar la fuente de agua, el uso familiar y las condiciones de instalación. Su desempeño depende de la preparación del medio filtrante, la maduración, la operación y el almacenamiento posterior.</p>
         <div class="highlight-blue">
-          Una familia de 5 personas necesita en promedio <strong>20 litros de agua segura al día</strong>. El FBA lo entrega sin costo operativo, sin recambios, sin nada más que arena y biología.
+          El FBA filtra por gravedad y no requiere electricidad para operar. La capacidad y el uso recomendado se definen según el diseño y el contexto de cada implementación.
         </div>
       </div>
       <div class="col-md-5 text-center">
@@ -163,6 +245,26 @@ category: FBA
              style="max-width:100%; max-height:320px; object-fit:contain;"
              alt="Diagrama Filtro FBA">
       </div>
+    </div>
+  </div>
+
+  <!-- EVOLUCIÓN DEL PRODUCTO -->
+  <div class="fba-section">
+    <h2>Del FBA de concreto al Filtro Vita</h2>
+    <div class="fba-transition">
+      <div>
+        <h3>Una misma tecnología, un formato más fácil de llevar</h3>
+        <p>AguaSAN comenzó implementando filtros bioarena familiares construidos en concreto. Esa etapa permitió aprender junto a las familias sobre instalación, caudal, limpieza y almacenamiento.</p>
+        <p>Hoy estamos transitando hacia el <strong>Filtro Vita</strong>, un cuerpo de polietileno más liviano y transportable. La tecnología sigue siendo el FBA, pero el formato facilita la fabricación, el traslado y la adaptación a contextos como Purús.</p>
+        <div class="fba-transition-points">
+          <div class="fba-transition-point"><strong>Antes</strong>FBA de concreto, instalado de forma más permanente.</div>
+          <div class="fba-transition-point"><strong>Ahora</strong>Filtro Vita de polietileno, pensado para moverse y acompañar mejor al hogar.</div>
+        </div>
+      </div>
+      <figure style="margin:0;">
+        <img src="{{site.baseurl}}/img/home/solutions/filtro-vita-1280.webp" alt="Filtro Vita de polietileno para uso familiar" loading="lazy">
+        <figcaption class="fba-transition-caption">El Filtro Vita conserva el principio del FBA y actualiza su cuerpo para facilitar el uso y el traslado.</figcaption>
+      </figure>
     </div>
   </div>
 
@@ -176,7 +278,7 @@ category: FBA
              alt="Funcionamiento del filtro bioarena">
       </div>
       <div class="col-md-7">
-        <p style="margin-bottom:20px;">El agua se vierte manualmente por la parte superior y desciende por gravedad a través de las capas filtrantes. El proceso combina <strong>filtración física</strong> y <strong>acción biológica</strong> para producir agua segura.</p>
+        <p style="margin-bottom:20px;">El agua se vierte manualmente por la parte superior y desciende por gravedad a través de las capas filtrantes. El proceso combina <strong>filtración física</strong> y <strong>acción biológica</strong> para ayudar a mejorar su calidad.</p>
         <div class="layer-step">
           <div class="ls-num">1</div>
           <div>
@@ -187,8 +289,8 @@ category: FBA
         <div class="layer-step">
           <div class="ls-num">2</div>
           <div>
-            <h4>Biocapa (Schmutzdecke)</h4>
-            <p>Una delgada capa de microorganismos vivos en la superficie de la arena que captura y digiere patógenos, es el corazón del filtro.</p>
+          <h4>Biocapa</h4>
+            <p>Una capa activa que se forma en la superficie de la arena y ayuda a retener y reducir microorganismos. Es una parte central del funcionamiento del filtro.</p>
           </div>
         </div>
         <div class="layer-step">
@@ -209,7 +311,7 @@ category: FBA
           <div class="ls-num">5</div>
           <div>
             <h4>Agua tratada (salida)</h4>
-            <p>El agua filtrada sale por un caño en la base del bidón, lista para beber directamente.</p>
+            <p>El agua filtrada sale por un caño en la base del bidón. Debe almacenarse y manipularse de forma higiénica antes de consumirla.</p>
           </div>
         </div>
       </div>
@@ -219,49 +321,77 @@ category: FBA
   <!-- BENEFICIOS -->
   <div class="fba-section">
     <h2>✅ ¿Por qué el FBA?</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">💰</span>
-          <h3>Bajo costo total</h3>
-          <p>Una fracción del costo de un sistema convencional. Sin recambios, sin insumos químicos, sin facturas de electricidad. El costo más alto es la instalación inicial.</p>
-        </div>
+    <div class="fba-benefit-grid">
+      <div class="fba-card">
+        <span class="card-icon">💧</span>
+        <h3>Operación por gravedad</h3>
+        <p>Durante la filtración no depende de bombas ni de electricidad. El costo y el acompañamiento se definen según el formato, la instalación y las condiciones de cada hogar.</p>
       </div>
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">🚤</span>
-          <h3>Transportable a cualquier lugar</h3>
-          <p>El bidón de polietileno pesa poco y cabe en una canoa. Ha llegado a comunidades en el Purús, Loreto y la sierra alta sin ningún vehículo especial.</p>
-        </div>
+      <div class="fba-card">
+        <span class="card-icon">🚤</span>
+        <h3>Formato transportable</h3>
+        <p>El Filtro Vita de polietileno facilita el traslado y la instalación en lugares de difícil acceso. La logística se evalúa para cada territorio.</p>
       </div>
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">🌱</span>
-          <h3>Sin insumos externos</h3>
-          <p>Una vez instalado, el filtro no necesita químicos, filtros de repuesto ni energía. La biocapa se regenera sola si se usa con regularidad.</p>
-        </div>
+      <div class="fba-card">
+        <span class="card-icon">🌱</span>
+        <h3>Materiales y uso sencillos</h3>
+        <p>El sistema trabaja con arena, grava y gravedad. La preparación de los materiales, el uso diario y el mantenimiento forman parte de la solución.</p>
       </div>
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">🦠</span>
-          <h3>Eliminación probada de patógenos</h3>
-          <p>Elimina hasta el 99% de bacterias (E. coli), el 99.9% de protozoos y reduce significativamente virus y turbidez cuando la biocapa está madura.</p>
-        </div>
+      <div class="fba-card">
+        <span class="card-icon">🦠</span>
+        <h3>Reducción condicionada</h3>
+        <p>Ayuda a reducir bacterias, protozoos y turbidez cuando la biocapa está madura y el sistema se opera correctamente. El resultado depende de la fuente y del seguimiento.</p>
       </div>
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">🔧</span>
-          <h3>Mantenimiento sencillo</h3>
-          <p>Solo requiere "raspado" superficial (swirl & dump) cuando el caudal baja. Cualquier miembro de la familia puede hacerlo tras una breve capacitación.</p>
-        </div>
+      <div class="fba-card">
+        <span class="card-icon">🔧</span>
+        <h3>Mantenimiento sencillo</h3>
+        <p>Cuando el caudal baja, se realiza una limpieza superficial de la arena. La familia puede aprender este procedimiento con una capacitación breve.</p>
       </div>
-      <div class="col-md-4">
-        <div class="fba-card">
-          <span class="card-icon">⏳</span>
-          <h3>15 años de vida útil</h3>
-          <p>Con un mantenimiento correcto, el bidón y la arena tienen una vida útil de más de 15 años. Inversión única, beneficio para toda una generación.</p>
-        </div>
+      <div class="fba-card">
+        <span class="card-icon">⏳</span>
+        <h3>Uso y mantenimiento claros</h3>
+        <p>La capacitación enseña cuándo limpiar el medio filtrante, cómo proteger la salida y cómo evitar la recontaminación durante el almacenamiento.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- FOTOS DE USO -->
+  <div class="fba-section">
+    <h2>🏠 El FBA dentro del hogar</h2>
+    <p>El filtro entra en la rutina familiar: se instala cerca del punto de uso, se carga manualmente y se mantiene con una capacitación sencilla.</p>
+    <div class="fba-photo-grid">
+      <figure>
+        <img src="{{site.baseurl}}/img/home/stories/fba/fba-en-cocina.png" alt="Filtro bioarena instalado dentro de una cocina" loading="lazy">
+        <figcaption>Instalado dentro de una cocina.</figcaption>
+      </figure>
+      <figure>
+        <img src="{{site.baseurl}}/img/home/stories/fba/fba-en-hogar.jpg" alt="Familia junto a un filtro bioarena en casa" loading="lazy">
+        <figcaption>El filtro como parte del hogar.</figcaption>
+      </figure>
+      <figure>
+        <img src="{{site.baseurl}}/img/home/stories/fba/fba-uso-domestico.jpg" alt="Uso doméstico de un filtro bioarena" loading="lazy">
+        <figcaption>Uso y acompañamiento familiar.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- TESTIMONIOS -->
+  <div class="fba-section">
+    <h2>💬 Voces sobre el agua limpia</h2>
+    <p>Estos testimonios fueron recogidos en Lurigancho-Chosica durante 2022. Expresan por qué el uso cotidiano y el cuidado del agua importan tanto como la instalación.</p>
+    <div class="fba-testimonials">
+      <blockquote class="fba-testimonial">
+        <p>“El agua limpia es importante para prevenir las enfermedades que pueda haber por el agua contaminada.”</p>
+        <cite>Participante, Lurigancho-Chosica, 2022</cite>
+      </blockquote>
+      <blockquote class="fba-testimonial">
+        <p>“Es importante consumir el agua limpia para conservar nuestra buena salud.”</p>
+        <cite>Participante, Lurigancho-Chosica, 2022</cite>
+      </blockquote>
+      <blockquote class="fba-testimonial">
+        <p>“Es necesario mantenerla bien limpia para los niños y las personas ancianas, y evitar muchas enfermedades.”</p>
+        <cite>Participante, Lurigancho-Chosica, 2022</cite>
+      </blockquote>
     </div>
   </div>
 
@@ -271,9 +401,9 @@ category: FBA
     <div class="row">
       <div class="col-md-6">
         <table class="spec-table">
-          <tr><td>Capacidad por uso</td><td>15 – 20 litros</td></tr>
+          <tr><td>Capacidad diaria</td><td>+60 litros/día de referencia*</td></tr>
           <tr><td>Caudal de salida</td><td>0.3 – 0.5 L/minuto</td></tr>
-          <tr><td>Vida útil</td><td>+15 años</td></tr>
+          <tr><td>Vida útil</td><td>Hasta 20 años de referencia*</td></tr>
           <tr><td>Electricidad requerida</td><td>Ninguna</td></tr>
           <tr><td>Químicos requeridos</td><td>Ninguno</td></tr>
           <tr><td>Escala de uso</td><td>Familiar (1 hogar)</td></tr>
@@ -281,22 +411,23 @@ category: FBA
       </div>
       <div class="col-md-6">
         <table class="spec-table">
-          <tr><td>Remoción de bacterias (E. coli)</td><td>Hasta 99%</td></tr>
-          <tr><td>Remoción de protozoos</td><td>Hasta 99.9%</td></tr>
-          <tr><td>Reducción de turbidez</td><td>Alta</td></tr>
+          <tr><td>Contaminantes objetivo</td><td>Bacterias, protozoos y turbidez</td></tr>
+          <tr><td>Resultado esperado</td><td>Depende de la fuente, maduración y operación</td></tr>
+          <tr><td>Arsénico y metales</td><td>Requieren análisis y tratamiento específico</td></tr>
           <tr><td>Material del contenedor</td><td>HDPE (polietileno alta densidad)</td></tr>
-          <tr><td>Mantenimiento</td><td>Swirl & dump cuando baja caudal</td></tr>
+          <tr><td>Mantenimiento</td><td>Limpieza superficial cuando baja el caudal</td></tr>
           <tr><td>Tecnología base</td><td>CAWST / Dr. David Manz</td></tr>
         </table>
       </div>
     </div>
+    <p class="fba-reference-note">*Valores de referencia sujetos al diseño, los materiales, la instalación, la operación y el mantenimiento de cada unidad.</p>
   </div>
 
   <!-- CTA -->
   <div class="cta-fba">
-    <h3>Lleva agua segura a una familia.</h3>
-    <p>Con tu apoyo podemos fabricar e instalar más filtros FBA en las comunidades que más lo necesitan.</p>
-    <a href="#contact" class="btn btn-lg page-scroll" style="background:white; color:#0d3f6b; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">Conversemos</a>
+    <h3>¿Buscas una solución para tu hogar?</h3>
+    <p>Cuéntanos dónde estás y qué fuente de agua utilizas para orientarte sobre el siguiente paso.</p>
+    <a href="https://wa.me/51974395777?text=Hola%20AguaSAN%2C%20busco%20una%20soluci%C3%B3n%20para%20mi%20hogar%20con%20un%20Filtro%20Vita." class="btn btn-lg" target="_blank" rel="noopener" style="background:white; color:#0d3f6b; font-weight:800; border-radius:8px; padding:12px 36px;"><i class="fa fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp</a>
   </div>
 
 </div><!-- /container -->
