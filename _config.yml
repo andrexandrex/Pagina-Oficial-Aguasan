@@ -1,9 +1,9 @@
 url: https://aguasanperu.org
 
 # Site settings
-title: AguaSan
+title: AguaSAN | Filtros de bioarena para hogares y comunidades
 email: andrejuarezcastro@gmail.com
-description: "Agua para todos los peruanos"
+description: "AguaSAN diseña, instala y acompaña soluciones de filtración por bioarena para hogares, comunidades e instituciones en el Perú."
 google_analytics: G-SDXLZYVCND
 
 
@@ -68,6 +68,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - CLAUDE.md
+  - content_claims.md
 
 #PLUGINS
 plugins:

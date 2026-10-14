@@ -1,0 +1,11 @@
+<div class="story-visual-row">
+  <figure class="story-visual-media">
+    <img src="{{ include.image | prepend: site.baseurl }}" alt="{{ include.alt | escape }}" loading="lazy">
+    <figcaption>{{ include.caption }}</figcaption>
+  </figure>
+  <div class="story-visual-copy">
+    <span class="story-visual-kicker"><i class="fa fa-map-o" aria-hidden="true"></i> {{ include.eyebrow }}</span>
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.text }}</p>
+  </div>
+</div>

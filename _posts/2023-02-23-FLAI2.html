@@ -1,8 +1,8 @@
 ---
 title: FLAI
 subtitle: Filtro bioarena comunitario
-layout: default
-modal-id: 7
+layout: product
+hide_hero: true
 date: 2023-02-23
 thumbnail: flai_1.jpg
 alt: Filtro Lento de Arena Intermitente
@@ -123,6 +123,27 @@ category: FLAI
     font-size: 0.9em; font-weight: 700;
     margin: 4px 3px; border: 1px solid #c8e6c9;
   }
+  .flai-why {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(280px, .92fr);
+    gap: 26px;
+    align-items: start;
+  }
+  .flai-why-intro { margin: 0 0 18px; color: #475569; line-height: 1.7; }
+  .flai-benefit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .flai-benefit { padding: 15px 16px; border: 1px solid #dcebdc; border-radius: 9px; background: #fbfefb; }
+  .flai-benefit h3 { margin: 0 0 5px; color: #1b5e20; font-size: 1em; }
+  .flai-benefit p { margin: 0; color: #52625a; font-size: .9em; line-height: 1.55; }
+  .flai-why-media { margin: 0; }
+  .flai-why-media img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; box-shadow: 0 6px 18px rgba(27,94,32,.16); }
+  .flai-why-media figcaption { margin-top: 8px; color: #68767a; font-size: .8em; line-height: 1.45; }
+  .flai-voices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+  .flai-voice { margin: 0; padding: 18px; border-left: 4px solid #8bc48e; border-radius: 0 9px 9px 0; background: #f3faf3; }
+  .flai-voice p { margin: 0; color: #345239; font-style: italic; line-height: 1.6; }
+  .flai-voice cite { display: block; margin-top: 9px; color: #4c7650; font-size: .78em; font-style: normal; font-weight: 700; }
+  @media (max-width: 767px) {
+    .flai-why, .flai-benefit-grid, .flai-voices { grid-template-columns: 1fr; }
+  }
 
   .cta-flai {
     background: linear-gradient(135deg, #388e3c, #1b5e20);
@@ -135,11 +156,11 @@ category: FLAI
 
 <!-- HERO -->
 <div class="flai-hero">
-  <img src="{{site.baseurl}}/img/portfolio/flai_1.jpg" alt="Filtro Lento de Arena Intermitente FLAI">
+  <img src="{{site.baseurl}}/img/home/solutions/flai-sistema-funcionamiento-1920.webp" alt="Sistema FLAI instalado y en funcionamiento comunitario">
   <div class="flai-hero-overlay"></div>
   <div class="flai-hero-text">
     <h1>🌿 Filtro Lento de Arena Intermitente (FLAI)</h1>
-    <p>Agua segura a escala comunitaria — para escuelas, postas de salud y grupos de familias en los lugares más remotos del Perú.</p>
+    <p>Una solución comunitaria para escuelas, postas de salud y grupos de familias, dimensionada según la fuente y la demanda de cada proyecto.</p>
   </div>
 </div>
 
@@ -148,20 +169,20 @@ category: FLAI
   <div class="container">
     <div class="row">
       <div class="col-sm-3 flai-stat">
-        <span class="cnum">2,000+</span>
-        <span class="clabel">litros por día</span>
+        <span class="cnum">+2,500 L</span>
+        <span class="clabel">por día, referencia de diseño</span>
       </div>
       <div class="col-sm-3 flai-stat">
-        <span class="cnum">100+</span>
-        <span class="clabel">personas abastecidas</span>
+        <span class="cnum">20 años</span>
+        <span class="clabel">vida útil de referencia*</span>
       </div>
       <div class="col-sm-3 flai-stat">
-        <span class="cnum">0 ⚡</span>
-        <span class="clabel">electricidad requerida</span>
+        <span class="cnum">Gravedad</span>
+        <span class="clabel">sin electricidad para filtrar</span>
       </div>
       <div class="col-sm-3 flai-stat">
-        <span class="cnum">3</span>
-        <span class="clabel">tanques integrados</span>
+        <span class="cnum">3 etapas</span>
+        <span class="clabel">recepción, filtración y almacenamiento</span>
       </div>
     </div>
   </div>
@@ -175,7 +196,7 @@ category: FLAI
     <div class="row">
       <div class="col-md-7">
         <p>El <strong>Filtro Lento de Arena Intermitente (FLAI)</strong> es la solución comunitaria de AguaSAN: un sistema de tratamiento de agua a mayor escala diseñado para abastecer a grupos de familias, escuelas, postas de salud o comunidades enteras.</p>
-        <p>Basado en el mismo principio de filtración lenta que el FBA, el FLAI escala la tecnología a un sistema de <strong>tres tanques</strong> que permite tratar caudales de más de 2,000 litros al día — sin electricidad, sin químicos, con materiales locales.</p>
+        <p>Basado en el mismo principio de filtración lenta que el FBA, el FLAI escala la tecnología a un sistema de <strong>tres tanques</strong>. La capacidad final se define mediante el diseño del proyecto, el caudal disponible y la demanda real.</p>
         <div class="highlight-green">
           El FLAI es ideal cuando el FBA familiar no es suficiente: comunidades agrupadas, instituciones o zonas donde una sola fuente centralizada puede abastecer a decenas de familias.
         </div>
@@ -206,14 +227,14 @@ category: FLAI
           <div class="tk-icon">1️⃣</div>
           <div>
             <h4>Tanque de recepción</h4>
-            <p>Capta el agua cruda desde la fuente hídrica — río, pozo, acequia o lluvia — y la retiene antes del tratamiento. Actúa como pre-sedimentación de partículas gruesas.</p>
+            <p>Capta el agua cruda desde la fuente hídrica: río, pozo, acequia o lluvia, y la retiene antes del tratamiento. Actúa como pre-sedimentación de partículas gruesas.</p>
           </div>
         </div>
         <div class="tank-step">
           <div class="tk-icon">2️⃣</div>
           <div>
             <h4>Tanque de tratamiento (filtración)</h4>
-            <p>El corazón del sistema. El agua desciende por capas de arena fina y grava donde la <strong>biocapa</strong> elimina bacterias, protozoos y turbidez. En versiones avanzadas, se incorporan materiales de hierro para remover arsénico y metales pesados.</p>
+            <p>El corazón del sistema. El agua desciende por capas de arena fina y grava donde la <strong>biocapa</strong> ayuda a reducir bacterias, protozoos y turbidez. Los contaminantes químicos requieren una adaptación específica y verificación de laboratorio.</p>
           </div>
         </div>
         <div class="tank-step">
@@ -224,7 +245,7 @@ category: FLAI
           </div>
         </div>
         <div class="highlight-green" style="margin-top:16px;">
-          El flujo es totalmente por <strong>gravedad</strong>. No hay bombas, no hay energía, no hay piezas mecánicas que puedan fallar.
+          El proceso de filtración funciona por <strong>gravedad</strong>. La captación, la conducción y el almacenamiento se diseñan según la infraestructura del lugar.
         </div>
       </div>
       <div class="col-md-5 text-center">
@@ -235,52 +256,39 @@ category: FLAI
     </div>
   </div>
 
-  <!-- BENEFICIOS -->
+  <!-- POR QUÉ FLAI -->
   <div class="flai-section">
     <h2>✅ ¿Por qué el FLAI?</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">🏘️</span>
-          <h3>Escala comunitaria real</h3>
-          <p>Un solo sistema puede abastecer a 100+ personas. Ideal para escuelas, postas de salud y comunidades donde el filtro doméstico no es suficiente.</p>
+    <div class="flai-why">
+      <div>
+        <p class="flai-why-intro">El FLAI no es un filtro doméstico multiplicado. Es una solución comunitaria diseñada alrededor de una fuente, un desnivel, una demanda y un equipo local que pueda operarla.</p>
+        <div class="flai-benefit-grid">
+          <article class="flai-benefit"><h3>Escala definida por demanda</h3><p>El caudal y la capacidad se calculan para el lugar, en vez de imponer una cifra igual para todas las comunidades.</p></article>
+          <article class="flai-benefit"><h3>La pendiente se vuelve diseño</h3><p>La topografía, la fuente y la ubicación de los tanques orientan el recorrido del agua por gravedad.</p></article>
+          <article class="flai-benefit"><h3>Filtración sin bombeo</h3><p>El sistema trabaja sin electricidad durante la filtración y evita depender de piezas mecánicas complejas.</p></article>
+          <article class="flai-benefit"><h3>Operación local</h3><p>La instalación incluye capacitación, acuerdos de uso y acompañamiento para que el sistema pueda ser cuidado en la comunidad.</p></article>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">🧪</span>
-          <h3>Versatilidad ante contaminantes</h3>
-          <p>Con modificaciones al material filtrante, el FLAI puede remover arsénico, hierro y otros metales pesados comunes en fuentes andinas — algo que el FBA doméstico no puede a esta escala.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">🔩</span>
-          <h3>Sin piezas mecánicas</h3>
-          <p>Todo el sistema opera por gravedad. Sin bombas, sin motores, sin nada que requiera repuestos difíciles de conseguir en zonas remotas.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">🌍</span>
-          <h3>Materiales locales</h3>
-          <p>Arena, grava y los contenedores se consiguen localmente, reduciendo costos de transporte y permitiendo que la comunidad reponga materiales de forma autónoma.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">📈</span>
-          <h3>Escalable y adaptable</h3>
-          <p>El diseño puede ampliarse para tratar más volumen o adaptarse a diferentes fuentes hídricas y necesidades de calidad de agua sin cambiar el principio de funcionamiento.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="flai-card">
-          <span class="card-icon">🎓</span>
-          <h3>Operación comunitaria</h3>
-          <p>Con una capacitación básica, la propia comunidad puede operar y mantener el sistema. AguaSAN entrena a operadores locales como parte de cada proyecto.</p>
-        </div>
-      </div>
+      <figure class="flai-why-media">
+        <img src="{{site.baseurl}}/img/inventario/post07/InstalacionFLAI_Girasoles.webp" alt="Sistema FLAI instalado en Girasoles" loading="lazy">
+        <figcaption>En Girasoles, el diseño del sistema se llevó a una instalación concreta, con espacio, desnivel y operación comunitaria.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- VOCES -->
+  <div class="flai-section">
+    <h2>💬 Por qué importa el agua limpia</h2>
+    <p>Estas voces fueron recogidas en Lurigancho-Chosica durante 2022. No sustituyen una medición de laboratorio: explican la razón social que sostiene una solución comunitaria.</p>
+    <div class="flai-voices">
+      <blockquote class="flai-voice">
+        <p>“El agua limpia es importante para prevenir las enfermedades que pueda haber por el agua contaminada.”</p>
+        <cite>Participante, Lurigancho-Chosica, 2022</cite>
+      </blockquote>
+      <blockquote class="flai-voice">
+        <p>“Es importante consumir el agua limpia para conservar nuestra buena salud.”</p>
+        <cite>Participante, Lurigancho-Chosica, 2022</cite>
+      </blockquote>
     </div>
   </div>
 
@@ -290,18 +298,18 @@ category: FLAI
     <div style="margin-top:16px;">
       <div class="compare-row">
         <div class="compare-label"></div>
-        <div class="compare-fba"><div class="compare-header">💧 FBA — Familiar</div></div>
-        <div class="compare-flai"><div class="compare-header">🌿 FLAI — Comunitario</div></div>
+        <div class="compare-fba"><div class="compare-header">💧 FBA Familiar</div></div>
+        <div class="compare-flai"><div class="compare-header">🌿 FLAI Comunitario</div></div>
       </div>
       <div class="compare-row">
         <div class="compare-label">Capacidad</div>
-        <div class="compare-fba">15 – 20 L por uso</div>
-        <div class="compare-flai">2,000+ L/día</div>
+        <div class="compare-fba">+60 L/día de referencia*</div>
+        <div class="compare-flai">+2,500 L/día de referencia*</div>
       </div>
       <div class="compare-row">
         <div class="compare-label">Escala</div>
         <div class="compare-fba">1 hogar (5 personas)</div>
-        <div class="compare-flai">100+ personas</div>
+        <div class="compare-flai">Según demanda y operación</div>
       </div>
       <div class="compare-row">
         <div class="compare-label">Operación</div>
@@ -311,7 +319,7 @@ category: FLAI
       <div class="compare-row">
         <div class="compare-label">Contaminantes</div>
         <div class="compare-fba">Bacterias, protozoos, turbidez</div>
-        <div class="compare-flai">+ arsénico y metales pesados (con adaptación)</div>
+        <div class="compare-flai">Tratamiento químico solo con adaptación y verificación</div>
       </div>
       <div class="compare-row">
         <div class="compare-label">Instalación</div>
@@ -327,28 +335,30 @@ category: FLAI
     <div class="row">
       <div class="col-md-6">
         <table class="spec-table">
-          <tr><td>Caudal de producción</td><td>2,000+ L/día</td></tr>
-          <tr><td>Personas abastecidas</td><td>100 – 200+ personas</td></tr>
-          <tr><td>Electricidad requerida</td><td>Ninguna</td></tr>
+          <tr><td>Caudal de producción</td><td>Se define por diseño y fuente</td></tr>
+          <tr><td>Capacidad de referencia</td><td>+2,500 litros/día*</td></tr>
+          <tr><td>Vida útil de referencia</td><td>Hasta 20 años*</td></tr>
+          <tr><td>Personas abastecidas</td><td>Se define por demanda y operación</td></tr>
+          <tr><td>Electricidad requerida</td><td>No requerida durante la filtración*</td></tr>
           <tr><td>Módulos</td><td>3 tanques (recepción, tratamiento, almacenamiento)</td></tr>
         </table>
       </div>
       <div class="col-md-6">
         <table class="spec-table">
-          <tr><td>Remoción de bacterias</td><td>Hasta 99%</td></tr>
-          <tr><td>Remoción de protozoos</td><td>Hasta 99.9%</td></tr>
-          <tr><td>Remoción de arsénico</td><td>Sí (con material de hierro adicional)</td></tr>
-          <tr><td>Material</td><td>Local (arena, grava, contenedores)</td></tr>
+          <tr><td>Contaminantes objetivo</td><td>Bacterias, protozoos y turbidez</td></tr>
+          <tr><td>Arsénico y metales</td><td>Requieren adaptación, análisis y verificación</td></tr>
+          <tr><td>Material</td><td>Arena, grava y contenedores, según disponibilidad</td></tr>
         </table>
       </div>
     </div>
+    <p style="margin:12px 0 0; color:#68767a; font-size:.82em; line-height:1.5;">*Valores de referencia sujetos al diseño, los materiales, la instalación, la operación y el mantenimiento de cada sistema.</p>
   </div>
 
   <!-- CTA -->
   <div class="cta-flai">
-    <h3>Agua segura para toda una comunidad.</h3>
-    <p>Un FLAI puede transformar la salud de una escuela, una posta o un barrio entero. Únete a nuestra misión.</p>
-    <a href="#contact" class="btn btn-lg page-scroll" style="background:white; color:#1b5e20; font-weight:800; border-radius:30px; padding:12px 36px;" data-dismiss="modal">Conversemos</a>
+    <h3>¿Quieres evaluar un proyecto comunitario?</h3>
+    <p>Cuéntanos la ubicación, la fuente y la demanda aproximada para conversar sobre un diseño posible.</p>
+    <a href="https://wa.me/51974395777?text=Hola%20AguaSAN%2C%20quiero%20evaluar%20un%20proyecto%20comunitario%20con%20un%20sistema%20FLAI." class="btn btn-lg" target="_blank" rel="noopener" style="background:white; color:#1b5e20; font-weight:800; border-radius:8px; padding:12px 36px;"><i class="fa fa-whatsapp" aria-hidden="true"></i> Consultar por WhatsApp</a>
   </div>
 
 </div><!-- /container -->

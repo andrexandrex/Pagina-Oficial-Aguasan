@@ -1,0 +1,46 @@
+{% assign inventory_groups = include.groups %}
+
+<section class="story-section story-archive">
+  <div class="story-archive-header">
+    <span class="story-archive-kicker"><i class="fa fa-camera" aria-hidden="true"></i> Registro visual</span>
+    <h2>Así se vivió la experiencia</h2>
+    <p class="story-archive-lead">Una selección de escenas para recorrer el trabajo en campo: el territorio, las manos, las decisiones y las personas que hicieron posible cada etapa.</p>
+  </div>
+  {% for group in inventory_groups %}
+    {% assign inventory_prefix = '/img/inventario/' | append: group.id | append: '/' %}
+    {% assign inventory_images = site.static_files | where_exp: 'file', 'file.path contains inventory_prefix' | sort: 'path' %}
+    {% if inventory_images.size > 0 %}
+      <div class="story-archive-group">
+        <h3 class="story-archive-heading"><i class="fa fa-angle-right" aria-hidden="true"></i>{{ group.title }}</h3>
+        <div class="story-inventory-grid">
+          {% for image in inventory_images %}
+            <figure class="story-inventory-item">
+              <a class="story-inventory-link" href="{{ image.path | prepend: site.baseurl }}" target="_blank" rel="noopener" data-story-gallery-item data-story-caption="{{ group.title | escape }}" aria-label="Ver fotografía de {{ group.title | escape }}">
+                <img src="{{ image.path | prepend: site.baseurl }}" alt="{{ group.title | escape }}" loading="lazy">
+                <span class="story-inventory-open" aria-hidden="true"><i class="fa fa-expand"></i></span>
+                <span class="sr-only">Ver fotografía</span>
+              </a>
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<div class="story-lightbox" data-story-gallery hidden role="dialog" aria-modal="true" aria-labelledby="story-gallery-title">
+  <div class="story-lightbox-backdrop" data-story-gallery-close></div>
+  <div class="story-lightbox-panel" role="document">
+    <div class="story-lightbox-toolbar">
+      <p id="story-gallery-title" class="story-lightbox-label">Registro visual</p>
+      <span class="story-lightbox-count" data-story-gallery-count aria-live="polite"></span>
+      <button class="story-lightbox-close" type="button" data-story-gallery-close aria-label="Cerrar visor" title="Cerrar visor"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <figure class="story-lightbox-figure">
+      <button class="story-lightbox-nav story-lightbox-prev" type="button" data-story-gallery-prev aria-label="Fotografía anterior" title="Fotografía anterior"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+      <img data-story-gallery-image src="" alt="">
+      <button class="story-lightbox-nav story-lightbox-next" type="button" data-story-gallery-next aria-label="Fotografía siguiente" title="Fotografía siguiente"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      <figcaption data-story-gallery-caption></figcaption>
+    </figure>
+  </div>
+</div>

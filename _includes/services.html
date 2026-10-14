@@ -3,6 +3,7 @@
 <style>
   /* Offset anchor jumps so fixed navbar doesn't cover the heading */
   #services, #productos, #impacto { scroll-margin-top: 90px; }
+  #productos { padding-bottom: 18px; }
 
   .nav-card {
     display: block;
@@ -99,64 +100,86 @@
   }
   .nav-card:hover .nc-cta { background: rgba(255,255,255,0.30); }
 
-  /* Sobre Nosotros — left intro column */
-  .about-intro h2.section-heading { text-align: left; margin-top: 0; color: #0d3f6b; }
-  .about-intro .about-lead {
-    font-size: 1.15em; color: #0d3f6b; font-weight: 600;
-    line-height: 1.6; margin-bottom: 14px;
+  /* Sobre Nosotros: keep the heading aligned with the centered home sections. */
+  .about-heading { max-width:780px; margin:0 auto 34px; text-align:center; }
+  .about-kicker {
+    display:inline-block; margin:0 0 10px; color:#1a6ea8; font-size:.78em;
+    font-weight:800; letter-spacing:.12em; text-transform:uppercase;
   }
-  .about-intro p.about-body { font-size: 0.98em; line-height: 1.75; color: #666; }
+  .about-heading h2.section-heading {
+    margin:0 0 12px; color:#0d3f6b; font-size:2.35em; line-height:1.05;
+  }
+  .about-heading .about-lead {
+    max-width:700px; margin:0 auto 10px; color:#0d3f6b; font-size:1.1em;
+    font-weight:700; line-height:1.5;
+  }
+  .about-heading .about-body {
+    max-width:680px; margin:0 auto 17px; color:#5d6970; font-size:.96em;
+    line-height:1.65;
+  }
+  .about-history-link {
+    display:inline-flex; align-items:center; gap:7px; color:#1a6ea8;
+    font-size:.9em; font-weight:800; text-decoration:none;
+  }
+  .about-history-link:hover { color:#0d3f6b; text-decoration:none; }
+  .about-layout {
+    display:grid; grid-template-columns:minmax(280px,.84fr) minmax(0,1.16fr);
+    gap:30px; align-items:stretch;
+  }
+  .about-visual { display:flex; flex-direction:column; justify-content:center; min-width:0; }
+  .about-actions { display:flex; flex-direction:column; gap:14px; align-self:stretch; min-width:0; }
+  .about-collage {
+    display:block; width:100%; aspect-ratio:1.24; object-fit:cover;
+    object-position:center 48%; border-radius:10px;
+    box-shadow:0 8px 24px rgba(13,63,107,.12);
+  }
+  .about-collage-caption {
+    margin:9px 0 0; color:#68767a; font-size:.8em; line-height:1.45;
+  }
+  .impact-card { margin-bottom:0; border-radius:14px; padding:25px 26px 23px; height:100%; }
+  .impact-head { margin-bottom:15px; }
+  .impact-stats > div { padding:11px 5px; }
+  .impact-stats strong { font-size:1.32em; }
+  .impact-stats span { font-size:.68em; }
+  .impact-photo-strip {
+    display:grid; grid-template-columns:1.2fr .9fr .9fr; gap:8px;
+    align-items:start; margin:0 0 15px; position:relative; z-index:1;
+  }
+  .impact-photo {
+    min-width:0; margin:0; overflow:hidden; border-radius:9px;
+    background:rgba(255,255,255,.12);
+  }
+  .impact-photo img {
+    display:block; width:100%; height:104px; object-fit:cover;
+    transition:transform .25s ease;
+  }
+  .impact-card:hover .impact-photo img { transform:scale(1.04); }
+  .impact-photo figcaption {
+    min-height:27px; padding:6px 8px 7px; color:rgba(255,255,255,.82);
+    font-size:.67em; line-height:1.2;
+  }
+  .impact-source-note {
+    display:block; position:relative; z-index:1; margin:-5px 0 13px;
+    color:rgba(255,255,255,.72); font-size:.7em; line-height:1.35;
+  }
+  .ct-crisis-card { min-height:82px; }
   @media (max-width: 767px) {
-    .about-intro { margin-bottom: 32px; }
-    .about-intro h2.section-heading { text-align: center; }
+    section#services { padding-top:12px; }
+    .about-layout { grid-template-columns:1fr; gap:20px; }
+    .about-heading h2.section-heading { font-size:2em; }
+    .about-heading .about-lead, .about-heading .about-body { max-width:none; }
+    .about-collage { aspect-ratio:1.2; }
+    .impact-photo-strip { grid-template-columns:1.15fr .85fr; }
+    .impact-photo img { height:96px; }
+    .impact-photo:last-child { display:none; }
   }
 </style>
-
-<!-- ── SOBRE NOSOTROS ─────────────────────────────────────────── -->
-<section id="services">
-    <div class="container">
-        <div class="row" style="display:flex; flex-wrap:wrap; align-items:center;">
-            <!-- Left: intro text -->
-            <div class="col-md-5 about-intro">
-                <h2 class="section-heading">Sobre Nosotros</h2>
-                <p class="about-lead">AguaSan cree que cada ser humano tiene derecho a agua potable de calidad.</p>
-                <p class="about-body">Buscamos atender la gran demanda de agua potable en centros poblados y zonas rurales que carecen de este servicio, llevando tecnología probada y sostenible a los lugares donde más se necesita.</p>
-            </div>
-            <!-- Right: Impacto (emphasized) on top, Crisis (compact) below -->
-            <div class="col-md-7" id="impacto">
-                <a class="impact-card portfolio-link" data-toggle="modal" href="#portfolioModal10">
-                    <div class="impact-head">
-                        <span class="impact-icon"><i class="fa fa-bar-chart"></i></span>
-                        <div>
-                            <h3>Nuestro Impacto</h3>
-                            <p>Más de 15 años llevando agua segura a las comunidades del Perú.</p>
-                        </div>
-                    </div>
-                    <div class="impact-stats">
-                        <div><strong>+2,250</strong><span>Filtros al 2012</span></div>
-                        <div><strong>+12,000</strong><span>Personas al 2014</span></div>
-                        <div><strong>2007</strong><span>Primer piloto</span></div>
-                    </div>
-                    <span class="nc-cta">Ver impacto →</span>
-                </a>
-                <a class="ct-crisis-card portfolio-link" data-toggle="modal" href="#portfolioModal9">
-                    <span class="ct-crisis-icon"><i class="fa fa-tint"></i></span>
-                    <div class="ct-crisis-body">
-                        <h4>La Crisis del Agua en el Perú</h4>
-                        <p>Más de 8 millones de peruanos no tienen acceso a agua segura.</p>
-                    </div>
-                    <span class="ct-crisis-arrow">→</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- ── NUESTROS PRODUCTOS ─────────────────────────────────────── -->
 <style>
   .product-section {
     background: #f8fafc;
-    padding: 50px 32px 34px;
+    padding: 40px 32px 20px;
     border-radius: 18px;
   }
   @media (max-width: 767px) { .product-section { padding: 40px 18px 24px; } }
@@ -223,6 +246,37 @@
     font-size: 0.82em;
     font-weight: 600;
   }
+  .product-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .product-metric {
+    padding: 10px 12px;
+    border-left: 3px solid #74d6d6;
+    background: #f4fafb;
+  }
+  .product-metric strong {
+    display: block;
+    color: #0d3f6b;
+    font-size: 1.2em;
+    line-height: 1.1;
+  }
+  .product-metric span {
+    display: block;
+    margin-top: 3px;
+    color: #5e6d72;
+    font-size: .75em;
+    line-height: 1.3;
+  }
+  .product-note {
+    display: block;
+    margin: 0 0 16px;
+    color: #68767a;
+    font-size: .76em;
+    line-height: 1.4;
+  }
   .product-cta {
     display: inline-block;
     padding: 10px 24px;
@@ -250,24 +304,28 @@
   .feat-icon i { color: white; font-size: 1.3em; }
   .feat-body h4 { font-size:1em; font-weight:800; color:#0d3f6b; margin:0 0 4px; }
   .feat-body p  { font-size:0.88em; color:#666; margin:0; line-height:1.55; }
+  section#services { padding: 20px 0 30px; }
+  @media (max-width: 767px) {
+    .product-metrics { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 
 <section id="productos" style="padding-top:0;">
     <div class="container product-section">
 
-        <!-- Intro: tagline (left) + feature tiles (right) — ABOVE the product cards -->
-        <div class="row" style="margin-bottom: 44px; align-items: center; display:flex; flex-wrap:wrap;">
+        <!-- Intro: tagline (left) + feature tiles (right), above the product cards -->
+        <div class="row" style="margin-bottom: 30px; align-items: center; display:flex; flex-wrap:wrap;">
             <div class="col-md-5" style="padding-right: 40px;">
                 <h2 class="section-heading" style="text-align:left; margin-top:0;">Nuestros Productos</h2>
-                <p style="font-size:1.15em; color:#0d3f6b; font-weight:600; line-height:1.6; margin-bottom:12px;">Tecnología probada, sin electricidad, sin químicos</p>
-                <p class="text-muted" style="font-size:0.97em; line-height:1.7;">Adaptada para los lugares donde más se necesita — comunidades rurales, zonas de difícil acceso y familias sin conexión a redes de agua convencionales.</p>
+                <p style="font-size:1.15em; color:#0d3f6b; font-weight:600; line-height:1.6; margin-bottom:12px;">Filtración por gravedad, adaptada a cada contexto</p>
+                <p class="text-muted" style="font-size:0.97em; line-height:1.7;">Adaptada para los lugares donde más se necesita: comunidades rurales, zonas de difícil acceso y familias sin conexión a redes de agua convencionales.</p>
             </div>
             <div class="col-md-7">
                 <div class="feat-row">
                     <div class="feat-icon"><i class="fa fa-money"></i></div>
                     <div class="feat-body">
-                        <h4>Bajo Costo</h4>
-                        <p>Hasta 10 veces más económico que un sistema convencional. Sin fuente de energía para operar.</p>
+                        <h4>Diseño adaptable</h4>
+                        <p>Diseñamos según el contexto y la demanda. La filtración funciona por gravedad, sin depender de electricidad.</p>
                     </div>
                 </div>
                 <div class="feat-row">
@@ -280,8 +338,8 @@
                 <div class="feat-row">
                     <div class="feat-icon"><i class="fa fa-tint"></i></div>
                     <div class="feat-body">
-                        <h4>Calidad de agua asegurada</h4>
-                        <p>Reducción de patógenos y turbidez, con aditamentos específicos para evaluar contaminantes como el arsénico.</p>
+                        <h4>Calidad de agua evaluada</h4>
+                        <p>Ayuda a reducir turbidez y contaminantes microbiológicos cuando se instala, madura, opera y mantiene correctamente. El arsénico requiere análisis y verificación específica.</p>
                     </div>
                 </div>
             </div>
@@ -291,39 +349,108 @@
         <div class="row">
             <div class="col-md-6">
               <div class="product-card">
-                <img class="product-card-img" src="{{site.baseurl}}/img/products/fba1.jpg" alt="Filtro Bioarena Familiar FBA">
+                <img class="product-card-img" src="{{site.baseurl}}/img/home/solutions/filtro-vita-1280.webp" alt="Filtro Vita para uso doméstico">
                 <div class="product-card-body">
                   <span class="product-card-badge badge-fba">💧 Uso doméstico</span>
                   <h3>Filtro Bioarena <span>Familiar</span> (FBA)</h3>
-                  <p>Diseñado para el hogar. Con capacidad de 15–20 litros por uso, elimina bacterias, protozoos y turbidez sin ninguna fuente de energía. Fabricado en bidón de polietileno, cabe en una canoa y llega a donde ningún sistema convencional puede.</p>
+                  <p>Diseñado para el hogar, el Filtro Vita/FBA trata el agua en el punto de uso por gravedad. Ayuda a reducir turbidez, bacterias y protozoos cuando el medio filtrante está preparado y el sistema se opera y mantiene correctamente.</p>
+                  <div class="product-metrics" aria-label="Referencias del FBA">
+                    <div class="product-metric"><strong>+60 L</strong><span>por día, según diseño y operación</span></div>
+                    <div class="product-metric"><strong>20 años</strong><span>de vida útil de referencia con mantenimiento</span></div>
+                  </div>
+                  <small class="product-note">Valores de referencia: el resultado depende de la instalación, el uso y el mantenimiento.</small>
                   <div class="product-tags">
                     <span class="product-tag">🏠 1 hogar</span>
                     <span class="product-tag">⚡ Sin electricidad</span>
-                    <span class="product-tag">💊 Sin químicos</span>
-                    <span class="product-tag">⏳ 15 años de vida</span>
+                    <span class="product-tag">🧼 Mantenimiento acompañado</span>
                     <span class="product-tag">🚤 Transportable</span>
                   </div>
-                  <a href="#portfolioModal6" class="product-cta cta-fba-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                  <a href="{{ '/fba/2023/02/22/FBA/' | prepend: site.baseurl }}" class="product-cta cta-fba-btn">Ver detalles</a>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="product-card">
-                <img class="product-card-img" src="{{site.baseurl}}/img/products/flai1.JPG" alt="Filtro FLAI Comunitario">
+                <img class="product-card-img" src="{{site.baseurl}}/img/inventario/post07/InstalacionFLAI_Girasoles.webp" alt="Sistema FLAI instalado en Girasoles">
                 <div class="product-card-body">
                   <span class="product-card-badge badge-flai">🌿 Uso comunitario</span>
                   <h3>Filtro Lento de Arena <span style="color:#388e3c;">Intermitente</span> (FLAI)</h3>
-                  <p>La solución para comunidades, escuelas y postas de salud. Produce más de 2,000 litros al día con un sistema de 3 tanques — recepción, tratamiento y almacenamiento — que opera completamente por gravedad.</p>
+                  <p>El FLAI lleva el principio del filtro lento de arena a comunidades e instituciones. Su diseño, caudal y alcance se definen con la fuente, la demanda y las condiciones del proyecto; opera por gravedad y requiere acompañamiento local.</p>
+                  <div class="product-metrics" aria-label="Referencias del FLAI">
+                    <div class="product-metric"><strong>+2,500 L</strong><span>por día, según diseño y demanda</span></div>
+                    <div class="product-metric"><strong>20 años</strong><span>de vida útil de referencia con mantenimiento</span></div>
+                  </div>
+                  <small class="product-note">La capacidad final se define para cada fuente, sistema y comunidad.</small>
                   <div class="product-tags">
-                    <span class="product-tag">🏘️ 100+ personas</span>
+                    <span class="product-tag">🏘️ Diseño por demanda</span>
                     <span class="product-tag">⚡ Sin electricidad</span>
-                    <span class="product-tag">🧪 Aditamento para arsénico</span>
+                    <span class="product-tag">🧪 Módulo especializado</span>
                     <span class="product-tag">🏫 Para escuelas</span>
                     <span class="product-tag">🏥 Para postas</span>
                   </div>
-                  <a href="#portfolioModal7" class="product-cta cta-flai-btn portfolio-link" data-toggle="modal">Ver detalles →</a>
+                  <a href="{{ '/flai/2023/02/23/FLAI2/' | prepend: site.baseurl }}" class="product-cta cta-flai-btn">Ver detalles</a>
                 </div>
               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── SOBRE NOSOTROS ─────────────────────────────────────────── -->
+<section id="services">
+    <div class="container">
+        <div class="about-heading">
+                <span class="about-kicker">Desde 2007</span>
+                <h2 class="section-heading">Sobre nosotros</h2>
+                <p class="about-lead">AguaSAN cree que cada persona debería poder contar con agua de mejor calidad.</p>
+                <p class="about-body">Acompañamos a hogares, centros poblados y zonas rurales con soluciones adaptadas a la fuente, al territorio y a las capacidades locales.</p>
+                <a class="about-history-link" href="{{ '/historia/' | prepend: site.baseurl }}">Conocer nuestra historia <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="about-layout">
+            <div class="about-visual">
+                <figure style="margin:0;">
+                    <img class="about-collage" src="{{site.baseurl}}/img/home/history/collage-aguasan.png" alt="Collage de proyectos, talleres y comunidades de AguaSAN" loading="lazy">
+                    <figcaption class="about-collage-caption">Una trayectoria construida con familias, talleres, alianzas y soluciones en campo.</figcaption>
+                </figure>
+            </div>
+            <div class="about-actions" id="impacto">
+                <a class="impact-card" href="{{ '/evidencia/2014/07/15/Impacto/' | prepend: site.baseurl }}">
+                    <div class="impact-head">
+                        <span class="impact-icon"><i class="fa fa-bar-chart"></i></span>
+                        <div>
+                            <h3>Nuestro Impacto</h3>
+                            <p>Una trayectoria de aprendizajes de campo, alianzas y soluciones adaptadas a cada territorio.</p>
+                        </div>
+                    </div>
+                    <div class="impact-photo-strip" aria-label="Imágenes de soluciones y comunidades de AguaSAN">
+                        <figure class="impact-photo">
+                            <img src="{{ site.baseurl }}/img/impacto/portada_impacto.jpg" alt="Comunidad reunida junto a una solución de filtración de bioarena" loading="lazy">
+                            <figcaption>Soluciones en comunidad</figcaption>
+                        </figure>
+                        <figure class="impact-photo">
+                            <img src="{{ site.baseurl }}/img/impacto/problematica_agua.jpg" alt="Actividad de comunicación sobre filtros de bioarena en campo" loading="lazy">
+                            <figcaption>Comunicación en campo</figcaption>
+                        </figure>
+                        <figure class="impact-photo">
+                            <img src="{{ site.baseurl }}/img/impacto/capacitacion.JPG" alt="Demostración práctica del filtro de bioarena durante una capacitación" loading="lazy">
+                            <figcaption>Capacitación práctica</figcaption>
+                        </figure>
+                    </div>
+                    <div class="impact-stats">
+                        <div><strong>+2,250</strong><span>Filtros al 2012</span></div>
+                        <div><strong>+12,000</strong><span>Personas al 2014</span></div>
+                        <div><strong>2007</strong><span>Primer piloto</span></div>
+                    </div>
+                    <small class="impact-source-note">Cifras históricas documentadas en la trayectoria de AguaSAN.</small>
+                    <span class="nc-cta">Ver impacto</span>
+                </a>
+                <a class="ct-crisis-card" href="{{ '/contexto/2014/07/16/crisis/' | prepend: site.baseurl }}">
+                    <span class="ct-crisis-icon"><i class="fa fa-tint"></i></span>
+                    <div class="ct-crisis-body">
+                        <h4>La Crisis del Agua en el Perú</h4>
+                        <p>90,4% accede a una red pública, pero solo 40,4% consumió agua con cloro residual adecuado.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

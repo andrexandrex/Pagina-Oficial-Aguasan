@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://aguasanperu.org/proyectos/origen-aguasan-2007/</loc>
-<lastmod>2007-09-01T00:00:00-05:00</lastmod>
+<lastmod>2008-09-01T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://aguasanperu.org/proyectos/rotary-san-antonio-2011/</loc>
@@ -17,7 +17,7 @@
 <lastmod>2013-05-27T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://aguasanperu.org/fba/2014/07/15/Impacto/</loc>
+<loc>https://aguasanperu.org/evidencia/2014/07/15/Impacto/</loc>
 <lastmod>2014-07-15T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -25,8 +25,8 @@
 <lastmod>2014-07-15T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://aguasanperu.org/fba/2014/07/15/crisis/</loc>
-<lastmod>2014-07-15T00:00:00-05:00</lastmod>
+<loc>https://aguasanperu.org/contexto/2014/07/16/crisis/</loc>
+<lastmod>2014-07-16T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://aguasanperu.org/proyectos/lurigancho-chosica-2022/</loc>
@@ -51,6 +51,9 @@
 <loc>https://aguasanperu.org/</loc>
 </url>
 <url>
+<loc>https://aguasanperu.org/inventario-fotografico/</loc>
+</url>
+<url>
 <loc>https://aguasanperu.org/politica-de-privacidad/</loc>
 </url>
 <url>
@@ -58,6 +61,14 @@
 </url>
 <url>
 <loc>https://aguasanperu.org/terminos-y-condiciones/</loc>
+</url>
+<url>
+<loc>https://aguasanperu.org/fba/2014/07/15/Impacto/</loc>
+<lastmod>2026-10-03T21:28:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://aguasanperu.org/fba/2014/07/15/crisis/</loc>
+<lastmod>2026-10-03T21:28:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://aguasanperu.org/img/historia/s41597-022-01923-0.pdf</loc>

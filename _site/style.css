@@ -240,6 +240,54 @@ header {
     max-width: 100%;
   }
 
+  .hero-caption {
+    position: absolute;
+    z-index: 4;
+    left: 8%;
+    bottom: 62px;
+    max-width: 650px;
+    padding: 22px 28px 24px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.18), transparent);
+    text-shadow: 0 2px 8px rgba(0,0,0,.55);
+  }
+
+  .hero-caption h1 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.1;
+    font-weight: 800;
+  }
+
+  .hero-caption p {
+    margin: 0;
+    color: rgba(255,255,255,.94);
+    font-size: 1.15rem;
+    line-height: 1.45;
+  }
+
+  .hero-caption .hero-caption-kicker {
+    margin-bottom: 8px;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    .hero-caption {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-width: none;
+      padding: 20px 18px 24px;
+      background: linear-gradient(0deg, rgba(0,0,0,.68), rgba(0,0,0,.08));
+    }
+    .hero-caption h1 { font-size: 2rem; }
+    .hero-caption p { font-size: 1rem; }
+  }
+
 
   .active {
     display: block;
@@ -649,6 +697,50 @@ fieldset[disabled] .btn-xl.active {
     max-width: 100%;
     max-height: 100%;
     padding-top: 0px;
+}
+
+.navbar-default .navbar-brand img {
+    display: block;
+    width: auto;
+    height: 48px;
+    max-width: 180px;
+    max-height: none;
+    object-fit: contain;
+}
+
+.navbar-default .navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 70px !important;
+    padding: 8px 15px !important;
+}
+
+.navbar-default img.navbar-brand {
+    display: block;
+    width: auto;
+    height: 60px !important;
+    max-width: 180px;
+    max-height: none;
+    padding: 8px 15px !important;
+    object-fit: contain;
+}
+
+@media (max-width:767px) {
+    .navbar-default .navbar-brand img {
+        height: 42px;
+        max-width: 145px;
+    }
+
+    .navbar-default .navbar-brand {
+        height: 60px !important;
+        padding: 8px 15px !important;
+    }
+
+    .navbar-default img.navbar-brand {
+        height: 52px !important;
+        max-width: 150px;
+        padding: 6px 10px !important;
+    }
 }
 
 
@@ -1113,6 +1205,14 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+/* Keep the content as wide as the photographic header on large screens. */
+@media (min-width: 768px) {
+    .container {
+        width: 94%;
+        max-width: 1360px;
+    }
 }
 
 footer {
