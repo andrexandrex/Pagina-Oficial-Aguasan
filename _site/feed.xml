@@ -3,10 +3,10 @@
   <channel>
     <title>AguaSAN | Filtros de bioarena para hogares y comunidades</title>
     <description>AguaSAN diseña, instala y acompaña soluciones de filtración por bioarena para hogares, comunidades e instituciones en el Perú.</description>
-    <link>https://aguasanperu.org/</link>
-    <atom:link href="https://aguasanperu.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Oct 2026 22:46:04 -0500</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2026 22:46:04 -0500</lastBuildDate>
+    <link>http://localhost:4010/</link>
+    <atom:link href="http://localhost:4010/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 13 Oct 2026 23:04:10 -0500</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2026 23:04:10 -0500</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -446,8 +446,8 @@
 &lt;/article&gt;
 </description>
         <pubDate>Thu, 28 Sep 2023 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/proyectos/purus-2023/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/proyectos/purus-2023/</guid>
+        <link>http://localhost:4010/proyectos/purus-2023/</link>
+        <guid isPermaLink="true">http://localhost:4010/proyectos/purus-2023/</guid>
         
         
         <category>Implementación</category>
@@ -810,8 +810,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Thu, 23 Feb 2023 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/flai/2023/02/23/FLAI2/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/flai/2023/02/23/FLAI2/</guid>
+        <link>http://localhost:4010/flai/2023/02/23/FLAI2/</link>
+        <guid isPermaLink="true">http://localhost:4010/flai/2023/02/23/FLAI2/</guid>
         
         
         <category>FLAI</category>
@@ -1242,8 +1242,8 @@
 &lt;/div&gt;&lt;!-- /container --&gt;
 </description>
         <pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/fba/2023/02/22/FBA/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/fba/2023/02/22/FBA/</guid>
+        <link>http://localhost:4010/fba/2023/02/22/FBA/</link>
+        <guid isPermaLink="true">http://localhost:4010/fba/2023/02/22/FBA/</guid>
         
         
         <category>FBA</category>
@@ -1602,8 +1602,8 @@
 &lt;/article&gt;
 </description>
         <pubDate>Sun, 22 May 2022 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/proyectos/lurigancho-chosica-2022/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/proyectos/lurigancho-chosica-2022/</guid>
+        <link>http://localhost:4010/proyectos/lurigancho-chosica-2022/</link>
+        <guid isPermaLink="true">http://localhost:4010/proyectos/lurigancho-chosica-2022/</guid>
         
         
         <category>Implementación</category>
@@ -1824,8 +1824,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 16 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/contexto/2014/07/16/crisis/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/contexto/2014/07/16/crisis/</guid>
+        <link>http://localhost:4010/contexto/2014/07/16/crisis/</link>
+        <guid isPermaLink="true">http://localhost:4010/contexto/2014/07/16/crisis/</guid>
         
         
         <category>Contexto</category>
@@ -1886,8 +1886,8 @@
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/fba/2014/07/15/Implementaci%C3%B3n/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/fba/2014/07/15/Implementaci%C3%B3n/</guid>
+        <link>http://localhost:4010/fba/2014/07/15/Implementaci%C3%B3n/</link>
+        <guid isPermaLink="true">http://localhost:4010/fba/2014/07/15/Implementaci%C3%B3n/</guid>
         
         
         <category>FBA</category>
@@ -2066,8 +2066,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/evidencia/2014/07/15/Impacto/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/evidencia/2014/07/15/Impacto/</guid>
+        <link>http://localhost:4010/evidencia/2014/07/15/Impacto/</link>
+        <guid isPermaLink="true">http://localhost:4010/evidencia/2014/07/15/Impacto/</guid>
         
         
         <category>Evidencia</category>
@@ -2252,8 +2252,8 @@
 &lt;/article&gt;
 </description>
         <pubDate>Mon, 27 May 2013 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/proyectos/taller-cawst-2013/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/proyectos/taller-cawst-2013/</guid>
+        <link>http://localhost:4010/proyectos/taller-cawst-2013/</link>
+        <guid isPermaLink="true">http://localhost:4010/proyectos/taller-cawst-2013/</guid>
         
         
         <category>Historia</category>
@@ -2423,8 +2423,8 @@
 &lt;/article&gt;
 </description>
         <pubDate>Tue, 28 Aug 2012 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/proyectos/aguasan-rimac-2012/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/proyectos/aguasan-rimac-2012/</guid>
+        <link>http://localhost:4010/proyectos/aguasan-rimac-2012/</link>
+        <guid isPermaLink="true">http://localhost:4010/proyectos/aguasan-rimac-2012/</guid>
         
         
         <category>Historia</category>
@@ -2559,8 +2559,8 @@
 &lt;/article&gt;
 </description>
         <pubDate>Wed, 19 Jan 2011 00:00:00 -0500</pubDate>
-        <link>https://aguasanperu.org/proyectos/rotary-san-antonio-2011/</link>
-        <guid isPermaLink="true">https://aguasanperu.org/proyectos/rotary-san-antonio-2011/</guid>
+        <link>http://localhost:4010/proyectos/rotary-san-antonio-2011/</link>
+        <guid isPermaLink="true">http://localhost:4010/proyectos/rotary-san-antonio-2011/</guid>
         
         
         <category>Historia</category>
